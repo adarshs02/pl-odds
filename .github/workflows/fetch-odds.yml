@@ -1,0 +1,50 @@
+name: Fetch Premier League Outrights
+
+on:
+  schedule:
+          # ┌───────────── minute (0)
+          # │ ┌─────────── hour   (0)
+          # │ │ ┌───────── day of month (*)
+          # │ │ │ ┌─────── month (*)
+          # │ │ │ │ ┌───── day of week (1 = Monday)
+          # │ │ │ │ │
+  - cron: '0 0 * * 1'
+  workflow_dispatch:  # allows manual trigger
+
+env:
+  ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}   # add your key in repo settings → Secrets
+
+jobs:
+  fetch-pl-odds:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Fetch latest odds
+        run: |
+          python scripts/fetch_odds.py
+
+      - name: Commit updated odds (if any)
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [[ -n $(git status --porcelain) ]]; then
+            git add data/*.json
+            git commit -m "chore(data): update PL outrights (winner/POTY/positions) $(date -u +'%Y-%m-%d')"
+            git push
+          else
+            echo "No changes in odds — nothing to commit."
+          fi
+

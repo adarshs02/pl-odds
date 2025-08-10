@@ -1,0 +1,40 @@
+name: Fetch EPL H2H Odds (DraftKings)
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * 1' # Every Monday at 00:00 UTC
+
+permissions:
+  contents: write
+
+jobs:
+  fetch-h2h:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Fetch EPL H2H odds (DraftKings)
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+        run: |
+          python scripts/fetch_epl_h2h.py --regions uk,eu,us --bookmakers draftkings
+
+      - name: Commit and push odds
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/pl_h2h_odds_*.json
+          git commit -m "Update EPL h2h odds (DraftKings) [skip ci]" || echo "No changes to commit"
+          git push
