@@ -9,7 +9,7 @@ Examples:
   python scripts/fetch_epl_h2h.py --regions uk,eu,us
   python scripts/fetch_epl_h2h.py --regions uk --bookmakers betfair,bet365
 
-Outputs JSON to data/pl_h2h_odds_<YYYY-MM-DD>.json
+Outputs JSON to data/pl_h2h_odds_<YYYY-MM-DDTHH-MM-SSZ>.json (UTC timestamp)
 Requires ODDS_API_KEY in environment or .env
 """
 import os
@@ -17,7 +17,7 @@ import sys
 import json
 import argparse
 import pathlib
-from datetime import date
+from datetime import date, datetime, timezone
 from typing import Any, Dict, List
 
 import requests
@@ -80,7 +80,11 @@ def main() -> None:
         print(f"Failed to fetch h2h: HTTP {status} {body}", file=sys.stderr)
         sys.exit(1)
 
-    out_file = pathlib.Path(args.out) if args.out else OUT_DIR / f"pl_h2h_odds_{date.today().isoformat()}.json"
+    if args.out:
+        out_file = pathlib.Path(args.out)
+    else:
+        ts = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H-%M-%SZ")
+        out_file = OUT_DIR / f"pl_h2h_odds_{ts}.json"
     with open(out_file, "w") as fp:
         json.dump(data, fp, indent=2, sort_keys=True)
     print(f"Saved EPL h2h odds → {out_file}")
