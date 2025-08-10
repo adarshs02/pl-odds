@@ -1,0 +1,352 @@
+[
+  {
+    "away_team": "Bournemouth",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "last_update": "2025-08-10T10:10:15Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-08-10T10:10:15Z",
+            "outcomes": [
+              {
+                "name": "Bournemouth",
+                "price": 7.5
+              },
+              {
+                "name": "Liverpool",
+                "price": 1.32
+              },
+              {
+                "name": "Draw",
+                "price": 5.75
+              }
+            ]
+          }
+        ],
+        "title": "DraftKings"
+      }
+    ],
+    "commence_time": "2025-08-15T19:00:00Z",
+    "home_team": "Liverpool",
+    "id": "f37021de21572159764157dbf2e5ae62",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL"
+  },
+  {
+    "away_team": "Newcastle United",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "last_update": "2025-08-10T10:10:15Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-08-10T10:10:15Z",
+            "outcomes": [
+              {
+                "name": "Aston Villa",
+                "price": 2.25
+              },
+              {
+                "name": "Newcastle United",
+                "price": 2.95
+              },
+              {
+                "name": "Draw",
+                "price": 3.6
+              }
+            ]
+          }
+        ],
+        "title": "DraftKings"
+      }
+    ],
+    "commence_time": "2025-08-16T11:30:00Z",
+    "home_team": "Aston Villa",
+    "id": "ef104c6285d1e04833a848d273a7b4ae",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL"
+  },
+  {
+    "away_team": "Fulham",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "last_update": "2025-08-10T10:10:15Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-08-10T10:10:15Z",
+            "outcomes": [
+              {
+                "name": "Brighton and Hove Albion",
+                "price": 1.91
+              },
+              {
+                "name": "Fulham",
+                "price": 3.8
+              },
+              {
+                "name": "Draw",
+                "price": 3.75
+              }
+            ]
+          }
+        ],
+        "title": "DraftKings"
+      }
+    ],
+    "commence_time": "2025-08-16T14:00:00Z",
+    "home_team": "Brighton and Hove Albion",
+    "id": "ad4a48da31810362af7fe32298725571",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL"
+  },
+  {
+    "away_team": "Burnley",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "last_update": "2025-08-10T10:10:15Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-08-10T10:10:15Z",
+            "outcomes": [
+              {
+                "name": "Burnley",
+                "price": 8.5
+              },
+              {
+                "name": "Tottenham Hotspur",
+                "price": 1.34
+              },
+              {
+                "name": "Draw",
+                "price": 5.0
+              }
+            ]
+          }
+        ],
+        "title": "DraftKings"
+      }
+    ],
+    "commence_time": "2025-08-16T14:00:00Z",
+    "home_team": "Tottenham Hotspur",
+    "id": "08ec2d2a8e67840bb3ab0e733ef2f58f",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL"
+  },
+  {
+    "away_team": "West Ham United",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "last_update": "2025-08-10T10:10:15Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-08-10T10:10:15Z",
+            "outcomes": [
+              {
+                "name": "Sunderland",
+                "price": 3.15
+              },
+              {
+                "name": "West Ham United",
+                "price": 2.25
+              },
+              {
+                "name": "Draw",
+                "price": 3.4
+              }
+            ]
+          }
+        ],
+        "title": "DraftKings"
+      }
+    ],
+    "commence_time": "2025-08-16T14:00:00Z",
+    "home_team": "Sunderland",
+    "id": "86a8812bc657e2b8c75bf77880a5cf3d",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL"
+  },
+  {
+    "away_team": "Manchester City",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "last_update": "2025-08-10T10:10:15Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-08-10T10:10:15Z",
+            "outcomes": [
+              {
+                "name": "Manchester City",
+                "price": 1.44
+              },
+              {
+                "name": "Wolverhampton Wanderers",
+                "price": 6.5
+              },
+              {
+                "name": "Draw",
+                "price": 4.7
+              }
+            ]
+          }
+        ],
+        "title": "DraftKings"
+      }
+    ],
+    "commence_time": "2025-08-16T16:30:00Z",
+    "home_team": "Wolverhampton Wanderers",
+    "id": "7f3f540489885d028ec9395ba46ee95b",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL"
+  },
+  {
+    "away_team": "Brentford",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "last_update": "2025-08-10T10:10:15Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-08-10T10:10:15Z",
+            "outcomes": [
+              {
+                "name": "Brentford",
+                "price": 3.5
+              },
+              {
+                "name": "Nottingham Forest",
+                "price": 2.05
+              },
+              {
+                "name": "Draw",
+                "price": 3.35
+              }
+            ]
+          }
+        ],
+        "title": "DraftKings"
+      }
+    ],
+    "commence_time": "2025-08-17T13:00:00Z",
+    "home_team": "Nottingham Forest",
+    "id": "eb357add4cbd1823e64186800ab46b13",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL"
+  },
+  {
+    "away_team": "Crystal Palace",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "last_update": "2025-08-10T10:10:15Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-08-10T10:10:15Z",
+            "outcomes": [
+              {
+                "name": "Chelsea",
+                "price": 1.53
+              },
+              {
+                "name": "Crystal Palace",
+                "price": 5.5
+              },
+              {
+                "name": "Draw",
+                "price": 4.4
+              }
+            ]
+          }
+        ],
+        "title": "DraftKings"
+      }
+    ],
+    "commence_time": "2025-08-17T13:00:00Z",
+    "home_team": "Chelsea",
+    "id": "96395d8faab66cf7b72830844f66eda7",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL"
+  },
+  {
+    "away_team": "Arsenal",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "last_update": "2025-08-10T10:10:15Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-08-10T10:10:15Z",
+            "outcomes": [
+              {
+                "name": "Arsenal",
+                "price": 2.1
+              },
+              {
+                "name": "Manchester United",
+                "price": 3.35
+              },
+              {
+                "name": "Draw",
+                "price": 3.55
+              }
+            ]
+          }
+        ],
+        "title": "DraftKings"
+      }
+    ],
+    "commence_time": "2025-08-17T15:30:00Z",
+    "home_team": "Manchester United",
+    "id": "4c489c20064afdb4a5623dff80c6c2d7",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL"
+  },
+  {
+    "away_team": "Everton",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "last_update": "2025-08-10T10:10:15Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-08-10T10:10:15Z",
+            "outcomes": [
+              {
+                "name": "Everton",
+                "price": 2.75
+              },
+              {
+                "name": "Leeds United",
+                "price": 2.5
+              },
+              {
+                "name": "Draw",
+                "price": 3.15
+              }
+            ]
+          }
+        ],
+        "title": "DraftKings"
+      }
+    ],
+    "commence_time": "2025-08-18T19:00:00Z",
+    "home_team": "Leeds United",
+    "id": "92020926e46ec2ebdc748d01a37a17b2",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL"
+  }
+]
