@@ -1,0 +1,5602 @@
+[
+  {
+    "id": "backfill_spread_0",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-08-15T00:00:00Z",
+    "home_team": "Liverpool",
+    "away_team": "Bournemouth",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Liverpool",
+                "point": -1.75
+              },
+              {
+                "name": "Bournemouth",
+                "point": 1.75
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_1",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-08-16T00:00:00Z",
+    "home_team": "Aston Villa",
+    "away_team": "Newcastle",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Aston Villa",
+                "point": -0.25
+              },
+              {
+                "name": "Newcastle",
+                "point": 0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_2",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-08-16T00:00:00Z",
+    "home_team": "Brighton",
+    "away_team": "Fulham",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Brighton",
+                "point": -0.5
+              },
+              {
+                "name": "Fulham",
+                "point": 0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_3",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-08-16T00:00:00Z",
+    "home_team": "Sunderland",
+    "away_team": "West Ham",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Sunderland",
+                "point": 0.25
+              },
+              {
+                "name": "West Ham",
+                "point": -0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_4",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-08-16T00:00:00Z",
+    "home_team": "Tottenham",
+    "away_team": "Burnley",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Tottenham",
+                "point": -1.0
+              },
+              {
+                "name": "Burnley",
+                "point": 1.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_5",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-08-16T00:00:00Z",
+    "home_team": "Wolves",
+    "away_team": "Man City",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Wolves",
+                "point": 1.0
+              },
+              {
+                "name": "Man City",
+                "point": -1.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_6",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-08-17T00:00:00Z",
+    "home_team": "Chelsea",
+    "away_team": "Crystal Palace",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Chelsea",
+                "point": -0.5
+              },
+              {
+                "name": "Crystal Palace",
+                "point": 0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_7",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-08-17T00:00:00Z",
+    "home_team": "Nott'm Forest",
+    "away_team": "Brentford",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Nott'm Forest",
+                "point": -0.5
+              },
+              {
+                "name": "Brentford",
+                "point": 0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_8",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-08-17T00:00:00Z",
+    "home_team": "Man United",
+    "away_team": "Arsenal",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Man United",
+                "point": 0.5
+              },
+              {
+                "name": "Arsenal",
+                "point": -0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_9",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-08-18T00:00:00Z",
+    "home_team": "Leeds",
+    "away_team": "Everton",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Leeds",
+                "point": -0.25
+              },
+              {
+                "name": "Everton",
+                "point": 0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_10",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-08-22T00:00:00Z",
+    "home_team": "West Ham",
+    "away_team": "Chelsea",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "West Ham",
+                "point": 0.75
+              },
+              {
+                "name": "Chelsea",
+                "point": -0.75
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_11",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-08-23T00:00:00Z",
+    "home_team": "Man City",
+    "away_team": "Tottenham",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Man City",
+                "point": -1.0
+              },
+              {
+                "name": "Tottenham",
+                "point": 1.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_12",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-08-23T00:00:00Z",
+    "home_team": "Bournemouth",
+    "away_team": "Wolves",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Bournemouth",
+                "point": -0.75
+              },
+              {
+                "name": "Wolves",
+                "point": 0.75
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_13",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-08-23T00:00:00Z",
+    "home_team": "Brentford",
+    "away_team": "Aston Villa",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Brentford",
+                "point": 0.25
+              },
+              {
+                "name": "Aston Villa",
+                "point": -0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_14",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-08-23T00:00:00Z",
+    "home_team": "Burnley",
+    "away_team": "Sunderland",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Burnley",
+                "point": -0.25
+              },
+              {
+                "name": "Sunderland",
+                "point": 0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_15",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-08-23T00:00:00Z",
+    "home_team": "Arsenal",
+    "away_team": "Leeds",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Arsenal",
+                "point": -1.5
+              },
+              {
+                "name": "Leeds",
+                "point": 1.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_16",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-08-24T00:00:00Z",
+    "home_team": "Crystal Palace",
+    "away_team": "Nott'm Forest",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Crystal Palace",
+                "point": -0.25
+              },
+              {
+                "name": "Nott'm Forest",
+                "point": 0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_17",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-08-24T00:00:00Z",
+    "home_team": "Everton",
+    "away_team": "Brighton",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Everton",
+                "point": 0.0
+              },
+              {
+                "name": "Brighton",
+                "point": -0.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_18",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-08-24T00:00:00Z",
+    "home_team": "Fulham",
+    "away_team": "Man United",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Fulham",
+                "point": 0.25
+              },
+              {
+                "name": "Man United",
+                "point": -0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_19",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-08-25T00:00:00Z",
+    "home_team": "Newcastle",
+    "away_team": "Liverpool",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Newcastle",
+                "point": 0.25
+              },
+              {
+                "name": "Liverpool",
+                "point": -0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_20",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-08-30T00:00:00Z",
+    "home_team": "Chelsea",
+    "away_team": "Fulham",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Chelsea",
+                "point": -1.0
+              },
+              {
+                "name": "Fulham",
+                "point": 1.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_21",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-08-30T00:00:00Z",
+    "home_team": "Man United",
+    "away_team": "Burnley",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Man United",
+                "point": -1.25
+              },
+              {
+                "name": "Burnley",
+                "point": 1.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_22",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-08-30T00:00:00Z",
+    "home_team": "Sunderland",
+    "away_team": "Brentford",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Sunderland",
+                "point": 0.25
+              },
+              {
+                "name": "Brentford",
+                "point": -0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_23",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-08-30T00:00:00Z",
+    "home_team": "Tottenham",
+    "away_team": "Bournemouth",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Tottenham",
+                "point": -0.5
+              },
+              {
+                "name": "Bournemouth",
+                "point": 0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_24",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-08-30T00:00:00Z",
+    "home_team": "Wolves",
+    "away_team": "Everton",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Wolves",
+                "point": 0.25
+              },
+              {
+                "name": "Everton",
+                "point": -0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_25",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-08-30T00:00:00Z",
+    "home_team": "Leeds",
+    "away_team": "Newcastle",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Leeds",
+                "point": 0.5
+              },
+              {
+                "name": "Newcastle",
+                "point": -0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_26",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-08-31T00:00:00Z",
+    "home_team": "Brighton",
+    "away_team": "Man City",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Brighton",
+                "point": 0.5
+              },
+              {
+                "name": "Man City",
+                "point": -0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_27",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-08-31T00:00:00Z",
+    "home_team": "Nott'm Forest",
+    "away_team": "West Ham",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Nott'm Forest",
+                "point": -0.75
+              },
+              {
+                "name": "West Ham",
+                "point": 0.75
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_28",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-08-31T00:00:00Z",
+    "home_team": "Liverpool",
+    "away_team": "Arsenal",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Liverpool",
+                "point": -0.25
+              },
+              {
+                "name": "Arsenal",
+                "point": 0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_29",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-08-31T00:00:00Z",
+    "home_team": "Aston Villa",
+    "away_team": "Crystal Palace",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Aston Villa",
+                "point": -0.25
+              },
+              {
+                "name": "Crystal Palace",
+                "point": 0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_30",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-09-13T00:00:00Z",
+    "home_team": "Arsenal",
+    "away_team": "Nott'm Forest",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Arsenal",
+                "point": -1.25
+              },
+              {
+                "name": "Nott'm Forest",
+                "point": 1.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_31",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-09-13T00:00:00Z",
+    "home_team": "Bournemouth",
+    "away_team": "Brighton",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Bournemouth",
+                "point": 0.0
+              },
+              {
+                "name": "Brighton",
+                "point": -0.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_32",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-09-13T00:00:00Z",
+    "home_team": "Crystal Palace",
+    "away_team": "Sunderland",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Crystal Palace",
+                "point": -0.75
+              },
+              {
+                "name": "Sunderland",
+                "point": 0.75
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_33",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-09-13T00:00:00Z",
+    "home_team": "Everton",
+    "away_team": "Aston Villa",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Everton",
+                "point": 0.0
+              },
+              {
+                "name": "Aston Villa",
+                "point": -0.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_34",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-09-13T00:00:00Z",
+    "home_team": "Fulham",
+    "away_team": "Leeds",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Fulham",
+                "point": -0.25
+              },
+              {
+                "name": "Leeds",
+                "point": 0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_35",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-09-13T00:00:00Z",
+    "home_team": "Newcastle",
+    "away_team": "Wolves",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Newcastle",
+                "point": -1.25
+              },
+              {
+                "name": "Wolves",
+                "point": 1.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_36",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-09-13T00:00:00Z",
+    "home_team": "West Ham",
+    "away_team": "Tottenham",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "West Ham",
+                "point": 0.25
+              },
+              {
+                "name": "Tottenham",
+                "point": -0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_37",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-09-13T00:00:00Z",
+    "home_team": "Brentford",
+    "away_team": "Chelsea",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Brentford",
+                "point": 0.5
+              },
+              {
+                "name": "Chelsea",
+                "point": -0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_38",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-09-14T00:00:00Z",
+    "home_team": "Burnley",
+    "away_team": "Liverpool",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Burnley",
+                "point": 1.5
+              },
+              {
+                "name": "Liverpool",
+                "point": -1.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_39",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-09-14T00:00:00Z",
+    "home_team": "Man City",
+    "away_team": "Man United",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Man City",
+                "point": -1.0
+              },
+              {
+                "name": "Man United",
+                "point": 1.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_40",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-09-20T00:00:00Z",
+    "home_team": "Liverpool",
+    "away_team": "Everton",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Liverpool",
+                "point": -1.0
+              },
+              {
+                "name": "Everton",
+                "point": 1.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_41",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-09-20T00:00:00Z",
+    "home_team": "Brighton",
+    "away_team": "Tottenham",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Brighton",
+                "point": -0.25
+              },
+              {
+                "name": "Tottenham",
+                "point": 0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_42",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-09-20T00:00:00Z",
+    "home_team": "Burnley",
+    "away_team": "Nott'm Forest",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Burnley",
+                "point": 0.25
+              },
+              {
+                "name": "Nott'm Forest",
+                "point": -0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_43",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-09-20T00:00:00Z",
+    "home_team": "West Ham",
+    "away_team": "Crystal Palace",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "West Ham",
+                "point": 0.25
+              },
+              {
+                "name": "Crystal Palace",
+                "point": -0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_44",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-09-20T00:00:00Z",
+    "home_team": "Wolves",
+    "away_team": "Leeds",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Wolves",
+                "point": 0.0
+              },
+              {
+                "name": "Leeds",
+                "point": -0.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_45",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-09-20T00:00:00Z",
+    "home_team": "Man United",
+    "away_team": "Chelsea",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Man United",
+                "point": 0.0
+              },
+              {
+                "name": "Chelsea",
+                "point": -0.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_46",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-09-20T00:00:00Z",
+    "home_team": "Fulham",
+    "away_team": "Brentford",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Fulham",
+                "point": -0.25
+              },
+              {
+                "name": "Brentford",
+                "point": 0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_47",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-09-21T00:00:00Z",
+    "home_team": "Bournemouth",
+    "away_team": "Newcastle",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Bournemouth",
+                "point": -0.25
+              },
+              {
+                "name": "Newcastle",
+                "point": 0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_48",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-09-21T00:00:00Z",
+    "home_team": "Sunderland",
+    "away_team": "Aston Villa",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Sunderland",
+                "point": 0.5
+              },
+              {
+                "name": "Aston Villa",
+                "point": -0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_49",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-09-21T00:00:00Z",
+    "home_team": "Arsenal",
+    "away_team": "Man City",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Arsenal",
+                "point": -0.5
+              },
+              {
+                "name": "Man City",
+                "point": 0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_50",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-09-27T00:00:00Z",
+    "home_team": "Brentford",
+    "away_team": "Man United",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Brentford",
+                "point": 0.5
+              },
+              {
+                "name": "Man United",
+                "point": -0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_51",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-09-27T00:00:00Z",
+    "home_team": "Chelsea",
+    "away_team": "Brighton",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Chelsea",
+                "point": -0.5
+              },
+              {
+                "name": "Brighton",
+                "point": 0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_52",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-09-27T00:00:00Z",
+    "home_team": "Crystal Palace",
+    "away_team": "Liverpool",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Crystal Palace",
+                "point": 0.5
+              },
+              {
+                "name": "Liverpool",
+                "point": -0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_53",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-09-27T00:00:00Z",
+    "home_team": "Leeds",
+    "away_team": "Bournemouth",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Leeds",
+                "point": 0.25
+              },
+              {
+                "name": "Bournemouth",
+                "point": -0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_54",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-09-27T00:00:00Z",
+    "home_team": "Man City",
+    "away_team": "Burnley",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Man City",
+                "point": -2.0
+              },
+              {
+                "name": "Burnley",
+                "point": 2.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_55",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-09-27T00:00:00Z",
+    "home_team": "Nott'm Forest",
+    "away_team": "Sunderland",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Nott'm Forest",
+                "point": -0.75
+              },
+              {
+                "name": "Sunderland",
+                "point": 0.75
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_56",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-09-27T00:00:00Z",
+    "home_team": "Tottenham",
+    "away_team": "Wolves",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Tottenham",
+                "point": -1.0
+              },
+              {
+                "name": "Wolves",
+                "point": 1.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_57",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-09-28T00:00:00Z",
+    "home_team": "Aston Villa",
+    "away_team": "Fulham",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Aston Villa",
+                "point": -0.25
+              },
+              {
+                "name": "Fulham",
+                "point": 0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_58",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-09-28T00:00:00Z",
+    "home_team": "Newcastle",
+    "away_team": "Arsenal",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Newcastle",
+                "point": 0.25
+              },
+              {
+                "name": "Arsenal",
+                "point": -0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_59",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-09-29T00:00:00Z",
+    "home_team": "Everton",
+    "away_team": "West Ham",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Everton",
+                "point": -0.75
+              },
+              {
+                "name": "West Ham",
+                "point": 0.75
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_60",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-10-03T00:00:00Z",
+    "home_team": "Bournemouth",
+    "away_team": "Fulham",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Bournemouth",
+                "point": -0.5
+              },
+              {
+                "name": "Fulham",
+                "point": 0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_61",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-10-04T00:00:00Z",
+    "home_team": "Leeds",
+    "away_team": "Tottenham",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Leeds",
+                "point": 0.0
+              },
+              {
+                "name": "Tottenham",
+                "point": -0.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_62",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-10-04T00:00:00Z",
+    "home_team": "Arsenal",
+    "away_team": "West Ham",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Arsenal",
+                "point": -2.0
+              },
+              {
+                "name": "West Ham",
+                "point": 2.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_63",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-10-04T00:00:00Z",
+    "home_team": "Man United",
+    "away_team": "Sunderland",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Man United",
+                "point": -0.75
+              },
+              {
+                "name": "Sunderland",
+                "point": 0.75
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_64",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-10-04T00:00:00Z",
+    "home_team": "Chelsea",
+    "away_team": "Liverpool",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Chelsea",
+                "point": 0.25
+              },
+              {
+                "name": "Liverpool",
+                "point": -0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_65",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-10-05T00:00:00Z",
+    "home_team": "Aston Villa",
+    "away_team": "Burnley",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Aston Villa",
+                "point": -1.0
+              },
+              {
+                "name": "Burnley",
+                "point": 1.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_66",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-10-05T00:00:00Z",
+    "home_team": "Everton",
+    "away_team": "Crystal Palace",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Everton",
+                "point": 0.0
+              },
+              {
+                "name": "Crystal Palace",
+                "point": -0.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_67",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-10-05T00:00:00Z",
+    "home_team": "Newcastle",
+    "away_team": "Nott'm Forest",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Newcastle",
+                "point": -1.0
+              },
+              {
+                "name": "Nott'm Forest",
+                "point": 1.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_68",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-10-05T00:00:00Z",
+    "home_team": "Wolves",
+    "away_team": "Brighton",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Wolves",
+                "point": 0.25
+              },
+              {
+                "name": "Brighton",
+                "point": -0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_69",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-10-05T00:00:00Z",
+    "home_team": "Brentford",
+    "away_team": "Man City",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Brentford",
+                "point": 1.0
+              },
+              {
+                "name": "Man City",
+                "point": -1.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_70",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-10-18T00:00:00Z",
+    "home_team": "Nott'm Forest",
+    "away_team": "Chelsea",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Nott'm Forest",
+                "point": 0.25
+              },
+              {
+                "name": "Chelsea",
+                "point": -0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_71",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-10-18T00:00:00Z",
+    "home_team": "Brighton",
+    "away_team": "Newcastle",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Brighton",
+                "point": 0.25
+              },
+              {
+                "name": "Newcastle",
+                "point": -0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_72",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-10-18T00:00:00Z",
+    "home_team": "Burnley",
+    "away_team": "Leeds",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Burnley",
+                "point": 0.25
+              },
+              {
+                "name": "Leeds",
+                "point": -0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_73",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-10-18T00:00:00Z",
+    "home_team": "Crystal Palace",
+    "away_team": "Bournemouth",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Crystal Palace",
+                "point": -0.25
+              },
+              {
+                "name": "Bournemouth",
+                "point": 0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_74",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-10-18T00:00:00Z",
+    "home_team": "Man City",
+    "away_team": "Everton",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Man City",
+                "point": -1.25
+              },
+              {
+                "name": "Everton",
+                "point": 1.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_75",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-10-18T00:00:00Z",
+    "home_team": "Sunderland",
+    "away_team": "Wolves",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Sunderland",
+                "point": -0.25
+              },
+              {
+                "name": "Wolves",
+                "point": 0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_76",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-10-18T00:00:00Z",
+    "home_team": "Fulham",
+    "away_team": "Arsenal",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Fulham",
+                "point": 1.0
+              },
+              {
+                "name": "Arsenal",
+                "point": -1.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_77",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-10-19T00:00:00Z",
+    "home_team": "Tottenham",
+    "away_team": "Aston Villa",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Tottenham",
+                "point": -0.25
+              },
+              {
+                "name": "Aston Villa",
+                "point": 0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_78",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-10-19T00:00:00Z",
+    "home_team": "Liverpool",
+    "away_team": "Man United",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Liverpool",
+                "point": -0.75
+              },
+              {
+                "name": "Man United",
+                "point": 0.75
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_79",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-10-20T00:00:00Z",
+    "home_team": "West Ham",
+    "away_team": "Brentford",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "West Ham",
+                "point": 0.0
+              },
+              {
+                "name": "Brentford",
+                "point": -0.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_80",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-10-24T00:00:00Z",
+    "home_team": "Leeds",
+    "away_team": "West Ham",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Leeds",
+                "point": -0.75
+              },
+              {
+                "name": "West Ham",
+                "point": 0.75
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_81",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-10-25T00:00:00Z",
+    "home_team": "Chelsea",
+    "away_team": "Sunderland",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Chelsea",
+                "point": -1.25
+              },
+              {
+                "name": "Sunderland",
+                "point": 1.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_82",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-10-25T00:00:00Z",
+    "home_team": "Newcastle",
+    "away_team": "Fulham",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Newcastle",
+                "point": -1.0
+              },
+              {
+                "name": "Fulham",
+                "point": 1.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_83",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-10-25T00:00:00Z",
+    "home_team": "Man United",
+    "away_team": "Brighton",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Man United",
+                "point": -0.5
+              },
+              {
+                "name": "Brighton",
+                "point": 0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_84",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-10-25T00:00:00Z",
+    "home_team": "Brentford",
+    "away_team": "Liverpool",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Brentford",
+                "point": 0.5
+              },
+              {
+                "name": "Liverpool",
+                "point": -0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_85",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-10-26T00:00:00Z",
+    "home_team": "Arsenal",
+    "away_team": "Crystal Palace",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Arsenal",
+                "point": -1.25
+              },
+              {
+                "name": "Crystal Palace",
+                "point": 1.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_86",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-10-26T00:00:00Z",
+    "home_team": "Aston Villa",
+    "away_team": "Man City",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Aston Villa",
+                "point": 0.5
+              },
+              {
+                "name": "Man City",
+                "point": -0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_87",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-10-26T00:00:00Z",
+    "home_team": "Bournemouth",
+    "away_team": "Nott'm Forest",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Bournemouth",
+                "point": -0.5
+              },
+              {
+                "name": "Nott'm Forest",
+                "point": 0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_88",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-10-26T00:00:00Z",
+    "home_team": "Wolves",
+    "away_team": "Burnley",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Wolves",
+                "point": -0.5
+              },
+              {
+                "name": "Burnley",
+                "point": 0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_89",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-10-26T00:00:00Z",
+    "home_team": "Everton",
+    "away_team": "Tottenham",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Everton",
+                "point": -0.25
+              },
+              {
+                "name": "Tottenham",
+                "point": 0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_90",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-11-01T00:00:00Z",
+    "home_team": "Brighton",
+    "away_team": "Leeds",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Brighton",
+                "point": -0.5
+              },
+              {
+                "name": "Leeds",
+                "point": 0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_91",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-11-01T00:00:00Z",
+    "home_team": "Burnley",
+    "away_team": "Arsenal",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Burnley",
+                "point": 1.75
+              },
+              {
+                "name": "Arsenal",
+                "point": -1.75
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_92",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-11-01T00:00:00Z",
+    "home_team": "Crystal Palace",
+    "away_team": "Brentford",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Crystal Palace",
+                "point": -0.5
+              },
+              {
+                "name": "Brentford",
+                "point": 0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_93",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-11-01T00:00:00Z",
+    "home_team": "Fulham",
+    "away_team": "Wolves",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Fulham",
+                "point": -0.75
+              },
+              {
+                "name": "Wolves",
+                "point": 0.75
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_94",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-11-01T00:00:00Z",
+    "home_team": "Nott'm Forest",
+    "away_team": "Man United",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Nott'm Forest",
+                "point": 0.25
+              },
+              {
+                "name": "Man United",
+                "point": -0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_95",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-11-01T00:00:00Z",
+    "home_team": "Tottenham",
+    "away_team": "Chelsea",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Tottenham",
+                "point": 0.25
+              },
+              {
+                "name": "Chelsea",
+                "point": -0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_96",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-11-01T00:00:00Z",
+    "home_team": "Liverpool",
+    "away_team": "Aston Villa",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Liverpool",
+                "point": -1.0
+              },
+              {
+                "name": "Aston Villa",
+                "point": 1.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_97",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-11-02T00:00:00Z",
+    "home_team": "West Ham",
+    "away_team": "Newcastle",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "West Ham",
+                "point": 1.0
+              },
+              {
+                "name": "Newcastle",
+                "point": -1.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_98",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-11-02T00:00:00Z",
+    "home_team": "Man City",
+    "away_team": "Bournemouth",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Man City",
+                "point": -1.25
+              },
+              {
+                "name": "Bournemouth",
+                "point": 1.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_99",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-11-03T00:00:00Z",
+    "home_team": "Sunderland",
+    "away_team": "Everton",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Sunderland",
+                "point": 0.25
+              },
+              {
+                "name": "Everton",
+                "point": -0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_100",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-11-08T00:00:00Z",
+    "home_team": "Tottenham",
+    "away_team": "Man United",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Tottenham",
+                "point": 0.25
+              },
+              {
+                "name": "Man United",
+                "point": -0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_101",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-11-08T00:00:00Z",
+    "home_team": "Everton",
+    "away_team": "Fulham",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Everton",
+                "point": -0.25
+              },
+              {
+                "name": "Fulham",
+                "point": 0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_102",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-11-08T00:00:00Z",
+    "home_team": "West Ham",
+    "away_team": "Burnley",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "West Ham",
+                "point": -0.5
+              },
+              {
+                "name": "Burnley",
+                "point": 0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_103",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-11-08T00:00:00Z",
+    "home_team": "Sunderland",
+    "away_team": "Arsenal",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Sunderland",
+                "point": 1.0
+              },
+              {
+                "name": "Arsenal",
+                "point": -1.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_104",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-11-08T00:00:00Z",
+    "home_team": "Chelsea",
+    "away_team": "Wolves",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Chelsea",
+                "point": -1.5
+              },
+              {
+                "name": "Wolves",
+                "point": 1.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_105",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-11-09T00:00:00Z",
+    "home_team": "Aston Villa",
+    "away_team": "Bournemouth",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Aston Villa",
+                "point": -0.25
+              },
+              {
+                "name": "Bournemouth",
+                "point": 0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_106",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-11-09T00:00:00Z",
+    "home_team": "Brentford",
+    "away_team": "Newcastle",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Brentford",
+                "point": 0.0
+              },
+              {
+                "name": "Newcastle",
+                "point": -0.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_107",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-11-09T00:00:00Z",
+    "home_team": "Crystal Palace",
+    "away_team": "Brighton",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Crystal Palace",
+                "point": -0.25
+              },
+              {
+                "name": "Brighton",
+                "point": 0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_108",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-11-09T00:00:00Z",
+    "home_team": "Nott'm Forest",
+    "away_team": "Leeds",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Nott'm Forest",
+                "point": -0.25
+              },
+              {
+                "name": "Leeds",
+                "point": 0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_109",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-11-09T00:00:00Z",
+    "home_team": "Man City",
+    "away_team": "Liverpool",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Man City",
+                "point": -0.5
+              },
+              {
+                "name": "Liverpool",
+                "point": 0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_110",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-11-22T00:00:00Z",
+    "home_team": "Burnley",
+    "away_team": "Chelsea",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Burnley",
+                "point": 1.0
+              },
+              {
+                "name": "Chelsea",
+                "point": -1.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_111",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-11-22T00:00:00Z",
+    "home_team": "Bournemouth",
+    "away_team": "West Ham",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Bournemouth",
+                "point": -0.75
+              },
+              {
+                "name": "West Ham",
+                "point": 0.75
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_112",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-11-22T00:00:00Z",
+    "home_team": "Brighton",
+    "away_team": "Brentford",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Brighton",
+                "point": -0.25
+              },
+              {
+                "name": "Brentford",
+                "point": 0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_113",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-11-22T00:00:00Z",
+    "home_team": "Fulham",
+    "away_team": "Sunderland",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Fulham",
+                "point": -0.5
+              },
+              {
+                "name": "Sunderland",
+                "point": 0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_114",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-11-22T00:00:00Z",
+    "home_team": "Liverpool",
+    "away_team": "Nott'm Forest",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Liverpool",
+                "point": -1.25
+              },
+              {
+                "name": "Nott'm Forest",
+                "point": 1.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_115",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-11-22T00:00:00Z",
+    "home_team": "Wolves",
+    "away_team": "Crystal Palace",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Wolves",
+                "point": 0.75
+              },
+              {
+                "name": "Crystal Palace",
+                "point": -0.75
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_116",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-11-22T00:00:00Z",
+    "home_team": "Newcastle",
+    "away_team": "Man City",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Newcastle",
+                "point": 0.5
+              },
+              {
+                "name": "Man City",
+                "point": -0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_117",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-11-23T00:00:00Z",
+    "home_team": "Leeds",
+    "away_team": "Aston Villa",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Leeds",
+                "point": 0.25
+              },
+              {
+                "name": "Aston Villa",
+                "point": -0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_118",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-11-23T00:00:00Z",
+    "home_team": "Arsenal",
+    "away_team": "Tottenham",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Arsenal",
+                "point": -1.0
+              },
+              {
+                "name": "Tottenham",
+                "point": 1.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_119",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-11-24T00:00:00Z",
+    "home_team": "Man United",
+    "away_team": "Everton",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Man United",
+                "point": -0.5
+              },
+              {
+                "name": "Everton",
+                "point": 0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_120",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-11-29T00:00:00Z",
+    "home_team": "Brentford",
+    "away_team": "Burnley",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Brentford",
+                "point": -1.0
+              },
+              {
+                "name": "Burnley",
+                "point": 1.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_121",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-11-29T00:00:00Z",
+    "home_team": "Man City",
+    "away_team": "Leeds",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Man City",
+                "point": -1.75
+              },
+              {
+                "name": "Leeds",
+                "point": 1.75
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_122",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-11-29T00:00:00Z",
+    "home_team": "Sunderland",
+    "away_team": "Bournemouth",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Sunderland",
+                "point": 0.25
+              },
+              {
+                "name": "Bournemouth",
+                "point": -0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_123",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-11-29T00:00:00Z",
+    "home_team": "Everton",
+    "away_team": "Newcastle",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Everton",
+                "point": 0.0
+              },
+              {
+                "name": "Newcastle",
+                "point": -0.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_124",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-11-29T00:00:00Z",
+    "home_team": "Tottenham",
+    "away_team": "Fulham",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Tottenham",
+                "point": -0.25
+              },
+              {
+                "name": "Fulham",
+                "point": 0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_125",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-11-30T00:00:00Z",
+    "home_team": "Crystal Palace",
+    "away_team": "Man United",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Crystal Palace",
+                "point": -0.5
+              },
+              {
+                "name": "Man United",
+                "point": 0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_126",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-11-30T00:00:00Z",
+    "home_team": "Aston Villa",
+    "away_team": "Wolves",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Aston Villa",
+                "point": -1.25
+              },
+              {
+                "name": "Wolves",
+                "point": 1.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_127",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-11-30T00:00:00Z",
+    "home_team": "Nott'm Forest",
+    "away_team": "Brighton",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Nott'm Forest",
+                "point": 0.0
+              },
+              {
+                "name": "Brighton",
+                "point": -0.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_128",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-11-30T00:00:00Z",
+    "home_team": "West Ham",
+    "away_team": "Liverpool",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "West Ham",
+                "point": 1.0
+              },
+              {
+                "name": "Liverpool",
+                "point": -1.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_129",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-11-30T00:00:00Z",
+    "home_team": "Chelsea",
+    "away_team": "Arsenal",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Chelsea",
+                "point": 0.25
+              },
+              {
+                "name": "Arsenal",
+                "point": -0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_130",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-12-02T00:00:00Z",
+    "home_team": "Bournemouth",
+    "away_team": "Everton",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Bournemouth",
+                "point": -0.25
+              },
+              {
+                "name": "Everton",
+                "point": 0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_131",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-12-02T00:00:00Z",
+    "home_team": "Fulham",
+    "away_team": "Man City",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Fulham",
+                "point": 0.75
+              },
+              {
+                "name": "Man City",
+                "point": -0.75
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_132",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-12-02T00:00:00Z",
+    "home_team": "Newcastle",
+    "away_team": "Tottenham",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Newcastle",
+                "point": -0.5
+              },
+              {
+                "name": "Tottenham",
+                "point": 0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_133",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-12-03T00:00:00Z",
+    "home_team": "Arsenal",
+    "away_team": "Brentford",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Arsenal",
+                "point": -1.25
+              },
+              {
+                "name": "Brentford",
+                "point": 1.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_134",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-12-03T00:00:00Z",
+    "home_team": "Brighton",
+    "away_team": "Aston Villa",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Brighton",
+                "point": -0.25
+              },
+              {
+                "name": "Aston Villa",
+                "point": 0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_135",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-12-03T00:00:00Z",
+    "home_team": "Burnley",
+    "away_team": "Crystal Palace",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Burnley",
+                "point": 0.75
+              },
+              {
+                "name": "Crystal Palace",
+                "point": -0.75
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_136",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-12-03T00:00:00Z",
+    "home_team": "Wolves",
+    "away_team": "Nott'm Forest",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Wolves",
+                "point": 0.25
+              },
+              {
+                "name": "Nott'm Forest",
+                "point": -0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_137",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-12-03T00:00:00Z",
+    "home_team": "Leeds",
+    "away_team": "Chelsea",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Leeds",
+                "point": 0.5
+              },
+              {
+                "name": "Chelsea",
+                "point": -0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_138",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-12-03T00:00:00Z",
+    "home_team": "Liverpool",
+    "away_team": "Sunderland",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Liverpool",
+                "point": -1.5
+              },
+              {
+                "name": "Sunderland",
+                "point": 1.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_139",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-12-04T00:00:00Z",
+    "home_team": "Man United",
+    "away_team": "West Ham",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Man United",
+                "point": -1.25
+              },
+              {
+                "name": "West Ham",
+                "point": 1.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_140",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-12-06T00:00:00Z",
+    "home_team": "Aston Villa",
+    "away_team": "Arsenal",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Aston Villa",
+                "point": 0.5
+              },
+              {
+                "name": "Arsenal",
+                "point": -0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_141",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-12-06T00:00:00Z",
+    "home_team": "Bournemouth",
+    "away_team": "Chelsea",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Bournemouth",
+                "point": 0.25
+              },
+              {
+                "name": "Chelsea",
+                "point": -0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_142",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-12-06T00:00:00Z",
+    "home_team": "Everton",
+    "away_team": "Nott'm Forest",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Everton",
+                "point": -0.25
+              },
+              {
+                "name": "Nott'm Forest",
+                "point": 0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_143",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-12-06T00:00:00Z",
+    "home_team": "Man City",
+    "away_team": "Sunderland",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Man City",
+                "point": -1.75
+              },
+              {
+                "name": "Sunderland",
+                "point": 1.75
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_144",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-12-06T00:00:00Z",
+    "home_team": "Newcastle",
+    "away_team": "Burnley",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Newcastle",
+                "point": -1.5
+              },
+              {
+                "name": "Burnley",
+                "point": 1.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_145",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-12-06T00:00:00Z",
+    "home_team": "Tottenham",
+    "away_team": "Brentford",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Tottenham",
+                "point": 0.0
+              },
+              {
+                "name": "Brentford",
+                "point": -0.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_146",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-12-06T00:00:00Z",
+    "home_team": "Leeds",
+    "away_team": "Liverpool",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Leeds",
+                "point": 0.75
+              },
+              {
+                "name": "Liverpool",
+                "point": -0.75
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_147",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-12-07T00:00:00Z",
+    "home_team": "Brighton",
+    "away_team": "West Ham",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Brighton",
+                "point": -1.0
+              },
+              {
+                "name": "West Ham",
+                "point": 1.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_148",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-12-07T00:00:00Z",
+    "home_team": "Fulham",
+    "away_team": "Crystal Palace",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Fulham",
+                "point": 0.0
+              },
+              {
+                "name": "Crystal Palace",
+                "point": -0.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_149",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-12-08T00:00:00Z",
+    "home_team": "Wolves",
+    "away_team": "Man United",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Wolves",
+                "point": 0.75
+              },
+              {
+                "name": "Man United",
+                "point": -0.75
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_150",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-12-13T00:00:00Z",
+    "home_team": "Chelsea",
+    "away_team": "Everton",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Chelsea",
+                "point": -0.75
+              },
+              {
+                "name": "Everton",
+                "point": 0.75
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_151",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-12-13T00:00:00Z",
+    "home_team": "Liverpool",
+    "away_team": "Brighton",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Liverpool",
+                "point": -0.75
+              },
+              {
+                "name": "Brighton",
+                "point": 0.75
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_152",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-12-13T00:00:00Z",
+    "home_team": "Burnley",
+    "away_team": "Fulham",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Burnley",
+                "point": 0.5
+              },
+              {
+                "name": "Fulham",
+                "point": -0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_153",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-12-13T00:00:00Z",
+    "home_team": "Arsenal",
+    "away_team": "Wolves",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Arsenal",
+                "point": -2.25
+              },
+              {
+                "name": "Wolves",
+                "point": 2.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_154",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-12-14T00:00:00Z",
+    "home_team": "Crystal Palace",
+    "away_team": "Man City",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Crystal Palace",
+                "point": 0.5
+              },
+              {
+                "name": "Man City",
+                "point": -0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_155",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-12-14T00:00:00Z",
+    "home_team": "Nott'm Forest",
+    "away_team": "Tottenham",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Nott'm Forest",
+                "point": 0.0
+              },
+              {
+                "name": "Tottenham",
+                "point": -0.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_156",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-12-14T00:00:00Z",
+    "home_team": "Sunderland",
+    "away_team": "Newcastle",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Sunderland",
+                "point": 0.25
+              },
+              {
+                "name": "Newcastle",
+                "point": -0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_157",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-12-14T00:00:00Z",
+    "home_team": "West Ham",
+    "away_team": "Aston Villa",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "West Ham",
+                "point": 0.25
+              },
+              {
+                "name": "Aston Villa",
+                "point": -0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_158",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-12-14T00:00:00Z",
+    "home_team": "Brentford",
+    "away_team": "Leeds",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Brentford",
+                "point": -0.25
+              },
+              {
+                "name": "Leeds",
+                "point": 0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_159",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-12-15T00:00:00Z",
+    "home_team": "Man United",
+    "away_team": "Bournemouth",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Man United",
+                "point": -0.75
+              },
+              {
+                "name": "Bournemouth",
+                "point": 0.75
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_160",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-12-20T00:00:00Z",
+    "home_team": "Newcastle",
+    "away_team": "Chelsea",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Newcastle",
+                "point": 0.0
+              },
+              {
+                "name": "Chelsea",
+                "point": -0.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_161",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-12-20T00:00:00Z",
+    "home_team": "Bournemouth",
+    "away_team": "Burnley",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Bournemouth",
+                "point": -1.25
+              },
+              {
+                "name": "Burnley",
+                "point": 1.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_162",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-12-20T00:00:00Z",
+    "home_team": "Brighton",
+    "away_team": "Sunderland",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Brighton",
+                "point": -0.5
+              },
+              {
+                "name": "Sunderland",
+                "point": 0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_163",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-12-20T00:00:00Z",
+    "home_team": "Man City",
+    "away_team": "West Ham",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Man City",
+                "point": -2.0
+              },
+              {
+                "name": "West Ham",
+                "point": 2.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_164",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-12-20T00:00:00Z",
+    "home_team": "Wolves",
+    "away_team": "Brentford",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Wolves",
+                "point": 0.25
+              },
+              {
+                "name": "Brentford",
+                "point": -0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_165",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-12-20T00:00:00Z",
+    "home_team": "Tottenham",
+    "away_team": "Liverpool",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Tottenham",
+                "point": 0.5
+              },
+              {
+                "name": "Liverpool",
+                "point": -0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_166",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-12-20T00:00:00Z",
+    "home_team": "Everton",
+    "away_team": "Arsenal",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Everton",
+                "point": 1.0
+              },
+              {
+                "name": "Arsenal",
+                "point": -1.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_167",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-12-20T00:00:00Z",
+    "home_team": "Leeds",
+    "away_team": "Crystal Palace",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Leeds",
+                "point": 0.0
+              },
+              {
+                "name": "Crystal Palace",
+                "point": -0.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_168",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-12-21T00:00:00Z",
+    "home_team": "Aston Villa",
+    "away_team": "Man United",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Aston Villa",
+                "point": -0.5
+              },
+              {
+                "name": "Man United",
+                "point": 0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_169",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-12-22T00:00:00Z",
+    "home_team": "Fulham",
+    "away_team": "Nott'm Forest",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Fulham",
+                "point": 0.0
+              },
+              {
+                "name": "Nott'm Forest",
+                "point": -0.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_170",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-12-26T00:00:00Z",
+    "home_team": "Man United",
+    "away_team": "Newcastle",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Man United",
+                "point": 0.0
+              },
+              {
+                "name": "Newcastle",
+                "point": -0.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_171",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-12-27T00:00:00Z",
+    "home_team": "Nott'm Forest",
+    "away_team": "Man City",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Nott'm Forest",
+                "point": 1.0
+              },
+              {
+                "name": "Man City",
+                "point": -1.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_172",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-12-27T00:00:00Z",
+    "home_team": "Arsenal",
+    "away_team": "Brighton",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Arsenal",
+                "point": -1.5
+              },
+              {
+                "name": "Brighton",
+                "point": 1.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_173",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-12-27T00:00:00Z",
+    "home_team": "Brentford",
+    "away_team": "Bournemouth",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Brentford",
+                "point": -0.25
+              },
+              {
+                "name": "Bournemouth",
+                "point": 0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_174",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-12-27T00:00:00Z",
+    "home_team": "Burnley",
+    "away_team": "Everton",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Burnley",
+                "point": 0.25
+              },
+              {
+                "name": "Everton",
+                "point": -0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_175",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-12-27T00:00:00Z",
+    "home_team": "Liverpool",
+    "away_team": "Wolves",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Liverpool",
+                "point": -1.75
+              },
+              {
+                "name": "Wolves",
+                "point": 1.75
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_176",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-12-27T00:00:00Z",
+    "home_team": "West Ham",
+    "away_team": "Fulham",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "West Ham",
+                "point": 0.25
+              },
+              {
+                "name": "Fulham",
+                "point": -0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_177",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-12-27T00:00:00Z",
+    "home_team": "Chelsea",
+    "away_team": "Aston Villa",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Chelsea",
+                "point": -0.75
+              },
+              {
+                "name": "Aston Villa",
+                "point": 0.75
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_178",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-12-28T00:00:00Z",
+    "home_team": "Sunderland",
+    "away_team": "Leeds",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Sunderland",
+                "point": 0.0
+              },
+              {
+                "name": "Leeds",
+                "point": -0.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_179",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-12-28T00:00:00Z",
+    "home_team": "Crystal Palace",
+    "away_team": "Tottenham",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Crystal Palace",
+                "point": -0.25
+              },
+              {
+                "name": "Tottenham",
+                "point": 0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_180",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-12-30T00:00:00Z",
+    "home_team": "Burnley",
+    "away_team": "Newcastle",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Burnley",
+                "point": 1.0
+              },
+              {
+                "name": "Newcastle",
+                "point": -1.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_181",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-12-30T00:00:00Z",
+    "home_team": "Chelsea",
+    "away_team": "Bournemouth",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Chelsea",
+                "point": -1.0
+              },
+              {
+                "name": "Bournemouth",
+                "point": 1.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_182",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-12-30T00:00:00Z",
+    "home_team": "Nott'm Forest",
+    "away_team": "Everton",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Nott'm Forest",
+                "point": -0.5
+              },
+              {
+                "name": "Everton",
+                "point": 0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_183",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-12-30T00:00:00Z",
+    "home_team": "West Ham",
+    "away_team": "Brighton",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "West Ham",
+                "point": 0.25
+              },
+              {
+                "name": "Brighton",
+                "point": -0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_184",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-12-30T00:00:00Z",
+    "home_team": "Arsenal",
+    "away_team": "Aston Villa",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Arsenal",
+                "point": -1.25
+              },
+              {
+                "name": "Aston Villa",
+                "point": 1.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_185",
+    "sport_key": "soccer_epl",
+    "commence_time": "2025-12-30T00:00:00Z",
+    "home_team": "Man United",
+    "away_team": "Wolves",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Man United",
+                "point": -1.25
+              },
+              {
+                "name": "Wolves",
+                "point": 1.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_186",
+    "sport_key": "soccer_epl",
+    "commence_time": "2026-01-01T00:00:00Z",
+    "home_team": "Crystal Palace",
+    "away_team": "Fulham",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Crystal Palace",
+                "point": -0.25
+              },
+              {
+                "name": "Fulham",
+                "point": 0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_187",
+    "sport_key": "soccer_epl",
+    "commence_time": "2026-01-01T00:00:00Z",
+    "home_team": "Liverpool",
+    "away_team": "Leeds",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Liverpool",
+                "point": -1.0
+              },
+              {
+                "name": "Leeds",
+                "point": 1.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_188",
+    "sport_key": "soccer_epl",
+    "commence_time": "2026-01-01T00:00:00Z",
+    "home_team": "Brentford",
+    "away_team": "Tottenham",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Brentford",
+                "point": 0.0
+              },
+              {
+                "name": "Tottenham",
+                "point": -0.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_189",
+    "sport_key": "soccer_epl",
+    "commence_time": "2026-01-01T00:00:00Z",
+    "home_team": "Sunderland",
+    "away_team": "Man City",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Sunderland",
+                "point": 1.25
+              },
+              {
+                "name": "Man City",
+                "point": -1.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_190",
+    "sport_key": "soccer_epl",
+    "commence_time": "2026-01-03T00:00:00Z",
+    "home_team": "Aston Villa",
+    "away_team": "Nott'm Forest",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Aston Villa",
+                "point": -0.5
+              },
+              {
+                "name": "Nott'm Forest",
+                "point": 0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_191",
+    "sport_key": "soccer_epl",
+    "commence_time": "2026-01-03T00:00:00Z",
+    "home_team": "Brighton",
+    "away_team": "Burnley",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Brighton",
+                "point": -1.25
+              },
+              {
+                "name": "Burnley",
+                "point": 1.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_192",
+    "sport_key": "soccer_epl",
+    "commence_time": "2026-01-03T00:00:00Z",
+    "home_team": "Wolves",
+    "away_team": "West Ham",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Wolves",
+                "point": 0.0
+              },
+              {
+                "name": "West Ham",
+                "point": -0.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_193",
+    "sport_key": "soccer_epl",
+    "commence_time": "2026-01-03T00:00:00Z",
+    "home_team": "Bournemouth",
+    "away_team": "Arsenal",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Bournemouth",
+                "point": 1.0
+              },
+              {
+                "name": "Arsenal",
+                "point": -1.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_194",
+    "sport_key": "soccer_epl",
+    "commence_time": "2026-01-04T00:00:00Z",
+    "home_team": "Leeds",
+    "away_team": "Man United",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Leeds",
+                "point": 0.0
+              },
+              {
+                "name": "Man United",
+                "point": -0.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_195",
+    "sport_key": "soccer_epl",
+    "commence_time": "2026-01-04T00:00:00Z",
+    "home_team": "Everton",
+    "away_team": "Brentford",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Everton",
+                "point": -0.25
+              },
+              {
+                "name": "Brentford",
+                "point": 0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_196",
+    "sport_key": "soccer_epl",
+    "commence_time": "2026-01-04T00:00:00Z",
+    "home_team": "Newcastle",
+    "away_team": "Crystal Palace",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Newcastle",
+                "point": -0.75
+              },
+              {
+                "name": "Crystal Palace",
+                "point": 0.75
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_197",
+    "sport_key": "soccer_epl",
+    "commence_time": "2026-01-04T00:00:00Z",
+    "home_team": "Tottenham",
+    "away_team": "Sunderland",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Tottenham",
+                "point": -0.5
+              },
+              {
+                "name": "Sunderland",
+                "point": 0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_198",
+    "sport_key": "soccer_epl",
+    "commence_time": "2026-01-04T00:00:00Z",
+    "home_team": "Fulham",
+    "away_team": "Liverpool",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Fulham",
+                "point": 0.5
+              },
+              {
+                "name": "Liverpool",
+                "point": -0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "backfill_spread_199",
+    "sport_key": "soccer_epl",
+    "commence_time": "2026-01-04T00:00:00Z",
+    "home_team": "Man City",
+    "away_team": "Chelsea",
+    "bookmakers": [
+      {
+        "key": "backfill",
+        "title": "Backfill",
+        "markets": [
+          {
+            "key": "spreads",
+            "outcomes": [
+              {
+                "name": "Man City",
+                "point": -1.25
+              },
+              {
+                "name": "Chelsea",
+                "point": 1.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
