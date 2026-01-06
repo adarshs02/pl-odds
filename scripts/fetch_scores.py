@@ -36,10 +36,32 @@ def fetch_scores(days_from=30):
         # Filter for completed only just in case
         completed = [g for g in data if g.get("completed")]
         
+        # Load existing scores to preserve history
         out_file = OUT_DIR / "scores_latest.json"
+        existing_data = []
+        if out_file.exists():
+            try:
+                with open(out_file, "r") as f:
+                    existing_data = json.load(f)
+            except json.JSONDecodeError:
+                pass
+        
+        # Merge logic: Use a dict keyed by game ID
+        merged_scores = {g["id"]: g for g in existing_data}
+        
+        # Update with new completed games
+        new_count = 0
+        for g in data:
+            if g.get("completed"):
+                if g["id"] not in merged_scores:
+                    new_count += 1
+                merged_scores[g["id"]] = g
+        
+        final_list = list(merged_scores.values())
+        
         with open(out_file, "w") as f:
-            json.dump(completed, f, indent=2)
-        print(f"Saved to {out_file}")
+            json.dump(final_list, f, indent=2)
+        print(f"Saved to {out_file} (Total: {len(final_list)}, New: {new_count})")
         
     except Exception as e:
         print(f"Error fetching scores: {e}")

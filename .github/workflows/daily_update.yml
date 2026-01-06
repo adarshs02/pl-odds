@@ -1,0 +1,51 @@
+name: Daily Betting Data Update
+
+on:
+  schedule:
+    # Run every day at 8:00 UTC (Early morning UK/US time)
+    # This ensures we catch mid-week games the morning after they happen,
+    # and capture daily spread movements.
+    - cron: '0 8 * * *'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Needed to commit changes
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          pip install requests python-dotenv matplotlib pandas
+
+      - name: Run Data Pipeline
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+        run: |
+          python3 scripts/run_pipeline.py
+
+      - name: Commit and Push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Add all new JSONs and updated Graph
+          git add data/*.json
+          git add images/*.png
+          
+          # Check if there are changes before committing
+          if git diff --staged --quiet; then
+            print("No changes to commit.")
+          else
+            git commit -m "auto: daily data update [skip ci]"
+            git push
+          fi
