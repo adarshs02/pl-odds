@@ -44,7 +44,7 @@ jobs:
           
           # Check if there are changes before committing
           if git diff --staged --quiet; then
-            print("No changes to commit.")
+            echo "No changes to commit."
           else
             git commit -m "auto: daily data update [skip ci]"
             git push
