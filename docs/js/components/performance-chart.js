@@ -181,7 +181,11 @@ export class PerformanceChart {
             .style('cursor', 'pointer')
             .on('mouseover', (event, d) => this.handleMouseOver(event, d))
             .on('mouseout', () => this.handleMouseOut())
-            .on('click', (event, d) => Router.navigateToTeam(d.name));
+            .on('click', (event, d) => {
+                event.preventDefault();
+                event.stopPropagation();
+                Router.navigateToTeam(d.name);
+            });
 
         // Animate bars
         bars.transition()
