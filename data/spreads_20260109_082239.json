@@ -1,0 +1,92 @@
+[
+  {
+    "id": "3fd1e970c718bfc0f99a7e4575e46f49",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-01-17T12:30:00Z",
+    "home_team": "Manchester United",
+    "away_team": "Manchester City",
+    "bookmakers": []
+  },
+  {
+    "id": "876bd00ab1c4cff1c6635a8ac7f93d75",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-01-17T15:00:00Z",
+    "home_team": "Chelsea",
+    "away_team": "Brentford",
+    "bookmakers": []
+  },
+  {
+    "id": "80cf233ec08173f3d8cf4645b687589d",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-01-17T15:00:00Z",
+    "home_team": "Liverpool",
+    "away_team": "Burnley",
+    "bookmakers": []
+  },
+  {
+    "id": "aa16a48d5e016963e076f7f5ecfc2f68",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-01-17T15:00:00Z",
+    "home_team": "Sunderland",
+    "away_team": "Crystal Palace",
+    "bookmakers": []
+  },
+  {
+    "id": "86609aa022312a15ec01d5bc0c172dbc",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-01-17T15:00:00Z",
+    "home_team": "Leeds United",
+    "away_team": "Fulham",
+    "bookmakers": []
+  },
+  {
+    "id": "47e36aed7df3160f584a73fbd1fd0830",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-01-17T15:00:00Z",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "West Ham United",
+    "bookmakers": []
+  },
+  {
+    "id": "b145d15344a4fca80d42b39faa58a050",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-01-17T17:30:00Z",
+    "home_team": "Nottingham Forest",
+    "away_team": "Arsenal",
+    "bookmakers": []
+  },
+  {
+    "id": "e15eb2362921b16a6b6a0397ce607a11",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-01-18T14:00:00Z",
+    "home_team": "Wolverhampton Wanderers",
+    "away_team": "Newcastle United",
+    "bookmakers": []
+  },
+  {
+    "id": "80b312e80c4c6e8f267a99606665ac8c",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-01-18T16:30:00Z",
+    "home_team": "Aston Villa",
+    "away_team": "Everton",
+    "bookmakers": []
+  },
+  {
+    "id": "342788786c22e570ed2da53a9608113f",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-01-19T20:00:00Z",
+    "home_team": "Brighton and Hove Albion",
+    "away_team": "Bournemouth",
+    "bookmakers": []
+  }
+]
