@@ -1,0 +1,156 @@
+{
+  "lastUpdated": "2026-01-09T09:17:40.272487Z",
+  "upcomingMatches": [
+    {
+      "id": "3fd1e970c718bfc0f99a7e4575e46f49",
+      "commenceTime": "2026-01-17T12:30:00Z",
+      "homeTeam": "Manchester United",
+      "awayTeam": "Manchester City",
+      "h2hOdds": {
+        "bookmaker": "DraftKings",
+        "home": 3.8,
+        "draw": 4.1,
+        "away": 1.8,
+        "impliedProbHome": 0.263,
+        "impliedProbDraw": 0.244,
+        "impliedProbAway": 0.556
+      }
+    },
+    {
+      "id": "876bd00ab1c4cff1c6635a8ac7f93d75",
+      "commenceTime": "2026-01-17T15:00:00Z",
+      "homeTeam": "Chelsea",
+      "awayTeam": "Brentford",
+      "h2hOdds": {
+        "bookmaker": "DraftKings",
+        "home": 1.62,
+        "draw": 3.95,
+        "away": 4.9,
+        "impliedProbHome": 0.617,
+        "impliedProbDraw": 0.253,
+        "impliedProbAway": 0.204
+      }
+    },
+    {
+      "id": "80cf233ec08173f3d8cf4645b687589d",
+      "commenceTime": "2026-01-17T15:00:00Z",
+      "homeTeam": "Liverpool",
+      "awayTeam": "Burnley",
+      "h2hOdds": {
+        "bookmaker": "DraftKings",
+        "home": 1.2,
+        "draw": 6.5,
+        "away": 11.0,
+        "impliedProbHome": 0.833,
+        "impliedProbDraw": 0.154,
+        "impliedProbAway": 0.091
+      }
+    },
+    {
+      "id": "aa16a48d5e016963e076f7f5ecfc2f68",
+      "commenceTime": "2026-01-17T15:00:00Z",
+      "homeTeam": "Sunderland",
+      "awayTeam": "Crystal Palace",
+      "h2hOdds": {
+        "bookmaker": "DraftKings",
+        "home": 2.75,
+        "draw": 3.15,
+        "away": 2.6,
+        "impliedProbHome": 0.364,
+        "impliedProbDraw": 0.317,
+        "impliedProbAway": 0.385
+      }
+    },
+    {
+      "id": "86609aa022312a15ec01d5bc0c172dbc",
+      "commenceTime": "2026-01-17T15:00:00Z",
+      "homeTeam": "Leeds United",
+      "awayTeam": "Fulham",
+      "h2hOdds": {
+        "bookmaker": "DraftKings",
+        "home": 2.2,
+        "draw": 3.25,
+        "away": 3.2,
+        "impliedProbHome": 0.455,
+        "impliedProbDraw": 0.308,
+        "impliedProbAway": 0.312
+      }
+    },
+    {
+      "id": "47e36aed7df3160f584a73fbd1fd0830",
+      "commenceTime": "2026-01-17T15:00:00Z",
+      "homeTeam": "Tottenham Hotspur",
+      "awayTeam": "West Ham United",
+      "h2hOdds": {
+        "bookmaker": "DraftKings",
+        "home": 1.69,
+        "draw": 3.85,
+        "away": 4.6,
+        "impliedProbHome": 0.592,
+        "impliedProbDraw": 0.26,
+        "impliedProbAway": 0.217
+      }
+    },
+    {
+      "id": "b145d15344a4fca80d42b39faa58a050",
+      "commenceTime": "2026-01-17T17:30:00Z",
+      "homeTeam": "Nottingham Forest",
+      "awayTeam": "Arsenal",
+      "h2hOdds": {
+        "bookmaker": "DraftKings",
+        "home": 5.5,
+        "draw": 4.1,
+        "away": 1.54,
+        "impliedProbHome": 0.182,
+        "impliedProbDraw": 0.244,
+        "impliedProbAway": 0.649
+      }
+    },
+    {
+      "id": "e15eb2362921b16a6b6a0397ce607a11",
+      "commenceTime": "2026-01-18T14:00:00Z",
+      "homeTeam": "Wolverhampton Wanderers",
+      "awayTeam": "Newcastle United",
+      "h2hOdds": {
+        "bookmaker": "DraftKings",
+        "home": 4.3,
+        "draw": 3.85,
+        "away": 1.71,
+        "impliedProbHome": 0.233,
+        "impliedProbDraw": 0.26,
+        "impliedProbAway": 0.585
+      }
+    },
+    {
+      "id": "80b312e80c4c6e8f267a99606665ac8c",
+      "commenceTime": "2026-01-18T16:30:00Z",
+      "homeTeam": "Aston Villa",
+      "awayTeam": "Everton",
+      "h2hOdds": {
+        "bookmaker": "DraftKings",
+        "home": 1.61,
+        "draw": 3.9,
+        "away": 5.25,
+        "impliedProbHome": 0.621,
+        "impliedProbDraw": 0.256,
+        "impliedProbAway": 0.19
+      }
+    },
+    {
+      "id": "342788786c22e570ed2da53a9608113f",
+      "commenceTime": "2026-01-19T20:00:00Z",
+      "homeTeam": "Brighton and Hove Albion",
+      "awayTeam": "Bournemouth",
+      "h2hOdds": {
+        "bookmaker": "DraftKings",
+        "home": 1.83,
+        "draw": 3.9,
+        "away": 3.7,
+        "impliedProbHome": 0.546,
+        "impliedProbDraw": 0.256,
+        "impliedProbAway": 0.27
+      }
+    }
+  ],
+  "totalMatches": 10
+}
