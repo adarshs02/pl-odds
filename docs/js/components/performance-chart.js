@@ -125,7 +125,7 @@ export class PerformanceChart {
         }
 
         description.innerHTML = `
-            Net Performance = (Actual Goal Difference) - (Spread Line).
+            Net Performance = (Actual Goal Difference) + (Spread).
             Positive values indicate outperformance against betting expectations${filterText}${locationText}.
         `;
     }

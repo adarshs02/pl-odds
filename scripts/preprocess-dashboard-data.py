@@ -148,8 +148,15 @@ def calculate_implied_probability(decimal_odds):
     return 1.0 / decimal_odds
 
 def calculate_net_performance(actual_diff, spread):
-    """Calculate net performance: (Actual Goal Diff) - (Spread Line)"""
-    return actual_diff - spread
+    """
+    Calculate net performance: (Actual Goal Diff) + (Spread)
+
+    Example: Team has spread -1.0 (favored to win by 1), wins by 1
+    - actual_diff = +1
+    - spread = -1.0
+    - net_performance = 1 + (-1.0) = 0 (performed exactly as expected)
+    """
+    return actual_diff + spread
 
 def preprocess_team_performance():
     """

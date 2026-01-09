@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """
 Analyzes "Net Expected Goal Difference" vs Actual Goal Difference.
-metric = (Actual Goal Diff) - (Spread Line)
+metric = (Actual Goal Diff) + (Spread)
 
 Example:
-Team A (-1.5) vs Team B.
+Team A (-1.5) vs Team B (+1.5).
 Actual: A wins 3-0 (+3).
-Metric: +3 - 1.5 = +1.5 "Net Positive" for Team A.
-Metric for Team B (+1.5): -3 - (-1.5) = -1.5 "Net Negative".
+Metric for Team A: +3 + (-1.5) = +1.5 "Net Positive" (won by more than expected).
+Metric for Team B: -3 + (+1.5) = -1.5 "Net Negative" (lost by more than expected).
 """
 import os
 import json
@@ -172,8 +172,8 @@ def analyze():
         home_spread = get_spread_from_odds(game_id, home, away, commence_time)
         
         actual_diff = h_score - a_score
-        h_perf = actual_diff - home_spread
-        a_perf = (-actual_diff) - (-home_spread)
+        h_perf = actual_diff + home_spread
+        a_perf = (-actual_diff) + (-home_spread)
         
         date_str = None
         if commence_time:

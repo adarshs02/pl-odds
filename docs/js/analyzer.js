@@ -5,10 +5,15 @@
 
 export class Analyzer {
     /**
-     * Calculate net performance: (Actual Goal Diff) - (Spread Line)
+     * Calculate net performance: (Actual Goal Diff) + (Spread)
+     *
+     * Example: Team has spread -1.0 (favored to win by 1), wins by 1
+     * - actualDiff = +1
+     * - spread = -1.0
+     * - netPerformance = 1 + (-1.0) = 0 (performed exactly as expected)
      */
     static calculateNetPerformance(actualDiff, spread) {
-        return actualDiff - spread;
+        return actualDiff + spread;
     }
 
     /**
