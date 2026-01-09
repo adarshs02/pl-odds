@@ -7,11 +7,12 @@ import { Router } from '../router.js';
 import { Analyzer } from '../analyzer.js';
 
 export class PerformanceChart {
-    constructor(containerId, data, sortBy = 'performance') {
+    constructor(containerId, data, sortBy = 'performance', filterBy = 'all') {
         this.containerId = containerId;
         this.container = d3.select(`#${containerId}`);
         this.data = data;
         this.sortBy = sortBy;
+        this.filterBy = filterBy;
         this.margin = { top: 20, right: 80, bottom: 40, left: 140 };
         this.tooltip = null;
 
@@ -24,6 +25,9 @@ export class PerformanceChart {
 
         // Sort teams
         const teams = this.sortTeams();
+
+        // Update section header if it exists
+        this.updateSectionHeader(teams);
 
         // Calculate dimensions
         const containerNode = this.container.node();
@@ -68,10 +72,59 @@ export class PerformanceChart {
     }
 
     sortTeams() {
+        // First apply filter
+        const filteredTeams = Analyzer.getFilteredTeams(this.data, this.filterBy);
+
+        // Create temporary data object with filtered teams
+        const tempData = {
+            ...this.data,
+            performance: {
+                ...this.data.performance,
+                teams: filteredTeams
+            }
+        };
+
+        // Then sort
         if (this.sortBy === 'alphabetical') {
-            return Analyzer.getTeamsSortedAlphabetically(this.data);
+            return Analyzer.getTeamsSortedAlphabetically(tempData);
         }
-        return Analyzer.getTeamsSortedByPerformance(this.data);
+        return Analyzer.getTeamsSortedByPerformance(tempData);
+    }
+
+    updateSectionHeader(teams) {
+        // Find the chart section and update description
+        const chartSection = document.querySelector('#performance-chart').closest('.chart-section');
+        if (!chartSection) return;
+
+        const description = chartSection.querySelector('.section-description');
+        if (!description) return;
+
+        let filterText = '';
+        let matchCount = 0;
+
+        if (teams.length > 0) {
+            matchCount = teams[0].statistics.matchesPlayed;
+        }
+
+        switch (this.filterBy) {
+            case 'last5':
+                filterText = ` (Last 5 matches)`;
+                break;
+            case 'last10':
+                filterText = ` (Last 10 matches)`;
+                break;
+            case 'season':
+                filterText = ` (Current season)`;
+                break;
+            case 'all':
+            default:
+                filterText = '';
+        }
+
+        description.innerHTML = `
+            Net Performance = (Actual Goal Difference) - (Spread Line).
+            Positive values indicate outperformance against betting expectations${filterText}.
+        `;
     }
 
     drawAxes() {
@@ -217,6 +270,17 @@ export class PerformanceChart {
 
     updateSort(sortBy) {
         this.sortBy = sortBy;
+        this.init();
+    }
+
+    updateFilter(filterBy) {
+        this.filterBy = filterBy;
+        this.init();
+    }
+
+    update(sortBy, filterBy) {
+        this.sortBy = sortBy;
+        this.filterBy = filterBy;
         this.init();
     }
 

@@ -65,6 +65,94 @@ export class Analyzer {
     }
 
     /**
+     * Get teams with performance calculated for last N matches only
+     */
+    static getTeamsForLastNMatches(data, n) {
+        return data.performance.teams.map(team => {
+            // Get last N matches
+            const recentMatches = team.matchHistory.slice(-n);
+
+            // Calculate total net performance for recent matches
+            const recentNetPerformance = recentMatches.reduce(
+                (sum, match) => sum + match.netPerformance,
+                0
+            );
+
+            // Calculate statistics for recent matches
+            const wins = recentMatches.filter(m => m.result === 'W').length;
+            const losses = recentMatches.filter(m => m.result === 'L').length;
+            const draws = recentMatches.filter(m => m.result === 'D').length;
+            const covers = recentMatches.filter(m => m.netPerformance > 0).length;
+            const matchesPlayed = recentMatches.length;
+
+            return {
+                ...team,
+                totalNetPerformance: recentNetPerformance,
+                statistics: {
+                    matchesPlayed,
+                    wins,
+                    losses,
+                    draws,
+                    covers,
+                    avgNetPerformance: matchesPlayed > 0 ? recentNetPerformance / matchesPlayed : 0,
+                    winRate: matchesPlayed > 0 ? wins / matchesPlayed : 0,
+                    coverRate: matchesPlayed > 0 ? covers / matchesPlayed : 0
+                }
+            };
+        });
+    }
+
+    /**
+     * Get teams filtered by date range or match count
+     */
+    static getFilteredTeams(data, filterType) {
+        switch (filterType) {
+            case 'last5':
+                return this.getTeamsForLastNMatches(data, 5);
+            case 'last10':
+                return this.getTeamsForLastNMatches(data, 10);
+            case 'season':
+                // Filter by matches from August onwards (current season)
+                const currentYear = new Date().getFullYear();
+                const seasonStart = new Date(currentYear, 7, 1); // August 1st
+                return data.performance.teams.map(team => {
+                    const seasonMatches = team.matchHistory.filter(m =>
+                        new Date(m.date) >= seasonStart
+                    );
+
+                    const seasonNetPerformance = seasonMatches.reduce(
+                        (sum, match) => sum + match.netPerformance,
+                        0
+                    );
+
+                    const wins = seasonMatches.filter(m => m.result === 'W').length;
+                    const losses = seasonMatches.filter(m => m.result === 'L').length;
+                    const draws = seasonMatches.filter(m => m.result === 'D').length;
+                    const covers = seasonMatches.filter(m => m.netPerformance > 0).length;
+                    const matchesPlayed = seasonMatches.length;
+
+                    return {
+                        ...team,
+                        totalNetPerformance: seasonNetPerformance,
+                        statistics: {
+                            matchesPlayed,
+                            wins,
+                            losses,
+                            draws,
+                            covers,
+                            avgNetPerformance: matchesPlayed > 0 ? seasonNetPerformance / matchesPlayed : 0,
+                            winRate: matchesPlayed > 0 ? wins / matchesPlayed : 0,
+                            coverRate: matchesPlayed > 0 ? covers / matchesPlayed : 0
+                        }
+                    };
+                });
+            case 'all':
+            default:
+                return data.performance.teams;
+        }
+    }
+
+    /**
      * Get sorted teams alphabetically
      */
     static getTeamsSortedAlphabetically(data) {

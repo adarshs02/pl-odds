@@ -68,9 +68,21 @@ class Dashboard {
 
         // Setup chart controls
         const sortSelect = document.getElementById('chart-sort');
+        const filterSelect = document.getElementById('chart-filter');
+
         if (sortSelect) {
             sortSelect.addEventListener('change', (e) => {
-                this.performanceChart.updateSort(e.target.value);
+                const sortBy = e.target.value;
+                const filterBy = filterSelect ? filterSelect.value : 'all';
+                this.performanceChart.update(sortBy, filterBy);
+            });
+        }
+
+        if (filterSelect) {
+            filterSelect.addEventListener('change', (e) => {
+                const filterBy = e.target.value;
+                const sortBy = sortSelect ? sortSelect.value : 'performance';
+                this.performanceChart.update(sortBy, filterBy);
             });
         }
 
