@@ -117,9 +117,9 @@ class Dashboard {
             // Match
             const matchCell = document.createElement('td');
             matchCell.innerHTML = `
-                <span class="team-name" data-team="${match.homeTeam}">${match.homeTeam}</span>
-                <br>vs<br>
-                <span class="team-name" data-team="${match.awayTeam}">${match.awayTeam}</span>
+                <span class="team-name" data-team="${match.homeTeam}" style="cursor: pointer; color: var(--accent-primary); font-weight: 600;">${match.homeTeam}</span>
+                <br><span style="color: var(--text-tertiary);">vs</span><br>
+                <span class="team-name" data-team="${match.awayTeam}" style="cursor: pointer; color: var(--accent-primary); font-weight: 600;">${match.awayTeam}</span>
             `;
             row.appendChild(matchCell);
 
