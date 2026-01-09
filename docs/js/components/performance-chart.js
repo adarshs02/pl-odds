@@ -12,7 +12,7 @@ export class PerformanceChart {
         this.container = d3.select(`#${containerId}`);
         this.data = data;
         this.sortBy = sortBy;
-        this.margin = { top: 20, right: 30, bottom: 40, left: 120 };
+        this.margin = { top: 20, right: 80, bottom: 40, left: 140 };
         this.tooltip = null;
 
         this.init();
@@ -146,13 +146,30 @@ export class PerformanceChart {
                 const barEnd = d.totalNetPerformance >= 0
                     ? this.xScale(d.totalNetPerformance)
                     : this.xScale(d.totalNetPerformance);
-                return barEnd + (d.totalNetPerformance >= 0 ? 5 : -5);
+                const barWidth = Math.abs(this.xScale(d.totalNetPerformance) - this.xScale(0));
+
+                // If bar is too small, put label outside
+                if (barWidth < 40) {
+                    return barEnd + (d.totalNetPerformance >= 0 ? 8 : -8);
+                }
+                // Otherwise, put label inside the bar
+                return barEnd - (d.totalNetPerformance >= 0 ? 5 : -5);
             })
             .attr('y', d => this.yScale(d.name) + this.yScale.bandwidth() / 2)
             .attr('dy', '0.35em')
-            .attr('text-anchor', d => d.totalNetPerformance >= 0 ? 'start' : 'end')
-            .attr('fill', 'var(--text-secondary)')
+            .attr('text-anchor', d => {
+                const barWidth = Math.abs(this.xScale(d.totalNetPerformance) - this.xScale(0));
+                if (barWidth < 40) {
+                    return d.totalNetPerformance >= 0 ? 'start' : 'end';
+                }
+                return d.totalNetPerformance >= 0 ? 'end' : 'start';
+            })
+            .attr('fill', d => {
+                const barWidth = Math.abs(this.xScale(d.totalNetPerformance) - this.xScale(0));
+                return barWidth < 40 ? 'var(--text-secondary)' : 'var(--bg-primary)';
+            })
             .attr('font-size', '12px')
+            .attr('font-weight', '600')
             .attr('opacity', 0)
             .text(d => Analyzer.formatNetPerf(d.totalNetPerformance))
             .transition()

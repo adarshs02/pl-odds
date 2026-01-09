@@ -8,6 +8,7 @@ import { DataLoader } from './data-loader.js';
 import { Router } from './router.js';
 import { Analyzer } from './analyzer.js';
 import { PerformanceChart } from './components/performance-chart.js';
+import { TeamUtils } from './team-utils.js';
 
 class Dashboard {
     constructor() {
@@ -133,7 +134,8 @@ class Dashboard {
             if (match.spread) {
                 spreadCell.textContent = `${match.homeTeam} ${Analyzer.formatNetPerf(match.spread.homePoint)}`;
             } else {
-                spreadCell.textContent = 'N/A';
+                spreadCell.innerHTML = '<span style="color: var(--text-tertiary); font-style: italic;">TBD</span>';
+                spreadCell.title = 'Spread odds not yet available';
             }
             row.appendChild(spreadCell);
 
@@ -282,8 +284,14 @@ class Dashboard {
             return;
         }
 
-        // Update team header
-        document.getElementById('team-name').textContent = teamData.name;
+        // Update team header with logo
+        const teamNameElement = document.getElementById('team-name');
+        teamNameElement.innerHTML = `
+            <div style="display: flex; align-items: center; gap: 1.5rem;">
+                ${TeamUtils.createLogoElement(teamData.name, 'large')}
+                <span>${teamData.name}</span>
+            </div>
+        `;
         document.getElementById('team-net-perf').textContent = Analyzer.formatNetPerf(teamData.totalNetPerformance);
         document.getElementById('team-net-perf').className = `value ${Analyzer.getNetPerfClass(teamData.totalNetPerformance)}`;
         document.getElementById('team-matches').textContent = teamData.statistics.matchesPlayed;
@@ -389,14 +397,45 @@ class Dashboard {
         matches.forEach(match => {
             const row = document.createElement('tr');
 
+            // Calculate actual margin from score
+            const [teamScore, oppScore] = match.score.split('-').map(s => parseInt(s.trim()));
+            const actualMargin = teamScore - oppScore;
+
+            // Calculate expected margin from spread (spread is from team's perspective)
+            const expectedMargin = -match.spread;
+
+            // Check if beat the spread
+            const beatSpread = match.netPerformance > 0;
+
             row.innerHTML = `
-                <td>${Analyzer.formatDateShort(match.date)}</td>
-                <td class="team-name" data-team="${match.opponent}" style="cursor: pointer;">${match.opponent}</td>
-                <td>${match.homeAway === 'home' ? 'H' : 'A'}</td>
-                <td>${match.score}</td>
-                <td class="${Analyzer.getResultClass(match.result)}">${match.result}</td>
-                <td>${Analyzer.formatNetPerf(match.spread)}</td>
-                <td class="${Analyzer.getNetPerfClass(match.netPerformance)}">${Analyzer.formatNetPerf(match.netPerformance)}</td>
+                <td style="white-space: nowrap;">${Analyzer.formatDateShort(match.date)}</td>
+                <td class="team-name" data-team="${match.opponent}" style="cursor: pointer; font-weight: 600;">
+                    ${match.opponent}
+                </td>
+                <td style="text-align: center;">
+                    <span style="display: inline-block; padding: 2px 8px; background: ${match.homeAway === 'home' ? 'var(--accent-primary)' : 'var(--accent-neutral)'}; color: white; border-radius: 4px; font-size: 0.75rem; font-weight: 600;">
+                        ${match.homeAway === 'home' ? 'HOME' : 'AWAY'}
+                    </span>
+                </td>
+                <td style="font-weight: 600; font-variant-numeric: tabular-nums;">${match.score}</td>
+                <td class="${Analyzer.getResultClass(match.result)}" style="font-weight: 700;">
+                    ${match.result === 'W' ? 'Win' : match.result === 'L' ? 'Loss' : 'Draw'}
+                </td>
+                <td style="font-variant-numeric: tabular-nums;">
+                    ${Analyzer.formatNetPerf(expectedMargin)}
+                    <span style="color: var(--text-tertiary); font-size: 0.85rem;"> (line: ${Analyzer.formatNetPerf(match.spread)})</span>
+                </td>
+                <td style="font-weight: 600; font-variant-numeric: tabular-nums;">
+                    ${Analyzer.formatNetPerf(actualMargin)}
+                </td>
+                <td class="${Analyzer.getNetPerfClass(match.netPerformance)}" style="font-weight: 700; font-variant-numeric: tabular-nums;">
+                    ${Analyzer.formatNetPerf(match.netPerformance)}
+                </td>
+                <td style="text-align: center;">
+                    <span style="font-size: 1.5rem;" title="${beatSpread ? 'Beat the spread' : 'Did not beat the spread'}">
+                        ${beatSpread ? '✅' : '❌'}
+                    </span>
+                </td>
             `;
 
             tbody.appendChild(row);
