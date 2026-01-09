@@ -253,8 +253,8 @@ export class PerformanceChart {
                 <div class="tooltip-content">
                     <strong>Net Performance:</strong> ${Analyzer.formatNetPerf(d.totalNetPerformance)}<br>
                     <strong>Matches:</strong> ${d.statistics.matchesPlayed}<br>
-                    <strong>Win Rate:</strong> ${(d.statistics.winRate * 100).toFixed(1)}%<br>
-                    <strong>Cover Rate:</strong> ${(d.statistics.coverRate * 100).toFixed(1)}%<br>
+                    <strong>Win Rate (Moneyline):</strong> ${(d.statistics.winRate * 100).toFixed(1)}%<br>
+                    <strong>Spread Cover Rate:</strong> ${(d.statistics.coverRate * 100).toFixed(1)}%<br>
                     <em>Click to view details</em>
                 </div>
             `)
