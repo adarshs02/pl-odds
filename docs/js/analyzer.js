@@ -103,52 +103,94 @@ export class Analyzer {
     }
 
     /**
+     * Filter matches by location (home/away)
+     */
+    static filterMatchesByLocation(matches, location) {
+        if (location === 'all') {
+            return matches;
+        }
+        return matches.filter(m => m.homeAway === location);
+    }
+
+    /**
      * Get teams filtered by date range or match count
      */
-    static getFilteredTeams(data, filterType) {
+    static getFilteredTeams(data, filterType, location = 'all') {
+        // Helper function to calculate stats for filtered matches
+        const calculateStats = (matches) => {
+            const netPerformance = matches.reduce((sum, m) => sum + m.netPerformance, 0);
+            const wins = matches.filter(m => m.result === 'W').length;
+            const losses = matches.filter(m => m.result === 'L').length;
+            const draws = matches.filter(m => m.result === 'D').length;
+            const covers = matches.filter(m => m.netPerformance > 0).length;
+            const matchesPlayed = matches.length;
+
+            return {
+                matchesPlayed,
+                wins,
+                losses,
+                draws,
+                covers,
+                avgNetPerformance: matchesPlayed > 0 ? netPerformance / matchesPlayed : 0,
+                winRate: matchesPlayed > 0 ? wins / matchesPlayed : 0,
+                coverRate: matchesPlayed > 0 ? covers / matchesPlayed : 0
+            };
+        };
+
+        // Apply time filter first, then location filter
         switch (filterType) {
             case 'last5':
-                return this.getTeamsForLastNMatches(data, 5);
-            case 'last10':
-                return this.getTeamsForLastNMatches(data, 10);
-            case 'season':
-                // Filter by matches from August onwards (current season)
-                const currentYear = new Date().getFullYear();
-                const seasonStart = new Date(currentYear, 7, 1); // August 1st
                 return data.performance.teams.map(team => {
-                    const seasonMatches = team.matchHistory.filter(m =>
-                        new Date(m.date) >= seasonStart
-                    );
-
-                    const seasonNetPerformance = seasonMatches.reduce(
-                        (sum, match) => sum + match.netPerformance,
-                        0
-                    );
-
-                    const wins = seasonMatches.filter(m => m.result === 'W').length;
-                    const losses = seasonMatches.filter(m => m.result === 'L').length;
-                    const draws = seasonMatches.filter(m => m.result === 'D').length;
-                    const covers = seasonMatches.filter(m => m.netPerformance > 0).length;
-                    const matchesPlayed = seasonMatches.length;
-
+                    let matches = team.matchHistory.slice(-5);
+                    matches = this.filterMatchesByLocation(matches, location);
+                    const netPerf = matches.reduce((sum, m) => sum + m.netPerformance, 0);
                     return {
                         ...team,
-                        totalNetPerformance: seasonNetPerformance,
-                        statistics: {
-                            matchesPlayed,
-                            wins,
-                            losses,
-                            draws,
-                            covers,
-                            avgNetPerformance: matchesPlayed > 0 ? seasonNetPerformance / matchesPlayed : 0,
-                            winRate: matchesPlayed > 0 ? wins / matchesPlayed : 0,
-                            coverRate: matchesPlayed > 0 ? covers / matchesPlayed : 0
-                        }
+                        totalNetPerformance: netPerf,
+                        statistics: calculateStats(matches)
                     };
                 });
+
+            case 'last10':
+                return data.performance.teams.map(team => {
+                    let matches = team.matchHistory.slice(-10);
+                    matches = this.filterMatchesByLocation(matches, location);
+                    const netPerf = matches.reduce((sum, m) => sum + m.netPerformance, 0);
+                    return {
+                        ...team,
+                        totalNetPerformance: netPerf,
+                        statistics: calculateStats(matches)
+                    };
+                });
+
+            case 'season':
+                const currentYear = new Date().getFullYear();
+                const seasonStart = new Date(currentYear, 7, 1);
+                return data.performance.teams.map(team => {
+                    let matches = team.matchHistory.filter(m => new Date(m.date) >= seasonStart);
+                    matches = this.filterMatchesByLocation(matches, location);
+                    const netPerf = matches.reduce((sum, m) => sum + m.netPerformance, 0);
+                    return {
+                        ...team,
+                        totalNetPerformance: netPerf,
+                        statistics: calculateStats(matches)
+                    };
+                });
+
             case 'all':
             default:
-                return data.performance.teams;
+                if (location === 'all') {
+                    return data.performance.teams;
+                }
+                return data.performance.teams.map(team => {
+                    const matches = this.filterMatchesByLocation(team.matchHistory, location);
+                    const netPerf = matches.reduce((sum, m) => sum + m.netPerformance, 0);
+                    return {
+                        ...team,
+                        totalNetPerformance: netPerf,
+                        statistics: calculateStats(matches)
+                    };
+                });
         }
     }
 

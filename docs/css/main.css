@@ -514,6 +514,52 @@ tbody tr:last-child td {
     margin-bottom: 2rem;
 }
 
+.home-away-breakdown {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+}
+
+.location-stat {
+    text-align: center;
+}
+
+.location-stat h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.location-details {
+    text-align: left;
+}
+
+.location-details p {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 0.875rem;
+}
+
+.location-details p:last-child {
+    border-bottom: none;
+}
+
+.location-details strong {
+    color: var(--text-secondary);
+}
+
+.location-details span {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
 .breadcrumb a {
     color: var(--accent-primary);
     text-decoration: none;

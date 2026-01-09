@@ -69,21 +69,25 @@ class Dashboard {
         // Setup chart controls
         const sortSelect = document.getElementById('chart-sort');
         const filterSelect = document.getElementById('chart-filter');
+        const locationSelect = document.getElementById('chart-location');
+
+        const updateChart = () => {
+            const sortBy = sortSelect ? sortSelect.value : 'performance';
+            const filterBy = filterSelect ? filterSelect.value : 'all';
+            const locationBy = locationSelect ? locationSelect.value : 'all';
+            this.performanceChart.update(sortBy, filterBy, locationBy);
+        };
 
         if (sortSelect) {
-            sortSelect.addEventListener('change', (e) => {
-                const sortBy = e.target.value;
-                const filterBy = filterSelect ? filterSelect.value : 'all';
-                this.performanceChart.update(sortBy, filterBy);
-            });
+            sortSelect.addEventListener('change', updateChart);
         }
 
         if (filterSelect) {
-            filterSelect.addEventListener('change', (e) => {
-                const filterBy = e.target.value;
-                const sortBy = sortSelect ? sortSelect.value : 'performance';
-                this.performanceChart.update(sortBy, filterBy);
-            });
+            filterSelect.addEventListener('change', updateChart);
+        }
+
+        if (locationSelect) {
+            locationSelect.addEventListener('change', updateChart);
         }
 
         // Render odds table
@@ -310,11 +314,54 @@ class Dashboard {
         document.getElementById('team-win-rate').textContent = `${(teamData.statistics.winRate * 100).toFixed(1)}%`;
         document.getElementById('team-cover-rate').textContent = `${(teamData.statistics.coverRate * 100).toFixed(1)}%`;
 
+        // Calculate and display home/away breakdown
+        this.renderHomeAwayBreakdown(teamData);
+
         // Render team trend chart
         this.renderTeamTrendChart(teamData);
 
         // Render match history table
         this.renderMatchHistoryTable(teamData);
+    }
+
+    renderHomeAwayBreakdown(teamData) {
+        // Filter matches by location
+        const homeMatches = teamData.matchHistory.filter(m => m.homeAway === 'home');
+        const awayMatches = teamData.matchHistory.filter(m => m.homeAway === 'away');
+
+        // Calculate home stats
+        const homeNetPerf = homeMatches.reduce((sum, m) => sum + m.netPerformance, 0);
+        const homeWins = homeMatches.filter(m => m.result === 'W').length;
+        const homeCovers = homeMatches.filter(m => m.netPerformance > 0).length;
+
+        // Calculate away stats
+        const awayNetPerf = awayMatches.reduce((sum, m) => sum + m.netPerformance, 0);
+        const awayWins = awayMatches.filter(m => m.result === 'W').length;
+        const awayCovers = awayMatches.filter(m => m.netPerformance > 0).length;
+
+        // Update home stats
+        const homeNetPerfEl = document.getElementById('home-net-perf');
+        homeNetPerfEl.textContent = Analyzer.formatNetPerf(homeNetPerf);
+        homeNetPerfEl.className = Analyzer.getNetPerfClass(homeNetPerf);
+        document.getElementById('home-matches').textContent = homeMatches.length;
+        document.getElementById('home-win-rate').textContent = homeMatches.length > 0
+            ? `${((homeWins / homeMatches.length) * 100).toFixed(1)}%`
+            : 'N/A';
+        document.getElementById('home-cover-rate').textContent = homeMatches.length > 0
+            ? `${((homeCovers / homeMatches.length) * 100).toFixed(1)}%`
+            : 'N/A';
+
+        // Update away stats
+        const awayNetPerfEl = document.getElementById('away-net-perf');
+        awayNetPerfEl.textContent = Analyzer.formatNetPerf(awayNetPerf);
+        awayNetPerfEl.className = Analyzer.getNetPerfClass(awayNetPerf);
+        document.getElementById('away-matches').textContent = awayMatches.length;
+        document.getElementById('away-win-rate').textContent = awayMatches.length > 0
+            ? `${((awayWins / awayMatches.length) * 100).toFixed(1)}%`
+            : 'N/A';
+        document.getElementById('away-cover-rate').textContent = awayMatches.length > 0
+            ? `${((awayCovers / awayMatches.length) * 100).toFixed(1)}%`
+            : 'N/A';
     }
 
     renderTeamTrendChart(teamData) {

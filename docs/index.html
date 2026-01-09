@@ -97,6 +97,14 @@
                                 <option value="season">This Season</option>
                             </select>
                         </label>
+                        <label>
+                            Location:
+                            <select id="chart-location">
+                                <option value="all">Home + Away</option>
+                                <option value="home">Home Only</option>
+                                <option value="away">Away Only</option>
+                            </select>
+                        </label>
                     </div>
                     <div id="performance-chart" class="chart-container"></div>
                 </section>
@@ -168,6 +176,30 @@
                         </div>
                     </div>
                 </div>
+
+                <section class="chart-section">
+                    <h2>Home vs Away Performance</h2>
+                    <div class="home-away-breakdown">
+                        <div class="location-stat">
+                            <h3>Home</h3>
+                            <div class="location-details">
+                                <p><strong>Net Performance:</strong> <span id="home-net-perf">-</span></p>
+                                <p><strong>Matches:</strong> <span id="home-matches">-</span></p>
+                                <p><strong>Win Rate:</strong> <span id="home-win-rate">-</span></p>
+                                <p><strong>Cover Rate:</strong> <span id="home-cover-rate">-</span></p>
+                            </div>
+                        </div>
+                        <div class="location-stat">
+                            <h3>Away</h3>
+                            <div class="location-details">
+                                <p><strong>Net Performance:</strong> <span id="away-net-perf">-</span></p>
+                                <p><strong>Matches:</strong> <span id="away-matches">-</span></p>
+                                <p><strong>Win Rate:</strong> <span id="away-win-rate">-</span></p>
+                                <p><strong>Cover Rate:</strong> <span id="away-cover-rate">-</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
                 <section class="chart-section">
                     <h2>Performance Trend</h2>

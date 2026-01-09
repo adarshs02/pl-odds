@@ -7,12 +7,13 @@ import { Router } from '../router.js';
 import { Analyzer } from '../analyzer.js';
 
 export class PerformanceChart {
-    constructor(containerId, data, sortBy = 'performance', filterBy = 'all') {
+    constructor(containerId, data, sortBy = 'performance', filterBy = 'all', locationBy = 'all') {
         this.containerId = containerId;
         this.container = d3.select(`#${containerId}`);
         this.data = data;
         this.sortBy = sortBy;
         this.filterBy = filterBy;
+        this.locationBy = locationBy;
         this.margin = { top: 20, right: 80, bottom: 40, left: 140 };
         this.tooltip = null;
 
@@ -72,8 +73,8 @@ export class PerformanceChart {
     }
 
     sortTeams() {
-        // First apply filter
-        const filteredTeams = Analyzer.getFilteredTeams(this.data, this.filterBy);
+        // First apply filter (with location filter)
+        const filteredTeams = Analyzer.getFilteredTeams(this.data, this.filterBy, this.locationBy);
 
         // Create temporary data object with filtered teams
         const tempData = {
@@ -100,30 +101,32 @@ export class PerformanceChart {
         if (!description) return;
 
         let filterText = '';
-        let matchCount = 0;
-
-        if (teams.length > 0) {
-            matchCount = teams[0].statistics.matchesPlayed;
-        }
+        let locationText = '';
 
         switch (this.filterBy) {
             case 'last5':
-                filterText = ` (Last 5 matches)`;
+                filterText = ' (Last 5 matches)';
                 break;
             case 'last10':
-                filterText = ` (Last 10 matches)`;
+                filterText = ' (Last 10 matches)';
                 break;
             case 'season':
-                filterText = ` (Current season)`;
+                filterText = ' (Current season)';
                 break;
-            case 'all':
-            default:
-                filterText = '';
+        }
+
+        switch (this.locationBy) {
+            case 'home':
+                locationText = ' - Home matches only';
+                break;
+            case 'away':
+                locationText = ' - Away matches only';
+                break;
         }
 
         description.innerHTML = `
             Net Performance = (Actual Goal Difference) - (Spread Line).
-            Positive values indicate outperformance against betting expectations${filterText}.
+            Positive values indicate outperformance against betting expectations${filterText}${locationText}.
         `;
     }
 
@@ -282,9 +285,15 @@ export class PerformanceChart {
         this.init();
     }
 
-    update(sortBy, filterBy) {
+    updateLocation(locationBy) {
+        this.locationBy = locationBy;
+        this.init();
+    }
+
+    update(sortBy, filterBy, locationBy) {
         this.sortBy = sortBy;
         this.filterBy = filterBy;
+        this.locationBy = locationBy;
         this.init();
     }
 
