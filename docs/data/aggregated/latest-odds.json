@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-01-09T14:47:49.674434Z",
+  "lastUpdated": "2026-01-09T14:59:01.020871Z",
   "upcomingMatches": [
     {
       "id": "3fd1e970c718bfc0f99a7e4575e46f49",
       "commenceTime": "2026-01-17T12:30:00Z",
-      "homeTeam": "Manchester United",
-      "awayTeam": "Manchester City",
+      "homeTeam": "Man United",
+      "awayTeam": "Man City",
       "h2hOdds": {
         "bookmaker": "DraftKings",
         "home": 3.8,
@@ -79,8 +79,8 @@
     {
       "id": "47e36aed7df3160f584a73fbd1fd0830",
       "commenceTime": "2026-01-17T15:00:00Z",
-      "homeTeam": "Tottenham Hotspur",
-      "awayTeam": "West Ham United",
+      "homeTeam": "Tottenham",
+      "awayTeam": "West Ham",
       "h2hOdds": {
         "bookmaker": "DraftKings",
         "home": 1.69,
@@ -94,7 +94,7 @@
     {
       "id": "b145d15344a4fca80d42b39faa58a050",
       "commenceTime": "2026-01-17T17:30:00Z",
-      "homeTeam": "Nottingham Forest",
+      "homeTeam": "Nott'm Forest",
       "awayTeam": "Arsenal",
       "h2hOdds": {
         "bookmaker": "DraftKings",
@@ -109,7 +109,7 @@
     {
       "id": "e15eb2362921b16a6b6a0397ce607a11",
       "commenceTime": "2026-01-18T14:00:00Z",
-      "homeTeam": "Wolverhampton Wanderers",
+      "homeTeam": "Wolves",
       "awayTeam": "Newcastle United",
       "h2hOdds": {
         "bookmaker": "DraftKings",
@@ -139,7 +139,7 @@
     {
       "id": "342788786c22e570ed2da53a9608113f",
       "commenceTime": "2026-01-19T20:00:00Z",
-      "homeTeam": "Brighton and Hove Albion",
+      "homeTeam": "Brighton",
       "awayTeam": "Bournemouth",
       "h2hOdds": {
         "bookmaker": "DraftKings",

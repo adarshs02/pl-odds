@@ -15,6 +15,21 @@ DATA_DIR = pathlib.Path("data")
 OUTPUT_DIR = pathlib.Path("docs/data/aggregated")
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
+def normalize_team_name(name):
+    """
+    Normalize team names to handle API inconsistencies
+    """
+    normalization_map = {
+        "Brighton and Hove Albion": "Brighton",
+        "Manchester City": "Man City",
+        "Manchester United": "Man United",
+        "Nottingham Forest": "Nott'm Forest",
+        "Tottenham Hotspur": "Tottenham",
+        "West Ham United": "West Ham",
+        "Wolverhampton Wanderers": "Wolves"
+    }
+    return normalization_map.get(name, name)
+
 def load_json(path):
     """Load JSON file safely"""
     if not path.exists():
@@ -36,8 +51,8 @@ def load_all_spreads():
         try:
             data = load_json(p)
             for event in data:
-                home = event["home_team"]
-                away = event["away_team"]
+                home = normalize_team_name(event["home_team"])
+                away = normalize_team_name(event["away_team"])
                 commence = event["commence_time"]
 
                 # Find spread point for home team
@@ -112,22 +127,25 @@ def load_all_h2h_odds():
                     for m in markets:
                         if m["key"] == "h2h":
                             outcomes = m["outcomes"]
+                            home_team = normalize_team_name(event["home_team"])
+                            away_team = normalize_team_name(event["away_team"])
+
                             odds_data = {
                                 "bookmaker": bk["title"],
                                 "last_update": bk.get("last_update"),
-                                "home_team": event["home_team"],
-                                "away_team": event["away_team"],
+                                "home_team": home_team,
+                                "away_team": away_team,
                                 "commence_time": commence
                             }
 
                             for o in outcomes:
-                                name = o["name"]
+                                name = normalize_team_name(o["name"])
                                 price = o["price"]
-                                if name == event["home_team"]:
+                                if name == home_team:
                                     odds_data["home_price"] = price
-                                elif name == event["away_team"]:
+                                elif name == away_team:
                                     odds_data["away_price"] = price
-                                elif name == "Draw":
+                                elif o["name"] == "Draw":
                                     odds_data["draw_price"] = price
 
                             # Keep latest odds (last file processed wins)
@@ -198,8 +216,8 @@ def preprocess_team_performance():
     print(f"Processing {len(completed_games)} completed games...")
 
     for game in completed_games:
-        home = game["home_team"]
-        away = game["away_team"]
+        home = normalize_team_name(game["home_team"])
+        away = normalize_team_name(game["away_team"])
         commence = game.get("commence_time")
 
         # Get scores
@@ -207,9 +225,10 @@ def preprocess_team_performance():
             h_score = 0
             a_score = 0
             for s in game.get("scores", []):
-                if s["name"] == home:
+                score_team = normalize_team_name(s["name"])
+                if score_team == home:
                     h_score = int(s["score"])
-                elif s["name"] == away:
+                elif score_team == away:
                     a_score = int(s["score"])
         except:
             continue

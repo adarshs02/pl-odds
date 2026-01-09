@@ -10,7 +10,7 @@ The graph below shows the cumulative "Net Performance" for each team.
 - **Negative (Red)**: The team underperformed against the spread.
 
 ### 📈 Predictive Power
-**Correlation Score:** 0.365
+**Correlation Score:** 0.415
 *(Correlation between Betting Line and Actual Goal Difference. Closer to 1.0 means higher accuracy.)*
 
 ![Net Performance Graph](images/performance_graph.png)

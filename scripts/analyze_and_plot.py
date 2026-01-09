@@ -21,6 +21,21 @@ DATA_DIR = pathlib.Path("data")
 IMG_DIR = pathlib.Path("images")
 IMG_DIR.mkdir(parents=True, exist_ok=True)
 
+def normalize_team_name(name):
+    """
+    Normalize team names to handle API inconsistencies
+    """
+    normalization_map = {
+        "Brighton and Hove Albion": "Brighton",
+        "Manchester City": "Man City",
+        "Manchester United": "Man United",
+        "Nottingham Forest": "Nott'm Forest",
+        "Tottenham Hotspur": "Tottenham",
+        "West Ham United": "West Ham",
+        "Wolverhampton Wanderers": "Wolves"
+    }
+    return normalization_map.get(name, name)
+
 def load_scores():
     scores_file = DATA_DIR / "scores_latest.json"
     if not scores_file.exists():
@@ -57,8 +72,8 @@ def load_historical_spreads():
             # filename = p.stem # spreads_...
             
             for event in data:
-                home = event["home_team"]
-                away = event["away_team"]
+                home = normalize_team_name(event["home_team"])
+                away = normalize_team_name(event["away_team"])
                 commence = event["commence_time"]
                 
                 # Find spread point
@@ -152,16 +167,17 @@ def analyze():
     for game in scores:
         if not game.get("completed"): continue
         
-        home = game["home_team"]
-        away = game["away_team"]
-        
+        home = normalize_team_name(game["home_team"])
+        away = normalize_team_name(game["away_team"])
+
         try:
             s_list = game.get("scores", [])
             h_score = 0
             a_score = 0
             for s in s_list:
-                if s["name"] == home: h_score = int(s["score"])
-                if s["name"] == away: a_score = int(s["score"])
+                score_team = normalize_team_name(s["name"])
+                if score_team == home: h_score = int(s["score"])
+                if score_team == away: a_score = int(s["score"])
         except:
             continue
             
@@ -246,15 +262,16 @@ def analyze():
         if not game.get("completed"): continue
         game_id = game["id"]
         commence = game.get("commence_time")
-        home = game["home_team"]
-        away = game["away_team"]
-        
+        home = normalize_team_name(game["home_team"])
+        away = normalize_team_name(game["away_team"])
+
         try:
              # get scores
              h = 0; a = 0
              for s in game.get("scores", []):
-                 if s["name"] == home: h = int(s["score"])
-                 if s["name"] == away: a = int(s["score"])
+                 score_team = normalize_team_name(s["name"])
+                 if score_team == home: h = int(s["score"])
+                 if score_team == away: a = int(s["score"])
                  
              # get spread
              spread = get_spread_from_odds(game_id, home, away, commence)
