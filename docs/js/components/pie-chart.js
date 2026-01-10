@@ -39,16 +39,16 @@ export class PieChart {
         let pieData;
         if (this.type === 'results') {
             pieData = [
-                { label: 'Wins', value: this.data.wins, color: 'var(--accent-positive)' },
-                { label: 'Draws', value: this.data.draws, color: 'var(--accent-neutral)' },
-                { label: 'Losses', value: this.data.losses, color: 'var(--accent-negative)' }
+                { label: 'Wins', value: this.data.wins, color: '--accent-positive' },
+                { label: 'Draws', value: this.data.draws, color: '--accent-neutral' },
+                { label: 'Losses', value: this.data.losses, color: '--accent-negative' }
             ];
         } else if (this.type === 'covers') {
             const covers = this.data.covers;
             const nonCovers = this.data.matchesPlayed - covers;
             pieData = [
-                { label: 'Covers', value: covers, color: 'var(--accent-positive)' },
-                { label: 'No Cover', value: nonCovers, color: 'var(--accent-negative)' }
+                { label: 'Covers', value: covers, color: '--accent-positive' },
+                { label: 'No Cover', value: nonCovers, color: '--accent-negative' }
             ];
         }
 
@@ -85,7 +85,7 @@ export class PieChart {
         slices.append('path')
             .attr('d', arc)
             .attr('fill', d => getColor(d.data.color))
-            .attr('stroke', 'var(--bg-card)')
+            .attr('stroke', getColor('--bg-card'))
             .attr('stroke-width', 2)
             .style('opacity', 0)
             .transition()
@@ -102,7 +102,7 @@ export class PieChart {
         slices.append('text')
             .attr('transform', d => `translate(${labelArc.centroid(d)})`)
             .attr('text-anchor', 'middle')
-            .attr('fill', 'var(--text-primary)')
+            .attr('fill', getColor('--text-primary'))
             .attr('font-size', '14px')
             .attr('font-weight', '600')
             .style('opacity', 0)
@@ -134,7 +134,7 @@ export class PieChart {
             .attr('x', 24)
             .attr('y', 9)
             .attr('dy', '0.35em')
-            .attr('fill', 'var(--text-primary)')
+            .attr('fill', getColor('--text-primary'))
             .attr('font-size', '13px')
             .text(d => `${d.label}: ${d.value} (${((d.value / pieData.reduce((sum, item) => sum + item.value, 0)) * 100).toFixed(1)}%)`);
 
