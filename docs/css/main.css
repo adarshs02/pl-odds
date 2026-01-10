@@ -426,6 +426,7 @@ body {
     box-shadow: var(--shadow);
     min-height: 400px;
     position: relative;
+    overflow: visible;
 }
 
 @media (max-width: 640px) {
@@ -439,7 +440,6 @@ body {
 .chart-container svg {
     display: block;
     width: 100%;
-    height: auto;
 }
 
 .bar {
