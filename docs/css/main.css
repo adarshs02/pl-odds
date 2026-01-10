@@ -431,8 +431,28 @@ body {
 
 @media (max-width: 640px) {
     .chart-container {
-        padding: 1rem;
+        padding: 0.5rem;
         min-height: 300px;
+        overflow-x: auto;
+        overflow-y: visible;
+    }
+
+    .chart-controls {
+        gap: 0.5rem;
+    }
+
+    .chart-controls label {
+        font-size: 0.8rem;
+        flex: 1 1 45%;
+    }
+
+    .chart-controls select {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.6rem;
+    }
+
+    .section-description {
+        font-size: 0.75rem;
     }
 }
 

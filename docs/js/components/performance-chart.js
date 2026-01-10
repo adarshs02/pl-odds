@@ -14,15 +14,31 @@ export class PerformanceChart {
         this.sortBy = sortBy;
         this.filterBy = filterBy;
         this.locationBy = locationBy;
-        this.margin = { top: 20, right: 80, bottom: 40, left: 220 };
         this.tooltip = null;
 
         this.init();
     }
 
+    getResponsiveMargins() {
+        const width = window.innerWidth;
+        if (width < 640) {
+            // Mobile: smaller margins
+            return { top: 10, right: 10, bottom: 30, left: 100 };
+        } else if (width < 1024) {
+            // Tablet: medium margins
+            return { top: 15, right: 40, bottom: 35, left: 140 };
+        } else {
+            // Desktop: full margins
+            return { top: 20, right: 80, bottom: 40, left: 220 };
+        }
+    }
+
     init() {
         // Clear existing content
         this.container.html('');
+
+        // Get responsive margins
+        this.margin = this.getResponsiveMargins();
 
         // Sort teams
         const teams = this.sortTeams();
@@ -131,22 +147,29 @@ export class PerformanceChart {
     }
 
     drawAxes() {
+        const isMobile = window.innerWidth < 640;
+        const isTablet = window.innerWidth >= 640 && window.innerWidth < 1024;
+
         // X axis (bottom)
         const xAxis = d3.axisBottom(this.xScale)
-            .ticks(6)
+            .ticks(isMobile ? 4 : 6)
             .tickFormat(d => d.toFixed(1));
 
         this.svg.append('g')
             .attr('class', 'x-axis axis')
             .attr('transform', `translate(0,${this.height})`)
-            .call(xAxis);
+            .call(xAxis)
+            .selectAll('text')
+            .style('font-size', isMobile ? '10px' : '12px');
 
         // Y axis (left)
         const yAxis = d3.axisLeft(this.yScale);
 
         this.svg.append('g')
             .attr('class', 'y-axis axis')
-            .call(yAxis);
+            .call(yAxis)
+            .selectAll('text')
+            .style('font-size', isMobile ? '10px' : (isTablet ? '11px' : '12px'));
 
         // Zero line
         this.svg.append('line')
@@ -170,6 +193,8 @@ export class PerformanceChart {
     }
 
     drawBars(teams) {
+        const isMobile = window.innerWidth < 640;
+
         const bars = this.svg.selectAll('.bar')
             .data(teams)
             .enter()
@@ -197,6 +222,7 @@ export class PerformanceChart {
             .attr('width', d => Math.abs(this.xScale(d.totalNetPerformance) - this.xScale(0)));
 
         // Add value labels
+        const minBarWidth = isMobile ? 30 : 40;
         this.svg.selectAll('.label')
             .data(teams)
             .enter()
@@ -209,7 +235,7 @@ export class PerformanceChart {
                 const barWidth = Math.abs(this.xScale(d.totalNetPerformance) - this.xScale(0));
 
                 // If bar is too small, put label outside
-                if (barWidth < 40) {
+                if (barWidth < minBarWidth) {
                     return barEnd + (d.totalNetPerformance >= 0 ? 8 : -8);
                 }
                 // Otherwise, put label inside the bar
@@ -219,16 +245,16 @@ export class PerformanceChart {
             .attr('dy', '0.35em')
             .attr('text-anchor', d => {
                 const barWidth = Math.abs(this.xScale(d.totalNetPerformance) - this.xScale(0));
-                if (barWidth < 40) {
+                if (barWidth < minBarWidth) {
                     return d.totalNetPerformance >= 0 ? 'start' : 'end';
                 }
                 return d.totalNetPerformance >= 0 ? 'end' : 'start';
             })
             .attr('fill', d => {
                 const barWidth = Math.abs(this.xScale(d.totalNetPerformance) - this.xScale(0));
-                return barWidth < 40 ? 'var(--text-secondary)' : 'var(--bg-primary)';
+                return barWidth < minBarWidth ? 'var(--text-secondary)' : 'var(--bg-primary)';
             })
-            .attr('font-size', '12px')
+            .attr('font-size', isMobile ? '10px' : '12px')
             .attr('font-weight', '600')
             .attr('opacity', 0)
             .text(d => Analyzer.formatNetPerf(d.totalNetPerformance))
