@@ -8,6 +8,7 @@ import { DataLoader } from './data-loader.js';
 import { Router } from './router.js';
 import { Analyzer } from './analyzer.js';
 import { PerformanceChart } from './components/performance-chart.js';
+import { PieChart } from './components/pie-chart.js';
 import { TeamUtils } from './team-utils.js';
 
 class Dashboard {
@@ -317,6 +318,9 @@ class Dashboard {
         // Calculate and display home/away breakdown
         this.renderHomeAwayBreakdown(teamData);
 
+        // Render pie charts
+        this.renderPieCharts(teamData);
+
         // Render team trend chart
         this.renderTeamTrendChart(teamData);
 
@@ -362,6 +366,21 @@ class Dashboard {
         document.getElementById('away-cover-rate').textContent = awayMatches.length > 0
             ? `${((awayCovers / awayMatches.length) * 100).toFixed(1)}%`
             : 'N/A';
+    }
+
+    renderPieCharts(teamData) {
+        // Create results pie chart (wins/draws/losses)
+        const resultsPieChart = new PieChart('results-pie-chart', {
+            wins: teamData.statistics.wins,
+            draws: teamData.statistics.draws,
+            losses: teamData.statistics.losses
+        }, 'results');
+
+        // Create covers pie chart
+        const coversPieChart = new PieChart('covers-pie-chart', {
+            covers: teamData.statistics.covers,
+            matchesPlayed: teamData.statistics.matchesPlayed
+        }, 'covers');
     }
 
     renderTeamTrendChart(teamData) {

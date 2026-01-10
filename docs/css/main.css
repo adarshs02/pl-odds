@@ -638,6 +638,36 @@ tbody tr:last-child td {
     font-weight: 600;
 }
 
+/* ===== Pie Charts ===== */
+.pie-charts-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.pie-chart-wrapper {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+}
+
+.pie-chart-wrapper h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .pie-charts-container {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* ===== Footer ===== */
 .footer {
     background: var(--bg-secondary);
