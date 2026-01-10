@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Betting API information for EPL Odds Dashboard">
+    <title>API Information - EPL Odds Dashboard</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="alternate icon" href="favicon.svg">
+    <link rel="mask-icon" href="favicon.svg" color="#2ecc71">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>EPL Odds Dashboard</h1>
+                    <p class="subtitle">API Information</p>
+                </div>
+                <div class="header-controls">
+                    <a href="index.html" class="btn-back">← Back to Dashboard</a>
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                        <span class="theme-icon sun">☀️</span>
+                        <span class="theme-icon moon">🌙</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="content-page">
+                <!-- Overview Section -->
+                <section class="content-section">
+                    <h2>Data Sources</h2>
+                    <p>
+                        This dashboard aggregates and analyzes betting odds data from professional bookmakers
+                        to track team performance against betting expectations. All odds data is sourced through
+                        <strong>The Odds API</strong>.
+                    </p>
+                </section>
+
+                <!-- The Odds API -->
+                <section class="content-section">
+                    <h2>The Odds API</h2>
+                    <div class="api-card">
+                        <div class="api-header">
+                            <h3>About The Odds API</h3>
+                            <a href="https://the-odds-api.com" target="_blank" class="api-link">Visit Website →</a>
+                        </div>
+                        <p>
+                            The Odds API is a professional sports odds aggregation service that provides real-time
+                            betting odds from bookmakers worldwide. It offers a comprehensive REST API for accessing
+                            sports betting data across multiple markets.
+                        </p>
+
+                        <h4>What We Use</h4>
+                        <ul>
+                            <li><strong>Sport:</strong> English Premier League (soccer_epl)</li>
+                            <li><strong>Regions:</strong> UK, Europe, US</li>
+                            <li><strong>Primary Bookmaker:</strong> DraftKings</li>
+                        </ul>
+
+                        <h4>Markets We Track</h4>
+                        <div class="markets-grid">
+                            <div class="market-card">
+                                <h5>H2H (Head-to-Head)</h5>
+                                <p>
+                                    Moneyline odds for match outcomes: Home Win, Draw, or Away Win.
+                                    These represent the implied probability of each result.
+                                </p>
+                                <div class="api-endpoint">
+                                    <code>GET /v4/sports/soccer_epl/odds?markets=h2h</code>
+                                </div>
+                            </div>
+
+                            <div class="market-card">
+                                <h5>Spreads (Handicaps)</h5>
+                                <p>
+                                    Goal handicap lines that level the playing field between teams.
+                                    Used to calculate performance vs betting expectations.
+                                </p>
+                                <div class="api-endpoint">
+                                    <code>GET /v4/sports/soccer_epl/odds?markets=spreads</code>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h4>API Features</h4>
+                        <ul>
+                            <li>Real-time odds updates from 80+ bookmakers</li>
+                            <li>Historical odds data for analysis</li>
+                            <li>Coverage of 20+ sports worldwide</li>
+                            <li>RESTful API with JSON responses</li>
+                            <li>Rate limiting and quota management</li>
+                        </ul>
+
+                        <h4>Pricing</h4>
+                        <p>
+                            The Odds API offers a free tier with 500 requests/month, suitable for small projects
+                            and testing. Paid plans provide higher quotas and additional features for production use.
+                        </p>
+                        <div class="pricing-note">
+                            <strong>Note:</strong> This project uses the free tier. Some data may be limited or
+                            delayed compared to premium tiers.
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Data Collection -->
+                <section class="content-section">
+                    <h2>Data Collection Pipeline</h2>
+                    <p>
+                        Our data collection pipeline runs automated scripts to fetch and process betting data:
+                    </p>
+
+                    <div class="pipeline-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Fetch Upcoming Matches</h4>
+                                <p>Retrieve H2H odds and spreads for upcoming EPL matches</p>
+                                <code>scripts/fetch_epl_h2h.py</code><br>
+                                <code>scripts/fetch_spreads.py</code>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Fetch Match Results</h4>
+                                <p>Collect final scores from completed matches</p>
+                                <code>scripts/fetch_scores.py</code>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Process & Analyze</h4>
+                                <p>Calculate performance metrics and generate visualizations</p>
+                                <code>scripts/preprocess-dashboard-data.py</code><br>
+                                <code>scripts/analyze_and_plot.py</code>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h4>Update Dashboard</h4>
+                                <p>Deploy processed data to the interactive dashboard</p>
+                                <code>docs/data/aggregated/latest-odds.json</code>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Metrics Explanation -->
+                <section class="content-section">
+                    <h2>How We Calculate Performance</h2>
+
+                    <div class="metric-explanation">
+                        <h4>Net Performance</h4>
+                        <div class="formula">
+                            Net Performance = (Actual Goal Difference) - (Spread Line)
+                        </div>
+                        <p>
+                            This metric shows how teams perform relative to betting expectations.
+                            A positive value means the team exceeded expectations, while negative means
+                            they underperformed.
+                        </p>
+                        <div class="example">
+                            <strong>Example:</strong> If Liverpool is favored by -1.5 goals and wins 3-1
+                            (goal difference: +2), their net performance is: 2 - 1.5 = +0.5
+                        </div>
+                    </div>
+
+                    <div class="metric-explanation">
+                        <h4>Implied Probability</h4>
+                        <div class="formula">
+                            Implied Probability = 1 / Decimal Odds
+                        </div>
+                        <p>
+                            Converts bookmaker odds into probability percentages. This shows what the
+                            bookmaker believes is the likelihood of each outcome.
+                        </p>
+                        <div class="example">
+                            <strong>Example:</strong> Odds of 2.50 = 1/2.50 = 0.40 = 40% implied probability
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Update Frequency -->
+                <section class="content-section">
+                    <h2>Data Freshness</h2>
+                    <p>
+                        This dashboard is automatically updated via GitHub Actions:
+                    </p>
+                    <ul>
+                        <li><strong>Upcoming Odds:</strong> Updated every 6 hours</li>
+                        <li><strong>Match Results:</strong> Updated daily after matches complete</li>
+                        <li><strong>Performance Analysis:</strong> Recalculated with each update</li>
+                    </ul>
+                    <p>
+                        Last update timestamp is displayed in the dashboard footer.
+                    </p>
+                </section>
+
+                <!-- Limitations -->
+                <section class="content-section">
+                    <h2>Limitations & Disclaimers</h2>
+                    <div class="disclaimer-box">
+                        <h4>Important Notes</h4>
+                        <ul>
+                            <li>This dashboard is for <strong>educational and informational purposes only</strong></li>
+                            <li>Odds data may be delayed or limited due to free API tier constraints</li>
+                            <li>Spreads may not be available for all matches (bookmakers post them closer to game time)</li>
+                            <li>Not all bookmakers are included - we primarily use DraftKings for consistency</li>
+                            <li>Historical data analysis does not guarantee future performance</li>
+                            <li><strong>This is not betting advice</strong> - always gamble responsibly</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Resources -->
+                <section class="content-section">
+                    <h2>Additional Resources</h2>
+                    <div class="resources-grid">
+                        <a href="https://the-odds-api.com/liveapi/guides/v4/" target="_blank" class="resource-link">
+                            <h4>The Odds API Documentation</h4>
+                            <p>Official API documentation and guides</p>
+                        </a>
+                        <a href="https://github.com/adarshs02/pl-odds" target="_blank" class="resource-link">
+                            <h4>GitHub Repository</h4>
+                            <p>View source code and contribute</p>
+                        </a>
+                        <a href="index.html" class="resource-link">
+                            <h4>Back to Dashboard</h4>
+                            <p>View live odds and performance data</p>
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>
+                <a href="index.html">Dashboard</a> •
+                <a href="api.html">API Info</a> •
+                <a href="https://github.com/adarshs02/pl-odds" target="_blank">GitHub</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Theme Toggle Script -->
+    <script>
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        const html = document.documentElement;
+
+        // Check for saved theme preference or default to 'dark'
+        const currentTheme = localStorage.getItem('theme') || 'dark';
+        html.setAttribute('data-theme', currentTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const newTheme = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        });
+    </script>
+</body>
+</html>
