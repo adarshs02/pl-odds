@@ -94,6 +94,9 @@ class Dashboard {
         // Render odds table
         this.renderOddsTable();
 
+        // Setup sidebar toggle
+        this.setupSidebarToggle();
+
         // Render historical trends (top 5 teams)
         this.renderHistoricalTrends();
     }
@@ -107,59 +110,51 @@ class Dashboard {
         const matches = DataLoader.getUpcomingMatches(this.data);
 
         if (matches.length === 0) {
-            tbody.innerHTML = '<tr><td colspan="7" style="text-align: center; padding: 2rem;">No upcoming matches</td></tr>';
+            tbody.innerHTML = '<tr><td colspan="3" style="text-align: center; padding: 2rem;">No upcoming matches</td></tr>';
             return;
         }
 
         matches.forEach(match => {
             const row = document.createElement('tr');
 
-            // Date
+            // Column 1: Date
             const dateCell = document.createElement('td');
-            dateCell.textContent = Analyzer.formatDate(match.commenceTime);
+            dateCell.textContent = Analyzer.formatDateShort(match.commenceTime);
             row.appendChild(dateCell);
 
-            // Match
+            // Column 2: Match (Team vs Team)
             const matchCell = document.createElement('td');
-            matchCell.innerHTML = `
-                <span class="team-name" data-team="${match.homeTeam}" style="cursor: pointer; color: var(--accent-primary); font-weight: 600;">${match.homeTeam}</span>
-                <br><span style="color: var(--text-tertiary);">vs</span><br>
-                <span class="team-name" data-team="${match.awayTeam}" style="cursor: pointer; color: var(--accent-primary); font-weight: 600;">${match.awayTeam}</span>
-            `;
+            const homeTeam = document.createElement('span');
+            homeTeam.textContent = match.homeTeam;
+            homeTeam.className = 'team-name';
+            homeTeam.dataset.team = match.homeTeam;
+            homeTeam.style.cursor = 'pointer';
+            homeTeam.style.color = 'var(--accent-primary)';
+            homeTeam.style.fontWeight = '600';
+
+            const vs = document.createTextNode(' vs ');
+
+            const awayTeam = document.createElement('span');
+            awayTeam.textContent = match.awayTeam;
+            awayTeam.className = 'team-name';
+            awayTeam.dataset.team = match.awayTeam;
+            awayTeam.style.cursor = 'pointer';
+            awayTeam.style.color = 'var(--accent-primary)';
+            awayTeam.style.fontWeight = '600';
+
+            matchCell.appendChild(homeTeam);
+            matchCell.appendChild(vs);
+            matchCell.appendChild(awayTeam);
             row.appendChild(matchCell);
 
-            // Home Odds
-            const homeOddsCell = document.createElement('td');
-            homeOddsCell.className = 'odds-value';
-            homeOddsCell.textContent = match.h2hOdds?.home?.toFixed(2) || 'N/A';
-            row.appendChild(homeOddsCell);
-
-            // Draw Odds
-            const drawOddsCell = document.createElement('td');
-            drawOddsCell.className = 'odds-value';
-            drawOddsCell.textContent = match.h2hOdds?.draw?.toFixed(2) || 'N/A';
-            row.appendChild(drawOddsCell);
-
-            // Away Odds
-            const awayOddsCell = document.createElement('td');
-            awayOddsCell.className = 'odds-value';
-            awayOddsCell.textContent = match.h2hOdds?.away?.toFixed(2) || 'N/A';
-            row.appendChild(awayOddsCell);
-
-            // Spread
-            const spreadCell = document.createElement('td');
-            if (match.spread) {
-                spreadCell.textContent = `${match.homeTeam} ${Analyzer.formatNetPerf(match.spread.homePoint)}`;
-            } else {
-                spreadCell.innerHTML = '<span style="color: var(--text-tertiary); font-style: italic;">TBD</span>';
-                spreadCell.title = 'Spread odds not yet available';
-            }
-            row.appendChild(spreadCell);
-
-            // Favorite
+            // Column 3: Favorite
             const favoriteCell = document.createElement('td');
             const favorite = Analyzer.getFavorite(match);
-            favoriteCell.innerHTML = `<span class="favorite-badge">${favorite}</span>`;
+            let spread = 'N/A';
+            if (match.spread && match.spread.homePoint) {
+                spread = Analyzer.formatNetPerf(match.spread.homePoint);
+            }
+            favoriteCell.innerHTML = `<span class="favorite-badge">${favorite}<br><small>(${spread})</small></span>`;
             row.appendChild(favoriteCell);
 
             tbody.appendChild(row);
@@ -167,11 +162,51 @@ class Dashboard {
 
         // Add click handlers for team names
         tbody.querySelectorAll('.team-name').forEach(el => {
-            el.style.cursor = 'pointer';
             el.addEventListener('click', () => {
                 Router.navigateToTeam(el.dataset.team);
             });
         });
+    }
+
+    setupSidebarToggle() {
+        const toggle = document.getElementById('sidebar-toggle');
+        const content = document.querySelector('.sidebar-content');
+
+        if (!toggle || !content) return;
+
+        // Remove existing listeners by cloning
+        const newToggle = toggle.cloneNode(true);
+        toggle.parentNode.replaceChild(newToggle, toggle);
+
+        newToggle.addEventListener('click', () => {
+            content.classList.toggle('collapsed');
+            const icon = newToggle.querySelector('.toggle-icon');
+            if (icon) {
+                icon.textContent = content.classList.contains('collapsed') ? '▼' : '▲';
+            }
+        });
+
+        // Start collapsed on mobile/tablet, expanded on desktop
+        if (window.innerWidth < 1024) {
+            content.classList.add('collapsed');
+            const icon = newToggle.querySelector('.toggle-icon');
+            if (icon) {
+                icon.textContent = '▼';
+            }
+        }
+
+        // Update on window resize
+        const resizeHandler = () => {
+            if (window.innerWidth >= 1024 && content.classList.contains('collapsed')) {
+                content.classList.remove('collapsed');
+                const icon = newToggle.querySelector('.toggle-icon');
+                if (icon) {
+                    icon.textContent = '▲';
+                }
+            }
+        };
+
+        window.addEventListener('resize', resizeHandler);
     }
 
     renderHistoricalTrends() {

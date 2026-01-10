@@ -209,6 +209,109 @@ body {
     to { opacity: 1; transform: translateY(0); }
 }
 
+/* ===== Dashboard Layout ===== */
+.dashboard-layout {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 2rem;
+    align-items: start;
+}
+
+.main-area {
+    min-width: 0; /* Prevents grid blowout */
+}
+
+@media (max-width: 1023px) {
+    .dashboard-layout {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+    }
+}
+
+/* ===== Sidebar ===== */
+.sidebar {
+    position: sticky;
+    top: 1rem;
+    max-height: calc(100vh - 2rem);
+    overflow-y: auto;
+}
+
+.sidebar-content {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+}
+
+.sidebar-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+    transition: background 0.2s ease;
+}
+
+.sidebar-toggle:hover {
+    background: var(--bg-tertiary);
+}
+
+.sidebar-toggle .toggle-icon {
+    transition: transform 0.3s ease;
+}
+
+.sidebar-content.collapsed {
+    display: none;
+}
+
+.sidebar-content.collapsed ~ .sidebar-toggle .toggle-icon {
+    transform: rotate(180deg);
+}
+
+/* Compact table styling for sidebar */
+.sidebar .odds-table {
+    width: 100%;
+    font-size: 0.8125rem;
+}
+
+.sidebar .odds-table th,
+.sidebar .odds-table td {
+    padding: 0.75rem 0.5rem;
+}
+
+/* Compact 3-column layout */
+.sidebar .odds-table th:nth-child(1),
+.sidebar .odds-table td:nth-child(1) {
+    width: 30%; /* Date */
+}
+
+.sidebar .odds-table th:nth-child(2),
+.sidebar .odds-table td:nth-child(2) {
+    width: 50%; /* Match */
+}
+
+.sidebar .odds-table th:nth-child(3),
+.sidebar .odds-table td:nth-child(3) {
+    width: 20%; /* Favorite */
+}
+
+@media (max-width: 1023px) {
+    .sidebar {
+        position: static;
+        max-height: none;
+        order: -1; /* Move above main content */
+    }
+}
+
 /* ===== Stats Summary ===== */
 .stats-summary {
     display: grid;
