@@ -14,7 +14,7 @@ export class PerformanceChart {
         this.sortBy = sortBy;
         this.filterBy = filterBy;
         this.locationBy = locationBy;
-        this.margin = { top: 20, right: 80, bottom: 40, left: 140 };
+        this.margin = { top: 20, right: 80, bottom: 40, left: 180 };
         this.tooltip = null;
 
         this.init();
