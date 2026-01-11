@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-10T08:19:42.287955Z",
+  "lastUpdated": "2026-01-11T08:19:45.175534Z",
   "upcomingMatches": [
     {
       "id": "3fd1e970c718bfc0f99a7e4575e46f49",
@@ -29,6 +29,10 @@
         "impliedProbHome": 0.617,
         "impliedProbDraw": 0.253,
         "impliedProbAway": 0.204
+      },
+      "spread": {
+        "homePoint": -0.75,
+        "awayPoint": 0.75
       }
     },
     {
@@ -44,6 +48,10 @@
         "impliedProbHome": 0.833,
         "impliedProbDraw": 0.154,
         "impliedProbAway": 0.091
+      },
+      "spread": {
+        "homePoint": -1.75,
+        "awayPoint": 1.75
       }
     },
     {
@@ -59,6 +67,10 @@
         "impliedProbHome": 0.364,
         "impliedProbDraw": 0.317,
         "impliedProbAway": 0.385
+      },
+      "spread": {
+        "homePoint": 0.0,
+        "awayPoint": -0.0
       }
     },
     {
@@ -74,6 +86,10 @@
         "impliedProbHome": 0.455,
         "impliedProbDraw": 0.308,
         "impliedProbAway": 0.312
+      },
+      "spread": {
+        "homePoint": -0.25,
+        "awayPoint": 0.25
       }
     },
     {
