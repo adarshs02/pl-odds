@@ -4349,15 +4349,15 @@
     "away_team": "Manchester City",
     "scores": [
       {
-        "name": "Manchester City",
-        "score": "0"
-      },
-      {
         "name": "Manchester United",
         "score": "2"
+      },
+      {
+        "name": "Manchester City",
+        "score": "0"
       }
     ],
-    "last_update": "2026-01-18T00:54:25Z"
+    "last_update": "2026-01-18T14:11:04Z"
   },
   {
     "id": "876bd00ab1c4cff1c6635a8ac7f93d75",
@@ -4369,15 +4369,15 @@
     "away_team": "Brentford",
     "scores": [
       {
-        "name": "Brentford",
-        "score": "0"
-      },
-      {
         "name": "Chelsea",
         "score": "2"
+      },
+      {
+        "name": "Brentford",
+        "score": "0"
       }
     ],
-    "last_update": "2026-01-18T00:54:25Z"
+    "last_update": "2026-01-18T14:11:04Z"
   },
   {
     "id": "80cf233ec08173f3d8cf4645b687589d",
@@ -4389,15 +4389,15 @@
     "away_team": "Burnley",
     "scores": [
       {
-        "name": "Burnley",
+        "name": "Liverpool",
         "score": "1"
       },
       {
-        "name": "Liverpool",
+        "name": "Burnley",
         "score": "1"
       }
     ],
-    "last_update": "2026-01-18T00:54:25Z"
+    "last_update": "2026-01-18T14:11:04Z"
   },
   {
     "id": "aa16a48d5e016963e076f7f5ecfc2f68",
@@ -4409,15 +4409,15 @@
     "away_team": "Crystal Palace",
     "scores": [
       {
-        "name": "Crystal Palace",
-        "score": "1"
-      },
-      {
         "name": "Sunderland",
         "score": "2"
+      },
+      {
+        "name": "Crystal Palace",
+        "score": "1"
       }
     ],
-    "last_update": "2026-01-18T00:54:25Z"
+    "last_update": "2026-01-18T14:11:04Z"
   },
   {
     "id": "86609aa022312a15ec01d5bc0c172dbc",
@@ -4429,15 +4429,15 @@
     "away_team": "Fulham",
     "scores": [
       {
-        "name": "Fulham",
-        "score": "0"
-      },
-      {
         "name": "Leeds United",
         "score": "1"
+      },
+      {
+        "name": "Fulham",
+        "score": "0"
       }
     ],
-    "last_update": "2026-01-18T00:54:25Z"
+    "last_update": "2026-01-18T14:11:04Z"
   },
   {
     "id": "47e36aed7df3160f584a73fbd1fd0830",
@@ -4449,15 +4449,15 @@
     "away_team": "West Ham United",
     "scores": [
       {
-        "name": "West Ham United",
-        "score": "2"
-      },
-      {
         "name": "Tottenham Hotspur",
         "score": "1"
+      },
+      {
+        "name": "West Ham United",
+        "score": "2"
       }
     ],
-    "last_update": "2026-01-18T00:54:25Z"
+    "last_update": "2026-01-18T14:11:04Z"
   },
   {
     "id": "b145d15344a4fca80d42b39faa58a050",
@@ -4469,14 +4469,54 @@
     "away_team": "Arsenal",
     "scores": [
       {
-        "name": "Arsenal",
+        "name": "Nottingham Forest",
         "score": "0"
       },
       {
-        "name": "Nottingham Forest",
+        "name": "Arsenal",
         "score": "0"
       }
     ],
-    "last_update": "2026-01-18T00:54:25Z"
+    "last_update": "2026-01-18T14:11:04Z"
+  },
+  {
+    "id": "e15eb2362921b16a6b6a0397ce607a11",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-01-18T14:00:00Z",
+    "completed": true,
+    "home_team": "Wolverhampton Wanderers",
+    "away_team": "Newcastle United",
+    "scores": [
+      {
+        "name": "Newcastle United",
+        "score": "0"
+      },
+      {
+        "name": "Wolverhampton Wanderers",
+        "score": "0"
+      }
+    ],
+    "last_update": "2026-01-18T23:51:32Z"
+  },
+  {
+    "id": "80b312e80c4c6e8f267a99606665ac8c",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-01-18T16:30:00Z",
+    "completed": true,
+    "home_team": "Aston Villa",
+    "away_team": "Everton",
+    "scores": [
+      {
+        "name": "Everton",
+        "score": "1"
+      },
+      {
+        "name": "Aston Villa",
+        "score": "0"
+      }
+    ],
+    "last_update": "2026-01-18T23:51:32Z"
   }
 ]
