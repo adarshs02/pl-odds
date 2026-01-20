@@ -1,21 +1,6 @@
 {
-  "lastUpdated": "2026-01-19T08:25:09.809748Z",
+  "lastUpdated": "2026-01-20T08:24:25.814241Z",
   "upcomingMatches": [
-    {
-      "id": "342788786c22e570ed2da53a9608113f",
-      "commenceTime": "2026-01-19T20:00:00Z",
-      "homeTeam": "Brighton",
-      "awayTeam": "Bournemouth",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 1.87,
-        "draw": 4.0,
-        "away": 3.7,
-        "impliedProbHome": 0.535,
-        "impliedProbDraw": 0.25,
-        "impliedProbAway": 0.27
-      }
-    },
     {
       "id": "a396966205b21287109ea8cae42e44c1",
       "commenceTime": "2026-01-24T12:30:00Z",
@@ -65,8 +50,8 @@
         "impliedProbAway": 0.5
       },
       "spread": {
-        "homePoint": 0.5,
-        "awayPoint": -0.5
+        "homePoint": 0.25,
+        "awayPoint": -0.25
       }
     },
     {
@@ -191,5 +176,5 @@
       }
     }
   ],
-  "totalMatches": 11
+  "totalMatches": 10
 }

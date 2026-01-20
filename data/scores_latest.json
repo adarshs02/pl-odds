@@ -4357,7 +4357,7 @@
         "score": "0"
       }
     ],
-    "last_update": "2026-01-18T14:11:04Z"
+    "last_update": "2026-01-19T20:11:16Z"
   },
   {
     "id": "876bd00ab1c4cff1c6635a8ac7f93d75",
@@ -4377,7 +4377,7 @@
         "score": "0"
       }
     ],
-    "last_update": "2026-01-18T14:11:04Z"
+    "last_update": "2026-01-19T20:11:16Z"
   },
   {
     "id": "80cf233ec08173f3d8cf4645b687589d",
@@ -4397,7 +4397,7 @@
         "score": "1"
       }
     ],
-    "last_update": "2026-01-18T14:11:04Z"
+    "last_update": "2026-01-19T20:11:16Z"
   },
   {
     "id": "aa16a48d5e016963e076f7f5ecfc2f68",
@@ -4417,7 +4417,7 @@
         "score": "1"
       }
     ],
-    "last_update": "2026-01-18T14:11:04Z"
+    "last_update": "2026-01-19T20:11:16Z"
   },
   {
     "id": "86609aa022312a15ec01d5bc0c172dbc",
@@ -4437,7 +4437,7 @@
         "score": "0"
       }
     ],
-    "last_update": "2026-01-18T14:11:04Z"
+    "last_update": "2026-01-19T20:11:16Z"
   },
   {
     "id": "47e36aed7df3160f584a73fbd1fd0830",
@@ -4457,7 +4457,7 @@
         "score": "2"
       }
     ],
-    "last_update": "2026-01-18T14:11:04Z"
+    "last_update": "2026-01-19T20:11:16Z"
   },
   {
     "id": "b145d15344a4fca80d42b39faa58a050",
@@ -4477,7 +4477,7 @@
         "score": "0"
       }
     ],
-    "last_update": "2026-01-18T14:11:04Z"
+    "last_update": "2026-01-19T20:11:16Z"
   },
   {
     "id": "e15eb2362921b16a6b6a0397ce607a11",
@@ -4489,15 +4489,15 @@
     "away_team": "Newcastle United",
     "scores": [
       {
-        "name": "Newcastle United",
+        "name": "Wolverhampton Wanderers",
         "score": "0"
       },
       {
-        "name": "Wolverhampton Wanderers",
+        "name": "Newcastle United",
         "score": "0"
       }
     ],
-    "last_update": "2026-01-18T23:51:32Z"
+    "last_update": "2026-01-19T20:11:16Z"
   },
   {
     "id": "80b312e80c4c6e8f267a99606665ac8c",
@@ -4509,14 +4509,34 @@
     "away_team": "Everton",
     "scores": [
       {
+        "name": "Aston Villa",
+        "score": "0"
+      },
+      {
         "name": "Everton",
+        "score": "1"
+      }
+    ],
+    "last_update": "2026-01-19T20:11:16Z"
+  },
+  {
+    "id": "342788786c22e570ed2da53a9608113f",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-01-19T20:00:00Z",
+    "completed": true,
+    "home_team": "Brighton and Hove Albion",
+    "away_team": "Bournemouth",
+    "scores": [
+      {
+        "name": "Bournemouth",
         "score": "1"
       },
       {
-        "name": "Aston Villa",
-        "score": "0"
+        "name": "Brighton and Hove Albion",
+        "score": "1"
       }
     ],
-    "last_update": "2026-01-18T23:51:32Z"
+    "last_update": "2026-01-20T03:27:37Z"
   }
 ]
