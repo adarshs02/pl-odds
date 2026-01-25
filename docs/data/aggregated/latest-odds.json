@@ -1,93 +1,6 @@
 {
-  "lastUpdated": "2026-01-24T08:19:49.913983Z",
+  "lastUpdated": "2026-01-25T08:20:48.473065Z",
   "upcomingMatches": [
-    {
-      "id": "a396966205b21287109ea8cae42e44c1",
-      "commenceTime": "2026-01-24T12:30:00Z",
-      "homeTeam": "West Ham",
-      "awayTeam": "Sunderland",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 2.5,
-        "draw": 3.3,
-        "away": 2.9,
-        "impliedProbHome": 0.4,
-        "impliedProbDraw": 0.303,
-        "impliedProbAway": 0.345
-      }
-    },
-    {
-      "id": "db78ecd9c2d10ab045a91fa64d90a172",
-      "commenceTime": "2026-01-24T15:00:00Z",
-      "homeTeam": "Fulham",
-      "awayTeam": "Brighton",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 2.55,
-        "draw": 3.4,
-        "away": 2.75,
-        "impliedProbHome": 0.392,
-        "impliedProbDraw": 0.294,
-        "impliedProbAway": 0.364
-      },
-      "spread": {
-        "homePoint": 0.0,
-        "awayPoint": -0.0
-      }
-    },
-    {
-      "id": "1e811fa7ead0a3e6ef920b15b2bbb95d",
-      "commenceTime": "2026-01-24T15:00:00Z",
-      "homeTeam": "Burnley",
-      "awayTeam": "Tottenham",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 3.65,
-        "draw": 3.45,
-        "away": 2.05,
-        "impliedProbHome": 0.274,
-        "impliedProbDraw": 0.29,
-        "impliedProbAway": 0.488
-      },
-      "spread": {
-        "homePoint": 0.25,
-        "awayPoint": -0.25
-      }
-    },
-    {
-      "id": "b32426b16a13c60170645be87a6b5cf5",
-      "commenceTime": "2026-01-24T15:00:00Z",
-      "homeTeam": "Man City",
-      "awayTeam": "Wolves",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 1.22,
-        "draw": 7.5,
-        "away": 10.0,
-        "impliedProbHome": 0.82,
-        "impliedProbDraw": 0.133,
-        "impliedProbAway": 0.1
-      }
-    },
-    {
-      "id": "7f9f2414fa5b890e516960bfcb8f153d",
-      "commenceTime": "2026-01-24T17:30:00Z",
-      "homeTeam": "Bournemouth",
-      "awayTeam": "Liverpool",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 3.75,
-        "draw": 3.9,
-        "away": 1.91,
-        "impliedProbHome": 0.267,
-        "impliedProbDraw": 0.256,
-        "impliedProbAway": 0.524
-      },
-      "spread": {
-        "homePoint": 0.5,
-        "awayPoint": -0.5
-      }
-    },
     {
       "id": "1ca6d3d9cde3e58a39211feb9188530c",
       "commenceTime": "2026-01-25T14:00:00Z",
@@ -141,8 +54,8 @@
         "impliedProbAway": 0.5
       },
       "spread": {
-        "homePoint": 0.5,
-        "awayPoint": -0.5
+        "homePoint": 0.25,
+        "awayPoint": -0.25
       }
     },
     {
@@ -158,6 +71,10 @@
         "impliedProbHome": 0.629,
         "impliedProbDraw": 0.253,
         "impliedProbAway": 0.174
+      },
+      "spread": {
+        "homePoint": -1.0,
+        "awayPoint": 1.0
       }
     },
     {
@@ -173,6 +90,10 @@
         "impliedProbHome": 0.408,
         "impliedProbDraw": 0.308,
         "impliedProbAway": 0.345
+      },
+      "spread": {
+        "homePoint": 0.0,
+        "awayPoint": -0.0
       }
     },
     {
@@ -326,5 +247,5 @@
       }
     }
   ],
-  "totalMatches": 20
+  "totalMatches": 15
 }

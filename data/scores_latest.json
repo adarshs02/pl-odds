@@ -4538,5 +4538,105 @@
       }
     ],
     "last_update": "2026-01-20T03:27:37Z"
+  },
+  {
+    "id": "a396966205b21287109ea8cae42e44c1",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-01-24T12:30:00Z",
+    "completed": true,
+    "home_team": "West Ham United",
+    "away_team": "Sunderland",
+    "scores": [
+      {
+        "name": "Sunderland",
+        "score": "1"
+      },
+      {
+        "name": "West Ham United",
+        "score": "3"
+      }
+    ],
+    "last_update": "2026-01-25T00:48:32Z"
+  },
+  {
+    "id": "db78ecd9c2d10ab045a91fa64d90a172",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-01-24T15:00:00Z",
+    "completed": true,
+    "home_team": "Fulham",
+    "away_team": "Brighton and Hove Albion",
+    "scores": [
+      {
+        "name": "Brighton and Hove Albion",
+        "score": "1"
+      },
+      {
+        "name": "Fulham",
+        "score": "2"
+      }
+    ],
+    "last_update": "2026-01-25T00:48:32Z"
+  },
+  {
+    "id": "b32426b16a13c60170645be87a6b5cf5",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-01-24T15:00:00Z",
+    "completed": true,
+    "home_team": "Manchester City",
+    "away_team": "Wolverhampton Wanderers",
+    "scores": [
+      {
+        "name": "Wolverhampton Wanderers",
+        "score": "0"
+      },
+      {
+        "name": "Manchester City",
+        "score": "2"
+      }
+    ],
+    "last_update": "2026-01-25T00:48:32Z"
+  },
+  {
+    "id": "1e811fa7ead0a3e6ef920b15b2bbb95d",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-01-24T15:01:00Z",
+    "completed": true,
+    "home_team": "Burnley",
+    "away_team": "Tottenham Hotspur",
+    "scores": [
+      {
+        "name": "Tottenham Hotspur",
+        "score": "2"
+      },
+      {
+        "name": "Burnley",
+        "score": "2"
+      }
+    ],
+    "last_update": "2026-01-25T00:48:32Z"
+  },
+  {
+    "id": "7f9f2414fa5b890e516960bfcb8f153d",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-01-24T17:30:00Z",
+    "completed": true,
+    "home_team": "Bournemouth",
+    "away_team": "Liverpool",
+    "scores": [
+      {
+        "name": "Liverpool",
+        "score": "2"
+      },
+      {
+        "name": "Bournemouth",
+        "score": "3"
+      }
+    ],
+    "last_update": "2026-01-25T00:48:32Z"
   }
 ]
