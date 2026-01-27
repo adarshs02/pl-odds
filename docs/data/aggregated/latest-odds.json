@@ -1,25 +1,6 @@
 {
-  "lastUpdated": "2026-01-26T08:25:09.807944Z",
+  "lastUpdated": "2026-01-27T08:25:21.985857Z",
   "upcomingMatches": [
-    {
-      "id": "e90e22b348a38af568f940b4b5d92ca6",
-      "commenceTime": "2026-01-26T20:00:00Z",
-      "homeTeam": "Everton",
-      "awayTeam": "Leeds United",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 2.55,
-        "draw": 3.2,
-        "away": 2.95,
-        "impliedProbHome": 0.392,
-        "impliedProbDraw": 0.312,
-        "impliedProbAway": 0.339
-      },
-      "spread": {
-        "homePoint": 0.0,
-        "awayPoint": -0.0
-      }
-    },
     {
       "id": "e52dc0a3276ffe7c9d3630a81b4300ca",
       "commenceTime": "2026-01-31T15:00:00Z",
@@ -84,8 +65,8 @@
         "impliedProbAway": 0.167
       },
       "spread": {
-        "homePoint": -1.0,
-        "awayPoint": 1.0
+        "homePoint": -2.25,
+        "awayPoint": 2.25
       }
     },
     {
@@ -103,8 +84,8 @@
         "impliedProbAway": 0.25
       },
       "spread": {
-        "homePoint": -0.75,
-        "awayPoint": 0.75
+        "homePoint": 0.25,
+        "awayPoint": -0.25
       }
     },
     {
@@ -337,5 +318,5 @@
       }
     }
   ],
-  "totalMatches": 21
+  "totalMatches": 20
 }

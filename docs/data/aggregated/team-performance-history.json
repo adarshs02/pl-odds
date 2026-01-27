@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-26T08:25:09.784442Z",
+  "lastUpdated": "2026-01-27T08:25:21.961499Z",
   "teams": [
     {
       "name": "Sunderland",
@@ -2407,18 +2407,28 @@
           "spread": 0.75,
           "netPerformance": 1.75,
           "cumulativeNetPerformance": 2.0
+        },
+        {
+          "date": "2026-01-26",
+          "opponent": "Leeds United",
+          "homeAway": "home",
+          "score": "1-1",
+          "result": "D",
+          "spread": 0.0,
+          "netPerformance": 0.0,
+          "cumulativeNetPerformance": 2.0
         }
       ],
       "totalNetPerformance": 2.0,
       "statistics": {
-        "matchesPlayed": 22,
+        "matchesPlayed": 23,
         "wins": 9,
         "losses": 8,
-        "draws": 5,
+        "draws": 6,
         "covers": 9,
         "avgNetPerformance": 0.09,
-        "winRate": 0.409,
-        "coverRate": 0.409
+        "winRate": 0.391,
+        "coverRate": 0.391
       }
     },
     {
@@ -2689,18 +2699,28 @@
           "spread": -0.25,
           "netPerformance": 0.75,
           "cumulativeNetPerformance": 0.75
+        },
+        {
+          "date": "2026-01-26",
+          "opponent": "Everton",
+          "homeAway": "away",
+          "score": "1-1",
+          "result": "D",
+          "spread": -0.0,
+          "netPerformance": 0.0,
+          "cumulativeNetPerformance": 0.75
         }
       ],
       "totalNetPerformance": 0.75,
       "statistics": {
-        "matchesPlayed": 1,
+        "matchesPlayed": 2,
         "wins": 1,
         "losses": 0,
-        "draws": 0,
+        "draws": 1,
         "covers": 1,
-        "avgNetPerformance": 0.75,
-        "winRate": 1.0,
-        "coverRate": 1.0
+        "avgNetPerformance": 0.38,
+        "winRate": 0.5,
+        "coverRate": 0.5
       }
     },
     {
@@ -4815,6 +4835,6 @@
     }
   ],
   "correlation": 0.39,
-  "totalMatches": 236,
+  "totalMatches": 237,
   "teamsTracked": 22
 }
