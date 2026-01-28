@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-27T08:25:21.985857Z",
+  "lastUpdated": "2026-01-28T08:24:09.761711Z",
   "upcomingMatches": [
     {
       "id": "e52dc0a3276ffe7c9d3630a81b4300ca",
@@ -65,8 +65,8 @@
         "impliedProbAway": 0.167
       },
       "spread": {
-        "homePoint": -2.25,
-        "awayPoint": 2.25
+        "homePoint": -1.0,
+        "awayPoint": 1.0
       }
     },
     {
@@ -84,8 +84,8 @@
         "impliedProbAway": 0.25
       },
       "spread": {
-        "homePoint": 0.25,
-        "awayPoint": -0.25
+        "homePoint": -0.75,
+        "awayPoint": 0.75
       }
     },
     {
