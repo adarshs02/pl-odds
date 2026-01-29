@@ -47,19 +47,20 @@ def load_scores():
 def load_historical_spreads():
     """
     Loads all `data/spreads_*.json` files.
-    Returns a lookup dictionary:
-    {(home_team, away_team): [
-        {"commence_time": str, "spread_point": float, "file_time": str}, 
+    Returns a lookup dictionary with ALL bookmakers' spreads:
+    {(home_team, away_team): {
+        bookmaker_key: [
+            {"commence_time": str, "point": float}, 
+            ...
+        ],
         ...
-    ]}
+    }}
     """
     lookup = {}
     
     # Find all spread files (including backfill)
     spread_files = sorted(DATA_DIR.glob("spreads_*.json"))
     
-    # Explicitly check for backfill if glob pattern missed it (it shouldn't as it matches spreads_*.json)
-    # But let's log it.
     print(f"Found {len(spread_files)} spread history files (including backfill if present).")
     
     for p in spread_files:
@@ -67,45 +68,40 @@ def load_historical_spreads():
             with open(p, "r") as f:
                 data = json.load(f)
             
-            # extract timestamp from filename: spreads_YYYYMMDD_HHMMSS.json
-            # if we need strict file time, parse it.
-            # filename = p.stem # spreads_...
-            
             for event in data:
                 home = normalize_team_name(event["home_team"])
                 away = normalize_team_name(event["away_team"])
                 commence = event["commence_time"]
+                key = (home, away)
                 
-                # Find spread point
-                # usually in event['bookmakers'][0]['markets'][0]['outcomes']...
-                point = None
-                try:
-                    # Prefer Pinnacle or widely available, else take first
-                    bks = event.get("bookmakers", [])
-                    if not bks: continue
+                bks = event.get("bookmakers", [])
+                if not bks:
+                    continue
+                
+                # Extract spreads from ALL bookmakers
+                for bk in bks:
+                    bookmaker_key = bk.get("key", "unknown")
+                    markets = bk.get("markets", [])
                     
-                    # Just take first bookmaker for now
-                    markets = bks[0].get("markets", [])
                     for m in markets:
-                        if m["key"] == "spreads":
-                            outcomes = m["outcomes"]
+                        if m.get("key") == "spreads":
+                            outcomes = m.get("outcomes", [])
                             # Find outcome for HOME team
                             for o in outcomes:
-                                if o["name"] == home:
+                                outcome_name = normalize_team_name(o.get("name", ""))
+                                if outcome_name == home:
                                     point = o.get("point")
+                                    if point is not None:
+                                        if key not in lookup:
+                                            lookup[key] = {}
+                                        if bookmaker_key not in lookup[key]:
+                                            lookup[key][bookmaker_key] = []
+                                        lookup[key][bookmaker_key].append({
+                                            "commence_time": commence,
+                                            "point": point
+                                        })
                                     break
                             break
-                except:
-                    pass
-                
-                if point is not None:
-                    key = (home, away)
-                    if key not in lookup: lookup[key] = []
-                    lookup[key].append({
-                        "commence_time": commence,
-                        "point": point,
-                        "checked_at": str(p) # debug source
-                    })
                     
         except Exception as e:
             print(f"Skipping bad file {p}: {e}")
@@ -115,40 +111,56 @@ def load_historical_spreads():
 # Global cache
 SPREAD_HISTORY = load_historical_spreads()
 
-def get_spread_from_odds(game_id, home_team, away_team, game_commence_time):
+def get_spreads_from_odds(game_id, home_team, away_team, game_commence_time):
     """
-    Finds the spread that was active closest to (but before) the game start.
-    Fallback to Mock if not found.
+    Returns spreads from ALL available bookmakers for a game.
+    Returns:
+        dict: {
+            "by_bookmaker": {bookmaker_key: spread_value, ...},
+            "consensus": float (average of all bookmakers),
+            "bookmakers_list": [list of bookmaker keys]
+        }
+    Falls back to mock data if no real spreads found.
     """
     key = (home_team, away_team)
-    history = SPREAD_HISTORY.get(key)
+    bookmaker_history = SPREAD_HISTORY.get(key, {})
     
-    real_spread = None
+    spreads_by_bookmaker = {}
     
-    if history:
-        # We want the latest record that is still BEFORE commence_time?
-        # Ideally, look for consistent line. 
-        # For simplicity: Use the latest datapoint we have (Closing Line).
-        # Since we might run this AFTER game, we should filter by 'checked_at' < game_commence_time?
-        # Actually our 'spreads_*.json' files are our only source of "when we saw it".
-        # But 'spreads' file doesn't store 'when it was fetched' inside JSON usually, only in filename.
-        # However, the event itself has 'commence_time'.
+    for bookmaker_key, records in bookmaker_history.items():
+        if records:
+            # Use the last (most recent) record for each bookmaker
+            last_record = records[-1]
+            spreads_by_bookmaker[bookmaker_key] = last_record["point"]
+    
+    if spreads_by_bookmaker:
+        # Calculate consensus (average)
+        all_spreads = list(spreads_by_bookmaker.values())
+        consensus = sum(all_spreads) / len(all_spreads)
         
-        # If we have multiple entries, pick the last one in the list (files were sorted).
-        # Real logic: Pick the one closest to kickoff.
-        
-        last_record = history[-1]
-        real_spread = last_record["point"]
+        return {
+            "by_bookmaker": spreads_by_bookmaker,
+            "consensus": round(consensus, 2),
+            "bookmakers_list": list(spreads_by_bookmaker.keys())
+        }
     
-    if real_spread is not None:
-        return real_spread
-
-    # Fallback to Mock if no history found (e.g. for README demo right now)
+    # Fallback to mock if no history found
     import random
-    # Deterministic fallback based on names so graph doesn't jitter every run
     seed = hash(home_team) + hash(away_team)
-    random.seed(seed) 
-    return random.choice([-1.5, -1.0, -0.5, 0, 0.5, 1.0, 1.5])
+    random.seed(seed)
+    mock_spread = random.choice([-1.5, -1.0, -0.5, 0, 0.5, 1.0, 1.5])
+    
+    return {
+        "by_bookmaker": {"mock": mock_spread},
+        "consensus": mock_spread,
+        "bookmakers_list": ["mock"]
+    }
+
+# Legacy function for backward compatibility
+def get_spread_from_odds(game_id, home_team, away_team, game_commence_time):
+    """Legacy function - returns consensus spread for backward compatibility."""
+    spreads = get_spreads_from_odds(game_id, home_team, away_team, game_commence_time)
+    return spreads["consensus"]
 
 def analyze():
     scores = load_scores()

@@ -5,6 +5,46 @@
 
 export class Analyzer {
     /**
+     * Get list of available bookmakers from data
+     */
+    static getAvailableBookmakers(data) {
+        return data.performance.bookmakers || ['consensus'];
+    }
+
+    /**
+     * Get team's total net performance for a specific bookmaker
+     * If bookmaker is 'consensus', returns the consensus-based total
+     */
+    static getTeamPerformanceByBookmaker(team, bookmaker = 'consensus') {
+        if (bookmaker === 'consensus' || !team.totalNetPerformanceByBookmaker) {
+            return team.totalNetPerformance;
+        }
+        return team.totalNetPerformanceByBookmaker[bookmaker] || team.totalNetPerformance;
+    }
+
+    /**
+     * Get team's cover rate for a specific bookmaker
+     */
+    static getTeamCoverRateByBookmaker(team, bookmaker = 'consensus') {
+        if (bookmaker === 'consensus' || !team.statistics.coverRateByBookmaker) {
+            return team.statistics.coverRate;
+        }
+        return team.statistics.coverRateByBookmaker[bookmaker] || team.statistics.coverRate;
+    }
+
+    /**
+     * Format bookmaker key to display name
+     */
+    static formatBookmakerName(key) {
+        if (!key) return 'Unknown';
+        if (key === 'consensus') return 'Consensus (Avg)';
+        // Capitalize first letter of each word
+        return key.split('_').map(word =>
+            word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
+        ).join(' ');
+    }
+
+    /**
      * Calculate net performance: (Actual Goal Diff) + (Spread)
      *
      * Example: Team has spread -1.0 (favored to win by 1), wins by 1

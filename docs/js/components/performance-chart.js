@@ -7,13 +7,14 @@ import { Router } from '../router.js';
 import { Analyzer } from '../analyzer.js';
 
 export class PerformanceChart {
-    constructor(containerId, data, sortBy = 'performance', filterBy = 'all', locationBy = 'all') {
+    constructor(containerId, data, sortBy = 'performance', filterBy = 'all', locationBy = 'all', bookmaker = 'consensus') {
         this.containerId = containerId;
         this.container = d3.select(`#${containerId}`);
         this.data = data;
         this.sortBy = sortBy;
         this.filterBy = filterBy;
         this.locationBy = locationBy;
+        this.bookmaker = bookmaker;
         this.tooltip = null;
 
         this.init();
@@ -53,6 +54,9 @@ export class PerformanceChart {
         const barGap = 10;
         const chartHeight = teams.length * (barHeight + barGap) + this.margin.top + this.margin.bottom;
 
+        // Store the current container width for resize comparison
+        this.lastContainerWidth = containerWidth;
+
         this.width = containerWidth - this.margin.left - this.margin.right;
         this.height = chartHeight - this.margin.top - this.margin.bottom;
 
@@ -81,23 +85,43 @@ export class PerformanceChart {
         this.drawAxes();
         this.drawBars(teams);
 
-        // Setup resize handler
-        window.addEventListener('resize', () => this.handleResize());
+        // Setup resize handler (remove existing first to avoid duplicates)
+        window.removeEventListener('resize', this.boundHandleResize);
+        this.boundHandleResize = () => this.handleResize();
+        window.addEventListener('resize', this.boundHandleResize);
 
         // Listen for theme changes to update colors
-        window.addEventListener('themechange', () => this.updateColors());
+        window.removeEventListener('themechange', this.boundUpdateColors);
+        this.boundUpdateColors = () => this.updateColors();
+        window.addEventListener('themechange', this.boundUpdateColors);
     }
 
     sortTeams() {
         // First apply filter (with location filter)
         const filteredTeams = Analyzer.getFilteredTeams(this.data, this.filterBy, this.locationBy);
 
-        // Create temporary data object with filtered teams
+        // Apply bookmaker-specific performance values if not consensus
+        const teamsWithBookmaker = filteredTeams.map(team => {
+            if (this.bookmaker === 'consensus' || !team.totalNetPerformanceByBookmaker) {
+                return team;
+            }
+            // Use bookmaker-specific performance
+            const bkPerf = team.totalNetPerformanceByBookmaker[this.bookmaker];
+            if (bkPerf !== undefined) {
+                return {
+                    ...team,
+                    totalNetPerformance: bkPerf
+                };
+            }
+            return team;
+        });
+
+        // Create temporary data object with modified teams
         const tempData = {
             ...this.data,
             performance: {
                 ...this.data.performance,
-                teams: filteredTeams
+                teams: teamsWithBookmaker
             }
         };
 
@@ -293,11 +317,19 @@ export class PerformanceChart {
     }
 
     handleResize() {
-        // Simple approach: rebuild the chart
-        // For production, you'd optimize this
+        // Only rebuild chart if width actually changed
+        // This prevents re-renders from mobile scroll (browser UI hide/show)
         clearTimeout(this.resizeTimer);
         this.resizeTimer = setTimeout(() => {
-            this.init();
+            const containerNode = this.container.node();
+            if (!containerNode) return;
+
+            const currentWidth = containerNode.clientWidth;
+            // Only reinitialize if width changed significantly (more than 10px)
+            // This filters out minor fluctuations from mobile scroll
+            if (Math.abs(currentWidth - (this.lastContainerWidth || 0)) > 10) {
+                this.init();
+            }
         }, 250);
     }
 
@@ -316,10 +348,16 @@ export class PerformanceChart {
         this.init();
     }
 
-    update(sortBy, filterBy, locationBy) {
+    update(sortBy, filterBy, locationBy, bookmaker = 'consensus') {
         this.sortBy = sortBy;
         this.filterBy = filterBy;
         this.locationBy = locationBy;
+        this.bookmaker = bookmaker;
+        this.init();
+    }
+
+    updateBookmaker(bookmaker) {
+        this.bookmaker = bookmaker;
         this.init();
     }
 
@@ -333,7 +371,12 @@ export class PerformanceChart {
         if (this.tooltip) {
             this.tooltip.remove();
         }
-        window.removeEventListener('resize', this.handleResize);
-        window.removeEventListener('themechange', this.updateColors);
+        if (this.boundHandleResize) {
+            window.removeEventListener('resize', this.boundHandleResize);
+        }
+        if (this.boundUpdateColors) {
+            window.removeEventListener('themechange', this.boundUpdateColors);
+        }
+        clearTimeout(this.resizeTimer);
     }
 }

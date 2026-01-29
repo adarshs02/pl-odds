@@ -63,6 +63,8 @@ body {
     color: var(--text-primary);
     line-height: 1.6;
     transition: background-color 0.3s ease, color 0.3s ease;
+    /* Prevent overscroll bounce on mobile which can trigger resize events */
+    overscroll-behavior: none;
 }
 
 /* ===== Container ===== */
@@ -427,6 +429,11 @@ body {
     min-height: 400px;
     position: relative;
     overflow: visible;
+    /* Promote to own layer for GPU acceleration - prevents repaint during scroll */
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    /* Allow vertical scrolling without triggering chart resize */
+    touch-action: pan-y;
 }
 
 @media (max-width: 640px) {
@@ -460,11 +467,16 @@ body {
 .chart-container svg {
     display: block;
     width: 100%;
+    /* Prevent SVG from causing layout shifts */
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
 }
 
 .bar {
     cursor: pointer;
     transition: opacity 0.2s ease;
+    /* Use will-change for smoother animations, but only for expected changes */
+    will-change: opacity;
 }
 
 .bar:hover {

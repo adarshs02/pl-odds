@@ -71,12 +71,30 @@ class Dashboard {
         const sortSelect = document.getElementById('chart-sort');
         const filterSelect = document.getElementById('chart-filter');
         const locationSelect = document.getElementById('chart-location');
+        const bookmakerSelect = document.getElementById('chart-bookmaker');
+
+        // Populate bookmaker dropdown
+        if (bookmakerSelect) {
+            const bookmakers = Analyzer.getAvailableBookmakers(this.data);
+            // Clear existing options except first (consensus)
+            while (bookmakerSelect.options.length > 1) {
+                bookmakerSelect.remove(1);
+            }
+            // Add bookmaker options
+            bookmakers.forEach(bk => {
+                const option = document.createElement('option');
+                option.value = bk;
+                option.textContent = Analyzer.formatBookmakerName(bk);
+                bookmakerSelect.appendChild(option);
+            });
+        }
 
         const updateChart = () => {
             const sortBy = sortSelect ? sortSelect.value : 'performance';
             const filterBy = filterSelect ? filterSelect.value : 'all';
             const locationBy = locationSelect ? locationSelect.value : 'all';
-            this.performanceChart.update(sortBy, filterBy, locationBy);
+            const bookmaker = bookmakerSelect ? bookmakerSelect.value : 'consensus';
+            this.performanceChart.update(sortBy, filterBy, locationBy, bookmaker);
         };
 
         if (sortSelect) {
@@ -89,6 +107,10 @@ class Dashboard {
 
         if (locationSelect) {
             locationSelect.addEventListener('change', updateChart);
+        }
+
+        if (bookmakerSelect) {
+            bookmakerSelect.addEventListener('change', updateChart);
         }
 
         // Render odds table
@@ -361,6 +383,49 @@ class Dashboard {
 
         // Render match history table
         this.renderMatchHistoryTable(teamData);
+
+        // Render bookmaker comparison table
+        this.renderBookmakerComparison(teamData);
+    }
+
+    renderBookmakerComparison(teamData) {
+        const tbody = document.getElementById('bookmaker-comparison-body');
+        if (!tbody) return;
+
+        tbody.innerHTML = '';
+
+        // Get bookmakers from team data
+        const coversByBk = teamData.statistics.coversByBookmaker || {};
+        const coverRateByBk = teamData.statistics.coverRateByBookmaker || {};
+        const totalPerfByBk = teamData.totalNetPerformanceByBookmaker || {};
+
+        // Get unique bookmakers
+        const bookmakers = Object.keys(coversByBk);
+
+        if (bookmakers.length === 0) {
+            tbody.innerHTML = '<tr><td colspan="4" style="text-align: center; padding: 1rem;">No per-bookmaker data available yet</td></tr>';
+            return;
+        }
+
+        // Sort by net performance descending
+        bookmakers.sort((a, b) => (totalPerfByBk[b] || 0) - (totalPerfByBk[a] || 0));
+
+        bookmakers.forEach(bk => {
+            const netPerf = totalPerfByBk[bk] || 0;
+            const coverRate = coverRateByBk[bk] || 0;
+            const covers = coversByBk[bk] || 0;
+
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td style="font-weight: 600;">${Analyzer.formatBookmakerName(bk)}</td>
+                <td class="${Analyzer.getNetPerfClass(netPerf)}" style="font-weight: 700; font-variant-numeric: tabular-nums;">
+                    ${Analyzer.formatNetPerf(netPerf)}
+                </td>
+                <td style="font-variant-numeric: tabular-nums;">${(coverRate * 100).toFixed(1)}%</td>
+                <td style="text-align: center;">${covers} covers</td>
+            `;
+            tbody.appendChild(row);
+        });
     }
 
     renderHomeAwayBreakdown(teamData) {
