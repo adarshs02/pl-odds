@@ -1,93 +1,6 @@
 {
-  "lastUpdated": "2026-01-31T08:22:23.409000Z",
+  "lastUpdated": "2026-02-01T08:25:29.681470Z",
   "upcomingMatches": [
-    {
-      "id": "e52dc0a3276ffe7c9d3630a81b4300ca",
-      "commenceTime": "2026-01-31T15:00:00Z",
-      "homeTeam": "Leeds United",
-      "awayTeam": "Arsenal",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 6.0,
-        "draw": 4.2,
-        "away": 1.54,
-        "impliedProbHome": 0.167,
-        "impliedProbDraw": 0.238,
-        "impliedProbAway": 0.649
-      },
-      "spread": {
-        "homePoint": 1.0,
-        "awayPoint": -1.0
-      }
-    },
-    {
-      "id": "b3c2ff07a6d24ca61f13c268a535c317",
-      "commenceTime": "2026-01-31T15:00:00Z",
-      "homeTeam": "Wolves",
-      "awayTeam": "Bournemouth",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 3.05,
-        "draw": 3.65,
-        "away": 2.25,
-        "impliedProbHome": 0.328,
-        "impliedProbDraw": 0.274,
-        "impliedProbAway": 0.444
-      }
-    },
-    {
-      "id": "36820753efb36739a83c6e5e440827b2",
-      "commenceTime": "2026-01-31T15:00:00Z",
-      "homeTeam": "Brighton",
-      "awayTeam": "Everton",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 1.87,
-        "draw": 3.7,
-        "away": 4.2,
-        "impliedProbHome": 0.535,
-        "impliedProbDraw": 0.27,
-        "impliedProbAway": 0.238
-      }
-    },
-    {
-      "id": "a3975ce7f6fd29bb83e7eadc3f7c1b3a",
-      "commenceTime": "2026-01-31T17:30:00Z",
-      "homeTeam": "Chelsea",
-      "awayTeam": "West Ham",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 1.5,
-        "draw": 4.5,
-        "away": 6.0,
-        "impliedProbHome": 0.667,
-        "impliedProbDraw": 0.222,
-        "impliedProbAway": 0.167
-      },
-      "spread": {
-        "homePoint": -1.0,
-        "awayPoint": 1.0
-      }
-    },
-    {
-      "id": "85b2c858725574961261f22c2b5b5d7e",
-      "commenceTime": "2026-01-31T20:00:00Z",
-      "homeTeam": "Liverpool",
-      "awayTeam": "Newcastle United",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 1.8,
-        "draw": 4.1,
-        "away": 4.1,
-        "impliedProbHome": 0.556,
-        "impliedProbDraw": 0.244,
-        "impliedProbAway": 0.244
-      },
-      "spread": {
-        "homePoint": -0.75,
-        "awayPoint": 0.75
-      }
-    },
     {
       "id": "9c612b05e7fc0b581b689380f7405f35",
       "commenceTime": "2026-02-01T14:00:00Z",
@@ -165,6 +78,10 @@
         "impliedProbHome": 0.575,
         "impliedProbDraw": 0.278,
         "impliedProbAway": 0.204
+      },
+      "spread": {
+        "homePoint": -0.75,
+        "awayPoint": 0.75
       }
     },
     {
@@ -180,6 +97,10 @@
         "impliedProbHome": 0.455,
         "impliedProbDraw": 0.308,
         "impliedProbAway": 0.323
+      },
+      "spread": {
+        "homePoint": -0.25,
+        "awayPoint": 0.25
       }
     },
     {
@@ -318,5 +239,5 @@
       }
     }
   ],
-  "totalMatches": 20
+  "totalMatches": 15
 }
