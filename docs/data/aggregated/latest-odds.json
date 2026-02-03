@@ -1,25 +1,6 @@
 {
-  "lastUpdated": "2026-02-02T08:36:07.337283Z",
+  "lastUpdated": "2026-02-03T08:29:49.810260Z",
   "upcomingMatches": [
-    {
-      "id": "5d2c6ee96eacb9c4bcac89213bcaf304",
-      "commenceTime": "2026-02-02T20:00:00Z",
-      "homeTeam": "Sunderland",
-      "awayTeam": "Burnley",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 1.77,
-        "draw": 3.55,
-        "away": 5.0,
-        "impliedProbHome": 0.565,
-        "impliedProbDraw": 0.282,
-        "impliedProbAway": 0.2
-      },
-      "spread": {
-        "homePoint": -0.75,
-        "awayPoint": 0.75
-      }
-    },
     {
       "id": "4ae3a1134fb1d10167c21bf10dff498f",
       "commenceTime": "2026-02-06T20:00:00Z",
@@ -158,6 +139,10 @@
         "impliedProbHome": 0.524,
         "impliedProbDraw": 0.27,
         "impliedProbAway": 0.263
+      },
+      "spread": {
+        "homePoint": -0.5,
+        "awayPoint": 0.5
       }
     },
     {
@@ -341,5 +326,5 @@
       }
     }
   ],
-  "totalMatches": 21
+  "totalMatches": 20
 }
