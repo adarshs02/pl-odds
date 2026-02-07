@@ -1,25 +1,6 @@
 {
-  "lastUpdated": "2026-02-06T08:34:53.331734Z",
+  "lastUpdated": "2026-02-07T08:23:38.212830Z",
   "upcomingMatches": [
-    {
-      "id": "4ae3a1134fb1d10167c21bf10dff498f",
-      "commenceTime": "2026-02-06T20:00:00Z",
-      "homeTeam": "Leeds United",
-      "awayTeam": "Nott'm Forest",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 2.2,
-        "draw": 3.3,
-        "away": 3.4,
-        "impliedProbHome": 0.455,
-        "impliedProbDraw": 0.303,
-        "impliedProbAway": 0.294
-      },
-      "spread": {
-        "homePoint": -0.25,
-        "awayPoint": 0.25
-      }
-    },
     {
       "id": "78f2e11f06a4662eb94d23b6c7319238",
       "commenceTime": "2026-02-07T12:30:00Z",
@@ -50,8 +31,8 @@
         "impliedProbAway": 0.077
       },
       "spread": {
-        "homePoint": -1.75,
-        "awayPoint": 1.75
+        "homePoint": -1.5,
+        "awayPoint": 1.5
       }
     },
     {
@@ -326,5 +307,5 @@
       }
     }
   ],
-  "totalMatches": 20
+  "totalMatches": 19
 }

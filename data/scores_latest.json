@@ -4938,5 +4938,25 @@
       }
     ],
     "last_update": "2026-02-03T03:00:35Z"
+  },
+  {
+    "id": "4ae3a1134fb1d10167c21bf10dff498f",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-02-06T20:00:00Z",
+    "completed": true,
+    "home_team": "Leeds United",
+    "away_team": "Nottingham Forest",
+    "scores": [
+      {
+        "name": "Nottingham Forest",
+        "score": "1"
+      },
+      {
+        "name": "Leeds United",
+        "score": "3"
+      }
+    ],
+    "last_update": "2026-02-07T02:41:17Z"
   }
 ]
