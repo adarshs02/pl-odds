@@ -24,6 +24,9 @@ class Dashboard {
             // Initialize theme manager
             ThemeManager.init();
 
+            // Setup scroll listener for header
+            this.setupScrollListener();
+
             // Load data
             this.data = await DataLoader.loadAll();
 
@@ -46,14 +49,25 @@ class Dashboard {
         }
     }
 
+    setupScrollListener() {
+        const header = document.getElementById('site-header');
+        if (!header) return;
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        }, { passive: true });
+    }
+
     updateStats() {
-        // Update stats summary cards
         document.getElementById('stat-matches').textContent = this.data.performance.totalMatches || 0;
         document.getElementById('stat-teams').textContent = this.data.performance.teamsTracked || 0;
         document.getElementById('stat-correlation').textContent = this.data.performance.correlation?.toFixed(3) || 'N/A';
         document.getElementById('stat-upcoming').textContent = this.data.odds.totalMatches || 0;
 
-        // Update last updated timestamp
         const lastUpdated = new Date(this.data.performance.lastUpdated);
         document.getElementById('last-updated').textContent = lastUpdated.toLocaleString();
     }
@@ -76,11 +90,9 @@ class Dashboard {
         // Populate bookmaker dropdown
         if (bookmakerSelect) {
             const bookmakers = Analyzer.getAvailableBookmakers(this.data);
-            // Clear existing options except first (consensus)
             while (bookmakerSelect.options.length > 1) {
                 bookmakerSelect.remove(1);
             }
-            // Add bookmaker options
             bookmakers.forEach(bk => {
                 const option = document.createElement('option');
                 option.value = bk;
@@ -113,126 +125,69 @@ class Dashboard {
             bookmakerSelect.addEventListener('change', updateChart);
         }
 
-        // Render odds table
-        this.renderOddsTable();
-
-        // Setup sidebar toggle
-        this.setupSidebarToggle();
+        // Render upcoming matches strip
+        this.renderUpcomingStrip();
 
         // Render historical trends (top 5 teams)
         this.renderHistoricalTrends();
     }
 
-    renderOddsTable() {
-        const tbody = document.getElementById('odds-table-body');
-        if (!tbody) return;
+    renderUpcomingStrip() {
+        const container = document.getElementById('upcoming-matches-strip');
+        if (!container) return;
 
-        tbody.innerHTML = '';
+        container.innerHTML = '';
 
         const matches = DataLoader.getUpcomingMatches(this.data);
 
         if (matches.length === 0) {
-            tbody.innerHTML = '<tr><td colspan="3" style="text-align: center; padding: 2rem;">No upcoming matches</td></tr>';
+            container.innerHTML = '<span class="upcoming-empty">No upcoming matches</span>';
             return;
         }
 
         matches.forEach(match => {
-            const row = document.createElement('tr');
+            const capsule = document.createElement('div');
+            capsule.className = 'upcoming-capsule';
 
-            // Column 1: Date
-            const dateCell = document.createElement('td');
-            dateCell.textContent = Analyzer.formatDateShort(match.commenceTime);
-            row.appendChild(dateCell);
+            const date = document.createElement('span');
+            date.className = 'upcoming-date';
+            date.textContent = Analyzer.formatDateShort(match.commenceTime);
 
-            // Column 2: Match (Team vs Team)
-            const matchCell = document.createElement('td');
+            const matchEl = document.createElement('span');
+            matchEl.className = 'upcoming-match';
+
             const homeTeam = document.createElement('span');
-            homeTeam.textContent = match.homeTeam;
             homeTeam.className = 'team-name';
+            homeTeam.textContent = match.homeTeam;
             homeTeam.dataset.team = match.homeTeam;
-            homeTeam.style.cursor = 'pointer';
-            homeTeam.style.color = 'var(--accent-primary)';
-            homeTeam.style.fontWeight = '600';
 
-            const vs = document.createTextNode(' vs ');
+            const vs = document.createElement('span');
+            vs.className = 'vs-text';
+            vs.textContent = 'v';
 
             const awayTeam = document.createElement('span');
-            awayTeam.textContent = match.awayTeam;
             awayTeam.className = 'team-name';
+            awayTeam.textContent = match.awayTeam;
             awayTeam.dataset.team = match.awayTeam;
-            awayTeam.style.cursor = 'pointer';
-            awayTeam.style.color = 'var(--accent-primary)';
-            awayTeam.style.fontWeight = '600';
 
-            matchCell.appendChild(homeTeam);
-            matchCell.appendChild(vs);
-            matchCell.appendChild(awayTeam);
-            row.appendChild(matchCell);
+            matchEl.appendChild(homeTeam);
+            matchEl.appendChild(vs);
+            matchEl.appendChild(awayTeam);
 
-            // Column 3: Favorite
-            const favoriteCell = document.createElement('td');
-            const favorite = Analyzer.getFavorite(match);
-            let spread = 'N/A';
-            if (match.spread && match.spread.homePoint) {
-                spread = Analyzer.formatNetPerf(match.spread.homePoint);
-            }
-            favoriteCell.innerHTML = `<span class="favorite-badge">${favorite}<br><small>(${spread})</small></span>`;
-            row.appendChild(favoriteCell);
-
-            tbody.appendChild(row);
+            capsule.appendChild(date);
+            capsule.appendChild(matchEl);
+            container.appendChild(capsule);
         });
 
         // Add click handlers for team names
-        tbody.querySelectorAll('.team-name').forEach(el => {
+        container.querySelectorAll('.team-name').forEach(el => {
             el.addEventListener('click', () => {
                 Router.navigateToTeam(el.dataset.team);
             });
         });
     }
 
-    setupSidebarToggle() {
-        const toggle = document.getElementById('sidebar-toggle');
-        const content = document.querySelector('.sidebar-content');
-
-        if (!toggle || !content) return;
-
-        // Remove existing listeners by cloning
-        const newToggle = toggle.cloneNode(true);
-        toggle.parentNode.replaceChild(newToggle, toggle);
-
-        newToggle.addEventListener('click', () => {
-            content.classList.toggle('collapsed');
-            const icon = newToggle.querySelector('.toggle-icon');
-            if (icon) {
-                icon.textContent = content.classList.contains('collapsed') ? '▼' : '▲';
-            }
-        });
-
-        // Start collapsed on mobile/tablet, expanded on desktop
-        if (window.innerWidth < 1024) {
-            content.classList.add('collapsed');
-            const icon = newToggle.querySelector('.toggle-icon');
-            if (icon) {
-                icon.textContent = '▼';
-            }
-        }
-
-        // Update on window resize
-        const resizeHandler = () => {
-            if (window.innerWidth >= 1024 && content.classList.contains('collapsed')) {
-                content.classList.remove('collapsed');
-                const icon = newToggle.querySelector('.toggle-icon');
-                if (icon) {
-                    icon.textContent = '▲';
-                }
-            }
-        };
-
-        window.addEventListener('resize', resizeHandler);
-    }
-
     renderHistoricalTrends() {
-        // Get top 5 teams
         const topTeams = Analyzer.getTopTeams(this.data, 5);
 
         const container = d3.select('#historical-trends');
@@ -250,7 +205,7 @@ class Dashboard {
         const containerNode = container.node();
         const containerWidth = containerNode.clientWidth;
         const containerHeight = 400;
-        const margin = { top: 20, right: 120, bottom: 40, left: 50 };
+        const margin = { top: 20, right: 140, bottom: 40, left: 50 };
         const width = containerWidth - margin.left - margin.right;
         const height = containerHeight - margin.top - margin.bottom;
 
@@ -261,8 +216,8 @@ class Dashboard {
             .append('g')
             .attr('transform', `translate(${margin.left},${margin.top})`);
 
-        // Prepare data
-        const teamColors = ['#3498db', '#e74c3c', '#2ecc71', '#f39c12', '#9b59b6'];
+        // Cohesive color palette
+        const teamColors = ['#2C5F8A', '#C0504D', '#3A7D5C', '#B8860B', '#7B6B8D'];
         const linesData = topTeams.map((team, i) => ({
             name: team.name,
             color: teamColors[i],
@@ -284,24 +239,10 @@ class Dashboard {
             .domain([d3.min(allValues) * 1.1, d3.max(allValues) * 1.1])
             .range([height, 0]);
 
-        // Axes
+        // Minimal y-axis only (4 ticks, no domain line)
         svg.append('g')
             .attr('class', 'axis')
-            .attr('transform', `translate(0,${height})`)
-            .call(d3.axisBottom(xScale).ticks(6));
-
-        svg.append('g')
-            .attr('class', 'axis')
-            .call(d3.axisLeft(yScale).ticks(6));
-
-        // Grid
-        svg.append('g')
-            .attr('class', 'grid')
-            .call(d3.axisLeft(yScale)
-                .ticks(6)
-                .tickSize(-width)
-                .tickFormat('')
-            );
+            .call(d3.axisLeft(yScale).ticks(4));
 
         // Line generator
         const line = d3.line()
@@ -309,41 +250,40 @@ class Dashboard {
             .y(d => yScale(d.value))
             .curve(d3.curveMonotoneX);
 
-        // Draw lines
+        // Draw lines with dot markers
         linesData.forEach(teamData => {
+            // Line
             svg.append('path')
                 .datum(teamData.values)
                 .attr('class', 'trend-line')
                 .attr('fill', 'none')
                 .attr('stroke', teamData.color)
-                .attr('stroke-width', 2)
+                .attr('stroke-width', 1.5)
                 .attr('d', line);
-        });
 
-        // Legend
-        const legend = svg.append('g')
-            .attr('class', 'legend')
-            .attr('transform', `translate(${width + 10}, 0)`);
+            // Dot markers
+            svg.selectAll(`.dot-${teamData.name.replace(/\s+/g, '-')}`)
+                .data(teamData.values)
+                .enter()
+                .append('circle')
+                .attr('cx', d => xScale(d.date))
+                .attr('cy', d => yScale(d.value))
+                .attr('r', 2.5)
+                .attr('fill', teamData.color);
 
-        linesData.forEach((teamData, i) => {
-            const legendRow = legend.append('g')
-                .attr('transform', `translate(0, ${i * 20})`);
-
-            legendRow.append('line')
-                .attr('x1', 0)
-                .attr('x2', 20)
-                .attr('y1', 9)
-                .attr('y2', 9)
-                .attr('stroke', teamData.color)
-                .attr('stroke-width', 2);
-
-            legendRow.append('text')
-                .attr('x', 25)
-                .attr('y', 9)
-                .attr('dy', '0.35em')
-                .attr('fill', 'var(--text-secondary)')
-                .attr('font-size', '12px')
-                .text(teamData.name);
+            // Inline label at the end of each line
+            const lastPoint = teamData.values[teamData.values.length - 1];
+            if (lastPoint) {
+                svg.append('text')
+                    .attr('x', xScale(lastPoint.date) + 8)
+                    .attr('y', yScale(lastPoint.value))
+                    .attr('dy', '0.35em')
+                    .attr('fill', teamData.color)
+                    .attr('font-family', 'DM Sans, sans-serif')
+                    .attr('font-size', '11px')
+                    .attr('font-weight', '500')
+                    .text(teamData.name);
+            }
         });
     }
 
@@ -394,12 +334,10 @@ class Dashboard {
 
         tbody.innerHTML = '';
 
-        // Get bookmakers from team data
         const coversByBk = teamData.statistics.coversByBookmaker || {};
         const coverRateByBk = teamData.statistics.coverRateByBookmaker || {};
         const totalPerfByBk = teamData.totalNetPerformanceByBookmaker || {};
 
-        // Get unique bookmakers
         const bookmakers = Object.keys(coversByBk);
 
         if (bookmakers.length === 0) {
@@ -407,7 +345,6 @@ class Dashboard {
             return;
         }
 
-        // Sort by net performance descending
         bookmakers.sort((a, b) => (totalPerfByBk[b] || 0) - (totalPerfByBk[a] || 0));
 
         bookmakers.forEach(bk => {
@@ -417,8 +354,8 @@ class Dashboard {
 
             const row = document.createElement('tr');
             row.innerHTML = `
-                <td style="font-weight: 600;">${Analyzer.formatBookmakerName(bk)}</td>
-                <td class="${Analyzer.getNetPerfClass(netPerf)}" style="font-weight: 700; font-variant-numeric: tabular-nums;">
+                <td style="font-weight: 500;">${Analyzer.formatBookmakerName(bk)}</td>
+                <td class="${Analyzer.getNetPerfClass(netPerf)}" style="font-variant-numeric: tabular-nums;">
                     ${Analyzer.formatNetPerf(netPerf)}
                 </td>
                 <td style="font-variant-numeric: tabular-nums;">${(coverRate * 100).toFixed(1)}%</td>
@@ -429,21 +366,17 @@ class Dashboard {
     }
 
     renderHomeAwayBreakdown(teamData) {
-        // Filter matches by location
         const homeMatches = teamData.matchHistory.filter(m => m.homeAway === 'home');
         const awayMatches = teamData.matchHistory.filter(m => m.homeAway === 'away');
 
-        // Calculate home stats
         const homeNetPerf = homeMatches.reduce((sum, m) => sum + m.netPerformance, 0);
         const homeWins = homeMatches.filter(m => m.result === 'W').length;
         const homeCovers = homeMatches.filter(m => m.netPerformance > 0).length;
 
-        // Calculate away stats
         const awayNetPerf = awayMatches.reduce((sum, m) => sum + m.netPerformance, 0);
         const awayWins = awayMatches.filter(m => m.result === 'W').length;
         const awayCovers = awayMatches.filter(m => m.netPerformance > 0).length;
 
-        // Update home stats
         const homeNetPerfEl = document.getElementById('home-net-perf');
         homeNetPerfEl.textContent = Analyzer.formatNetPerf(homeNetPerf);
         homeNetPerfEl.className = Analyzer.getNetPerfClass(homeNetPerf);
@@ -455,7 +388,6 @@ class Dashboard {
             ? `${((homeCovers / homeMatches.length) * 100).toFixed(1)}%`
             : 'N/A';
 
-        // Update away stats
         const awayNetPerfEl = document.getElementById('away-net-perf');
         awayNetPerfEl.textContent = Analyzer.formatNetPerf(awayNetPerf);
         awayNetPerfEl.className = Analyzer.getNetPerfClass(awayNetPerf);
@@ -469,14 +401,12 @@ class Dashboard {
     }
 
     renderPieCharts(teamData) {
-        // Create results pie chart (wins/draws/losses)
         const resultsPieChart = new PieChart('results-pie-chart', {
             wins: teamData.statistics.wins,
             draws: teamData.statistics.draws,
             losses: teamData.statistics.losses
         }, 'results');
 
-        // Create covers pie chart
         const coversPieChart = new PieChart('covers-pie-chart', {
             covers: teamData.statistics.covers,
             matchesPlayed: teamData.statistics.matchesPlayed
@@ -487,7 +417,6 @@ class Dashboard {
         const container = d3.select('#team-trend-chart');
         container.html('');
 
-        // Dimensions
         const containerNode = container.node();
         const containerWidth = containerNode.clientWidth;
         const containerHeight = 300;
@@ -495,7 +424,6 @@ class Dashboard {
         const width = containerWidth - margin.left - margin.right;
         const height = containerHeight - margin.top - margin.bottom;
 
-        // Create SVG
         const svg = container.append('svg')
             .attr('width', containerWidth)
             .attr('height', containerHeight)
@@ -507,7 +435,6 @@ class Dashboard {
             value: m.cumulativeNetPerformance
         }));
 
-        // Scales
         const xScale = d3.scaleTime()
             .domain(d3.extent(data, d => d.date))
             .range([0, width]);
@@ -516,17 +443,12 @@ class Dashboard {
             .domain([d3.min(data, d => d.value) * 1.1, d3.max(data, d => d.value) * 1.1])
             .range([height, 0]);
 
-        // Axes
+        // Minimal y-axis only (4 ticks)
         svg.append('g')
             .attr('class', 'axis')
-            .attr('transform', `translate(0,${height})`)
-            .call(d3.axisBottom(xScale).ticks(6));
+            .call(d3.axisLeft(yScale).ticks(4));
 
-        svg.append('g')
-            .attr('class', 'axis')
-            .call(d3.axisLeft(yScale).ticks(6));
-
-        // Area
+        // Area fill — very subtle
         const area = d3.area()
             .x(d => xScale(d.date))
             .y0(height)
@@ -536,7 +458,7 @@ class Dashboard {
         svg.append('path')
             .datum(data)
             .attr('fill', Analyzer.getPerformanceColor(teamData.totalNetPerformance))
-            .attr('opacity', 0.3)
+            .attr('opacity', 0.08)
             .attr('d', area);
 
         // Line
@@ -549,8 +471,19 @@ class Dashboard {
             .datum(data)
             .attr('fill', 'none')
             .attr('stroke', Analyzer.getPerformanceColor(teamData.totalNetPerformance))
-            .attr('stroke-width', 2)
+            .attr('stroke-width', 1.5)
             .attr('d', line);
+
+        // Dot markers
+        svg.selectAll('.trend-dot')
+            .data(data)
+            .enter()
+            .append('circle')
+            .attr('class', 'trend-dot')
+            .attr('cx', d => xScale(d.date))
+            .attr('cy', d => yScale(d.value))
+            .attr('r', 2.5)
+            .attr('fill', Analyzer.getPerformanceColor(teamData.totalNetPerformance));
 
         // Zero line
         svg.append('line')
@@ -569,50 +502,40 @@ class Dashboard {
 
         tbody.innerHTML = '';
 
-        // Reverse to show most recent first
         const matches = [...teamData.matchHistory].reverse();
 
         matches.forEach(match => {
             const row = document.createElement('tr');
 
-            // Calculate actual margin from score
             const [teamScore, oppScore] = match.score.split('-').map(s => parseInt(s.trim()));
             const actualMargin = teamScore - oppScore;
-
-            // Calculate expected margin from spread (spread is from team's perspective)
             const expectedMargin = -match.spread;
-
-            // Check if beat the spread
             const beatSpread = match.netPerformance > 0;
 
             row.innerHTML = `
                 <td style="white-space: nowrap;">${Analyzer.formatDateShort(match.date)}</td>
-                <td class="team-name" data-team="${match.opponent}" style="cursor: pointer; font-weight: 600;">
+                <td class="team-name" data-team="${match.opponent}" style="cursor: pointer;">
                     ${match.opponent}
                 </td>
-                <td style="text-align: center;">
-                    <span style="display: inline-block; padding: 2px 8px; background: ${match.homeAway === 'home' ? 'var(--accent-primary)' : 'var(--accent-neutral)'}; color: white; border-radius: 4px; font-size: 0.75rem; font-weight: 600;">
-                        ${match.homeAway === 'home' ? 'HOME' : 'AWAY'}
-                    </span>
+                <td style="text-align: center; text-transform: uppercase; font-size: 0.75rem; font-weight: 500; letter-spacing: 0.04em; color: var(--text-secondary);">
+                    ${match.homeAway === 'home' ? 'H' : 'A'}
                 </td>
-                <td style="font-weight: 600; font-variant-numeric: tabular-nums;">${match.score}</td>
-                <td class="${Analyzer.getResultClass(match.result)}" style="font-weight: 700;">
+                <td style="font-weight: 500; font-variant-numeric: tabular-nums;">${match.score}</td>
+                <td class="${Analyzer.getResultClass(match.result)}">
                     ${match.result === 'W' ? 'Win' : match.result === 'L' ? 'Loss' : 'Draw'}
                 </td>
                 <td style="font-variant-numeric: tabular-nums;">
                     ${Analyzer.formatNetPerf(expectedMargin)}
-                    <span style="color: var(--text-tertiary); font-size: 0.85rem;"> (line: ${Analyzer.formatNetPerf(match.spread)})</span>
+                    <span style="color: var(--text-tertiary); font-size: 0.8125rem;"> (${Analyzer.formatNetPerf(match.spread)})</span>
                 </td>
-                <td style="font-weight: 600; font-variant-numeric: tabular-nums;">
+                <td style="font-weight: 500; font-variant-numeric: tabular-nums;">
                     ${Analyzer.formatNetPerf(actualMargin)}
                 </td>
-                <td class="${Analyzer.getNetPerfClass(match.netPerformance)}" style="font-weight: 700; font-variant-numeric: tabular-nums;">
+                <td class="${Analyzer.getNetPerfClass(match.netPerformance)}" style="font-variant-numeric: tabular-nums;">
                     ${Analyzer.formatNetPerf(match.netPerformance)}
                 </td>
-                <td style="text-align: center;">
-                    <span style="font-size: 1.5rem;" title="${beatSpread ? 'Beat the spread' : 'Did not beat the spread'}">
-                        ${beatSpread ? '✅' : '❌'}
-                    </span>
+                <td style="text-align: center; font-size: 0.8125rem; font-weight: 500; color: ${beatSpread ? 'var(--accent-positive)' : 'var(--accent-negative)'};">
+                    ${beatSpread ? 'YES' : 'NO'}
                 </td>
             `;
 

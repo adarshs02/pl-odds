@@ -13,6 +13,11 @@
     <link rel="alternate icon" href="favicon.svg">
     <link rel="mask-icon" href="favicon.svg" color="#2ecc71">
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
     <!-- Preload critical data -->
     <link rel="preload" href="data/aggregated/team-performance-history.json" as="fetch" crossorigin>
 
@@ -26,22 +31,22 @@
 <body>
     <!-- Loading overlay -->
     <div id="loading-overlay" class="loading-overlay">
-        <div class="spinner"></div>
+        <div class="loading-bar"></div>
         <p>Loading dashboard...</p>
     </div>
 
     <!-- Header -->
-    <header class="header">
+    <header class="header" id="site-header">
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <h1>EPL Odds Dashboard</h1>
+                    <h1>EPL Odds</h1>
                     <p class="subtitle">Performance vs Betting Expectations</p>
                 </div>
                 <div class="header-controls">
                     <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
-                        <span class="theme-icon sun">☀️</span>
-                        <span class="theme-icon moon">🌙</span>
+                        <span class="theme-label light-label">Light</span>
+                        <span class="theme-label dark-label">Dark</span>
                     </button>
                 </div>
             </div>
@@ -53,119 +58,98 @@
         <div class="container">
             <!-- Dashboard View (default) -->
             <div id="dashboard-view" class="view">
-                <div class="dashboard-layout">
-                    <!-- Main content area -->
-                    <div class="main-area">
-                        <!-- Stats Summary -->
-                        <section class="stats-summary">
-                            <div class="stat-card">
-                                <h3>Total Matches</h3>
-                                <p class="stat-value" id="stat-matches">-</p>
-                            </div>
-                            <div class="stat-card">
-                                <h3>Teams Tracked</h3>
-                                <p class="stat-value" id="stat-teams">-</p>
-                            </div>
-                            <div class="stat-card">
-                                <h3>Correlation Score</h3>
-                                <p class="stat-value" id="stat-correlation">-</p>
-                                <p class="stat-subtitle">Prediction Accuracy</p>
-                            </div>
-                            <div class="stat-card">
-                                <h3>Upcoming Matches</h3>
-                                <p class="stat-value" id="stat-upcoming">-</p>
-                            </div>
-                        </section>
+                <!-- Stats Strip -->
+                <section class="stats-strip reveal">
+                    <div class="stat-item">
+                        <span class="stat-label">Matches</span>
+                        <span class="stat-value" id="stat-matches">-</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-label">Teams</span>
+                        <span class="stat-value" id="stat-teams">-</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-label">Correlation</span>
+                        <span class="stat-value" id="stat-correlation">-</span>
+                        <span class="stat-subtitle">Prediction Accuracy</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-label">Upcoming</span>
+                        <span class="stat-value" id="stat-upcoming">-</span>
+                    </div>
+                </section>
 
-                        <!-- Performance Chart Section -->
-                        <section class="chart-section">
-                            <div class="section-header">
-                                <h2>Team Performance vs Spreads</h2>
-                                <p class="section-description">
-                                    Net Performance = (Actual Goal Difference) + (Spread).
-                                    Positive values indicate outperformance against betting expectations.
-                                    Example: Favored by -1.0 and win by 1 = net performance of 0 (met expectations
-                                    exactly).
-                                </p>
-                            </div>
-                            <div class="chart-controls">
-                                <label>
-                                    Sort by:
-                                    <select id="chart-sort">
-                                        <option value="performance">Performance</option>
-                                        <option value="alphabetical">Alphabetical</option>
-                                    </select>
-                                </label>
-                                <label>
-                                    Show:
-                                    <select id="chart-filter">
-                                        <option value="all">All Matches</option>
-                                        <option value="last10">Last 10 Matches</option>
-                                        <option value="last5">Last 5 Matches</option>
-                                        <option value="season">This Season</option>
-                                    </select>
-                                </label>
-                                <label>
-                                    Location:
-                                    <select id="chart-location">
-                                        <option value="all">Home + Away</option>
-                                        <option value="home">Home Only</option>
-                                        <option value="away">Away Only</option>
-                                    </select>
-                                </label>
-                                <label>
-                                    Bookmaker:
-                                    <select id="chart-bookmaker">
-                                        <option value="consensus">Consensus (Avg)</option>
-                                        <!-- Dynamic options populated by JavaScript -->
-                                    </select>
-                                </label>
-                            </div>
-                            <div id="performance-chart" class="chart-container"></div>
-                        </section>
+                <!-- Upcoming Matches Strip -->
+                <section class="upcoming-strip reveal reveal-delay-1">
+                    <div class="upcoming-scroll" id="upcoming-matches-strip">
+                        <!-- Populated by JavaScript -->
+                    </div>
+                </section>
 
-                        <!-- Historical Trends Preview -->
-                        <section class="chart-section">
-                            <div class="section-header">
-                                <h2>Historical Trends (Top 5 Teams)</h2>
-                                <p class="section-description">
-                                    Cumulative net performance over time for top performing teams.
-                                </p>
-                            </div>
-                            <div id="historical-trends" class="chart-container"></div>
-                        </section>
-                    </div><!-- End main-area -->
+                <!-- Performance Chart Section -->
+                <section class="chart-section reveal reveal-delay-2">
+                    <div class="section-header">
+                        <h2>Team Performance vs Spreads</h2>
+                        <p class="section-description">
+                            Net Performance = (Actual Goal Difference) + (Spread).
+                            Positive values indicate outperformance against betting expectations.
+                        </p>
+                    </div>
+                    <div class="chart-controls">
+                        <label>
+                            Sort by:
+                            <select id="chart-sort">
+                                <option value="performance">Performance</option>
+                                <option value="alphabetical">Alphabetical</option>
+                            </select>
+                        </label>
+                        <label>
+                            Show:
+                            <select id="chart-filter">
+                                <option value="all">All Matches</option>
+                                <option value="last10">Last 10 Matches</option>
+                                <option value="last5">Last 5 Matches</option>
+                                <option value="season">This Season</option>
+                            </select>
+                        </label>
+                        <label>
+                            Location:
+                            <select id="chart-location">
+                                <option value="all">Home + Away</option>
+                                <option value="home">Home Only</option>
+                                <option value="away">Away Only</option>
+                            </select>
+                        </label>
+                        <label>
+                            Bookmaker:
+                            <select id="chart-bookmaker">
+                                <option value="consensus">Consensus (Avg)</option>
+                                <!-- Dynamic options populated by JavaScript -->
+                            </select>
+                        </label>
+                    </div>
+                    <div id="performance-chart" class="chart-container"></div>
+                </section>
 
-                    <!-- Sidebar -->
-                    <aside class="sidebar">
-                        <button id="sidebar-toggle" class="sidebar-toggle">
-                            <span>Upcoming Matches</span>
-                            <span class="toggle-icon">▲</span>
-                        </button>
-                        <div class="sidebar-content">
-                            <div class="table-container">
-                                <table id="odds-table" class="odds-table">
-                                    <thead>
-                                        <tr>
-                                            <th>Date</th>
-                                            <th>Match</th>
-                                            <th>Favorite</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody id="odds-table-body">
-                                        <!-- Populated by JavaScript -->
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </aside>
-                </div><!-- End dashboard-layout -->
+                <!-- Historical Trends Preview -->
+                <section class="chart-section reveal reveal-delay-3">
+                    <div class="section-header">
+                        <h2>Historical Trends (Top 5 Teams)</h2>
+                        <p class="section-description">
+                            Cumulative net performance over time for top performing teams.
+                        </p>
+                    </div>
+                    <div id="historical-trends" class="chart-container"></div>
+                </section>
             </div><!-- End dashboard-view -->
 
             <!-- Team Detail View (hidden by default) -->
             <div id="team-detail-view" class="view" style="display: none;">
                 <nav class="breadcrumb">
-                    <a href="#" id="back-to-dashboard">← Back to Dashboard</a>
+                    <a href="#" id="back-to-dashboard">Dashboard</a>
                 </nav>
 
                 <div class="team-header">
@@ -175,14 +159,17 @@
                             <span class="label">Net Performance</span>
                             <span class="value" id="team-net-perf">0.00</span>
                         </div>
+                        <div class="stat-divider"></div>
                         <div class="team-stat">
                             <span class="label">Matches</span>
                             <span class="value" id="team-matches">0</span>
                         </div>
+                        <div class="stat-divider"></div>
                         <div class="team-stat">
                             <span class="label">Win Rate (Moneyline)</span>
                             <span class="value" id="team-win-rate">0%</span>
                         </div>
+                        <div class="stat-divider"></div>
                         <div class="team-stat">
                             <span class="label">Spread Cover Rate</span>
                             <span class="value" id="team-cover-rate">0%</span>
@@ -194,8 +181,7 @@
                     <h2>Home vs Away Performance</h2>
                     <p class="section-description">
                         Win Rate = % of matches won outright (W/L/D).
-                        Spread Cover Rate = % of matches where team beat the betting spread (performed better than
-                        expected).
+                        Spread Cover Rate = % of matches where team beat the betting spread.
                     </p>
                     <div class="home-away-breakdown">
                         <div class="location-stat">
@@ -207,6 +193,7 @@
                                 <p><strong>Spread Cover Rate:</strong> <span id="home-cover-rate">-</span></p>
                             </div>
                         </div>
+                        <div class="location-divider"></div>
                         <div class="location-stat">
                             <h3>Away</h3>
                             <div class="location-details">
@@ -225,7 +212,7 @@
                     <p class="section-description">
                         How this team performs against different bookmakers' spreads.
                     </p>
-                    <div id="bookmaker-comparison-table" class="table-container">
+                    <div id="bookmaker-comparison-table">
                         <table class="odds-table">
                             <thead>
                                 <tr>
@@ -295,7 +282,7 @@
         <div class="container">
             <p>Data updated: <span id="last-updated">-</span></p>
             <p>
-                <a href="api.html">API Info</a> •
+                <a href="api.html">API Info</a> <span class="footer-sep">&middot;</span>
                 <a href="https://github.com/adarshs02/pl-odds" target="_blank">GitHub</a>
             </p>
         </div>

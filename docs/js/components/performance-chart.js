@@ -23,14 +23,11 @@ export class PerformanceChart {
     getResponsiveMargins() {
         const width = window.innerWidth;
         if (width < 640) {
-            // Mobile: smaller margins
-            return { top: 10, right: 10, bottom: 30, left: 100 };
+            return { top: 10, right: 10, bottom: 10, left: 100 };
         } else if (width < 1024) {
-            // Tablet: medium margins
-            return { top: 15, right: 40, bottom: 35, left: 140 };
+            return { top: 10, right: 40, bottom: 10, left: 140 };
         } else {
-            // Desktop: full margins
-            return { top: 20, right: 80, bottom: 40, left: 220 };
+            return { top: 10, right: 80, bottom: 10, left: 220 };
         }
     }
 
@@ -50,8 +47,8 @@ export class PerformanceChart {
         // Calculate dimensions
         const containerNode = this.container.node();
         const containerWidth = containerNode.clientWidth;
-        const barHeight = 30;
-        const barGap = 10;
+        const barHeight = 24;
+        const barGap = 8;
         const chartHeight = teams.length * (barHeight + barGap) + this.margin.top + this.margin.bottom;
 
         // Store the current container width for resize comparison
@@ -105,7 +102,6 @@ export class PerformanceChart {
             if (this.bookmaker === 'consensus' || !team.totalNetPerformanceByBookmaker) {
                 return team;
             }
-            // Use bookmaker-specific performance
             const bkPerf = team.totalNetPerformanceByBookmaker[this.bookmaker];
             if (bkPerf !== undefined) {
                 return {
@@ -133,7 +129,6 @@ export class PerformanceChart {
     }
 
     updateSectionHeader(teams) {
-        // Find the chart section and update description
         const chartSection = document.querySelector('#performance-chart').closest('.chart-section');
         if (!chartSection) return;
 
@@ -174,51 +169,29 @@ export class PerformanceChart {
         const isMobile = window.innerWidth < 640;
         const isTablet = window.innerWidth >= 640 && window.innerWidth < 1024;
 
-        // X axis (bottom)
-        const xAxis = d3.axisBottom(this.xScale)
-            .ticks(isMobile ? 4 : 6)
-            .tickFormat(d => d.toFixed(1));
-
-        this.svg.append('g')
-            .attr('class', 'x-axis axis')
-            .attr('transform', `translate(0,${this.height})`)
-            .call(xAxis)
-            .selectAll('text')
-            .style('font-size', isMobile ? '10px' : '12px');
-
-        // Y axis (left)
+        // Y axis (left) — team names only
         const yAxis = d3.axisLeft(this.yScale);
 
         this.svg.append('g')
             .attr('class', 'y-axis axis')
             .call(yAxis)
             .selectAll('text')
-            .style('font-size', isMobile ? '10px' : (isTablet ? '11px' : '12px'));
+            .style('font-size', isMobile ? '10px' : (isTablet ? '11px' : '12px'))
+            .style('font-family', 'DM Sans, sans-serif');
 
-        // Zero line
+        // Zero line — subtle
         this.svg.append('line')
             .attr('class', 'zero-line')
             .attr('x1', this.xScale(0))
             .attr('x2', this.xScale(0))
             .attr('y1', 0)
             .attr('y2', this.height)
-            .attr('stroke', Analyzer.getPerformanceColor(0))
-            .attr('stroke-width', 2)
-            .attr('opacity', 0.5);
-
-        // Grid lines
-        this.svg.append('g')
-            .attr('class', 'grid')
-            .call(d3.axisBottom(this.xScale)
-                .ticks(6)
-                .tickSize(-this.height)
-                .tickFormat('')
-            );
+            .attr('stroke', 'var(--chart-grid)')
+            .attr('stroke-width', 1)
+            .attr('opacity', 0.3);
     }
 
     drawBars(teams) {
-        const isMobile = window.innerWidth < 640;
-
         const bars = this.svg.selectAll('.bar')
             .data(teams)
             .enter()
@@ -229,7 +202,7 @@ export class PerformanceChart {
             .attr('width', 0)
             .attr('height', this.yScale.bandwidth())
             .attr('fill', d => Analyzer.getPerformanceColor(d.totalNetPerformance))
-            .attr('rx', 4)
+            .attr('rx', 2)
             .style('cursor', 'pointer')
             .on('mouseover', (event, d) => this.handleMouseOver(event, d))
             .on('mouseout', () => this.handleMouseOut())
@@ -239,51 +212,37 @@ export class PerformanceChart {
                 Router.navigateToTeam(d.name);
             });
 
-        // Animate bars
+        // Animate bars with stagger
         bars.transition()
-            .duration(800)
-            .ease(d3.easeElastic)
+            .duration(600)
+            .delay((d, i) => i * 30)
+            .ease(d3.easeCubicOut)
             .attr('width', d => Math.abs(this.xScale(d.totalNetPerformance) - this.xScale(0)));
 
-        // Add value labels
-        const minBarWidth = isMobile ? 30 : 40;
+        // Add value labels — always outside bar
         this.svg.selectAll('.label')
             .data(teams)
             .enter()
             .append('text')
             .attr('class', 'label')
             .attr('x', d => {
-                const barEnd = d.totalNetPerformance >= 0
-                    ? this.xScale(d.totalNetPerformance)
-                    : this.xScale(d.totalNetPerformance);
-                const barWidth = Math.abs(this.xScale(d.totalNetPerformance) - this.xScale(0));
-
-                // If bar is too small, put label outside
-                if (barWidth < minBarWidth) {
-                    return barEnd + (d.totalNetPerformance >= 0 ? 8 : -8);
+                if (d.totalNetPerformance >= 0) {
+                    return this.xScale(d.totalNetPerformance) + 8;
+                } else {
+                    return this.xScale(d.totalNetPerformance) - 8;
                 }
-                // Otherwise, put label inside the bar
-                return barEnd - (d.totalNetPerformance >= 0 ? 5 : -5);
             })
             .attr('y', d => this.yScale(d.name) + this.yScale.bandwidth() / 2)
             .attr('dy', '0.35em')
-            .attr('text-anchor', d => {
-                const barWidth = Math.abs(this.xScale(d.totalNetPerformance) - this.xScale(0));
-                if (barWidth < minBarWidth) {
-                    return d.totalNetPerformance >= 0 ? 'start' : 'end';
-                }
-                return d.totalNetPerformance >= 0 ? 'end' : 'start';
-            })
-            .attr('fill', d => {
-                const barWidth = Math.abs(this.xScale(d.totalNetPerformance) - this.xScale(0));
-                return barWidth < minBarWidth ? 'var(--text-secondary)' : 'var(--bg-primary)';
-            })
-            .attr('font-size', isMobile ? '10px' : '12px')
-            .attr('font-weight', '600')
+            .attr('text-anchor', d => d.totalNetPerformance >= 0 ? 'start' : 'end')
+            .attr('fill', 'var(--text-secondary)')
+            .attr('font-family', 'DM Sans, sans-serif')
+            .attr('font-size', '0.75rem')
+            .attr('font-weight', '500')
             .attr('opacity', 0)
             .text(d => Analyzer.formatNetPerf(d.totalNetPerformance))
             .transition()
-            .delay(800)
+            .delay((d, i) => 600 + i * 30)
             .duration(300)
             .attr('opacity', 1);
     }
@@ -303,9 +262,9 @@ export class PerformanceChart {
                 <div class="tooltip-content">
                     <strong>Net Performance:</strong> ${Analyzer.formatNetPerf(d.totalNetPerformance)}<br>
                     <strong>Matches:</strong> ${d.statistics.matchesPlayed}<br>
-                    <strong>Win Rate (Moneyline):</strong> ${(d.statistics.winRate * 100).toFixed(1)}%<br>
-                    <strong>Spread Cover Rate:</strong> ${(d.statistics.coverRate * 100).toFixed(1)}%<br>
-                    <em>Click to view details</em>
+                    <strong>Win Rate:</strong> ${(d.statistics.winRate * 100).toFixed(1)}%<br>
+                    <strong>Cover Rate:</strong> ${(d.statistics.coverRate * 100).toFixed(1)}%<br>
+                    <em style="color: var(--text-tertiary);">Click to view details</em>
                 </div>
             `)
             .style('left', (event.pageX + 15) + 'px')
@@ -317,16 +276,12 @@ export class PerformanceChart {
     }
 
     handleResize() {
-        // Only rebuild chart if width actually changed
-        // This prevents re-renders from mobile scroll (browser UI hide/show)
         clearTimeout(this.resizeTimer);
         this.resizeTimer = setTimeout(() => {
             const containerNode = this.container.node();
             if (!containerNode) return;
 
             const currentWidth = containerNode.clientWidth;
-            // Only reinitialize if width changed significantly (more than 10px)
-            // This filters out minor fluctuations from mobile scroll
             if (Math.abs(currentWidth - (this.lastContainerWidth || 0)) > 10) {
                 this.init();
             }
@@ -362,7 +317,6 @@ export class PerformanceChart {
     }
 
     updateColors() {
-        // Update bar colors when theme changes
         d3.selectAll('.bar')
             .attr('fill', d => Analyzer.getPerformanceColor(d.totalNetPerformance));
     }
