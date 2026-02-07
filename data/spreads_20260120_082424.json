@@ -1,0 +1,350 @@
+[
+  {
+    "id": "a396966205b21287109ea8cae42e44c1",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-01-24T12:30:00Z",
+    "home_team": "West Ham United",
+    "away_team": "Sunderland",
+    "bookmakers": []
+  },
+  {
+    "id": "db78ecd9c2d10ab045a91fa64d90a172",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-01-24T15:00:00Z",
+    "home_team": "Fulham",
+    "away_team": "Brighton and Hove Albion",
+    "bookmakers": [
+      {
+        "key": "matchbook",
+        "title": "Matchbook",
+        "last_update": "2026-01-20T08:23:52Z",
+        "markets": [
+          {
+            "key": "spreads",
+            "last_update": "2026-01-20T08:23:52Z",
+            "outcomes": [
+              {
+                "name": "Brighton and Hove Albion",
+                "price": 1.83,
+                "point": 0.0
+              },
+              {
+                "name": "Fulham",
+                "price": 1.71,
+                "point": 0.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "1e811fa7ead0a3e6ef920b15b2bbb95d",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-01-24T15:00:00Z",
+    "home_team": "Burnley",
+    "away_team": "Tottenham Hotspur",
+    "bookmakers": [
+      {
+        "key": "matchbook",
+        "title": "Matchbook",
+        "last_update": "2026-01-20T08:23:52Z",
+        "markets": [
+          {
+            "key": "spreads",
+            "last_update": "2026-01-20T08:23:52Z",
+            "outcomes": [
+              {
+                "name": "Burnley",
+                "price": 2.08,
+                "point": 0.25
+              },
+              {
+                "name": "Tottenham Hotspur",
+                "price": 1.81,
+                "point": -0.25
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "b32426b16a13c60170645be87a6b5cf5",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-01-24T15:00:00Z",
+    "home_team": "Manchester City",
+    "away_team": "Wolverhampton Wanderers",
+    "bookmakers": [
+      {
+        "key": "matchbook",
+        "title": "Matchbook",
+        "last_update": "2026-01-20T08:23:52Z",
+        "markets": [
+          {
+            "key": "spreads",
+            "last_update": "2026-01-20T08:23:52Z",
+            "outcomes": [
+              {
+                "name": "Manchester City",
+                "price": 2.0,
+                "point": -2.0
+              },
+              {
+                "name": "Wolverhampton Wanderers",
+                "price": 1.88,
+                "point": 2.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "7f9f2414fa5b890e516960bfcb8f153d",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-01-24T17:30:00Z",
+    "home_team": "Bournemouth",
+    "away_team": "Liverpool",
+    "bookmakers": [
+      {
+        "key": "matchbook",
+        "title": "Matchbook",
+        "last_update": "2026-01-20T08:23:52Z",
+        "markets": [
+          {
+            "key": "spreads",
+            "last_update": "2026-01-20T08:23:52Z",
+            "outcomes": [
+              {
+                "name": "Bournemouth",
+                "price": 1.9,
+                "point": 0.5
+              },
+              {
+                "name": "Liverpool",
+                "price": 1.81,
+                "point": -0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "1ca6d3d9cde3e58a39211feb9188530c",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-01-25T14:00:00Z",
+    "home_team": "Newcastle United",
+    "away_team": "Aston Villa",
+    "bookmakers": [
+      {
+        "key": "matchbook",
+        "title": "Matchbook",
+        "last_update": "2026-01-20T08:23:52Z",
+        "markets": [
+          {
+            "key": "spreads",
+            "last_update": "2026-01-20T08:23:52Z",
+            "outcomes": [
+              {
+                "name": "Aston Villa",
+                "price": 1.9,
+                "point": 0.5
+              },
+              {
+                "name": "Newcastle United",
+                "price": 2.0,
+                "point": -0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "84aeb5074adb6205fcb1206830a62861",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-01-25T14:00:00Z",
+    "home_team": "Brentford",
+    "away_team": "Nottingham Forest",
+    "bookmakers": [
+      {
+        "key": "matchbook",
+        "title": "Matchbook",
+        "last_update": "2026-01-20T08:23:52Z",
+        "markets": [
+          {
+            "key": "spreads",
+            "last_update": "2026-01-20T08:23:52Z",
+            "outcomes": [
+              {
+                "name": "Brentford",
+                "price": 1.84,
+                "point": -0.5
+              },
+              {
+                "name": "Nottingham Forest",
+                "price": 1.72,
+                "point": 0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "4d6c0ac53b2b38aeb5bc8c8163f3f8b9",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-01-25T14:00:00Z",
+    "home_team": "Crystal Palace",
+    "away_team": "Chelsea",
+    "bookmakers": [
+      {
+        "key": "matchbook",
+        "title": "Matchbook",
+        "last_update": "2026-01-20T08:23:52Z",
+        "markets": [
+          {
+            "key": "spreads",
+            "last_update": "2026-01-20T08:23:52Z",
+            "outcomes": [
+              {
+                "name": "Chelsea",
+                "price": 2.02,
+                "point": -0.5
+              },
+              {
+                "name": "Crystal Palace",
+                "price": 1.87,
+                "point": 0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "5d6e09834e58cd6190113f232aece005",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-01-25T16:30:00Z",
+    "home_team": "Arsenal",
+    "away_team": "Manchester United",
+    "bookmakers": []
+  },
+  {
+    "id": "e90e22b348a38af568f940b4b5d92ca6",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-01-26T20:00:00Z",
+    "home_team": "Everton",
+    "away_team": "Leeds United",
+    "bookmakers": []
+  },
+  {
+    "id": "e52dc0a3276ffe7c9d3630a81b4300ca",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-01-31T15:00:00Z",
+    "home_team": "Leeds United",
+    "away_team": "Arsenal",
+    "bookmakers": []
+  },
+  {
+    "id": "b3c2ff07a6d24ca61f13c268a535c317",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-01-31T15:00:00Z",
+    "home_team": "Wolverhampton Wanderers",
+    "away_team": "Bournemouth",
+    "bookmakers": []
+  },
+  {
+    "id": "36820753efb36739a83c6e5e440827b2",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-01-31T15:00:00Z",
+    "home_team": "Brighton and Hove Albion",
+    "away_team": "Everton",
+    "bookmakers": []
+  },
+  {
+    "id": "a3975ce7f6fd29bb83e7eadc3f7c1b3a",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-01-31T17:30:00Z",
+    "home_team": "Chelsea",
+    "away_team": "West Ham United",
+    "bookmakers": []
+  },
+  {
+    "id": "85b2c858725574961261f22c2b5b5d7e",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-01-31T20:00:00Z",
+    "home_team": "Liverpool",
+    "away_team": "Newcastle United",
+    "bookmakers": []
+  },
+  {
+    "id": "9c612b05e7fc0b581b689380f7405f35",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-02-01T14:00:00Z",
+    "home_team": "Aston Villa",
+    "away_team": "Brentford",
+    "bookmakers": []
+  },
+  {
+    "id": "d2436eec6993a6e21f00887163987e87",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-02-01T14:00:00Z",
+    "home_team": "Nottingham Forest",
+    "away_team": "Crystal Palace",
+    "bookmakers": []
+  },
+  {
+    "id": "ded98b5baf6ff662af13282c2c6c7946",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-02-01T14:00:00Z",
+    "home_team": "Manchester United",
+    "away_team": "Fulham",
+    "bookmakers": []
+  },
+  {
+    "id": "38a3cb5e295f55e274d589fc646cf2dd",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-02-01T16:30:00Z",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Manchester City",
+    "bookmakers": []
+  },
+  {
+    "id": "5d2c6ee96eacb9c4bcac89213bcaf304",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-02-02T20:00:00Z",
+    "home_team": "Sunderland",
+    "away_team": "Burnley",
+    "bookmakers": []
+  }
+]
