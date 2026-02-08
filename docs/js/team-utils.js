@@ -5,37 +5,29 @@
  */
 
 export class TeamUtils {
-    // Verified team badge URLs from Wikipedia/Wikimedia (high quality SVG)
+    // Local team badge SVGs (sourced from Wikipedia/Wikimedia)
+    static LOGO_PATH = 'img/logos/';
     static teamLogos = {
-        'Arsenal': 'https://upload.wikimedia.org/wikipedia/en/5/53/Arsenal_FC.svg',
-        'Aston Villa': null, // Will use fallback
-        'Bournemouth': 'https://upload.wikimedia.org/wikipedia/en/e/e5/AFC_Bournemouth_%282013%29.svg',
-        'Brentford': 'https://upload.wikimedia.org/wikipedia/en/2/2a/Brentford_FC_crest.svg',
-        'Brighton': 'https://upload.wikimedia.org/wikipedia/en/f/fd/Brighton_%26_Hove_Albion_logo.svg',
-        'Chelsea': 'https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg',
-        'Crystal Palace': 'https://upload.wikimedia.org/wikipedia/en/a/a2/Crystal_Palace_FC_logo_%282022%29.svg',
-        'Everton': 'https://upload.wikimedia.org/wikipedia/en/7/7c/Everton_FC_logo.svg',
-        'Fulham': 'https://upload.wikimedia.org/wikipedia/en/e/eb/Fulham_FC_%28shield%29.svg',
-        'Ipswich Town': 'https://upload.wikimedia.org/wikipedia/en/4/43/Ipswich_Town.svg',
-        'Leicester City': 'https://upload.wikimedia.org/wikipedia/en/2/2d/Leicester_City_crest.svg',
-        'Liverpool': 'https://upload.wikimedia.org/wikipedia/en/0/0c/Liverpool_FC.svg',
-        'Manchester City': 'https://upload.wikimedia.org/wikipedia/en/e/eb/Manchester_City_FC_badge.svg',
-        'Manchester United': 'https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_crest.svg',
-        'Newcastle United': 'https://upload.wikimedia.org/wikipedia/en/5/56/Newcastle_United_Logo.svg',
-        'Nottingham Forest': 'https://upload.wikimedia.org/wikipedia/en/e/e5/Nottingham_Forest_F.C._logo.svg',
-        'Southampton': 'https://upload.wikimedia.org/wikipedia/en/c/c9/FC_Southampton.svg',
-        'Tottenham': 'https://upload.wikimedia.org/wikipedia/en/b/b4/Tottenham_Hotspur.svg',
-        'West Ham United': 'https://upload.wikimedia.org/wikipedia/en/c/c2/West_Ham_United_FC_logo.svg',
-        'Wolverhampton': 'https://upload.wikimedia.org/wikipedia/en/f/fc/Wolverhampton_Wanderers.svg',
-        // Aliases
-        'Man City': 'https://upload.wikimedia.org/wikipedia/en/e/eb/Manchester_City_FC_badge.svg',
-        'Man United': 'https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_crest.svg',
-        'Newcastle': 'https://upload.wikimedia.org/wikipedia/en/5/56/Newcastle_United_Logo.svg',
-        'Leeds': 'https://upload.wikimedia.org/wikipedia/en/5/54/Leeds_United_F.C._logo.svg',
-        'Spurs': 'https://upload.wikimedia.org/wikipedia/en/b/b4/Tottenham_Hotspur.svg',
-        'Nott\'m Forest': 'https://upload.wikimedia.org/wikipedia/en/e/e5/Nottingham_Forest_F.C._logo.svg',
-        'West Ham': 'https://upload.wikimedia.org/wikipedia/en/c/c2/West_Ham_United_FC_logo.svg',
-        'Wolves': 'https://upload.wikimedia.org/wikipedia/en/f/fc/Wolverhampton_Wanderers.svg'
+        'Arsenal': 'arsenal.svg',
+        'Aston Villa': 'aston-villa.svg',
+        'Bournemouth': 'bournemouth.svg',
+        'Brentford': 'brentford.svg',
+        'Brighton': 'brighton.svg',
+        'Burnley': 'burnley.svg',
+        'Chelsea': 'chelsea.svg',
+        'Crystal Palace': 'crystal-palace.svg',
+        'Everton': 'everton.svg',
+        'Fulham': 'fulham.svg',
+        'Leeds': 'leeds.svg',
+        'Liverpool': 'liverpool.svg',
+        'Man City': 'man-city.svg',
+        'Man United': 'man-united.svg',
+        'Newcastle': 'newcastle.svg',
+        "Nott'm Forest": 'nottm-forest.svg',
+        'Sunderland': 'sunderland.svg',
+        'Tottenham': 'tottenham.svg',
+        'West Ham': 'west-ham.svg',
+        'Wolves': 'wolves.svg',
     };
 
     // Team colors for fallback backgrounds
@@ -71,10 +63,11 @@ export class TeamUtils {
     };
 
     /**
-     * Get team logo URL from Wikipedia/Wikimedia Commons
+     * Get team logo URL (local SVG files)
      */
     static getLogoUrl(teamName) {
-        return this.teamLogos[teamName] || null;
+        const filename = this.teamLogos[teamName];
+        return filename ? this.LOGO_PATH + filename : null;
     }
 
     /**
