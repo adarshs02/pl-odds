@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-08T13:22:06.300356Z",
+  "lastUpdated": "2026-02-08T13:41:48.480752Z",
   "upcomingMatches": [
     {
       "id": "a7f9683fe58c4fc6a5ac52396f279456",
@@ -19,7 +19,8 @@
         "homePoint": -0.5,
         "awayPoint": 0.5,
         "byBookmaker": {
-          "matchbook": -0.5
+          "matchbook": -0.5,
+          "mybookieag": -0.5
         }
       }
     },
@@ -38,10 +39,11 @@
         "impliedProbAway": 0.364
       },
       "spread": {
-        "homePoint": -0.25,
-        "awayPoint": 0.25,
+        "homePoint": -0.38,
+        "awayPoint": 0.38,
         "byBookmaker": {
-          "matchbook": -0.25
+          "matchbook": -0.25,
+          "mybookieag": -0.5
         }
       }
     },
@@ -60,10 +62,11 @@
         "impliedProbAway": 0.345
       },
       "spread": {
-        "homePoint": -0.25,
-        "awayPoint": 0.25,
+        "homePoint": -0.38,
+        "awayPoint": 0.38,
         "byBookmaker": {
-          "matchbook": -0.25
+          "matchbook": -0.25,
+          "mybookieag": -0.5
         }
       }
     },
@@ -82,10 +85,11 @@
         "impliedProbAway": 0.2
       },
       "spread": {
-        "homePoint": -1.0,
-        "awayPoint": 1.0,
+        "homePoint": -0.75,
+        "awayPoint": 0.75,
         "byBookmaker": {
-          "matchbook": -1.0
+          "matchbook": -1.0,
+          "mybookieag": -0.5
         }
       }
     },
@@ -104,10 +108,11 @@
         "impliedProbAway": 0.385
       },
       "spread": {
-        "homePoint": 0.0,
-        "awayPoint": -0.0,
+        "homePoint": 0.25,
+        "awayPoint": -0.25,
         "byBookmaker": {
-          "matchbook": 0.0
+          "matchbook": 0.0,
+          "mybookieag": 0.5
         }
       }
     },
@@ -126,10 +131,11 @@
         "impliedProbAway": 0.535
       },
       "spread": {
-        "homePoint": 0.75,
-        "awayPoint": -0.75,
+        "homePoint": 0.62,
+        "awayPoint": -0.62,
         "byBookmaker": {
-          "matchbook": 0.75
+          "matchbook": 0.75,
+          "mybookieag": 0.5
         }
       }
     },
@@ -151,7 +157,8 @@
         "homePoint": -0.5,
         "awayPoint": 0.5,
         "byBookmaker": {
-          "matchbook": -0.5
+          "matchbook": -0.5,
+          "mybookieag": -0.5
         }
       }
     },
@@ -170,10 +177,11 @@
         "impliedProbAway": 0.19
       },
       "spread": {
-        "homePoint": -0.75,
-        "awayPoint": 0.75,
+        "homePoint": -0.62,
+        "awayPoint": 0.62,
         "byBookmaker": {
-          "matchbook": -0.75
+          "matchbook": -0.75,
+          "mybookieag": -0.5
         }
       }
     },
@@ -190,6 +198,13 @@
         "impliedProbHome": 0.73,
         "impliedProbDraw": 0.2,
         "impliedProbAway": 0.133
+      },
+      "spread": {
+        "homePoint": -1.5,
+        "awayPoint": 1.5,
+        "byBookmaker": {
+          "mybookieag": -1.5
+        }
       }
     },
     {
@@ -205,6 +220,13 @@
         "impliedProbHome": 0.606,
         "impliedProbDraw": 0.26,
         "impliedProbAway": 0.19
+      },
+      "spread": {
+        "homePoint": -0.5,
+        "awayPoint": 0.5,
+        "byBookmaker": {
+          "mybookieag": -0.5
+        }
       }
     },
     {
@@ -220,6 +242,13 @@
         "impliedProbHome": 0.2,
         "impliedProbDraw": 0.244,
         "impliedProbAway": 0.621
+      },
+      "spread": {
+        "homePoint": 0.5,
+        "awayPoint": -0.5,
+        "byBookmaker": {
+          "mybookieag": 0.5
+        }
       }
     },
     {
@@ -235,12 +264,20 @@
         "impliedProbHome": 0.208,
         "impliedProbDraw": 0.256,
         "impliedProbAway": 0.599
+      },
+      "spread": {
+        "homePoint": 0.5,
+        "awayPoint": -0.5,
+        "byBookmaker": {
+          "mybookieag": 0.5
+        }
       }
     }
   ],
   "bookmakers": [
     "backfill",
-    "matchbook"
+    "matchbook",
+    "mybookieag"
   ],
   "totalMatches": 12
 }

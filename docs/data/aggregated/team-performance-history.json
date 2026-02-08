@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-08T13:22:06.256533Z",
+  "lastUpdated": "2026-02-08T13:41:48.440562Z",
   "teams": [
     {
       "name": "Sunderland",
@@ -8436,7 +8436,8 @@
   ],
   "bookmakers": [
     "backfill",
-    "matchbook"
+    "matchbook",
+    "mybookieag"
   ],
   "correlation": 0.415,
   "totalMatches": 248,

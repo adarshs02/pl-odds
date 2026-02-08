@@ -14,8 +14,9 @@ if not API_KEY:
     sys.exit("❌ ODDS_API_KEY not found in environment.")
 
 SPORT = "soccer_epl"
-REGION = "uk"
+REGION = "us"
 MARKETS = "spreads"
+BOOKMAKER = "mybookieag"
 OUT_DIR = pathlib.Path("data")
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -25,7 +26,7 @@ def fetch_spreads():
         "apiKey": API_KEY,
         "regions": REGION,
         "markets": MARKETS,
-        "bookmakers": "bet365",
+        "bookmakers": BOOKMAKER,
     }
     
     print(f"GET {url}")
