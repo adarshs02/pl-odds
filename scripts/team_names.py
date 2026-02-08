@@ -46,3 +46,15 @@ EPL_TEAMS = [
 def normalize(name):
     """Normalize a team name to its canonical form."""
     return NORMALIZATION_MAP.get(name, name)
+
+
+def snap_spread(spread):
+    """Snap Asian handicap quarter lines to half-goal lines.
+    0.25 → 0.5, 0.75 → 0.5, 1.25 → 1.5, 1.75 → 1.5, etc.
+    """
+    frac = abs(spread) % 1
+    if frac == 0.25:
+        return spread + 0.25 if spread > 0 else spread - 0.25
+    elif frac == 0.75:
+        return spread - 0.25 if spread > 0 else spread + 0.25
+    return spread

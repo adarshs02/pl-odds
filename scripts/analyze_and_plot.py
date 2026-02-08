@@ -16,7 +16,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 from datetime import datetime, timedelta
-from team_names import normalize as normalize_team_name
+from team_names import normalize as normalize_team_name, snap_spread
 
 DATA_DIR = pathlib.Path("data")
 IMG_DIR = pathlib.Path("images")
@@ -84,7 +84,7 @@ def load_historical_spreads():
                                             lookup[key][bookmaker_key] = []
                                         lookup[key][bookmaker_key].append({
                                             "commence_time": commence,
-                                            "point": point
+                                            "point": snap_spread(point)
                                         })
                                     break
                             break

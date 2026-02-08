@@ -10,7 +10,7 @@ import json
 import pathlib
 from datetime import datetime
 from collections import defaultdict
-from team_names import normalize as normalize_team_name
+from team_names import normalize as normalize_team_name, snap_spread
 
 DATA_DIR = pathlib.Path("data")
 OUTPUT_DIR = pathlib.Path("docs/data/aggregated")
@@ -66,7 +66,7 @@ def load_all_spreads():
                                     point = o.get("point")
                                     if point is not None:
                                         # Keep latest spread per bookmaker (last file wins)
-                                        lookup[key][bookmaker_key] = point
+                                        lookup[key][bookmaker_key] = snap_spread(point)
                                     break
                             break
         except Exception as e:
