@@ -61,7 +61,15 @@
 
     <!-- Main Content -->
     <main class="main-content">
-        <div class="container">
+        <div class="container dashboard-layout">
+            <!-- Upcoming Matches Sidebar -->
+            <aside class="upcoming-sidebar reveal">
+                <h3 class="sidebar-title">Upcoming</h3>
+                <div class="upcoming-scroll" id="upcoming-matches-strip">
+                    <!-- Populated by JavaScript -->
+                </div>
+            </aside>
+
             <!-- Dashboard View (default) -->
             <div id="dashboard-view" class="view">
                 <!-- Stats Strip -->
@@ -85,13 +93,6 @@
                     <div class="stat-item">
                         <span class="stat-label">Upcoming</span>
                         <span class="stat-value" id="stat-upcoming">-</span>
-                    </div>
-                </section>
-
-                <!-- Upcoming Matches Strip -->
-                <section class="upcoming-strip reveal reveal-delay-1">
-                    <div class="upcoming-scroll" id="upcoming-matches-strip">
-                        <!-- Populated by JavaScript -->
                     </div>
                 </section>
 
