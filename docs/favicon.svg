@@ -1,41 +1,51 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <defs>
-    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#2980b9;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#3498db;stop-opacity:1" />
-    </linearGradient>
-  </defs>
+  <!-- Football/soccer ball -->
+  <circle cx="50" cy="50" r="46" fill="#f5f0e1" stroke="#1a3a2a" stroke-width="3"/>
 
-  <!-- Background circle -->
-  <circle cx="50" cy="50" r="48" fill="url(#grad)"/>
+  <!-- Classic pentagon pattern -->
+  <!-- Center pentagon -->
+  <polygon points="50,36 58.5,42.2 55.3,52 44.7,52 41.5,42.2" fill="#1a3a2a"/>
 
-  <!-- Soccer ball -->
-  <g transform="translate(50, 50)">
-    <!-- White circle for ball -->
-    <circle cx="0" cy="0" r="28" fill="white"/>
+  <!-- Top pentagon -->
+  <polygon points="50,14 58,21.5 54,23 46,23 42,21.5" fill="#1a3a2a"/>
 
-    <!-- Pentagon in center -->
-    <path d="M 0,-10 L 9.5,-3 L 5.9,8.1 L -5.9,8.1 L -9.5,-3 Z" fill="#2c3e50"/>
+  <!-- Top-right pentagon -->
+  <polygon points="76,32 76,42 70,40 66,33 70,27" fill="#1a3a2a"/>
 
-    <!-- Hexagons around pentagon -->
-    <!-- Top -->
-    <path d="M 0,-10 L 9.5,-3 L 7,-16 L -7,-16 L -9.5,-3 Z" fill="#2c3e50"/>
+  <!-- Bottom-right pentagon -->
+  <polygon points="68,62 62,70 55,66 56,58 63,56" fill="#1a3a2a"/>
 
-    <!-- Top right -->
-    <path d="M 9.5,-3 L 5.9,8.1 L 16,7 L 18,-5 Z" fill="#2c3e50"/>
+  <!-- Bottom-left pentagon -->
+  <polygon points="32,62 37,56 44,58 45,66 38,70" fill="#1a3a2a"/>
 
-    <!-- Bottom right -->
-    <path d="M 5.9,8.1 L -5.9,8.1 L -4,18 L 8,17 L 16,7 Z" fill="#2c3e50"/>
+  <!-- Top-left pentagon -->
+  <polygon points="24,32 30,27 34,33 30,40 24,42" fill="#1a3a2a"/>
 
-    <!-- Bottom left -->
-    <path d="M -5.9,8.1 L -9.5,-3 L -18,-5 L -16,7 L -4,18 Z" fill="#2c3e50"/>
+  <!-- Seam lines from center pentagon to outer pentagons -->
+  <line x1="50" y1="36" x2="50" y2="23" stroke="#1a3a2a" stroke-width="2"/>
+  <line x1="58.5" y1="42.2" x2="66" y2="33" stroke="#1a3a2a" stroke-width="2"/>
+  <line x1="55.3" y1="52" x2="63" y2="56" stroke="#1a3a2a" stroke-width="2"/>
+  <line x1="44.7" y1="52" x2="37" y2="56" stroke="#1a3a2a" stroke-width="2"/>
+  <line x1="41.5" y1="42.2" x2="34" y2="33" stroke="#1a3a2a" stroke-width="2"/>
 
-    <!-- Top left -->
-    <path d="M -9.5,-3 L 0,-10 L -7,-16 L -18,-5 Z" fill="#2c3e50"/>
-  </g>
+  <!-- Seam lines between outer pentagons -->
+  <line x1="54" y1="23" x2="70" y2="27" stroke="#1a3a2a" stroke-width="2"/>
+  <line x1="76" y1="42" x2="70" y2="40" stroke="#1a3a2a" stroke-width="2"/>
+  <line x1="70" y1="40" x2="63" y2="56" stroke="#1a3a2a" stroke-width="2"/>
+  <line x1="56" y1="58" x2="55" y2="66" stroke="#1a3a2a" stroke-width="2"/>
+  <line x1="45" y1="66" x2="44" y2="58" stroke="#1a3a2a" stroke-width="2"/>
+  <line x1="37" y1="56" x2="30" y2="40" stroke="#1a3a2a" stroke-width="2"/>
+  <line x1="24" y1="42" x2="30" y2="40" stroke="#1a3a2a" stroke-width="2"/>
+  <line x1="30" y1="27" x2="46" y2="23" stroke="#1a3a2a" stroke-width="2"/>
 
-  <!-- Data points overlay (subtle) -->
-  <circle cx="78" cy="22" r="6" fill="#27ae60" opacity="0.9"/>
-  <circle cx="22" cy="78" r="6" fill="#e74c3c" opacity="0.9"/>
-  <path d="M 22 78 L 78 22" stroke="white" stroke-width="2" stroke-dasharray="3,3" opacity="0.4"/>
+  <!-- Outer edge seams -->
+  <line x1="50" y1="14" x2="50" y2="4" stroke="#1a3a2a" stroke-width="2"/>
+  <line x1="76" y1="32" x2="84" y2="22" stroke="#1a3a2a" stroke-width="2"/>
+  <line x1="76" y1="42" x2="86" y2="50" stroke="#1a3a2a" stroke-width="2"/>
+  <line x1="68" y1="62" x2="78" y2="72" stroke="#1a3a2a" stroke-width="2"/>
+  <line x1="62" y1="70" x2="58" y2="82" stroke="#1a3a2a" stroke-width="2"/>
+  <line x1="38" y1="70" x2="42" y2="82" stroke="#1a3a2a" stroke-width="2"/>
+  <line x1="32" y1="62" x2="22" y2="72" stroke="#1a3a2a" stroke-width="2"/>
+  <line x1="24" y1="42" x2="14" y2="50" stroke="#1a3a2a" stroke-width="2"/>
+  <line x1="24" y1="32" x2="16" y2="22" stroke="#1a3a2a" stroke-width="2"/>
 </svg>
