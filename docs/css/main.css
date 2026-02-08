@@ -217,21 +217,24 @@ h3, th, .stat-label, .theme-toggle, .chart-controls label {
     gap: 2rem;
 }
 
-.logo {
+a.logo {
     display: flex;
+    flex-direction: row;
     align-items: center;
     gap: 0.75rem;
     text-decoration: none;
     cursor: pointer;
 }
 
-.logo:hover {
+a.logo:hover {
     opacity: 0.85;
 }
 
 .logo-icon {
-    width: 44px;
-    height: 44px;
+    width: 40px;
+    height: 40px;
+    max-width: 40px;
+    max-height: 40px;
     flex-shrink: 0;
 }
 
@@ -1122,8 +1125,10 @@ th, td,
     }
 
     .logo-icon {
-        width: 36px;
-        height: 36px;
+        width: 32px;
+        height: 32px;
+        max-width: 32px;
+        max-height: 32px;
     }
 
     .logo h1 {
