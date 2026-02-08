@@ -97,10 +97,10 @@ export class PieChart {
             .attr('text-anchor', 'middle')
             .attr('dy', '-0.1em')
             .attr('fill', getColor('--text-primary'))
-            .attr('font-family', 'Instrument Serif, Georgia, serif')
-            .attr('font-size', '2rem')
-            .attr('font-weight', '400')
-            .attr('letter-spacing', '-0.02em')
+            .attr('font-family', 'Big Shoulders Display, sans-serif')
+            .attr('font-size', '2.5rem')
+            .attr('font-weight', '800')
+            .attr('letter-spacing', '0.02em')
             .text(totalCount);
 
         // Center label — "matches"
@@ -108,11 +108,11 @@ export class PieChart {
             .attr('text-anchor', 'middle')
             .attr('dy', '1.5em')
             .attr('fill', getColor('--text-tertiary'))
-            .attr('font-family', 'DM Sans, sans-serif')
+            .attr('font-family', 'Barlow, sans-serif')
             .attr('font-size', '0.6875rem')
-            .attr('font-weight', '500')
+            .attr('font-weight', '700')
             .attr('text-transform', 'uppercase')
-            .attr('letter-spacing', '0.06em')
+            .attr('letter-spacing', '0.1em')
             .text('MATCHES');
 
         // Horizontal legend below donut
@@ -132,7 +132,7 @@ export class PieChart {
 
         // Create a temp text to measure
         const tempText = svg.append('text')
-            .attr('font-family', 'DM Sans, sans-serif')
+            .attr('font-family', 'Barlow, sans-serif')
             .attr('font-size', '12px')
             .style('visibility', 'hidden');
 
@@ -163,7 +163,7 @@ export class PieChart {
                 .attr('y', 0)
                 .attr('dy', '0.35em')
                 .attr('fill', getColor('--text-secondary'))
-                .attr('font-family', 'DM Sans, sans-serif')
+                .attr('font-family', 'Barlow, sans-serif')
                 .attr('font-size', '12px')
                 .text(item.text);
 

@@ -177,7 +177,7 @@ export class PerformanceChart {
             .call(yAxis)
             .selectAll('text')
             .style('font-size', isMobile ? '10px' : (isTablet ? '11px' : '12px'))
-            .style('font-family', 'DM Sans, sans-serif');
+            .style('font-family', 'Barlow, sans-serif');
 
         // Zero line — subtle
         this.svg.append('line')
@@ -236,7 +236,7 @@ export class PerformanceChart {
             .attr('dy', '0.35em')
             .attr('text-anchor', d => d.totalNetPerformance >= 0 ? 'start' : 'end')
             .attr('fill', 'var(--text-secondary)')
-            .attr('font-family', 'DM Sans, sans-serif')
+            .attr('font-family', 'Barlow, sans-serif')
             .attr('font-size', '0.75rem')
             .attr('font-weight', '500')
             .attr('opacity', 0)

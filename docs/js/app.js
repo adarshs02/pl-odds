@@ -279,7 +279,7 @@ class Dashboard {
                     .attr('y', yScale(lastPoint.value))
                     .attr('dy', '0.35em')
                     .attr('fill', teamData.color)
-                    .attr('font-family', 'DM Sans, sans-serif')
+                    .attr('font-family', 'Barlow, sans-serif')
                     .attr('font-size', '11px')
                     .attr('font-weight', '500')
                     .text(teamData.name);
