@@ -29,10 +29,12 @@ def normalize_team_name(name):
         "Brighton and Hove Albion": "Brighton",
         "Manchester City": "Man City",
         "Manchester United": "Man United",
+        "Newcastle United": "Newcastle",
         "Nottingham Forest": "Nott'm Forest",
         "Tottenham Hotspur": "Tottenham",
         "West Ham United": "West Ham",
-        "Wolverhampton Wanderers": "Wolves"
+        "Wolverhampton Wanderers": "Wolves",
+        "Leeds United": "Leeds",
     }
     return normalization_map.get(name, name)
 

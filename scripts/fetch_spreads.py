@@ -25,6 +25,7 @@ def fetch_spreads():
         "apiKey": API_KEY,
         "regions": REGION,
         "markets": MARKETS,
+        "bookmakers": "bet365",
     }
     
     print(f"GET {url}")

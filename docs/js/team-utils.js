@@ -29,7 +29,12 @@ export class TeamUtils {
         // Aliases
         'Man City': 'https://upload.wikimedia.org/wikipedia/en/e/eb/Manchester_City_FC_badge.svg',
         'Man United': 'https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_crest.svg',
-        'Spurs': 'https://upload.wikimedia.org/wikipedia/en/b/b4/Tottenham_Hotspur.svg'
+        'Newcastle': 'https://upload.wikimedia.org/wikipedia/en/5/56/Newcastle_United_Logo.svg',
+        'Leeds': 'https://upload.wikimedia.org/wikipedia/en/5/54/Leeds_United_F.C._logo.svg',
+        'Spurs': 'https://upload.wikimedia.org/wikipedia/en/b/b4/Tottenham_Hotspur.svg',
+        'Nott\'m Forest': 'https://upload.wikimedia.org/wikipedia/en/e/e5/Nottingham_Forest_F.C._logo.svg',
+        'West Ham': 'https://upload.wikimedia.org/wikipedia/en/c/c2/West_Ham_United_FC_logo.svg',
+        'Wolves': 'https://upload.wikimedia.org/wikipedia/en/f/fc/Wolverhampton_Wanderers.svg'
     };
 
     // Team colors for fallback backgrounds
@@ -53,7 +58,15 @@ export class TeamUtils {
         'Southampton': '#D71920',
         'Tottenham': '#132257',
         'West Ham United': '#7A263A',
-        'Wolverhampton': '#FDB913'
+        'Wolverhampton': '#FDB913',
+        // Aliases for normalized names
+        'Man City': '#6CABDD',
+        'Man United': '#DA291C',
+        'Newcastle': '#241F20',
+        'Leeds': '#FFCD00',
+        'Nott\'m Forest': '#DD0000',
+        'West Ham': '#7A263A',
+        'Wolves': '#FDB913'
     };
 
     /**
@@ -70,9 +83,10 @@ export class TeamUtils {
         // Handle special cases
         if (teamName === 'Manchester City' || teamName === 'Man City') return 'MC';
         if (teamName === 'Manchester United' || teamName === 'Man United') return 'MU';
-        if (teamName === 'Newcastle United') return 'NEW';
-        if (teamName === 'West Ham United') return 'WHU';
-        if (teamName === 'Nottingham Forest') return 'NF';
+        if (teamName === 'Newcastle United' || teamName === 'Newcastle') return 'NEW';
+        if (teamName === 'West Ham United' || teamName === 'West Ham') return 'WHU';
+        if (teamName === 'Nottingham Forest' || teamName === "Nott'm Forest") return 'NF';
+        if (teamName === 'Leeds United' || teamName === 'Leeds') return 'LEE';
         if (teamName === 'Aston Villa') return 'AV';
         if (teamName === 'Crystal Palace') return 'CP';
         if (teamName === 'Brighton') return 'BHA';

@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-08T08:25:56.659266Z",
+  "lastUpdated": "2026-02-08T12:09:15.309885Z",
   "upcomingMatches": [
     {
       "id": "a7f9683fe58c4fc6a5ac52396f279456",
@@ -71,7 +71,7 @@
       "id": "72774f6fb55af274c4982bcb62d4a765",
       "commenceTime": "2026-02-10T19:30:00Z",
       "homeTeam": "Chelsea",
-      "awayTeam": "Leeds United",
+      "awayTeam": "Leeds",
       "h2hOdds": {
         "bookmaker": "DraftKings",
         "home": 1.62,
@@ -93,7 +93,7 @@
       "id": "7dbe188ba5a5b8a16e8d293c2afe1274",
       "commenceTime": "2026-02-10T19:30:00Z",
       "homeTeam": "Tottenham",
-      "awayTeam": "Newcastle United",
+      "awayTeam": "Newcastle",
       "h2hOdds": {
         "bookmaker": "DraftKings",
         "home": 2.5,
