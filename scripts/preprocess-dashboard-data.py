@@ -10,27 +10,11 @@ import json
 import pathlib
 from datetime import datetime
 from collections import defaultdict
+from team_names import normalize as normalize_team_name
 
 DATA_DIR = pathlib.Path("data")
 OUTPUT_DIR = pathlib.Path("docs/data/aggregated")
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-
-def normalize_team_name(name):
-    """
-    Normalize team names to handle API inconsistencies
-    """
-    normalization_map = {
-        "Brighton and Hove Albion": "Brighton",
-        "Manchester City": "Man City",
-        "Manchester United": "Man United",
-        "Newcastle United": "Newcastle",
-        "Nottingham Forest": "Nott'm Forest",
-        "Tottenham Hotspur": "Tottenham",
-        "West Ham United": "West Ham",
-        "Wolverhampton Wanderers": "Wolves",
-        "Leeds United": "Leeds",
-    }
-    return normalization_map.get(name, name)
 
 def load_json(path):
     """Load JSON file safely"""
@@ -226,8 +210,19 @@ def preprocess_team_performance():
     expected_margins = []
     actual_margins = []
 
-    # Process each completed game
-    completed_games = [g for g in scores if g.get("completed")]
+    # Process each completed game (deduplicate by matchup + date)
+    seen_matchups = set()
+    completed_games = []
+    for g in scores:
+        if not g.get("completed"):
+            continue
+        home = normalize_team_name(g["home_team"])
+        away = normalize_team_name(g["away_team"])
+        date = g.get("commence_time", "")[:10]
+        matchup_key = (home, away, date)
+        if matchup_key not in seen_matchups:
+            seen_matchups.add(matchup_key)
+            completed_games.append(g)
     print(f"Processing {len(completed_games)} completed games...")
 
     for game in completed_games:

@@ -116,7 +116,7 @@ After completing every task, update the auto memory files in `~/.claude/projects
 
 ## Team Name Normalization
 
-Used in both Python scripts and JS. The canonical mapping:
+Source of truth: `scripts/team_names.py`. Both Python scripts import from it; `docs/js/team-utils.js` must be kept in sync manually. The canonical mapping:
 
 | API Name                    | Normalized     |
 |-----------------------------|----------------|

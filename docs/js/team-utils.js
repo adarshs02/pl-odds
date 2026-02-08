@@ -1,6 +1,7 @@
 /**
  * Team Utilities
  * Handles team logos, colors, and metadata
+ * NOTE: Keep aliases in sync with scripts/team_names.py (source of truth)
  */
 
 export class TeamUtils {
