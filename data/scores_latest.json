@@ -4957,7 +4957,7 @@
         "score": "1"
       }
     ],
-    "last_update": "2026-02-07T12:41:37Z"
+    "last_update": "2026-02-08T14:11:13Z"
   },
   {
     "id": "78f2e11f06a4662eb94d23b6c7319238",
@@ -4969,15 +4969,15 @@
     "away_team": "Tottenham Hotspur",
     "scores": [
       {
-        "name": "Tottenham Hotspur",
-        "score": "0"
-      },
-      {
         "name": "Manchester United",
         "score": "2"
+      },
+      {
+        "name": "Tottenham Hotspur",
+        "score": "0"
       }
     ],
-    "last_update": "2026-02-08T00:59:58Z"
+    "last_update": "2026-02-08T14:11:13Z"
   },
   {
     "id": "0232baa88f2ea7539654e9f8ebd53272",
@@ -4989,15 +4989,15 @@
     "away_team": "Sunderland",
     "scores": [
       {
-        "name": "Sunderland",
-        "score": "0"
-      },
-      {
         "name": "Arsenal",
         "score": "3"
+      },
+      {
+        "name": "Sunderland",
+        "score": "0"
       }
     ],
-    "last_update": "2026-02-08T00:59:58Z"
+    "last_update": "2026-02-08T14:11:13Z"
   },
   {
     "id": "9a38c80a3bab5163166bcf10f4995e8d",
@@ -5009,15 +5009,15 @@
     "away_team": "Aston Villa",
     "scores": [
       {
-        "name": "Aston Villa",
+        "name": "Bournemouth",
         "score": "1"
       },
       {
-        "name": "Bournemouth",
+        "name": "Aston Villa",
         "score": "1"
       }
     ],
-    "last_update": "2026-02-08T00:59:58Z"
+    "last_update": "2026-02-08T14:11:13Z"
   },
   {
     "id": "8ca6a2f0fb6436b92bf3745d4ba81c54",
@@ -5029,15 +5029,15 @@
     "away_team": "West Ham United",
     "scores": [
       {
-        "name": "West Ham United",
-        "score": "2"
-      },
-      {
         "name": "Burnley",
         "score": "0"
+      },
+      {
+        "name": "West Ham United",
+        "score": "2"
       }
     ],
-    "last_update": "2026-02-08T00:59:58Z"
+    "last_update": "2026-02-08T14:11:13Z"
   },
   {
     "id": "a6fb47d91c1bdfd7152af4938e73b4d3",
@@ -5049,15 +5049,15 @@
     "away_team": "Chelsea",
     "scores": [
       {
-        "name": "Chelsea",
-        "score": "3"
-      },
-      {
         "name": "Wolverhampton Wanderers",
         "score": "1"
+      },
+      {
+        "name": "Chelsea",
+        "score": "3"
       }
     ],
-    "last_update": "2026-02-08T00:59:58Z"
+    "last_update": "2026-02-08T14:11:13Z"
   },
   {
     "id": "5064501681485a3db4abd297a0e775f4",
@@ -5069,15 +5069,15 @@
     "away_team": "Everton",
     "scores": [
       {
-        "name": "Everton",
-        "score": "2"
-      },
-      {
         "name": "Fulham",
         "score": "1"
+      },
+      {
+        "name": "Everton",
+        "score": "2"
       }
     ],
-    "last_update": "2026-02-08T00:59:58Z"
+    "last_update": "2026-02-08T14:11:13Z"
   },
   {
     "id": "5c062fe74faee27e969bdccaa3040ef5",
@@ -5089,14 +5089,54 @@
     "away_team": "Brentford",
     "scores": [
       {
-        "name": "Brentford",
-        "score": "3"
-      },
-      {
         "name": "Newcastle United",
         "score": "2"
+      },
+      {
+        "name": "Brentford",
+        "score": "3"
       }
     ],
-    "last_update": "2026-02-08T00:59:58Z"
+    "last_update": "2026-02-08T14:11:13Z"
+  },
+  {
+    "id": "a7f9683fe58c4fc6a5ac52396f279456",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-02-08T14:00:00Z",
+    "completed": true,
+    "home_team": "Brighton and Hove Albion",
+    "away_team": "Crystal Palace",
+    "scores": [
+      {
+        "name": "Crystal Palace",
+        "score": "1"
+      },
+      {
+        "name": "Brighton and Hove Albion",
+        "score": "0"
+      }
+    ],
+    "last_update": "2026-02-08T23:52:55Z"
+  },
+  {
+    "id": "e526c157d950230afb02bc6534fbaf82",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-02-08T16:30:00Z",
+    "completed": true,
+    "home_team": "Liverpool",
+    "away_team": "Manchester City",
+    "scores": [
+      {
+        "name": "Manchester City",
+        "score": "2"
+      },
+      {
+        "name": "Liverpool",
+        "score": "1"
+      }
+    ],
+    "last_update": "2026-02-08T23:52:55Z"
   }
 ]
