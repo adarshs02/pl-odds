@@ -32,9 +32,10 @@ After completing every task, update the auto memory files in `~/.claude/projects
 │   ├── pl_h2h_odds_*.json        # H2H moneyline odds snapshots
 │   └── pl_winner_odds_*.json     # Outright winner odds (if available)
 ├── scripts/                      # Python data pipeline
+│   ├── team_names.py             # Single source of truth: normalization map + snap_spread()
 │   ├── run_pipeline.py           # Master runner: fetch_scores → fetch_spreads → analyze_and_plot
 │   ├── fetch_scores.py           # Fetch completed EPL scores, merge into scores_latest.json
-│   ├── fetch_spreads.py          # Fetch upcoming spread lines, save timestamped JSON
+│   ├── fetch_spreads.py          # Fetch upcoming spread lines (MyBookie, US region), save timestamped JSON
 │   ├── fetch_epl_h2h.py          # Fetch h2h (moneyline) odds, save timestamped JSON
 │   ├── fetch_odds.py             # Fetch outrights (winner, POTY, top4, relegation)
 │   ├── fetch_epl_winner.py       # Dedicated EPL winner outrights fetcher
@@ -51,7 +52,8 @@ After completing every task, update the auto memory files in `~/.claude/projects
 │   ├── index.html                # Main dashboard page
 │   ├── api.html                  # API info page
 │   ├── css/main.css              # Styles
-│   ├── favicon.svg
+│   ├── favicon.svg               # Football icon in retro theme colors
+│   ├── img/logos/                # Local team badge SVGs (20 EPL teams)
 │   ├── data/
 │   │   ├── team-badges.json      # Team badge image URLs
 │   │   └── aggregated/
@@ -60,12 +62,12 @@ After completing every task, update the auto memory files in `~/.claude/projects
 │   └── js/
 │       ├── app.js                # Main app entry (ES module)
 │       ├── analyzer.js           # Analysis/calculation logic
-│       ├── data-loader.js        # Fetch aggregated JSON data
+│       ├── data-loader.js        # Fetch aggregated JSON data (localStorage cache, 1hr TTL)
 │       ├── router.js             # Client-side routing (dashboard ↔ team detail)
-│       ├── team-utils.js         # Team name normalization, badge lookup
-│       ├── theme-manager.js      # Dark/light theme toggle
+│       ├── team-utils.js         # Team logos, colors, metadata, inline logo helpers
+│       ├── theme-manager.js      # Dark/light theme toggle (sun/moon SVG icons)
 │       └── components/
-│           ├── performance-chart.js  # D3.js horizontal bar chart
+│           ├── performance-chart.js  # D3.js horizontal bar chart (with team logos on Y-axis)
 │           └── pie-chart.js          # D3.js pie charts (results, covers)
 └── README.md                     # Auto-updated with correlation score
 ```
@@ -86,12 +88,14 @@ After completing every task, update the auto memory files in `~/.claude/projects
 
 ### Daily Pipeline (`run_pipeline.py` / `daily_update.yml`)
 1. `fetch_scores.py` — GET `/v4/sports/soccer_epl/scores?daysFrom=3` → merge into `data/scores_latest.json`
-2. `fetch_spreads.py` — GET `/v4/sports/soccer_epl/odds?markets=spreads&regions=uk&bookmakers=bet365` → save timestamped file
+2. `fetch_spreads.py` — GET `/v4/sports/soccer_epl/odds?markets=spreads&regions=us&bookmakers=mybookieag` → save timestamped file
 3. `analyze_and_plot.py` — load all scores + all spread files → compute net performance → generate `images/performance_graph.png` + update README correlation
 
 ### Dashboard Preprocessing (`preprocess-dashboard-data.py`)
 - Runs after the pipeline (in `daily_update.yml`)
 - Reads `scores_latest.json` + all `spreads_*.json` + all `pl_h2h_odds_*.json`
+- Deduplicates matches by `(home, away, date)` tuple (not game ID — API + backfill can have different IDs for same match)
+- Snaps Asian handicap quarter-lines (0.25, 0.75) to half-goal values via `snap_spread()` from `team_names.py`
 - Outputs:
   - `docs/data/aggregated/team-performance-history.json` — per-team stats, match history, per-bookmaker breakdowns
   - `docs/data/aggregated/latest-odds.json` — upcoming matches with merged h2h + spread odds
@@ -106,11 +110,21 @@ After completing every task, update the auto memory files in `~/.claude/projects
 
 - Served from `docs/` directory
 - Vanilla JS with ES modules, D3.js v7 for charts
-- Dark/light theme support
+- Dark/light theme support with sun/moon SVG icon toggle
+- Retro football programme aesthetic: Big Shoulders Display + Barlow fonts, pitch greens, parchment cream, gold accents
 - Two views:
-  - **Dashboard**: stats strip, upcoming matches, performance bar chart (sortable, filterable by matches/location/bookmaker), historical trends line chart
+  - **Dashboard**: stats strip, upcoming matches sidebar (vertical), performance bar chart (sortable, filterable by matches/location/bookmaker), historical trends line chart
   - **Team Detail**: team stats, home/away breakdown, bookmaker comparison table, W/L/D pie chart, spread cover pie chart, performance trend line, full match history table
 - Data loaded from `docs/data/aggregated/*.json` (no backend)
+- localStorage cache with 1-hour TTL in `data-loader.js` — clear cache to see fresh data
+
+### Team Logos
+
+- 20 EPL team SVGs stored locally at `docs/img/logos/` (sourced from Wikipedia/Wikimedia)
+- `TeamUtils.inlineLogo(name, size)` returns `<img>` HTML for DOM/innerHTML contexts
+- `TeamUtils.getLogoUrl(name)` returns path for SVG `<image>` elements in D3 charts
+- Logos appear inline before team names in: upcoming sidebar, match history table, performance chart Y-axis, historical trends labels, tooltips, and team detail header
+- Performance chart Y-axis positions logos using `getBBox()` relative to D3-generated tick text
 
 ---
 

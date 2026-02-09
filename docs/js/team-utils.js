@@ -71,6 +71,15 @@ export class TeamUtils {
     }
 
     /**
+     * Get small inline logo HTML for use before team names
+     */
+    static inlineLogo(teamName, size = 16) {
+        const logoUrl = this.getLogoUrl(teamName);
+        if (!logoUrl) return '';
+        return `<img src="${logoUrl}" alt="" class="inline-logo" style="width: ${size}px; height: ${size}px; object-fit: contain; vertical-align: middle; margin-right: 4px;">`;
+    }
+
+    /**
      * Get team initials for fallback
      */
     static getInitials(teamName) {

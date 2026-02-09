@@ -82,7 +82,6 @@ class Dashboard {
         this.performanceChart = new PerformanceChart('performance-chart', this.data);
 
         // Setup chart controls
-        const sortSelect = document.getElementById('chart-sort');
         const filterSelect = document.getElementById('chart-filter');
         const locationSelect = document.getElementById('chart-location');
         const bookmakerSelect = document.getElementById('chart-bookmaker');
@@ -102,16 +101,11 @@ class Dashboard {
         }
 
         const updateChart = () => {
-            const sortBy = sortSelect ? sortSelect.value : 'performance';
             const filterBy = filterSelect ? filterSelect.value : 'all';
             const locationBy = locationSelect ? locationSelect.value : 'all';
             const bookmaker = bookmakerSelect ? bookmakerSelect.value : 'consensus';
-            this.performanceChart.update(sortBy, filterBy, locationBy, bookmaker);
+            this.performanceChart.update(null, filterBy, locationBy, bookmaker);
         };
-
-        if (sortSelect) {
-            sortSelect.addEventListener('change', updateChart);
-        }
 
         if (filterSelect) {
             filterSelect.addEventListener('change', updateChart);
@@ -158,7 +152,7 @@ class Dashboard {
 
             const homeTeam = document.createElement('span');
             homeTeam.className = 'team-name';
-            homeTeam.textContent = match.homeTeam;
+            homeTeam.innerHTML = TeamUtils.inlineLogo(match.homeTeam, 14) + match.homeTeam;
             homeTeam.dataset.team = match.homeTeam;
 
             const vs = document.createElement('span');
@@ -167,7 +161,7 @@ class Dashboard {
 
             const awayTeam = document.createElement('span');
             awayTeam.className = 'team-name';
-            awayTeam.textContent = match.awayTeam;
+            awayTeam.innerHTML = TeamUtils.inlineLogo(match.awayTeam, 14) + match.awayTeam;
             awayTeam.dataset.team = match.awayTeam;
 
             matchEl.appendChild(homeTeam);
@@ -205,7 +199,7 @@ class Dashboard {
         const containerNode = container.node();
         const containerWidth = containerNode.clientWidth;
         const containerHeight = 400;
-        const margin = { top: 20, right: 140, bottom: 40, left: 50 };
+        const margin = { top: 20, right: 160, bottom: 40, left: 50 };
         const width = containerWidth - margin.left - margin.right;
         const height = containerHeight - margin.top - margin.bottom;
 
@@ -271,12 +265,31 @@ class Dashboard {
                 .attr('r', 2.5)
                 .attr('fill', teamData.color);
 
-            // Inline label at the end of each line
+            // Inline label at the end of each line (logo + name)
             const lastPoint = teamData.values[teamData.values.length - 1];
             if (lastPoint) {
+                const labelX = xScale(lastPoint.date) + 8;
+                const labelY = yScale(lastPoint.value);
+                const logoUrl = TeamUtils.getLogoUrl(teamData.name);
+
+                if (logoUrl) {
+                    const fo = svg.append('foreignObject')
+                        .attr('x', labelX)
+                        .attr('y', labelY - 7)
+                        .attr('width', 14)
+                        .attr('height', 14)
+                        .style('overflow', 'visible');
+                    fo.append('xhtml:img')
+                        .attr('src', logoUrl)
+                        .style('width', '14px')
+                        .style('height', '14px')
+                        .style('object-fit', 'contain')
+                        .style('display', 'block');
+                }
+
                 svg.append('text')
-                    .attr('x', xScale(lastPoint.date) + 8)
-                    .attr('y', yScale(lastPoint.value))
+                    .attr('x', labelX + (logoUrl ? 18 : 0))
+                    .attr('y', labelY)
                     .attr('dy', '0.35em')
                     .attr('fill', teamData.color)
                     .attr('font-family', 'Barlow, sans-serif')
@@ -514,8 +527,8 @@ class Dashboard {
 
             row.innerHTML = `
                 <td style="white-space: nowrap;">${Analyzer.formatDateShort(match.date)}</td>
-                <td class="team-name" data-team="${match.opponent}" style="cursor: pointer;">
-                    ${match.opponent}
+                <td class="team-name" data-team="${match.opponent}" style="cursor: pointer; white-space: nowrap;">
+                    ${TeamUtils.inlineLogo(match.opponent)} ${match.opponent}
                 </td>
                 <td style="text-align: center; text-transform: uppercase; font-size: 0.75rem; font-weight: 500; letter-spacing: 0.04em; color: var(--text-secondary);">
                     ${match.homeAway === 'home' ? 'H' : 'A'}
