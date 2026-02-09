@@ -205,9 +205,9 @@ class Dashboard {
         const containerWidth = containerNode.clientWidth;
         const isMobile = window.innerWidth < 640;
         const isTablet = window.innerWidth >= 640 && window.innerWidth < 1024;
-        const containerHeight = isMobile ? 360 : (isTablet ? 420 : 480);
+        const containerHeight = isMobile ? 320 : (isTablet ? 380 : 420);
         const badgeSize = isMobile ? 14 : (isTablet ? 16 : 18);
-        const margin = { top: 20, right: badgeSize + 16, bottom: 40, left: 50 };
+        const margin = { top: 15, right: badgeSize + 24, bottom: 35, left: 50 };
         const width = containerWidth - margin.left - margin.right;
         const height = containerHeight - margin.top - margin.bottom;
 
@@ -215,6 +215,7 @@ class Dashboard {
         const svg = container.append('svg')
             .attr('width', containerWidth)
             .attr('height', containerHeight)
+            .style('overflow', 'visible')
             .append('g')
             .attr('transform', `translate(${margin.left},${margin.top})`);
 
