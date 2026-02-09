@@ -182,12 +182,17 @@ class Dashboard {
     }
 
     renderHistoricalTrends() {
-        const topTeams = Analyzer.getTopTeams(this.data, 5);
+        const allTeams = Analyzer.getTeamsSortedByPerformance(this.data, true);
+
+        if (this._historicalTrendTooltip) {
+            this._historicalTrendTooltip.remove();
+            this._historicalTrendTooltip = null;
+        }
 
         const container = d3.select('#historical-trends');
         container.html('');
 
-        if (topTeams.length === 0) {
+        if (allTeams.length === 0) {
             container.append('p')
                 .style('text-align', 'center')
                 .style('padding', '2rem')
@@ -198,8 +203,11 @@ class Dashboard {
         // Dimensions
         const containerNode = container.node();
         const containerWidth = containerNode.clientWidth;
-        const containerHeight = 400;
-        const margin = { top: 20, right: 160, bottom: 40, left: 50 };
+        const isMobile = window.innerWidth < 640;
+        const isTablet = window.innerWidth >= 640 && window.innerWidth < 1024;
+        const containerHeight = isMobile ? 360 : (isTablet ? 420 : 480);
+        const badgeSize = isMobile ? 14 : (isTablet ? 16 : 18);
+        const margin = { top: 20, right: badgeSize + 16, bottom: 40, left: 50 };
         const width = containerWidth - margin.left - margin.right;
         const height = containerHeight - margin.top - margin.bottom;
 
@@ -210,16 +218,14 @@ class Dashboard {
             .append('g')
             .attr('transform', `translate(${margin.left},${margin.top})`);
 
-        // Cohesive color palette
-        const teamColors = ['#2C5F8A', '#C0504D', '#3A7D5C', '#B8860B', '#7B6B8D'];
-        const linesData = topTeams.map((team, i) => ({
+        const linesData = allTeams.map(team => ({
             name: team.name,
-            color: teamColors[i],
+            color: TeamUtils.getColor(team.name),
             values: team.matchHistory.map(m => ({
                 date: new Date(m.date),
                 value: m.cumulativeNetPerformance
             }))
-        }));
+        })).filter(d => d.values.length > 0);
 
         // Scales
         const allDates = linesData.flatMap(d => d.values.map(v => v.date));
@@ -233,10 +239,34 @@ class Dashboard {
             .domain([d3.min(allValues) * 1.1, d3.max(allValues) * 1.1])
             .range([height, 0]);
 
-        // Minimal y-axis only (4 ticks, no domain line)
+        // Y grid lines
+        const style = getComputedStyle(document.documentElement);
+        const gridColor = style.getPropertyValue('--chart-grid').trim();
+        svg.append('g')
+            .attr('class', 'grid')
+            .call(d3.axisLeft(yScale).ticks(5).tickSize(-width).tickFormat(''))
+            .selectAll('line')
+            .attr('stroke', gridColor)
+            .attr('stroke-opacity', 0.2);
+
+        // Minimal y-axis (4 ticks)
         svg.append('g')
             .attr('class', 'axis')
             .call(d3.axisLeft(yScale).ticks(4));
+
+        // Zero line
+        const y0 = yScale(0);
+        if (y0 >= 0 && y0 <= height) {
+            const gold = style.getPropertyValue('--accent-primary').trim();
+            svg.append('line')
+                .attr('x1', 0).attr('x2', width)
+                .attr('y1', y0).attr('y2', y0)
+                .attr('stroke', gold)
+                .attr('stroke-width', 1)
+                .attr('stroke-dasharray', '6,4')
+                .attr('opacity', 0.4)
+                .style('pointer-events', 'none');
+        }
 
         // Line generator
         const line = d3.line()
@@ -244,60 +274,110 @@ class Dashboard {
             .y(d => yScale(d.value))
             .curve(d3.curveMonotoneX);
 
-        // Draw lines with dot markers
-        linesData.forEach(teamData => {
-            // Line
-            svg.append('path')
-                .datum(teamData.values)
-                .attr('class', 'trend-line')
-                .attr('fill', 'none')
-                .attr('stroke', teamData.color)
-                .attr('stroke-width', 1.5)
-                .attr('d', line);
+        // Draw each team as a group (line + badge)
+        const teamGroups = svg.selectAll('.trend-team')
+            .data(linesData)
+            .enter()
+            .append('g')
+            .attr('class', 'trend-team')
+            .style('cursor', 'pointer');
 
-            // Dot markers
-            svg.selectAll(`.dot-${teamData.name.replace(/\s+/g, '-')}`)
-                .data(teamData.values)
-                .enter()
-                .append('circle')
-                .attr('cx', d => xScale(d.date))
-                .attr('cy', d => yScale(d.value))
-                .attr('r', 2.5)
-                .attr('fill', teamData.color);
+        // Lines
+        teamGroups.append('path')
+            .datum(d => d.values)
+            .attr('class', 'trend-line')
+            .attr('fill', 'none')
+            .attr('stroke', function() { return d3.select(this.parentNode).datum().color; })
+            .attr('stroke-width', 1.2)
+            .attr('stroke-opacity', 0.45)
+            .attr('d', line);
 
-            // Inline label at the end of each line (logo + name)
-            const lastPoint = teamData.values[teamData.values.length - 1];
-            if (lastPoint) {
-                const labelX = xScale(lastPoint.date) + 8;
-                const labelY = yScale(lastPoint.value);
-                const logoUrl = TeamUtils.getLogoUrl(teamData.name);
+        // Badge at end of each line
+        const halfBadge = badgeSize / 2;
+        teamGroups.each(function(d) {
+            const lastPoint = d.values[d.values.length - 1];
+            if (!lastPoint) return;
 
-                if (logoUrl) {
-                    const fo = svg.append('foreignObject')
-                        .attr('x', labelX)
-                        .attr('y', labelY - 7)
-                        .attr('width', 14)
-                        .attr('height', 14)
-                        .style('overflow', 'visible');
-                    fo.append('xhtml:img')
-                        .attr('src', logoUrl)
-                        .style('width', '14px')
-                        .style('height', '14px')
-                        .style('object-fit', 'contain')
-                        .style('display', 'block');
-                }
+            const g = d3.select(this);
+            const bx = xScale(lastPoint.date);
+            const by = yScale(lastPoint.value);
+            const logoUrl = TeamUtils.getLogoUrl(d.name);
 
-                svg.append('text')
-                    .attr('x', labelX + (logoUrl ? 18 : 0))
-                    .attr('y', labelY)
-                    .attr('dy', '0.35em')
-                    .attr('fill', teamData.color)
-                    .attr('font-family', 'Barlow, sans-serif')
-                    .attr('font-size', '11px')
-                    .attr('font-weight', '500')
-                    .text(teamData.name);
+            if (logoUrl) {
+                g.append('foreignObject')
+                    .attr('class', 'trend-badge')
+                    .attr('x', bx + 4)
+                    .attr('y', by - halfBadge)
+                    .attr('width', badgeSize)
+                    .attr('height', badgeSize)
+                    .style('overflow', 'visible')
+                    .append('xhtml:img')
+                    .attr('src', logoUrl)
+                    .style('width', badgeSize + 'px')
+                    .style('height', badgeSize + 'px')
+                    .style('object-fit', 'contain')
+                    .style('display', 'block');
             }
+
+            // Transparent hit area over badge
+            g.append('circle')
+                .attr('cx', bx + 4 + halfBadge)
+                .attr('cy', by)
+                .attr('r', halfBadge + 4)
+                .attr('fill', 'transparent')
+                .attr('stroke', 'none');
         });
+
+        // Create tooltip for this chart
+        const tooltip = d3.select('body').append('div')
+            .attr('class', 'tooltip historical-trend-tooltip')
+            .style('position', 'absolute')
+            .style('opacity', 0);
+
+        // Hover: highlight one team, dim others
+        teamGroups
+            .on('mouseover', function(event, d) {
+                teamGroups.transition().duration(150)
+                    .style('opacity', g => g.name === d.name ? 1 : 0.1);
+
+                d3.select(this).select('.trend-line')
+                    .attr('stroke-width', 2.5)
+                    .attr('stroke-opacity', 1);
+
+                const lastPoint = d.values[d.values.length - 1];
+                tooltip.style('opacity', 1)
+                    .html(`
+                        <div class="tooltip-title">${TeamUtils.inlineLogo(d.name, 18)} ${d.name}</div>
+                        <div class="tooltip-content">
+                            <strong>Cumulative Net Perf:</strong> ${Analyzer.formatNetPerf(lastPoint.value)}<br>
+                            <strong>Matches:</strong> ${d.values.length}
+                        </div>
+                    `)
+                    .style('left', (event.pageX + 15) + 'px')
+                    .style('top', (event.pageY - 15) + 'px');
+            })
+            .on('mousemove', function(event) {
+                tooltip
+                    .style('left', (event.pageX + 15) + 'px')
+                    .style('top', (event.pageY - 15) + 'px');
+            })
+            .on('mouseout', function() {
+                teamGroups.transition().duration(150)
+                    .style('opacity', 1);
+
+                teamGroups.selectAll('.trend-line')
+                    .attr('stroke-width', 1.2)
+                    .attr('stroke-opacity', 0.45);
+
+                tooltip.style('opacity', 0);
+            })
+            .on('click', function(event, d) {
+                event.preventDefault();
+                Router.navigateToTeam(d.name);
+            });
+
+        // Store tooltip ref for cleanup
+        this._historicalTrendTooltip = tooltip;
     }
 
     renderTeamDetail(teamName) {
