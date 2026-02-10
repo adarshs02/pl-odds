@@ -207,7 +207,7 @@ class Dashboard {
         const isTablet = window.innerWidth >= 640 && window.innerWidth < 1024;
         const containerHeight = isMobile ? 320 : (isTablet ? 380 : 420);
         const badgeSize = isMobile ? 14 : (isTablet ? 16 : 18);
-        const margin = { top: 15, right: badgeSize + 24, bottom: 35, left: 50 };
+        const margin = { top: 15, right: 15, bottom: 35, left: 50 };
         const width = containerWidth - margin.left - margin.right;
         const height = containerHeight - margin.top - margin.bottom;
 
@@ -215,7 +215,6 @@ class Dashboard {
         const svg = container.append('svg')
             .attr('width', containerWidth)
             .attr('height', containerHeight)
-            .style('overflow', 'visible')
             .append('g')
             .attr('transform', `translate(${margin.left},${margin.top})`);
 
@@ -232,17 +231,45 @@ class Dashboard {
         const allDates = linesData.flatMap(d => d.values.map(v => v.date));
         const allValues = linesData.flatMap(d => d.values.map(v => v.value));
 
+        // Leave room for badges at the right end (inside the plot)
+        const badgeMargin = badgeSize + 8;
         const xScale = d3.scaleTime()
             .domain(d3.extent(allDates))
-            .range([0, width]);
+            .range([0, width - badgeMargin]);
 
+        // Widen Y domain so lines stay well inside the box
+        const yMin = d3.min(allValues);
+        const yMax = d3.max(allValues);
+        const yRange = yMax - yMin;
+        const yPad = Math.max(yRange * 0.3, 3);
         const yScale = d3.scaleLinear()
-            .domain([d3.min(allValues) * 1.1, d3.max(allValues) * 1.1])
+            .domain([yMin - yPad, yMax + yPad])
             .range([height, 0]);
 
-        // Y grid lines
         const style = getComputedStyle(document.documentElement);
         const gridColor = style.getPropertyValue('--chart-grid').trim();
+        const borderColor = style.getPropertyValue('--border-color').trim();
+
+        // Plot area border (closed box)
+        svg.append('rect')
+            .attr('x', 0)
+            .attr('y', 0)
+            .attr('width', width)
+            .attr('height', height)
+            .attr('fill', 'none')
+            .attr('stroke', borderColor)
+            .attr('stroke-width', 1);
+
+        // Clip path so lines don't overflow the box
+        svg.append('defs').append('clipPath')
+            .attr('id', 'trend-clip')
+            .append('rect')
+            .attr('x', 0)
+            .attr('y', 0)
+            .attr('width', width)
+            .attr('height', height);
+
+        // Y grid lines
         svg.append('g')
             .attr('class', 'grid')
             .call(d3.axisLeft(yScale).ticks(5).tickSize(-width).tickFormat(''))
@@ -275,8 +302,11 @@ class Dashboard {
             .y(d => yScale(d.value))
             .curve(d3.curveMonotoneX);
 
-        // Draw each team as a group (line + badge)
-        const teamGroups = svg.selectAll('.trend-team')
+        // Draw each team as a group (line + badge), clipped to plot area
+        const clippedArea = svg.append('g')
+            .attr('clip-path', 'url(#trend-clip)');
+
+        const teamGroups = clippedArea.selectAll('.trend-team')
             .data(linesData)
             .enter()
             .append('g')
