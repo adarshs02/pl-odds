@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-09T08:43:21.342731Z",
+  "lastUpdated": "2026-02-10T08:44:02.022969Z",
   "upcomingMatches": [
     {
       "id": "5b5fa92a38c5a46da05ac81d003f6f1e",
@@ -39,11 +39,11 @@
         "impliedProbAway": 0.174
       },
       "spread": {
-        "homePoint": -1.25,
-        "awayPoint": 1.25,
+        "homePoint": -0.75,
+        "awayPoint": 0.75,
         "byBookmaker": {
           "matchbook": -1.0,
-          "mybookieag": -1.5
+          "mybookieag": -0.5
         }
       }
     },
