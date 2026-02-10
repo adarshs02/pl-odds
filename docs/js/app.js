@@ -208,7 +208,7 @@ class Dashboard {
         const containerHeight = isMobile ? 220 : (isTablet ? 260 : 280);
         const badgeSize = isMobile ? 14 : (isTablet ? 16 : 18);
         // Right margin holds badges outside the plot box
-        const margin = { top: 15, right: badgeSize + 12, bottom: 30, left: 40 };
+        const margin = { top: 15, right: badgeSize + 12, bottom: 10, left: 40 };
         const width = containerWidth - margin.left - margin.right;
         const height = containerHeight - margin.top - margin.bottom;
 
@@ -271,18 +271,6 @@ class Dashboard {
         svg.append('g')
             .attr('class', 'axis')
             .call(d3.axisLeft(yScale).ticks(5));
-
-        // X-axis: gameweek numbers at bottom
-        const gwTicks = Math.min(maxGW, isMobile ? 6 : (isTablet ? 10 : 15));
-        svg.append('g')
-            .attr('class', 'axis')
-            .attr('transform', `translate(0,${height})`)
-            .call(d3.axisBottom(xScale)
-                .ticks(gwTicks)
-                .tickFormat(d => `GW${Math.round(d)}`)
-            )
-            .selectAll('text')
-            .style('font-size', isMobile ? '9px' : '10px');
 
         // Zero line
         const y0 = yScale(0);
