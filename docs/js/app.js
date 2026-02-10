@@ -209,8 +209,7 @@ class Dashboard {
         const isTablet = window.innerWidth >= 640 && window.innerWidth < 1024;
         const containerHeight = isMobile ? 220 : (isTablet ? 260 : 280);
         const badgeSize = isMobile ? 14 : (isTablet ? 16 : 18);
-        // Right margin holds badges outside the plot box
-        const margin = { top: 15, right: badgeSize + 12, bottom: 10, left: 40 };
+        const margin = { top: 15, right: 10, bottom: 10, left: 40 };
         const width = containerWidth - margin.left - margin.right;
         const height = containerHeight - margin.top - margin.bottom;
 
@@ -218,7 +217,6 @@ class Dashboard {
         const svg = container.append('svg')
             .attr('width', containerWidth)
             .attr('height', containerHeight)
-            .style('overflow', 'visible')
             .append('g')
             .attr('transform', `translate(${margin.left},${margin.top})`);
 
@@ -296,7 +294,7 @@ class Dashboard {
             .y(d => yScale(d.value))
             .curve(d3.curveMonotoneX);
 
-        // Team groups (lines clipped, badges outside box in right margin)
+        // Team groups (lines + badges clipped to plot area)
         const teamGroups = svg.selectAll('.trend-team')
             .data(linesData)
             .enter()
@@ -329,21 +327,31 @@ class Dashboard {
             .attr('stroke-opacity', 0.45)
             .attr('d', d => line(d.values));
 
-        // Badges outside the box in the right margin
+        // Badges inside the plot area at the end of each line
         const halfBadge = badgeSize / 2;
-        teamGroups.each(function(d) {
+        const badgesGroup = svg.append('g')
+            .attr('clip-path', 'url(#trend-clip-lines)');
+
+        const badgeTeamGroups = badgesGroup.selectAll('.trend-badge-group')
+            .data(linesData)
+            .enter()
+            .append('g')
+            .attr('class', 'trend-badge-group');
+
+        teamGroups.each(function(d, i) {
             const lastPoint = d.values[d.values.length - 1];
             if (!lastPoint) return;
 
             const g = d3.select(this);
-            const bx = width + 4;
+            const bx = xScale(lastPoint.gw);
             const by = yScale(lastPoint.value);
             const logoUrl = TeamUtils.getLogoUrl(d.name);
 
             if (logoUrl) {
-                g.append('foreignObject')
+                d3.select(badgeTeamGroups.nodes()[i])
+                    .append('foreignObject')
                     .attr('class', 'trend-badge')
-                    .attr('x', bx)
+                    .attr('x', bx - halfBadge)
                     .attr('y', by - halfBadge)
                     .attr('width', badgeSize)
                     .attr('height', badgeSize)
@@ -359,7 +367,7 @@ class Dashboard {
             // Transparent hit area covers line + badge
             g.append('rect')
                 .attr('x', 0).attr('y', by - halfBadge - 2)
-                .attr('width', bx + badgeSize)
+                .attr('width', bx + halfBadge)
                 .attr('height', badgeSize + 4)
                 .attr('fill', 'transparent');
         });
@@ -370,12 +378,14 @@ class Dashboard {
             .style('position', 'absolute')
             .style('opacity', 0);
 
-        // Hover: highlight one team, dim others (across both badge + line groups)
+        // Hover: highlight one team, dim others (across line + badge groups)
         teamGroups
             .on('mouseover', function(event, d) {
                 teamGroups.transition().duration(150)
                     .style('opacity', g => g.name === d.name ? 1 : 0.1);
                 lineTeamGroups.transition().duration(150)
+                    .style('opacity', g => g.name === d.name ? 1 : 0.1);
+                badgeTeamGroups.transition().duration(150)
                     .style('opacity', g => g.name === d.name ? 1 : 0.1);
                 lineTeamGroups.filter(g => g.name === d.name).select('.trend-line')
                     .attr('stroke-width', 2.5)
@@ -402,6 +412,8 @@ class Dashboard {
                 teamGroups.transition().duration(150)
                     .style('opacity', 1);
                 lineTeamGroups.transition().duration(150)
+                    .style('opacity', 1);
+                badgeTeamGroups.transition().duration(150)
                     .style('opacity', 1);
                 lineTeamGroups.selectAll('.trend-line')
                     .attr('stroke-width', 1.2)
