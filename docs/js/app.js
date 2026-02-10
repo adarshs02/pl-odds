@@ -200,9 +200,9 @@ class Dashboard {
             return;
         }
 
-        // Dimensions
+        // Dimensions — cap width so chart doesn't stretch full page
         const containerNode = container.node();
-        const containerWidth = containerNode.clientWidth;
+        const containerWidth = Math.min(containerNode.clientWidth, 700);
         const isMobile = window.innerWidth < 640;
         const isTablet = window.innerWidth >= 640 && window.innerWidth < 1024;
         const containerHeight = isMobile ? 220 : (isTablet ? 260 : 280);
