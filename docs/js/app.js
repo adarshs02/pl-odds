@@ -200,14 +200,15 @@ class Dashboard {
             return;
         }
 
-        // Dimensions — symmetric margins, compact height
+        // Dimensions
         const containerNode = container.node();
         const containerWidth = containerNode.clientWidth;
         const isMobile = window.innerWidth < 640;
         const isTablet = window.innerWidth >= 640 && window.innerWidth < 1024;
-        const containerHeight = isMobile ? 300 : (isTablet ? 340 : 380);
+        const containerHeight = isMobile ? 280 : (isTablet ? 320 : 360);
         const badgeSize = isMobile ? 14 : (isTablet ? 16 : 18);
-        const margin = { top: 20, right: 20, bottom: 35, left: 45 };
+        // Right margin holds badges outside the plot box
+        const margin = { top: 15, right: badgeSize + 12, bottom: 30, left: 40 };
         const width = containerWidth - margin.left - margin.right;
         const height = containerHeight - margin.top - margin.bottom;
 
@@ -215,33 +216,31 @@ class Dashboard {
         const svg = container.append('svg')
             .attr('width', containerWidth)
             .attr('height', containerHeight)
+            .style('overflow', 'visible')
             .append('g')
             .attr('transform', `translate(${margin.left},${margin.top})`);
 
+        // Build line data with gameweek index
         const linesData = allTeams.map(team => ({
             name: team.name,
             color: TeamUtils.getColor(team.name),
-            values: team.matchHistory.map(m => ({
-                date: new Date(m.date),
+            values: team.matchHistory.map((m, i) => ({
+                gw: i + 1,
                 value: m.cumulativeNetPerformance
             }))
         })).filter(d => d.values.length > 0);
 
         // Scales
-        const allDates = linesData.flatMap(d => d.values.map(v => v.date));
+        const maxGW = d3.max(linesData, d => d.values.length);
         const allValues = linesData.flatMap(d => d.values.map(v => v.value));
 
-        // Shrink X range to leave room for badges at right end
-        const badgeRoom = badgeSize + 6;
-        const xScale = d3.scaleTime()
-            .domain(d3.extent(allDates))
-            .range([0, width - badgeRoom]);
+        const xScale = d3.scaleLinear()
+            .domain([1, maxGW])
+            .range([0, width]);
 
-        // Wide Y padding so data sits compact in the middle
         const yMin = d3.min(allValues);
         const yMax = d3.max(allValues);
-        const yRange = yMax - yMin;
-        const yPad = Math.max(yRange * 0.5, 5);
+        const yPad = Math.max((yMax - yMin) * 0.25, 3);
         const yScale = d3.scaleLinear()
             .domain([yMin - yPad, yMax + yPad])
             .range([height, 0])
@@ -250,6 +249,7 @@ class Dashboard {
         const style = getComputedStyle(document.documentElement);
         const gridColor = style.getPropertyValue('--chart-grid').trim();
         const borderColor = style.getPropertyValue('--border-color').trim();
+        const textColor = style.getPropertyValue('--chart-text').trim();
 
         // Plot area border (closed box)
         svg.append('rect')
@@ -259,14 +259,7 @@ class Dashboard {
             .attr('stroke', borderColor)
             .attr('stroke-width', 1);
 
-        // Clip path
-        svg.append('defs').append('clipPath')
-            .attr('id', 'trend-clip')
-            .append('rect')
-            .attr('x', 0).attr('y', 0)
-            .attr('width', width).attr('height', height);
-
-        // Y grid lines (inside box)
+        // Y grid lines
         svg.append('g')
             .attr('class', 'grid')
             .call(d3.axisLeft(yScale).ticks(5).tickSize(-width).tickFormat(''))
@@ -274,10 +267,22 @@ class Dashboard {
             .attr('stroke', gridColor)
             .attr('stroke-opacity', 0.15);
 
-        // Y-axis ticks (outside box on left)
+        // Y-axis ticks
         svg.append('g')
             .attr('class', 'axis')
             .call(d3.axisLeft(yScale).ticks(5));
+
+        // X-axis: gameweek numbers at bottom
+        const gwTicks = Math.min(maxGW, isMobile ? 6 : (isTablet ? 10 : 15));
+        svg.append('g')
+            .attr('class', 'axis')
+            .attr('transform', `translate(0,${height})`)
+            .call(d3.axisBottom(xScale)
+                .ticks(gwTicks)
+                .tickFormat(d => `GW${Math.round(d)}`)
+            )
+            .selectAll('text')
+            .style('font-size', isMobile ? '9px' : '10px');
 
         // Zero line
         const y0 = yScale(0);
@@ -293,51 +298,64 @@ class Dashboard {
                 .style('pointer-events', 'none');
         }
 
-        // Line generator
+        // Line generator (gameweek on X)
         const line = d3.line()
-            .x(d => xScale(d.date))
+            .x(d => xScale(d.gw))
             .y(d => yScale(d.value))
             .curve(d3.curveMonotoneX);
 
-        // All lines + badges clipped to the box
-        const clippedArea = svg.append('g')
-            .attr('clip-path', 'url(#trend-clip)');
-
-        const teamGroups = clippedArea.selectAll('.trend-team')
+        // Team groups (lines clipped, badges outside box in right margin)
+        const teamGroups = svg.selectAll('.trend-team')
             .data(linesData)
             .enter()
             .append('g')
             .attr('class', 'trend-team')
             .style('cursor', 'pointer');
 
-        // Lines
-        teamGroups.append('path')
-            .datum(d => d.values)
+        // Lines (clipped to box via clipPath on a sub-group)
+        const linesGroup = svg.append('g')
+            .attr('clip-path', 'url(#trend-clip-lines)');
+
+        svg.append('defs').append('clipPath')
+            .attr('id', 'trend-clip-lines')
+            .append('rect')
+            .attr('x', 0).attr('y', 0)
+            .attr('width', width).attr('height', height);
+
+        // Re-select team groups into the clipped lines area
+        const lineTeamGroups = linesGroup.selectAll('.trend-line-group')
+            .data(linesData)
+            .enter()
+            .append('g')
+            .attr('class', 'trend-line-group');
+
+        lineTeamGroups.append('path')
             .attr('class', 'trend-line')
             .attr('fill', 'none')
-            .attr('stroke', function() { return d3.select(this.parentNode).datum().color; })
+            .attr('stroke', d => d.color)
             .attr('stroke-width', 1.2)
             .attr('stroke-opacity', 0.45)
-            .attr('d', line);
+            .attr('d', d => line(d.values));
 
-        // Badge at the end of each line (inside box)
+        // Badges outside the box in the right margin
         const halfBadge = badgeSize / 2;
         teamGroups.each(function(d) {
             const lastPoint = d.values[d.values.length - 1];
             if (!lastPoint) return;
 
             const g = d3.select(this);
-            const bx = xScale(lastPoint.date);
+            const bx = width + 4;
             const by = yScale(lastPoint.value);
             const logoUrl = TeamUtils.getLogoUrl(d.name);
 
             if (logoUrl) {
                 g.append('foreignObject')
                     .attr('class', 'trend-badge')
-                    .attr('x', bx + 3)
+                    .attr('x', bx)
                     .attr('y', by - halfBadge)
                     .attr('width', badgeSize)
                     .attr('height', badgeSize)
+                    .style('overflow', 'visible')
                     .append('xhtml:img')
                     .attr('src', logoUrl)
                     .style('width', badgeSize + 'px')
@@ -346,11 +364,11 @@ class Dashboard {
                     .style('display', 'block');
             }
 
-            // Transparent hit area
-            g.append('circle')
-                .attr('cx', bx + 3 + halfBadge)
-                .attr('cy', by)
-                .attr('r', halfBadge + 4)
+            // Transparent hit area covers line + badge
+            g.append('rect')
+                .attr('x', 0).attr('y', by - halfBadge - 2)
+                .attr('width', bx + badgeSize)
+                .attr('height', badgeSize + 4)
                 .attr('fill', 'transparent');
         });
 
@@ -360,13 +378,14 @@ class Dashboard {
             .style('position', 'absolute')
             .style('opacity', 0);
 
-        // Hover: highlight one team, dim others
+        // Hover: highlight one team, dim others (across both badge + line groups)
         teamGroups
             .on('mouseover', function(event, d) {
                 teamGroups.transition().duration(150)
                     .style('opacity', g => g.name === d.name ? 1 : 0.1);
-
-                d3.select(this).select('.trend-line')
+                lineTeamGroups.transition().duration(150)
+                    .style('opacity', g => g.name === d.name ? 1 : 0.1);
+                lineTeamGroups.filter(g => g.name === d.name).select('.trend-line')
                     .attr('stroke-width', 2.5)
                     .attr('stroke-opacity', 1);
 
@@ -390,8 +409,9 @@ class Dashboard {
             .on('mouseout', function() {
                 teamGroups.transition().duration(150)
                     .style('opacity', 1);
-
-                teamGroups.selectAll('.trend-line')
+                lineTeamGroups.transition().duration(150)
+                    .style('opacity', 1);
+                lineTeamGroups.selectAll('.trend-line')
                     .attr('stroke-width', 1.2)
                     .attr('stroke-opacity', 0.45);
 
