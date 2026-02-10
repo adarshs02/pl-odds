@@ -27,21 +27,21 @@ export class PerformanceChart {
         if (vw < 640) {
             return {
                 width: containerWidth,
-                height: 360,
+                height: 300,
                 margin: { top: 30, right: 20, bottom: 50, left: 55 },
                 badgeSize: 16
             };
         } else if (vw < 1024) {
             return {
                 width: containerWidth,
-                height: 450,
+                height: 340,
                 margin: { top: 35, right: 30, bottom: 55, left: 60 },
                 badgeSize: 20
             };
         } else {
             return {
                 width: containerWidth,
-                height: 520,
+                height: 400,
                 margin: { top: 40, right: 40, bottom: 60, left: 65 },
                 badgeSize: 24
             };

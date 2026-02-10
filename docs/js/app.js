@@ -205,7 +205,7 @@ class Dashboard {
         const containerWidth = containerNode.clientWidth;
         const isMobile = window.innerWidth < 640;
         const isTablet = window.innerWidth >= 640 && window.innerWidth < 1024;
-        const containerHeight = isMobile ? 280 : (isTablet ? 320 : 360);
+        const containerHeight = isMobile ? 220 : (isTablet ? 260 : 280);
         const badgeSize = isMobile ? 14 : (isTablet ? 16 : 18);
         // Right margin holds badges outside the plot box
         const margin = { top: 15, right: badgeSize + 12, bottom: 30, left: 40 };
