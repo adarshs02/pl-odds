@@ -272,19 +272,21 @@ class Dashboard {
             .attr('class', 'axis')
             .call(d3.axisLeft(yScale).ticks(5));
 
-        // Zero line
-        const y0 = yScale(0);
-        if (y0 > 0 && y0 < height) {
-            const gold = style.getPropertyValue('--accent-primary').trim();
-            svg.append('line')
-                .attr('x1', 0).attr('x2', width)
-                .attr('y1', y0).attr('y2', y0)
-                .attr('stroke', gold)
-                .attr('stroke-width', 1)
-                .attr('stroke-dasharray', '6,4')
-                .attr('opacity', 0.4)
-                .style('pointer-events', 'none');
-        }
+        // Horizontal reference lines at 0, ±10, ±20
+        const gold = style.getPropertyValue('--accent-primary').trim();
+        [0, 10, -10, 20, -20].forEach(val => {
+            const yPos = yScale(val);
+            if (yPos > 0 && yPos < height) {
+                svg.append('line')
+                    .attr('x1', 0).attr('x2', width)
+                    .attr('y1', yPos).attr('y2', yPos)
+                    .attr('stroke', val === 0 ? gold : gridColor)
+                    .attr('stroke-width', 1)
+                    .attr('stroke-dasharray', val === 0 ? '6,4' : '4,3')
+                    .attr('opacity', val === 0 ? 0.4 : 0.25)
+                    .style('pointer-events', 'none');
+            }
+        });
 
         // Line generator (gameweek on X)
         const line = d3.line()
