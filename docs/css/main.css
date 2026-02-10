@@ -553,10 +553,6 @@ a.logo:hover {
     margin-top: 0.25rem;
 }
 
-/* Constrain historical trends chart width */
-#historical-trends {
-    max-width: 700px;
-}
 
 /* ===== Chart Controls — retro control panel ===== */
 .chart-controls {
