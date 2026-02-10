@@ -200,14 +200,14 @@ class Dashboard {
             return;
         }
 
-        // Dimensions
+        // Dimensions — symmetric margins, compact height
         const containerNode = container.node();
         const containerWidth = containerNode.clientWidth;
         const isMobile = window.innerWidth < 640;
         const isTablet = window.innerWidth >= 640 && window.innerWidth < 1024;
-        const containerHeight = isMobile ? 320 : (isTablet ? 380 : 420);
+        const containerHeight = isMobile ? 300 : (isTablet ? 340 : 380);
         const badgeSize = isMobile ? 14 : (isTablet ? 16 : 18);
-        const margin = { top: 15, right: 15, bottom: 35, left: 50 };
+        const margin = { top: 20, right: 20, bottom: 35, left: 45 };
         const width = containerWidth - margin.left - margin.right;
         const height = containerHeight - margin.top - margin.bottom;
 
@@ -231,20 +231,21 @@ class Dashboard {
         const allDates = linesData.flatMap(d => d.values.map(v => v.date));
         const allValues = linesData.flatMap(d => d.values.map(v => v.value));
 
-        // Leave room for badges at the right end (inside the plot)
-        const badgeMargin = badgeSize + 8;
+        // Shrink X range to leave room for badges at right end
+        const badgeRoom = badgeSize + 6;
         const xScale = d3.scaleTime()
             .domain(d3.extent(allDates))
-            .range([0, width - badgeMargin]);
+            .range([0, width - badgeRoom]);
 
-        // Widen Y domain so lines stay well inside the box
+        // Wide Y padding so data sits compact in the middle
         const yMin = d3.min(allValues);
         const yMax = d3.max(allValues);
         const yRange = yMax - yMin;
-        const yPad = Math.max(yRange * 0.3, 3);
+        const yPad = Math.max(yRange * 0.5, 5);
         const yScale = d3.scaleLinear()
             .domain([yMin - yPad, yMax + yPad])
-            .range([height, 0]);
+            .range([height, 0])
+            .nice();
 
         const style = getComputedStyle(document.documentElement);
         const gridColor = style.getPropertyValue('--chart-grid').trim();
@@ -252,39 +253,35 @@ class Dashboard {
 
         // Plot area border (closed box)
         svg.append('rect')
-            .attr('x', 0)
-            .attr('y', 0)
-            .attr('width', width)
-            .attr('height', height)
+            .attr('x', 0).attr('y', 0)
+            .attr('width', width).attr('height', height)
             .attr('fill', 'none')
             .attr('stroke', borderColor)
             .attr('stroke-width', 1);
 
-        // Clip path so lines don't overflow the box
+        // Clip path
         svg.append('defs').append('clipPath')
             .attr('id', 'trend-clip')
             .append('rect')
-            .attr('x', 0)
-            .attr('y', 0)
-            .attr('width', width)
-            .attr('height', height);
+            .attr('x', 0).attr('y', 0)
+            .attr('width', width).attr('height', height);
 
-        // Y grid lines
+        // Y grid lines (inside box)
         svg.append('g')
             .attr('class', 'grid')
             .call(d3.axisLeft(yScale).ticks(5).tickSize(-width).tickFormat(''))
             .selectAll('line')
             .attr('stroke', gridColor)
-            .attr('stroke-opacity', 0.2);
+            .attr('stroke-opacity', 0.15);
 
-        // Minimal y-axis (4 ticks)
+        // Y-axis ticks (outside box on left)
         svg.append('g')
             .attr('class', 'axis')
-            .call(d3.axisLeft(yScale).ticks(4));
+            .call(d3.axisLeft(yScale).ticks(5));
 
         // Zero line
         const y0 = yScale(0);
-        if (y0 >= 0 && y0 <= height) {
+        if (y0 > 0 && y0 < height) {
             const gold = style.getPropertyValue('--accent-primary').trim();
             svg.append('line')
                 .attr('x1', 0).attr('x2', width)
@@ -302,7 +299,7 @@ class Dashboard {
             .y(d => yScale(d.value))
             .curve(d3.curveMonotoneX);
 
-        // Draw each team as a group (line + badge), clipped to plot area
+        // All lines + badges clipped to the box
         const clippedArea = svg.append('g')
             .attr('clip-path', 'url(#trend-clip)');
 
@@ -323,7 +320,7 @@ class Dashboard {
             .attr('stroke-opacity', 0.45)
             .attr('d', line);
 
-        // Badge at end of each line
+        // Badge at the end of each line (inside box)
         const halfBadge = badgeSize / 2;
         teamGroups.each(function(d) {
             const lastPoint = d.values[d.values.length - 1];
@@ -337,11 +334,10 @@ class Dashboard {
             if (logoUrl) {
                 g.append('foreignObject')
                     .attr('class', 'trend-badge')
-                    .attr('x', bx + 4)
+                    .attr('x', bx + 3)
                     .attr('y', by - halfBadge)
                     .attr('width', badgeSize)
                     .attr('height', badgeSize)
-                    .style('overflow', 'visible')
                     .append('xhtml:img')
                     .attr('src', logoUrl)
                     .style('width', badgeSize + 'px')
@@ -350,13 +346,12 @@ class Dashboard {
                     .style('display', 'block');
             }
 
-            // Transparent hit area over badge
+            // Transparent hit area
             g.append('circle')
-                .attr('cx', bx + 4 + halfBadge)
+                .attr('cx', bx + 3 + halfBadge)
                 .attr('cy', by)
                 .attr('r', halfBadge + 4)
-                .attr('fill', 'transparent')
-                .attr('stroke', 'none');
+                .attr('fill', 'transparent');
         });
 
         // Create tooltip for this chart
