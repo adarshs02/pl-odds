@@ -209,6 +209,7 @@ class Dashboard {
         const isTablet = window.innerWidth >= 640 && window.innerWidth < 1024;
         const containerHeight = isMobile ? 220 : (isTablet ? 260 : 280);
         const badgeSize = isMobile ? 14 : (isTablet ? 16 : 18);
+        const halfBadge = badgeSize / 2;
         const margin = { top: 15, right: 10, bottom: 10, left: 40 };
         const width = containerWidth - margin.left - margin.right;
         const height = containerHeight - margin.top - margin.bottom;
@@ -236,7 +237,7 @@ class Dashboard {
 
         const xScale = d3.scaleLinear()
             .domain([1, maxGW])
-            .range([0, width]);
+            .range([0, width - halfBadge]);
 
         const yMin = d3.min(allValues);
         const yMax = d3.max(allValues);
@@ -328,9 +329,15 @@ class Dashboard {
             .attr('d', d => line(d.values));
 
         // Badges inside the plot area at the end of each line
-        const halfBadge = badgeSize / 2;
+        // Use a separate clip path that extends vertically so top/bottom badges aren't cut off
+        svg.select('defs').append('clipPath')
+            .attr('id', 'trend-clip-badges')
+            .append('rect')
+            .attr('x', 0).attr('y', -halfBadge)
+            .attr('width', width).attr('height', height + badgeSize);
+
         const badgesGroup = svg.append('g')
-            .attr('clip-path', 'url(#trend-clip-lines)');
+            .attr('clip-path', 'url(#trend-clip-badges)');
 
         const badgeTeamGroups = badgesGroup.selectAll('.trend-badge-group')
             .data(linesData)

@@ -2,10 +2,10 @@ name: Daily Betting Data Update
 
 on:
   schedule:
-    # Run every day at 8:00 UTC (Early morning UK/US time)
-    # This ensures we catch mid-week games the morning after they happen,
-    # and capture daily spread movements.
-    - cron: '0 8 * * *'
+    # Run every day at 23:00 UTC (11 PM GMT / midnight BST)
+    # This is after the latest EPL kickoff (20:00 UK) + match completion,
+    # ensuring same-day results are captured.
+    - cron: '0 23 * * *'
   workflow_dispatch: # Allow manual trigger
 
 jobs:
