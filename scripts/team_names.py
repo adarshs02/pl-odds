@@ -58,3 +58,29 @@ def snap_spread(spread):
     elif frac == 0.75:
         return spread - 0.25 if spread > 0 else spread + 0.25
     return spread
+
+
+# Kalshi uses varying short forms across markets
+KALSHI_ALIASES = {
+    # Match markets (yes_sub_title) use full/partial names
+    "Wolverhampton": "Wolves",
+    "Nottingham": "Nott'm Forest",
+    "Nottingham Forest": "Nott'm Forest",
+    "Manchester City": "Man City",
+    "Manchester United": "Man United",
+    "Leeds United": "Leeds",
+    "Newcastle United": "Newcastle",
+    "West Ham United": "West Ham",
+    "Tottenham Hotspur": "Tottenham",
+    "Brighton and Hove Albion": "Brighton",
+    "Wolverhampton Wanderers": "Wolves",
+    # Winner/Top-4 futures use abbreviated forms
+    "Man Utd": "Man United",
+}
+
+
+def normalize_kalshi(name):
+    """Normalize a Kalshi team name to its canonical form."""
+    if name in KALSHI_ALIASES:
+        return KALSHI_ALIASES[name]
+    return normalize(name)

@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-11T23:22:42.563820Z",
+  "lastUpdated": "2026-02-12T11:17:56.877205Z",
   "upcomingMatches": [
     {
       "id": "c05ca60866c3224a6fa96c81a0eef68f",
@@ -21,6 +21,11 @@
         "byBookmaker": {
           "mybookieag": 0.5
         }
+      },
+      "kalshiOdds": {
+        "homeWinProb": 0.1765,
+        "drawProb": 0.2451,
+        "awayWinProb": 0.5784
       }
     },
     {
@@ -43,6 +48,11 @@
         "byBookmaker": {
           "mybookieag": 1.5
         }
+      },
+      "kalshiOdds": {
+        "homeWinProb": 0.0865,
+        "drawProb": 0.1731,
+        "awayWinProb": 0.7404
       }
     },
     {
@@ -65,6 +75,11 @@
         "byBookmaker": {
           "mybookieag": -0.5
         }
+      },
+      "kalshiOdds": {
+        "homeWinProb": 0.5189,
+        "drawProb": 0.2547,
+        "awayWinProb": 0.2264
       }
     },
     {
@@ -87,6 +102,11 @@
         "byBookmaker": {
           "mybookieag": -0.5
         }
+      },
+      "kalshiOdds": {
+        "homeWinProb": 0.4595,
+        "drawProb": 0.2613,
+        "awayWinProb": 0.2793
       }
     },
     {
@@ -109,6 +129,11 @@
         "byBookmaker": {
           "mybookieag": -1.5
         }
+      },
+      "kalshiOdds": {
+        "homeWinProb": 0.7593,
+        "drawProb": 0.1481,
+        "awayWinProb": 0.0926
       }
     },
     {
@@ -126,11 +151,16 @@
         "impliedProbAway": 0.377
       },
       "spread": {
-        "homePoint": 0.5,
-        "awayPoint": -0.5,
+        "homePoint": -0.5,
+        "awayPoint": 0.5,
         "byBookmaker": {
-          "mybookieag": 0.5
+          "mybookieag": -0.5
         }
+      },
+      "kalshiOdds": {
+        "homeWinProb": 0.3619,
+        "drawProb": 0.2667,
+        "awayWinProb": 0.3714
       }
     },
     {
@@ -153,6 +183,11 @@
         "byBookmaker": {
           "mybookieag": -1.5
         }
+      },
+      "kalshiOdds": {
+        "homeWinProb": 0.6514,
+        "drawProb": 0.1835,
+        "awayWinProb": 0.1651
       }
     },
     {
@@ -175,6 +210,11 @@
         "byBookmaker": {
           "mybookieag": -0.5
         }
+      },
+      "kalshiOdds": {
+        "homeWinProb": 0.5619,
+        "drawProb": 0.2476,
+        "awayWinProb": 0.1905
       }
     },
     {
@@ -197,6 +237,11 @@
         "byBookmaker": {
           "mybookieag": -0.5
         }
+      },
+      "kalshiOdds": {
+        "homeWinProb": 0.3578,
+        "drawProb": 0.2936,
+        "awayWinProb": 0.3486
       }
     },
     {
@@ -219,6 +264,11 @@
         "byBookmaker": {
           "mybookieag": 0.5
         }
+      },
+      "kalshiOdds": {
+        "homeWinProb": 0.2407,
+        "drawProb": 0.2407,
+        "awayWinProb": 0.5185
       }
     },
     {
@@ -241,6 +291,11 @@
         "byBookmaker": {
           "mybookieag": 0.5
         }
+      },
+      "kalshiOdds": {
+        "homeWinProb": 0.1619,
+        "drawProb": 0.2286,
+        "awayWinProb": 0.6095
       }
     },
     {
@@ -263,6 +318,11 @@
         "byBookmaker": {
           "mybookieag": 0.5
         }
+      },
+      "kalshiOdds": {
+        "homeWinProb": 0.2617,
+        "drawProb": 0.243,
+        "awayWinProb": 0.4953
       }
     }
   ],

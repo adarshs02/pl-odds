@@ -124,6 +124,9 @@ class Dashboard {
 
         // Render historical trends (top 5 teams)
         this.renderHistoricalTrends();
+
+        // Render Kalshi futures
+        this.renderKalshiFutures();
     }
 
     renderUpcomingStrip() {
@@ -170,6 +173,16 @@ class Dashboard {
 
             capsule.appendChild(date);
             capsule.appendChild(matchEl);
+
+            // Kalshi probabilities if available
+            if (match.kalshiOdds) {
+                const ko = match.kalshiOdds;
+                const probLine = document.createElement('span');
+                probLine.className = 'kalshi-probs';
+                probLine.innerHTML = `<span class="kalshi-label">Kalshi:</span> ${(ko.homeWinProb * 100).toFixed(0)}% ${(ko.drawProb * 100).toFixed(0)}% ${(ko.awayWinProb * 100).toFixed(0)}%`;
+                capsule.appendChild(probLine);
+            }
+
             container.appendChild(capsule);
         });
 
@@ -462,6 +475,9 @@ class Dashboard {
         document.getElementById('team-win-rate').textContent = `${(teamData.statistics.winRate * 100).toFixed(1)}%`;
         document.getElementById('team-cover-rate').textContent = `${(teamData.statistics.coverRate * 100).toFixed(1)}%`;
 
+        // Render Kalshi team data
+        this.renderKalshiTeamData(teamData.name);
+
         // Calculate and display home/away breakdown
         this.renderHomeAwayBreakdown(teamData);
 
@@ -698,6 +714,155 @@ class Dashboard {
                 Router.navigateToTeam(el.dataset.team);
             });
         });
+    }
+
+    renderKalshiFutures() {
+        const kalshiData = DataLoader.getKalshiData(this.data);
+        const section = document.getElementById('kalshi-futures-section');
+        if (!kalshiData || !kalshiData.winnerFutures || kalshiData.winnerFutures.length === 0) {
+            if (section) section.style.display = 'none';
+            return;
+        }
+        if (section) section.style.display = '';
+
+        const container = d3.select('#kalshi-winner-chart');
+        container.html('');
+
+        const futures = kalshiData.winnerFutures.filter(f => f.probability > 0);
+        if (futures.length === 0) return;
+
+        // Dimensions
+        const containerNode = container.node();
+        const cs = getComputedStyle(containerNode);
+        const containerWidth = containerNode.clientWidth
+            - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
+        const barHeight = 28;
+        const gap = 6;
+        const margin = { top: 10, right: 60, bottom: 10, left: 120 };
+        const width = containerWidth - margin.left - margin.right;
+        const height = futures.length * (barHeight + gap) + margin.top + margin.bottom;
+
+        const svg = container.append('svg')
+            .attr('width', containerWidth)
+            .attr('height', height)
+            .append('g')
+            .attr('transform', `translate(${margin.left},${margin.top})`);
+
+        const xScale = d3.scaleLinear()
+            .domain([0, d3.max(futures, d => d.probability)])
+            .range([0, width]);
+
+        const yScale = d3.scaleBand()
+            .domain(futures.map(d => d.team))
+            .range([0, futures.length * (barHeight + gap)])
+            .padding(0.15);
+
+        const style = getComputedStyle(document.documentElement);
+        const textColor = style.getPropertyValue('--chart-text').trim();
+        const gold = style.getPropertyValue('--accent-primary').trim();
+
+        // Bars
+        svg.selectAll('.pm-bar')
+            .data(futures)
+            .enter()
+            .append('rect')
+            .attr('class', 'pm-bar')
+            .attr('x', 0)
+            .attr('y', d => yScale(d.team))
+            .attr('width', d => xScale(d.probability))
+            .attr('height', yScale.bandwidth())
+            .attr('fill', d => TeamUtils.getColor(d.team))
+            .attr('rx', 2)
+            .style('cursor', 'pointer')
+            .on('click', (event, d) => Router.navigateToTeam(d.team));
+
+        // Probability labels at end of bars
+        svg.selectAll('.pm-label-text')
+            .data(futures)
+            .enter()
+            .append('text')
+            .attr('x', d => xScale(d.probability) + 6)
+            .attr('y', d => yScale(d.team) + yScale.bandwidth() / 2)
+            .attr('dy', '0.35em')
+            .attr('fill', gold)
+            .attr('font-family', "'Big Shoulders Display', sans-serif")
+            .attr('font-size', '13px')
+            .attr('font-weight', '700')
+            .text(d => `${(d.probability * 100).toFixed(1)}%`);
+
+        // Team logos + names on Y-axis
+        const badgeSize = 18;
+        futures.forEach(d => {
+            const y = yScale(d.team) + yScale.bandwidth() / 2;
+            const logoUrl = TeamUtils.getLogoUrl(d.team);
+
+            if (logoUrl) {
+                svg.append('image')
+                    .attr('href', logoUrl)
+                    .attr('x', -margin.left + 4)
+                    .attr('y', y - badgeSize / 2)
+                    .attr('width', badgeSize)
+                    .attr('height', badgeSize);
+            }
+
+            svg.append('text')
+                .attr('x', -margin.left + 4 + badgeSize + 6)
+                .attr('y', y)
+                .attr('dy', '0.35em')
+                .attr('fill', textColor)
+                .attr('font-family', "'Barlow', sans-serif")
+                .attr('font-size', '12px')
+                .attr('font-weight', '600')
+                .style('cursor', 'pointer')
+                .text(d.team)
+                .on('click', () => Router.navigateToTeam(d.team));
+        });
+    }
+
+    renderKalshiTeamData(teamName) {
+        const container = document.getElementById('kalshi-team-info');
+        if (!container) return;
+
+        const kalshiData = DataLoader.getKalshiData(this.data);
+        if (!kalshiData) {
+            container.style.display = 'none';
+            return;
+        }
+
+        const winner = (kalshiData.winnerFutures || []).find(f => f.team === teamName);
+        const top4 = (kalshiData.top4Futures || []).find(f => f.team === teamName);
+
+        if (!winner && !top4) {
+            container.style.display = 'none';
+            return;
+        }
+
+        container.style.display = '';
+        let html = '<div class="kalshi-team-stats">';
+        html += '<h3 class="kalshi-section-title">Kalshi Prediction Markets</h3>';
+        html += '<div class="kalshi-stats-row">';
+
+        if (winner) {
+            html += `
+                <div class="kalshi-stat">
+                    <span class="label">Win League</span>
+                    <span class="value">${(winner.probability * 100).toFixed(1)}%</span>
+                    <span class="kalshi-volume">${Analyzer.formatVolume(winner.volume)} contracts</span>
+                </div>
+            `;
+        }
+        if (top4) {
+            html += `
+                <div class="kalshi-stat">
+                    <span class="label">Top 4 Finish</span>
+                    <span class="value">${(top4.probability * 100).toFixed(1)}%</span>
+                    <span class="kalshi-volume">${Analyzer.formatVolume(top4.volume)} contracts</span>
+                </div>
+            `;
+        }
+
+        html += '</div></div>';
+        container.innerHTML = html;
     }
 
     hideLoading() {

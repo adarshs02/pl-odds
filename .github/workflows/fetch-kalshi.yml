@@ -1,0 +1,40 @@
+name: Fetch Kalshi EPL Odds
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 12 * * *' # Daily at noon UTC
+
+permissions:
+  contents: write
+
+jobs:
+  fetch-kalshi:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Fetch Kalshi EPL data
+        run: python scripts/fetch_kalshi.py
+
+      - name: Preprocess dashboard data
+        run: |
+          pip install -r requirements.txt
+          python scripts/preprocess-dashboard-data.py
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/kalshi_epl_*.json docs/data/aggregated/kalshi-odds.json docs/data/aggregated/latest-odds.json
+          git commit -m "auto: daily Kalshi EPL update [skip ci]" || echo "No changes to commit"
+          git push

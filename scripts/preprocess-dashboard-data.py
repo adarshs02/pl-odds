@@ -421,7 +421,7 @@ def preprocess_team_performance():
     print(f"  - {len(all_bookmakers)} bookmakers: {all_bookmakers}")
     print(f"  - Correlation: {correlation:.3f}")
 
-def preprocess_latest_odds():
+def preprocess_latest_odds(kalshi_data=None):
     """
     Generate latest-odds.json with upcoming matches and merged odds
     Includes per-bookmaker spread data
@@ -490,6 +490,9 @@ def preprocess_latest_odds():
     # Sort by commence time
     upcoming_matches.sort(key=lambda x: x["commenceTime"])
 
+    # Merge Kalshi match probabilities
+    merge_kalshi_match_odds(upcoming_matches, kalshi_data)
+
     # Write output
     output = {
         "lastUpdated": datetime.utcnow().isoformat() + "Z",
@@ -505,6 +508,82 @@ def preprocess_latest_odds():
     print(f"✓ Generated {output_path}")
     print(f"  - {len(upcoming_matches)} upcoming matches")
 
+def load_kalshi_data():
+    """Load the latest Kalshi EPL data file."""
+    files = sorted(DATA_DIR.glob("kalshi_epl_*.json"))
+    if not files:
+        return None
+    latest = files[-1]
+    print(f"Loading Kalshi data from {latest}")
+    return load_json(latest)
+
+def preprocess_kalshi_odds():
+    """
+    Generate kalshi-odds.json from the latest Kalshi data.
+    Returns the data for merging into latest-odds.json.
+    """
+    print("\n=== Preprocessing Kalshi Odds ===")
+
+    kalshi_data = load_kalshi_data()
+    if not kalshi_data:
+        print("No Kalshi data files found, skipping")
+        return None
+
+    # Sort winner/top4 by probability descending
+    winner = sorted(kalshi_data.get("winnerFutures", []),
+                    key=lambda x: x.get("probability", 0), reverse=True)
+    top4 = sorted(kalshi_data.get("top4Futures", []),
+                  key=lambda x: x.get("probability", 0), reverse=True)
+    matches = sorted(kalshi_data.get("matchOutcomes", []),
+                     key=lambda x: x.get("commenceTime", ""))
+
+    output = {
+        "lastUpdated": kalshi_data.get("fetchedAt", datetime.utcnow().isoformat() + "Z"),
+        "winnerFutures": winner,
+        "top4Futures": top4,
+        "matchOutcomes": matches,
+    }
+
+    output_path = OUTPUT_DIR / "kalshi-odds.json"
+    with open(output_path, "w") as f:
+        json.dump(output, f, indent=2)
+
+    print(f"✓ Generated {output_path}")
+    print(f"  - {len(winner)} winner futures")
+    print(f"  - {len(top4)} top-4 futures")
+    print(f"  - {len(matches)} match outcomes")
+
+    return kalshi_data
+
+def merge_kalshi_match_odds(upcoming_matches, kalshi_data):
+    """Merge Kalshi match probabilities into latest-odds.json matches."""
+    if not kalshi_data:
+        return
+
+    match_outcomes = kalshi_data.get("matchOutcomes", [])
+    if not match_outcomes:
+        return
+
+    # Build lookup by (home, away)
+    kalshi_lookup = {}
+    for m in match_outcomes:
+        key = (m["homeTeam"], m["awayTeam"])
+        kalshi_lookup[key] = m
+
+    merged = 0
+    for match in upcoming_matches:
+        key = (match["homeTeam"], match["awayTeam"])
+        km = kalshi_lookup.get(key)
+        if km:
+            match["kalshiOdds"] = {
+                "homeWinProb": km["homeWinProb"],
+                "drawProb": km["drawProb"],
+                "awayWinProb": km["awayWinProb"],
+            }
+            merged += 1
+
+    print(f"  Merged Kalshi odds for {merged}/{len(upcoming_matches)} matches")
+
 def main():
     print("=" * 60)
     print("Dashboard Data Preprocessing")
@@ -512,7 +591,8 @@ def main():
 
     try:
         preprocess_team_performance()
-        preprocess_latest_odds()
+        kalshi_data = preprocess_kalshi_odds()
+        preprocess_latest_odds(kalshi_data)
 
         print("\n" + "=" * 60)
         print("✓ Preprocessing complete!")

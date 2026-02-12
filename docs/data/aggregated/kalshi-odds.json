@@ -1,0 +1,366 @@
+{
+  "lastUpdated": "2026-02-12T10:47:07Z",
+  "winnerFutures": [
+    {
+      "team": "Arsenal",
+      "probability": 0.72,
+      "volume": 2082042,
+      "liquidity": 20845303
+    },
+    {
+      "team": "Man City",
+      "probability": 0.24,
+      "volume": 2054887,
+      "liquidity": 19216051
+    },
+    {
+      "team": "Man United",
+      "probability": 0.02,
+      "volume": 1293224,
+      "liquidity": 243557310
+    },
+    {
+      "team": "Aston Villa",
+      "probability": 0.02,
+      "volume": 913544,
+      "liquidity": 247995265
+    },
+    {
+      "team": "Wolves",
+      "probability": 0.01,
+      "volume": 613,
+      "liquidity": 242458983
+    },
+    {
+      "team": "West Ham",
+      "probability": 0.01,
+      "volume": 3540,
+      "liquidity": 242415841
+    },
+    {
+      "team": "Sunderland",
+      "probability": 0.01,
+      "volume": 83166,
+      "liquidity": 242468552
+    },
+    {
+      "team": "Leeds",
+      "probability": 0.01,
+      "volume": 9337,
+      "liquidity": 243460180
+    },
+    {
+      "team": "Fulham",
+      "probability": 0.01,
+      "volume": 22861,
+      "liquidity": 243757325
+    },
+    {
+      "team": "Everton",
+      "probability": 0.01,
+      "volume": 9558,
+      "liquidity": 242599727
+    },
+    {
+      "team": "Crystal Palace",
+      "probability": 0.01,
+      "volume": 73584,
+      "liquidity": 242736005
+    },
+    {
+      "team": "Burnley",
+      "probability": 0.01,
+      "volume": 3215,
+      "liquidity": 242684921
+    },
+    {
+      "team": "Brentford",
+      "probability": 0.01,
+      "volume": 16956,
+      "liquidity": 241898122
+    },
+    {
+      "team": "Bournemouth",
+      "probability": 0.01,
+      "volume": 56132,
+      "liquidity": 241843013
+    },
+    {
+      "team": "Tottenham",
+      "probability": 0.01,
+      "volume": 595351,
+      "liquidity": 242571046
+    },
+    {
+      "team": "Nott'm Forest",
+      "probability": 0.01,
+      "volume": 37944,
+      "liquidity": 242550418
+    },
+    {
+      "team": "Newcastle",
+      "probability": 0.01,
+      "volume": 147322,
+      "liquidity": 242420525
+    },
+    {
+      "team": "Liverpool",
+      "probability": 0.01,
+      "volume": 1732918,
+      "liquidity": 30244923
+    },
+    {
+      "team": "Chelsea",
+      "probability": 0.01,
+      "volume": 1311642,
+      "liquidity": 243841812
+    },
+    {
+      "team": "Brighton",
+      "probability": 0.01,
+      "volume": 13099,
+      "liquidity": 242169583
+    }
+  ],
+  "top4Futures": [
+    {
+      "team": "Arsenal",
+      "probability": 0.96,
+      "volume": 49528,
+      "liquidity": 1659864
+    },
+    {
+      "team": "Man City",
+      "probability": 0.92,
+      "volume": 46360,
+      "liquidity": 2547041
+    },
+    {
+      "team": "Aston Villa",
+      "probability": 0.6,
+      "volume": 81956,
+      "liquidity": 4376163
+    },
+    {
+      "team": "Man United",
+      "probability": 0.51,
+      "volume": 280038,
+      "liquidity": 4996919
+    },
+    {
+      "team": "Liverpool",
+      "probability": 0.48,
+      "volume": 106196,
+      "liquidity": 3381016
+    },
+    {
+      "team": "Chelsea",
+      "probability": 0.44,
+      "volume": 412870,
+      "liquidity": 4791323
+    },
+    {
+      "team": "Fulham",
+      "probability": 0.09,
+      "volume": 1784,
+      "liquidity": 3134938
+    },
+    {
+      "team": "Brentford",
+      "probability": 0.07,
+      "volume": 3072,
+      "liquidity": 1201200
+    },
+    {
+      "team": "Sunderland",
+      "probability": 0.05,
+      "volume": 30951,
+      "liquidity": 975369
+    },
+    {
+      "team": "Brighton",
+      "probability": 0.05,
+      "volume": 1701,
+      "liquidity": 1523584
+    },
+    {
+      "team": "Everton",
+      "probability": 0.04,
+      "volume": 4484,
+      "liquidity": 1848632
+    },
+    {
+      "team": "West Ham",
+      "probability": 0.03,
+      "volume": 818,
+      "liquidity": 2002166
+    },
+    {
+      "team": "Leeds",
+      "probability": 0.03,
+      "volume": 832,
+      "liquidity": 1722068
+    },
+    {
+      "team": "Crystal Palace",
+      "probability": 0.03,
+      "volume": 58387,
+      "liquidity": 1170508
+    },
+    {
+      "team": "Wolves",
+      "probability": 0.02,
+      "volume": 60,
+      "liquidity": 1516748
+    },
+    {
+      "team": "Bournemouth",
+      "probability": 0.02,
+      "volume": 171728,
+      "liquidity": 1378011
+    },
+    {
+      "team": "Tottenham",
+      "probability": 0.02,
+      "volume": 189911,
+      "liquidity": 1178119
+    },
+    {
+      "team": "Nott'm Forest",
+      "probability": 0.02,
+      "volume": 16357,
+      "liquidity": 2198454
+    },
+    {
+      "team": "Newcastle",
+      "probability": 0.02,
+      "volume": 44007,
+      "liquidity": 986082
+    },
+    {
+      "team": "Burnley",
+      "probability": 0.01,
+      "volume": 85,
+      "liquidity": 1879622
+    }
+  ],
+  "matchOutcomes": [
+    {
+      "homeTeam": "Brentford",
+      "awayTeam": "Arsenal",
+      "commenceTime": "2026-02-26T20:00:00Z",
+      "homeWinProb": 0.1765,
+      "drawProb": 0.2451,
+      "awayWinProb": 0.5784,
+      "totalVolume": 817338
+    },
+    {
+      "homeTeam": "Wolves",
+      "awayTeam": "Arsenal",
+      "commenceTime": "2026-03-04T20:00:00Z",
+      "homeWinProb": 0.0865,
+      "drawProb": 0.1731,
+      "awayWinProb": 0.7404,
+      "totalVolume": 22355
+    },
+    {
+      "homeTeam": "Chelsea",
+      "awayTeam": "Burnley",
+      "commenceTime": "2026-03-07T15:00:00Z",
+      "homeWinProb": 0.7593,
+      "drawProb": 0.1481,
+      "awayWinProb": 0.0926,
+      "totalVolume": 8926
+    },
+    {
+      "homeTeam": "Aston Villa",
+      "awayTeam": "Leeds",
+      "commenceTime": "2026-03-07T15:00:00Z",
+      "homeWinProb": 0.5189,
+      "drawProb": 0.2547,
+      "awayWinProb": 0.2264,
+      "totalVolume": 10583
+    },
+    {
+      "homeTeam": "Brentford",
+      "awayTeam": "Brighton",
+      "commenceTime": "2026-03-07T15:00:00Z",
+      "homeWinProb": 0.4595,
+      "drawProb": 0.2613,
+      "awayWinProb": 0.2793,
+      "totalVolume": 4476
+    },
+    {
+      "homeTeam": "West Ham",
+      "awayTeam": "Bournemouth",
+      "commenceTime": "2026-03-07T17:30:00Z",
+      "homeWinProb": 0.3619,
+      "drawProb": 0.2667,
+      "awayWinProb": 0.3714,
+      "totalVolume": 5285
+    },
+    {
+      "homeTeam": "Man City",
+      "awayTeam": "Newcastle",
+      "commenceTime": "2026-03-07T20:00:00Z",
+      "homeWinProb": 0.6514,
+      "drawProb": 0.1835,
+      "awayWinProb": 0.1651,
+      "totalVolume": 17391
+    },
+    {
+      "homeTeam": "Sunderland",
+      "awayTeam": "Fulham",
+      "commenceTime": "2026-03-08T14:00:00Z",
+      "homeWinProb": 0.3578,
+      "drawProb": 0.2936,
+      "awayWinProb": 0.3486,
+      "totalVolume": 1749
+    },
+    {
+      "homeTeam": "Nott'm Forest",
+      "awayTeam": "Liverpool",
+      "commenceTime": "2026-03-08T14:00:00Z",
+      "homeWinProb": 0.2407,
+      "drawProb": 0.2407,
+      "awayWinProb": 0.5185,
+      "totalVolume": 14657
+    },
+    {
+      "homeTeam": "Crystal Palace",
+      "awayTeam": "Wolves",
+      "commenceTime": "2026-03-08T14:00:00Z",
+      "homeWinProb": 0.5619,
+      "drawProb": 0.2476,
+      "awayWinProb": 0.1905,
+      "totalVolume": 1144
+    },
+    {
+      "homeTeam": "Tottenham",
+      "awayTeam": "Arsenal",
+      "commenceTime": "2026-03-08T16:30:00Z",
+      "homeWinProb": 0.1619,
+      "drawProb": 0.2286,
+      "awayWinProb": 0.6095,
+      "totalVolume": 17320
+    },
+    {
+      "homeTeam": "Everton",
+      "awayTeam": "Man United",
+      "commenceTime": "2026-03-09T20:00:00Z",
+      "homeWinProb": 0.2617,
+      "drawProb": 0.243,
+      "awayWinProb": 0.4953,
+      "totalVolume": 17265
+    },
+    {
+      "homeTeam": "Wolves",
+      "awayTeam": "Aston Villa",
+      "commenceTime": "2026-03-13T20:00:00Z",
+      "homeWinProb": 0.0,
+      "drawProb": 0.0,
+      "awayWinProb": 1.0,
+      "totalVolume": 20
+    }
+  ]
+}

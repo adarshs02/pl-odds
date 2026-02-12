@@ -19,14 +19,16 @@ export class DataLoader {
 
         // Load fresh data
         try {
-            const [performanceData, oddsData] = await Promise.all([
+            const [performanceData, oddsData, kalshiData] = await Promise.all([
                 this.fetchJSON('data/aggregated/team-performance-history.json'),
-                this.fetchJSON('data/aggregated/latest-odds.json')
+                this.fetchJSON('data/aggregated/latest-odds.json'),
+                this.fetchJSON('data/aggregated/kalshi-odds.json').catch(() => null)
             ]);
 
             const data = {
                 performance: performanceData,
                 odds: oddsData,
+                kalshi: kalshiData,
                 timestamp: Date.now()
             };
 
@@ -105,5 +107,9 @@ export class DataLoader {
 
     static getAllTeams(data) {
         return data.performance.teams || [];
+    }
+
+    static getKalshiData(data) {
+        return data.kalshi || null;
     }
 }
