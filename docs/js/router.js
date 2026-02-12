@@ -16,14 +16,13 @@ export class Router {
         // Handle initial route
         this.handleRoute();
 
-        // Bind back to dashboard link
-        const backLink = document.getElementById('back-to-dashboard');
-        if (backLink) {
-            backLink.addEventListener('click', (e) => {
+        // Bind back to dashboard links
+        document.querySelectorAll('#back-to-dashboard, #back-to-dashboard-tables').forEach(link => {
+            link.addEventListener('click', (e) => {
                 e.preventDefault();
                 this.navigate('');
             });
-        }
+        });
 
         console.log('Router initialized');
     }
@@ -33,6 +32,8 @@ export class Router {
 
         if (!hash || hash === '/') {
             this.showDashboard();
+        } else if (hash === '/tables') {
+            this.showTables();
         } else if (hash.startsWith('/team/')) {
             const teamName = decodeURIComponent(hash.replace('/team/', ''));
             this.showTeamDetail(teamName);
@@ -46,16 +47,16 @@ export class Router {
         console.log('Showing dashboard view');
         this.currentView = 'dashboard';
 
-        // Hide team detail, show dashboard
         document.getElementById('dashboard-view').style.display = 'block';
         document.getElementById('team-detail-view').style.display = 'none';
+        document.getElementById('tables-view').style.display = 'none';
+        const sidebar = document.querySelector('.upcoming-sidebar');
+        if (sidebar) sidebar.style.display = '';
 
-        // Call dashboard handler if defined
         if (this.handlers.onDashboard) {
             this.handlers.onDashboard();
         }
 
-        // Scroll to top
         window.scrollTo(0, 0);
     }
 
@@ -63,16 +64,33 @@ export class Router {
         console.log('Showing team detail view for:', teamName);
         this.currentView = 'team-detail';
 
-        // Hide dashboard, show team detail
         document.getElementById('dashboard-view').style.display = 'none';
         document.getElementById('team-detail-view').style.display = 'block';
+        document.getElementById('tables-view').style.display = 'none';
+        const sidebar = document.querySelector('.upcoming-sidebar');
+        if (sidebar) sidebar.style.display = '';
 
-        // Call team detail handler if defined
         if (this.handlers.onTeamDetail) {
             this.handlers.onTeamDetail(teamName);
         }
 
-        // Scroll to top
+        window.scrollTo(0, 0);
+    }
+
+    static showTables() {
+        console.log('Showing tables view');
+        this.currentView = 'tables';
+
+        document.getElementById('dashboard-view').style.display = 'none';
+        document.getElementById('team-detail-view').style.display = 'none';
+        document.getElementById('tables-view').style.display = 'block';
+        const sidebar = document.querySelector('.upcoming-sidebar');
+        if (sidebar) sidebar.style.display = 'none';
+
+        if (this.handlers.onTables) {
+            this.handlers.onTables();
+        }
+
         window.scrollTo(0, 0);
     }
 
@@ -86,6 +104,10 @@ export class Router {
 
     static navigateToDashboard() {
         this.navigate('');
+    }
+
+    static navigateToTables() {
+        this.navigate('/tables');
     }
 
     static getCurrentView() {

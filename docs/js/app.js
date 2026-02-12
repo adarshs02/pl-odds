@@ -36,7 +36,8 @@ class Dashboard {
             // Initialize router
             Router.init({
                 onDashboard: () => this.renderDashboard(),
-                onTeamDetail: (teamName) => this.renderTeamDetail(teamName)
+                onTeamDetail: (teamName) => this.renderTeamDetail(teamName),
+                onTables: () => this.renderTables()
             });
 
             // Hide loading overlay
@@ -713,6 +714,148 @@ class Dashboard {
             el.addEventListener('click', () => {
                 Router.navigateToTeam(el.dataset.team);
             });
+        });
+    }
+
+    renderTables() {
+        console.log('Rendering tables view');
+        this.renderTeamStandingsTable();
+        this.renderUpcomingMatchesTable();
+    }
+
+    renderTeamStandingsTable(sortKey = 'totalNetPerformance', sortDir = 'desc') {
+        const teams = DataLoader.getAllTeams(this.data);
+        const kalshiData = DataLoader.getKalshiData(this.data);
+
+        // Build lookup maps for Kalshi data
+        const winnerMap = {};
+        const top4Map = {};
+        if (kalshiData) {
+            (kalshiData.winnerFutures || []).forEach(f => { winnerMap[f.team] = f.probability; });
+            (kalshiData.top4Futures || []).forEach(f => { top4Map[f.team] = f.probability; });
+        }
+
+        // Build sortable row data
+        const rows = teams.map(t => ({
+            name: t.name,
+            matchesPlayed: t.statistics.matchesPlayed,
+            wins: t.statistics.wins,
+            draws: t.statistics.draws,
+            losses: t.statistics.losses,
+            winRate: t.statistics.winRate,
+            coverRate: t.statistics.coverRate,
+            avgNetPerformance: t.statistics.avgNetPerformance,
+            totalNetPerformance: t.totalNetPerformance,
+            kalshiWin: winnerMap[t.name] ?? -1,
+            kalshiTop4: top4Map[t.name] ?? -1
+        }));
+
+        // Sort
+        rows.sort((a, b) => {
+            let aVal = a[sortKey], bVal = b[sortKey];
+            if (sortKey === 'name') {
+                return sortDir === 'asc' ? aVal.localeCompare(bVal) : bVal.localeCompare(aVal);
+            }
+            return sortDir === 'asc' ? aVal - bVal : bVal - aVal;
+        });
+
+        // Render tbody
+        const tbody = document.getElementById('standings-body');
+        tbody.innerHTML = '';
+
+        rows.forEach(r => {
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td class="team-name" data-team="${r.name}" style="cursor:pointer; white-space:nowrap;">
+                    ${TeamUtils.inlineLogo(r.name, 18)} ${r.name}
+                </td>
+                <td>${r.matchesPlayed}</td>
+                <td>${r.wins}</td>
+                <td>${r.draws}</td>
+                <td>${r.losses}</td>
+                <td>${(r.winRate * 100).toFixed(1)}%</td>
+                <td>${(r.coverRate * 100).toFixed(1)}%</td>
+                <td class="${Analyzer.getNetPerfClass(r.avgNetPerformance)}">${Analyzer.formatNetPerf(r.avgNetPerformance)}</td>
+                <td class="${Analyzer.getNetPerfClass(r.totalNetPerformance)}">${Analyzer.formatNetPerf(r.totalNetPerformance)}</td>
+                <td>${r.kalshiWin >= 0 ? (r.kalshiWin * 100).toFixed(1) + '%' : '—'}</td>
+                <td>${r.kalshiTop4 >= 0 ? (r.kalshiTop4 * 100).toFixed(1) + '%' : '—'}</td>
+            `;
+            tbody.appendChild(row);
+        });
+
+        // Click handlers for team names
+        tbody.querySelectorAll('.team-name').forEach(el => {
+            el.addEventListener('click', () => Router.navigateToTeam(el.dataset.team));
+        });
+
+        // Sort header indicators
+        const table = document.getElementById('standings-table');
+        table.querySelectorAll('th.sortable').forEach(th => {
+            th.classList.remove('sort-asc', 'sort-desc');
+            if (th.dataset.sort === sortKey) {
+                th.classList.add(sortDir === 'asc' ? 'sort-asc' : 'sort-desc');
+            }
+        });
+
+        // Bind sort click handlers (replace to avoid duplicate listeners)
+        table.querySelectorAll('th.sortable').forEach(th => {
+            const newTh = th.cloneNode(true);
+            th.parentNode.replaceChild(newTh, th);
+            newTh.addEventListener('click', () => {
+                const key = newTh.dataset.sort;
+                let dir = 'desc';
+                if (key === sortKey) {
+                    dir = sortDir === 'desc' ? 'asc' : 'desc';
+                }
+                this.renderTeamStandingsTable(key, dir);
+            });
+        });
+    }
+
+    renderUpcomingMatchesTable() {
+        const matches = DataLoader.getUpcomingMatches(this.data);
+        const tbody = document.getElementById('upcoming-body');
+        tbody.innerHTML = '';
+
+        if (matches.length === 0) {
+            tbody.innerHTML = '<tr><td colspan="6" style="text-align:center; padding:1.5rem; color:var(--text-tertiary);">No upcoming matches</td></tr>';
+            return;
+        }
+
+        matches.forEach(match => {
+            const row = document.createElement('tr');
+
+            const h2h = match.h2hOdds
+                ? `${match.h2hOdds.home?.toFixed(2) ?? '—'} / ${match.h2hOdds.draw?.toFixed(2) ?? '—'} / ${match.h2hOdds.away?.toFixed(2) ?? '—'}`
+                : '—';
+
+            const spread = match.spreadOdds?.spread != null
+                ? Analyzer.formatNetPerf(match.spreadOdds.spread)
+                : '—';
+
+            let kalshi = '—';
+            if (match.kalshiOdds) {
+                const ko = match.kalshiOdds;
+                kalshi = `${(ko.homeWinProb * 100).toFixed(0)}% / ${(ko.drawProb * 100).toFixed(0)}% / ${(ko.awayWinProb * 100).toFixed(0)}%`;
+            }
+
+            row.innerHTML = `
+                <td style="white-space:nowrap;">${Analyzer.formatDateShort(match.commenceTime)}</td>
+                <td class="team-name" data-team="${match.homeTeam}" style="cursor:pointer; white-space:nowrap;">
+                    ${TeamUtils.inlineLogo(match.homeTeam, 18)} ${match.homeTeam}
+                </td>
+                <td class="team-name" data-team="${match.awayTeam}" style="cursor:pointer; white-space:nowrap;">
+                    ${TeamUtils.inlineLogo(match.awayTeam, 18)} ${match.awayTeam}
+                </td>
+                <td style="font-variant-numeric:tabular-nums;">${h2h}</td>
+                <td style="font-variant-numeric:tabular-nums;">${spread}</td>
+                <td style="font-variant-numeric:tabular-nums;">${kalshi}</td>
+            `;
+            tbody.appendChild(row);
+        });
+
+        tbody.querySelectorAll('.team-name').forEach(el => {
+            el.addEventListener('click', () => Router.navigateToTeam(el.dataset.team));
         });
     }
 
