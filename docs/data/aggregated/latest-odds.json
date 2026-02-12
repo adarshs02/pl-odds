@@ -1,33 +1,6 @@
 {
-  "lastUpdated": "2026-02-12T12:22:21.092258Z",
+  "lastUpdated": "2026-02-12T23:19:25.058886Z",
   "upcomingMatches": [
-    {
-      "id": "c05ca60866c3224a6fa96c81a0eef68f",
-      "commenceTime": "2026-02-12T20:00:00Z",
-      "homeTeam": "Brentford",
-      "awayTeam": "Arsenal",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 5.0,
-        "draw": 3.95,
-        "away": 1.67,
-        "impliedProbHome": 0.2,
-        "impliedProbDraw": 0.253,
-        "impliedProbAway": 0.599
-      },
-      "spread": {
-        "homePoint": 0.5,
-        "awayPoint": -0.5,
-        "byBookmaker": {
-          "mybookieag": 0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.1765,
-        "drawProb": 0.2451,
-        "awayWinProb": 0.5784
-      }
-    },
     {
       "id": "5b648e6c89d56257cb38abb4a76cee72",
       "commenceTime": "2026-02-18T20:00:00Z",
@@ -151,10 +124,10 @@
         "impliedProbAway": 0.392
       },
       "spread": {
-        "homePoint": 0.5,
-        "awayPoint": -0.5,
+        "homePoint": -0.5,
+        "awayPoint": 0.5,
         "byBookmaker": {
-          "mybookieag": 0.5
+          "mybookieag": -0.5
         }
       },
       "kalshiOdds": {
@@ -331,5 +304,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 12
+  "totalMatches": 11
 }
