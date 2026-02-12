@@ -829,8 +829,8 @@ class Dashboard {
                 ? `${match.h2hOdds.home?.toFixed(2) ?? '—'} / ${match.h2hOdds.draw?.toFixed(2) ?? '—'} / ${match.h2hOdds.away?.toFixed(2) ?? '—'}`
                 : '—';
 
-            const spread = match.spreadOdds?.spread != null
-                ? Analyzer.formatNetPerf(match.spreadOdds.spread)
+            const spread = match.spread?.homePoint != null
+                ? Analyzer.formatNetPerf(match.spread.homePoint)
                 : '—';
 
             let kalshi = '—';
