@@ -836,7 +836,7 @@ class Dashboard {
             let kalshi = '—';
             if (match.kalshiOdds) {
                 const ko = match.kalshiOdds;
-                kalshi = `${(ko.homeWinProb * 100).toFixed(0)}% / ${(ko.drawProb * 100).toFixed(0)}% / ${(ko.awayWinProb * 100).toFixed(0)}%`;
+                kalshi = `${(ko.homeWinProb * 100).toFixed(1)}% / ${(ko.drawProb * 100).toFixed(1)}% / ${(ko.awayWinProb * 100).toFixed(1)}%`;
             }
 
             row.innerHTML = `
