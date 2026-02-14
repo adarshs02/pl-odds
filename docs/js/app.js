@@ -399,53 +399,66 @@ class Dashboard {
             .style('position', 'absolute')
             .style('opacity', 0);
 
-        // Hover: highlight one team, dim others (across line + badge groups)
+        // Shared hover handlers for both hit-area rects and badges
+        const onMouseOver = function(event, d) {
+            teamGroups.transition().duration(150)
+                .style('opacity', g => g.name === d.name ? 1 : 0.1);
+            lineTeamGroups.transition().duration(150)
+                .style('opacity', g => g.name === d.name ? 1 : 0.1);
+            badgeTeamGroups.transition().duration(150)
+                .style('opacity', g => g.name === d.name ? 1 : 0.1);
+            lineTeamGroups.filter(g => g.name === d.name).select('.trend-line')
+                .attr('stroke-width', 2.5)
+                .attr('stroke-opacity', 1);
+
+            const lastPoint = d.values[d.values.length - 1];
+            tooltip.style('opacity', 1)
+                .html(`
+                    <div class="tooltip-title">${TeamUtils.inlineLogo(d.name, 18)} ${d.name}</div>
+                    <div class="tooltip-content">
+                        <strong>Cumulative Net Perf:</strong> ${Analyzer.formatNetPerf(lastPoint.value)}<br>
+                        <strong>Matches:</strong> ${d.values.length}
+                    </div>
+                `)
+                .style('left', (event.pageX + 15) + 'px')
+                .style('top', (event.pageY - 15) + 'px');
+        };
+        const onMouseMove = function(event) {
+            tooltip
+                .style('left', (event.pageX + 15) + 'px')
+                .style('top', (event.pageY - 15) + 'px');
+        };
+        const onMouseOut = function() {
+            teamGroups.transition().duration(150)
+                .style('opacity', 1);
+            lineTeamGroups.transition().duration(150)
+                .style('opacity', 1);
+            badgeTeamGroups.transition().duration(150)
+                .style('opacity', 1);
+            lineTeamGroups.selectAll('.trend-line')
+                .attr('stroke-width', 1.2)
+                .attr('stroke-opacity', 0.45);
+            tooltip.style('opacity', 0);
+        };
+        const onClick = function(event, d) {
+            event.preventDefault();
+            Router.navigateToTeam(d.name);
+        };
+
+        // Bind to hit-area rects
         teamGroups
-            .on('mouseover', function(event, d) {
-                teamGroups.transition().duration(150)
-                    .style('opacity', g => g.name === d.name ? 1 : 0.1);
-                lineTeamGroups.transition().duration(150)
-                    .style('opacity', g => g.name === d.name ? 1 : 0.1);
-                badgeTeamGroups.transition().duration(150)
-                    .style('opacity', g => g.name === d.name ? 1 : 0.1);
-                lineTeamGroups.filter(g => g.name === d.name).select('.trend-line')
-                    .attr('stroke-width', 2.5)
-                    .attr('stroke-opacity', 1);
+            .on('mouseover', onMouseOver)
+            .on('mousemove', onMouseMove)
+            .on('mouseout', onMouseOut)
+            .on('click', onClick);
 
-                const lastPoint = d.values[d.values.length - 1];
-                tooltip.style('opacity', 1)
-                    .html(`
-                        <div class="tooltip-title">${TeamUtils.inlineLogo(d.name, 18)} ${d.name}</div>
-                        <div class="tooltip-content">
-                            <strong>Cumulative Net Perf:</strong> ${Analyzer.formatNetPerf(lastPoint.value)}<br>
-                            <strong>Matches:</strong> ${d.values.length}
-                        </div>
-                    `)
-                    .style('left', (event.pageX + 15) + 'px')
-                    .style('top', (event.pageY - 15) + 'px');
-            })
-            .on('mousemove', function(event) {
-                tooltip
-                    .style('left', (event.pageX + 15) + 'px')
-                    .style('top', (event.pageY - 15) + 'px');
-            })
-            .on('mouseout', function() {
-                teamGroups.transition().duration(150)
-                    .style('opacity', 1);
-                lineTeamGroups.transition().duration(150)
-                    .style('opacity', 1);
-                badgeTeamGroups.transition().duration(150)
-                    .style('opacity', 1);
-                lineTeamGroups.selectAll('.trend-line')
-                    .attr('stroke-width', 1.2)
-                    .attr('stroke-opacity', 0.45);
-
-                tooltip.style('opacity', 0);
-            })
-            .on('click', function(event, d) {
-                event.preventDefault();
-                Router.navigateToTeam(d.name);
-            });
+        // Bind to badge groups
+        badgeTeamGroups
+            .style('cursor', 'pointer')
+            .on('mouseover', onMouseOver)
+            .on('mousemove', onMouseMove)
+            .on('mouseout', onMouseOut)
+            .on('click', onClick);
 
         // Store tooltip ref for cleanup
         this._historicalTrendTooltip = tooltip;
