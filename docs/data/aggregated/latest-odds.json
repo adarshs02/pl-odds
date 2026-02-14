@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-13T23:21:28.313839Z",
+  "lastUpdated": "2026-02-14T12:57:33.428666Z",
   "upcomingMatches": [
     {
       "id": "5b648e6c89d56257cb38abb4a76cee72",
@@ -23,9 +23,9 @@
         }
       },
       "kalshiOdds": {
-        "homeWinProb": 0.0952,
-        "drawProb": 0.1714,
-        "awayWinProb": 0.7333
+        "homeWinProb": 0.0874,
+        "drawProb": 0.165,
+        "awayWinProb": 0.7476
       }
     },
     {
@@ -50,9 +50,9 @@
         }
       },
       "kalshiOdds": {
-        "homeWinProb": 0.5327,
-        "drawProb": 0.2523,
-        "awayWinProb": 0.215
+        "homeWinProb": 0.5534,
+        "drawProb": 0.2621,
+        "awayWinProb": 0.1845
       }
     },
     {
@@ -77,9 +77,9 @@
         }
       },
       "kalshiOdds": {
-        "homeWinProb": 0.4679,
-        "drawProb": 0.2569,
-        "awayWinProb": 0.2752
+        "homeWinProb": 0.4766,
+        "drawProb": 0.2523,
+        "awayWinProb": 0.271
       }
     },
     {
@@ -104,9 +104,9 @@
         }
       },
       "kalshiOdds": {
-        "homeWinProb": 0.757,
-        "drawProb": 0.1495,
-        "awayWinProb": 0.0935
+        "homeWinProb": 0.7685,
+        "drawProb": 0.1389,
+        "awayWinProb": 0.0926
       }
     },
     {
@@ -131,9 +131,9 @@
         }
       },
       "kalshiOdds": {
-        "homeWinProb": 0.3853,
-        "drawProb": 0.2477,
-        "awayWinProb": 0.367
+        "homeWinProb": 0.3738,
+        "drawProb": 0.2617,
+        "awayWinProb": 0.3645
       }
     },
     {
@@ -158,9 +158,9 @@
         }
       },
       "kalshiOdds": {
-        "homeWinProb": 0.6415,
-        "drawProb": 0.1981,
-        "awayWinProb": 0.1604
+        "homeWinProb": 0.6542,
+        "drawProb": 0.1869,
+        "awayWinProb": 0.1589
       }
     },
     {
@@ -185,9 +185,9 @@
         }
       },
       "kalshiOdds": {
-        "homeWinProb": 0.5728,
-        "drawProb": 0.2524,
-        "awayWinProb": 0.1748
+        "homeWinProb": 0.5888,
+        "drawProb": 0.2336,
+        "awayWinProb": 0.1776
       }
     },
     {
@@ -212,9 +212,9 @@
         }
       },
       "kalshiOdds": {
-        "homeWinProb": 0.3619,
-        "drawProb": 0.2762,
-        "awayWinProb": 0.3619
+        "homeWinProb": 0.3679,
+        "drawProb": 0.2925,
+        "awayWinProb": 0.3396
       }
     },
     {
@@ -239,9 +239,9 @@
         }
       },
       "kalshiOdds": {
-        "homeWinProb": 0.2381,
-        "drawProb": 0.2286,
-        "awayWinProb": 0.5333
+        "homeWinProb": 0.2358,
+        "drawProb": 0.2453,
+        "awayWinProb": 0.5189
       }
     },
     {
@@ -266,9 +266,9 @@
         }
       },
       "kalshiOdds": {
-        "homeWinProb": 0.1635,
-        "drawProb": 0.2308,
-        "awayWinProb": 0.6058
+        "homeWinProb": 0.1714,
+        "drawProb": 0.2095,
+        "awayWinProb": 0.619
       }
     },
     {
@@ -293,9 +293,9 @@
         }
       },
       "kalshiOdds": {
-        "homeWinProb": 0.28,
-        "drawProb": 0.2,
-        "awayWinProb": 0.52
+        "homeWinProb": 0.2381,
+        "drawProb": 0.2571,
+        "awayWinProb": 0.5048
       }
     }
   ],
