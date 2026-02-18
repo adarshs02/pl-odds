@@ -1,33 +1,6 @@
 {
-  "lastUpdated": "2026-02-18T13:14:03.511440Z",
+  "lastUpdated": "2026-02-18T23:19:35.873796Z",
   "upcomingMatches": [
-    {
-      "id": "5b648e6c89d56257cb38abb4a76cee72",
-      "commenceTime": "2026-02-18T20:00:00Z",
-      "homeTeam": "Wolves",
-      "awayTeam": "Arsenal",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 9.5,
-        "draw": 5.75,
-        "away": 1.3,
-        "impliedProbHome": 0.105,
-        "impliedProbDraw": 0.174,
-        "impliedProbAway": 0.769
-      },
-      "spread": {
-        "homePoint": 1.5,
-        "awayPoint": -1.5,
-        "byBookmaker": {
-          "mybookieag": 1.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0784,
-        "drawProb": 0.1569,
-        "awayWinProb": 0.7647
-      }
-    },
     {
       "id": "121455e2f00d446f83bf2939263ff388",
       "commenceTime": "2026-02-21T15:00:00Z",
@@ -574,5 +547,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 21
+  "totalMatches": 20
 }
