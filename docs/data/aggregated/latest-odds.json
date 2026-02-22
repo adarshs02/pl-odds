@@ -1,114 +1,6 @@
 {
-  "lastUpdated": "2026-02-22T12:58:06.132961Z",
+  "lastUpdated": "2026-02-22T23:16:00.778396Z",
   "upcomingMatches": [
-    {
-      "id": "0674c077e5225c0795ebb7866e06ac4c",
-      "commenceTime": "2026-02-22T14:00:00Z",
-      "homeTeam": "Crystal Palace",
-      "awayTeam": "Wolves",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 1.61,
-        "draw": 4.1,
-        "away": 5.25,
-        "impliedProbHome": 0.621,
-        "impliedProbDraw": 0.244,
-        "impliedProbAway": 0.19
-      },
-      "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
-        "byBookmaker": {
-          "mybookieag": -0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.5392,
-        "drawProb": 0.2549,
-        "awayWinProb": 0.2059
-      }
-    },
-    {
-      "id": "9da0932d1255c3f7d4156ec7730ffa75",
-      "commenceTime": "2026-02-22T14:00:00Z",
-      "homeTeam": "Sunderland",
-      "awayTeam": "Fulham",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 2.6,
-        "draw": 3.25,
-        "away": 2.7,
-        "impliedProbHome": 0.385,
-        "impliedProbDraw": 0.308,
-        "impliedProbAway": 0.37
-      },
-      "spread": {
-        "homePoint": 0.5,
-        "awayPoint": -0.5,
-        "byBookmaker": {
-          "mybookieag": 0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.3398,
-        "drawProb": 0.301,
-        "awayWinProb": 0.3592
-      }
-    },
-    {
-      "id": "55754da4f841e3997e766dd7ff5eafe2",
-      "commenceTime": "2026-02-22T14:00:00Z",
-      "homeTeam": "Nott'm Forest",
-      "awayTeam": "Liverpool",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 4.0,
-        "draw": 3.9,
-        "away": 1.8,
-        "impliedProbHome": 0.25,
-        "impliedProbDraw": 0.256,
-        "impliedProbAway": 0.556
-      },
-      "spread": {
-        "homePoint": 0.5,
-        "awayPoint": -0.5,
-        "byBookmaker": {
-          "mybookieag": 0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.2353,
-        "drawProb": 0.2549,
-        "awayWinProb": 0.5098
-      }
-    },
-    {
-      "id": "ea3c0df9b0c96cc6a4c80022bbf85720",
-      "commenceTime": "2026-02-22T16:30:00Z",
-      "homeTeam": "Tottenham",
-      "awayTeam": "Arsenal",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 6.0,
-        "draw": 4.0,
-        "away": 1.54,
-        "impliedProbHome": 0.167,
-        "impliedProbDraw": 0.25,
-        "impliedProbAway": 0.649
-      },
-      "spread": {
-        "homePoint": 0.5,
-        "awayPoint": -0.5,
-        "byBookmaker": {
-          "mybookieag": 0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.1373,
-        "drawProb": 0.2059,
-        "awayWinProb": 0.6569
-      }
-    },
     {
       "id": "b2dfd255beca9618d6796a7e79a4b398",
       "commenceTime": "2026-02-23T20:00:00Z",
@@ -412,5 +304,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 15
+  "totalMatches": 11
 }
