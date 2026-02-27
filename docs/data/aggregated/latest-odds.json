@@ -1,33 +1,6 @@
 {
-  "lastUpdated": "2026-02-27T13:07:12.843870Z",
+  "lastUpdated": "2026-02-27T23:15:30.206208Z",
   "upcomingMatches": [
-    {
-      "id": "b9ade3f715e4c344543f672014bc2188",
-      "commenceTime": "2026-02-27T20:00:00Z",
-      "homeTeam": "Wolves",
-      "awayTeam": "Aston Villa",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 4.0,
-        "draw": 3.65,
-        "away": 1.91,
-        "impliedProbHome": 0.25,
-        "impliedProbDraw": 0.274,
-        "impliedProbAway": 0.524
-      },
-      "spread": {
-        "homePoint": 0.5,
-        "awayPoint": -0.5,
-        "byBookmaker": {
-          "mybookieag": 0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.2157,
-        "drawProb": 0.2549,
-        "awayWinProb": 0.5294
-      }
-    },
     {
       "id": "621cff11a60f850184fc515327f29a11",
       "commenceTime": "2026-02-28T12:30:00Z",
@@ -547,5 +520,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 20
+  "totalMatches": 19
 }

@@ -5558,5 +5558,25 @@
       }
     ],
     "last_update": "2026-02-24T03:22:29Z"
+  },
+  {
+    "id": "b9ade3f715e4c344543f672014bc2188",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-02-27T20:00:00Z",
+    "completed": true,
+    "home_team": "Wolverhampton Wanderers",
+    "away_team": "Aston Villa",
+    "scores": [
+      {
+        "name": "Aston Villa",
+        "score": "0"
+      },
+      {
+        "name": "Wolverhampton Wanderers",
+        "score": "2"
+      }
+    ],
+    "last_update": "2026-02-27T23:15:14Z"
   }
 ]
