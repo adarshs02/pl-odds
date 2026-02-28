@@ -1,114 +1,6 @@
 {
-  "lastUpdated": "2026-02-28T12:54:07.013594Z",
+  "lastUpdated": "2026-02-28T23:12:20.141949Z",
   "upcomingMatches": [
-    {
-      "id": "c31face07c72bd0418f18dc032764cea",
-      "commenceTime": "2026-02-28T15:00:00Z",
-      "homeTeam": "Burnley",
-      "awayTeam": "Brentford",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 4.4,
-        "draw": 3.9,
-        "away": 1.77,
-        "impliedProbHome": 0.227,
-        "impliedProbDraw": 0.256,
-        "impliedProbAway": 0.565
-      },
-      "spread": {
-        "homePoint": 0.5,
-        "awayPoint": -0.5,
-        "byBookmaker": {
-          "mybookieag": 0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.22,
-        "drawProb": 0.24,
-        "awayWinProb": 0.54
-      }
-    },
-    {
-      "id": "5eeaa47bfb416d8b2a5f25cf16731cb2",
-      "commenceTime": "2026-02-28T15:00:00Z",
-      "homeTeam": "Newcastle",
-      "awayTeam": "Everton",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 1.74,
-        "draw": 3.95,
-        "away": 4.5,
-        "impliedProbHome": 0.575,
-        "impliedProbDraw": 0.253,
-        "impliedProbAway": 0.222
-      },
-      "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
-        "byBookmaker": {
-          "mybookieag": -0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.5446,
-        "drawProb": 0.2475,
-        "awayWinProb": 0.2079
-      }
-    },
-    {
-      "id": "466f3df43a6647947e4fb9cab6657d80",
-      "commenceTime": "2026-02-28T15:00:00Z",
-      "homeTeam": "Liverpool",
-      "awayTeam": "West Ham",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 1.4,
-        "draw": 5.25,
-        "away": 7.0,
-        "impliedProbHome": 0.714,
-        "impliedProbDraw": 0.19,
-        "impliedProbAway": 0.143
-      },
-      "spread": {
-        "homePoint": -1.5,
-        "awayPoint": 1.5,
-        "byBookmaker": {
-          "mybookieag": -1.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.6832,
-        "drawProb": 0.1881,
-        "awayWinProb": 0.1287
-      }
-    },
-    {
-      "id": "300862b165c77b6fe6c3fccf717aba1e",
-      "commenceTime": "2026-02-28T17:30:00Z",
-      "homeTeam": "Leeds",
-      "awayTeam": "Man City",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 5.0,
-        "draw": 4.5,
-        "away": 1.61,
-        "impliedProbHome": 0.2,
-        "impliedProbDraw": 0.222,
-        "impliedProbAway": 0.621
-      },
-      "spread": {
-        "homePoint": 0.5,
-        "awayPoint": -0.5,
-        "byBookmaker": {
-          "mybookieag": 0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.1782,
-        "drawProb": 0.2376,
-        "awayWinProb": 0.5842
-      }
-    },
     {
       "id": "b0e5c780eac6e73974f5d023b9a7f17b",
       "commenceTime": "2026-03-01T14:00:00Z",
@@ -493,5 +385,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 18
+  "totalMatches": 14
 }
