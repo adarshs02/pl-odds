@@ -1,114 +1,6 @@
 {
-  "lastUpdated": "2026-03-01T12:56:42.594253Z",
+  "lastUpdated": "2026-03-01T23:14:20.209466Z",
   "upcomingMatches": [
-    {
-      "id": "b0e5c780eac6e73974f5d023b9a7f17b",
-      "commenceTime": "2026-03-01T14:00:00Z",
-      "homeTeam": "Brighton",
-      "awayTeam": "Nott'm Forest",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 2.1,
-        "draw": 3.55,
-        "away": 3.35,
-        "impliedProbHome": 0.476,
-        "impliedProbDraw": 0.282,
-        "impliedProbAway": 0.299
-      },
-      "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
-        "byBookmaker": {
-          "mybookieag": -0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.45,
-        "drawProb": 0.28,
-        "awayWinProb": 0.27
-      }
-    },
-    {
-      "id": "17717f1dec1142342e08b89ec57dafa8",
-      "commenceTime": "2026-03-01T14:00:00Z",
-      "homeTeam": "Man United",
-      "awayTeam": "Crystal Palace",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 1.56,
-        "draw": 4.4,
-        "away": 5.25,
-        "impliedProbHome": 0.641,
-        "impliedProbDraw": 0.227,
-        "impliedProbAway": 0.19
-      },
-      "spread": {
-        "homePoint": -1.5,
-        "awayPoint": 1.5,
-        "byBookmaker": {
-          "mybookieag": -1.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.6436,
-        "drawProb": 0.2079,
-        "awayWinProb": 0.1485
-      }
-    },
-    {
-      "id": "c9a6fecd9a75e1db00f4a2aa82e0b69e",
-      "commenceTime": "2026-03-01T14:00:00Z",
-      "homeTeam": "Fulham",
-      "awayTeam": "Tottenham",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 2.1,
-        "draw": 3.55,
-        "away": 3.35,
-        "impliedProbHome": 0.476,
-        "impliedProbDraw": 0.282,
-        "impliedProbAway": 0.299
-      },
-      "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
-        "byBookmaker": {
-          "mybookieag": -0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.4854,
-        "drawProb": 0.2524,
-        "awayWinProb": 0.2621
-      }
-    },
-    {
-      "id": "9471be41334d79e0e85fda9feb065bfa",
-      "commenceTime": "2026-03-01T16:30:00Z",
-      "homeTeam": "Arsenal",
-      "awayTeam": "Chelsea",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 1.62,
-        "draw": 4.1,
-        "away": 5.0,
-        "impliedProbHome": 0.617,
-        "impliedProbDraw": 0.244,
-        "impliedProbAway": 0.2
-      },
-      "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
-        "byBookmaker": {
-          "mybookieag": -0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.6139,
-        "drawProb": 0.2178,
-        "awayWinProb": 0.1683
-      }
-    },
     {
       "id": "0514ff63edc959b9fedb8a345a5417a6",
       "commenceTime": "2026-03-03T19:30:00Z",
@@ -385,5 +277,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 14
+  "totalMatches": 10
 }
