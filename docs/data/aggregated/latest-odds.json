@@ -1,114 +1,6 @@
 {
-  "lastUpdated": "2026-03-03T13:06:21.160505Z",
+  "lastUpdated": "2026-03-03T23:16:30.206700Z",
   "upcomingMatches": [
-    {
-      "id": "0514ff63edc959b9fedb8a345a5417a6",
-      "commenceTime": "2026-03-03T19:30:00Z",
-      "homeTeam": "Bournemouth",
-      "awayTeam": "Brentford",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 2.35,
-        "draw": 3.65,
-        "away": 2.85,
-        "impliedProbHome": 0.426,
-        "impliedProbDraw": 0.274,
-        "impliedProbAway": 0.351
-      },
-      "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
-        "byBookmaker": {
-          "mybookieag": -0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.3824,
-        "drawProb": 0.2549,
-        "awayWinProb": 0.3627
-      }
-    },
-    {
-      "id": "2e1d2217ad447314a64b383883f80929",
-      "commenceTime": "2026-03-03T19:30:00Z",
-      "homeTeam": "Everton",
-      "awayTeam": "Burnley",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 1.65,
-        "draw": 3.9,
-        "away": 5.5,
-        "impliedProbHome": 0.606,
-        "impliedProbDraw": 0.256,
-        "impliedProbAway": 0.182
-      },
-      "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
-        "byBookmaker": {
-          "mybookieag": -0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.6139,
-        "drawProb": 0.2376,
-        "awayWinProb": 0.1485
-      }
-    },
-    {
-      "id": "c70d3c7df4d50c7e0edbf4faa36f9aa6",
-      "commenceTime": "2026-03-03T19:30:00Z",
-      "homeTeam": "Leeds",
-      "awayTeam": "Sunderland",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 1.91,
-        "draw": 3.55,
-        "away": 4.1,
-        "impliedProbHome": 0.524,
-        "impliedProbDraw": 0.282,
-        "impliedProbAway": 0.244
-      },
-      "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
-        "byBookmaker": {
-          "mybookieag": -0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.51,
-        "drawProb": 0.27,
-        "awayWinProb": 0.22
-      }
-    },
-    {
-      "id": "d558849331cb2c112e9cce7219e46efd",
-      "commenceTime": "2026-03-03T20:15:00Z",
-      "homeTeam": "Wolves",
-      "awayTeam": "Liverpool",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 6.5,
-        "draw": 5.25,
-        "away": 1.42,
-        "impliedProbHome": 0.154,
-        "impliedProbDraw": 0.19,
-        "impliedProbAway": 0.704
-      },
-      "spread": {
-        "homePoint": 1.5,
-        "awayPoint": -1.5,
-        "byBookmaker": {
-          "mybookieag": 1.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.14,
-        "drawProb": 0.19,
-        "awayWinProb": 0.67
-      }
-    },
     {
       "id": "4671b2f61a9077cd741ca08032cc7f86",
       "commenceTime": "2026-03-04T19:30:00Z",
@@ -232,10 +124,10 @@
         "impliedProbAway": 0.385
       },
       "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
+        "homePoint": 0.5,
+        "awayPoint": -0.5,
         "byBookmaker": {
-          "mybookieag": -0.5
+          "mybookieag": 0.5
         }
       },
       "kalshiOdds": {
@@ -277,5 +169,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 10
+  "totalMatches": 6
 }
