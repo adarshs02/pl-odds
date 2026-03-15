@@ -1,114 +1,6 @@
 {
-  "lastUpdated": "2026-03-15T13:01:39.855011Z",
+  "lastUpdated": "2026-03-15T23:19:21.089116Z",
   "upcomingMatches": [
-    {
-      "id": "18e2b8ff6e7459881bc8ea82284bfa81",
-      "commenceTime": "2026-03-15T14:00:00Z",
-      "homeTeam": "Man United",
-      "awayTeam": "Aston Villa",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 1.74,
-        "draw": 4.1,
-        "away": 4.3,
-        "impliedProbHome": 0.575,
-        "impliedProbDraw": 0.244,
-        "impliedProbAway": 0.233
-      },
-      "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
-        "byBookmaker": {
-          "mybookieag": -0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
-    {
-      "id": "44df3d0dc87a1d7970d9ec5f2bf03c25",
-      "commenceTime": "2026-03-15T14:00:00Z",
-      "homeTeam": "Crystal Palace",
-      "awayTeam": "Leeds",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 2.35,
-        "draw": 3.25,
-        "away": 3.1,
-        "impliedProbHome": 0.426,
-        "impliedProbDraw": 0.308,
-        "impliedProbAway": 0.323
-      },
-      "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
-        "byBookmaker": {
-          "mybookieag": -0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
-    {
-      "id": "1b704b460cca3f7bf6cc31f0a7ef5d22",
-      "commenceTime": "2026-03-15T14:00:00Z",
-      "homeTeam": "Nott'm Forest",
-      "awayTeam": "Fulham",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 2.15,
-        "draw": 3.4,
-        "away": 3.3,
-        "impliedProbHome": 0.465,
-        "impliedProbDraw": 0.294,
-        "impliedProbAway": 0.303
-      },
-      "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
-        "byBookmaker": {
-          "mybookieag": -0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
-    {
-      "id": "0ca99a22a42a6d974f58b6de06c2617f",
-      "commenceTime": "2026-03-15T16:30:00Z",
-      "homeTeam": "Liverpool",
-      "awayTeam": "Tottenham",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 1.33,
-        "draw": 5.75,
-        "away": 7.5,
-        "impliedProbHome": 0.752,
-        "impliedProbDraw": 0.174,
-        "impliedProbAway": 0.133
-      },
-      "spread": {
-        "homePoint": -1.5,
-        "awayPoint": 1.5,
-        "byBookmaker": {
-          "mybookieag": -1.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
     {
       "id": "5d742adbd3eb4cc8128387cc6353e1fe",
       "commenceTime": "2026-03-16T20:00:00Z",
@@ -358,5 +250,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 13
+  "totalMatches": 9
 }
