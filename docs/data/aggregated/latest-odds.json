@@ -1,33 +1,6 @@
 {
-  "lastUpdated": "2026-03-16T13:22:02.167743Z",
+  "lastUpdated": "2026-03-16T23:21:21.715107Z",
   "upcomingMatches": [
-    {
-      "id": "5d742adbd3eb4cc8128387cc6353e1fe",
-      "commenceTime": "2026-03-16T20:00:00Z",
-      "homeTeam": "Brentford",
-      "awayTeam": "Wolves",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 1.57,
-        "draw": 4.3,
-        "away": 5.5,
-        "impliedProbHome": 0.637,
-        "impliedProbDraw": 0.233,
-        "impliedProbAway": 0.182
-      },
-      "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
-        "byBookmaker": {
-          "mybookieag": -0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
     {
       "id": "97ab90a603a65929bd77565a95e00644",
       "commenceTime": "2026-03-20T20:00:00Z",
@@ -97,10 +70,10 @@
         "impliedProbAway": 0.167
       },
       "spread": {
-        "homePoint": -1.5,
-        "awayPoint": 1.5,
+        "homePoint": -0.5,
+        "awayPoint": 0.5,
         "byBookmaker": {
-          "mybookieag": -1.5
+          "mybookieag": -0.5
         }
       },
       "kalshiOdds": {
@@ -250,5 +223,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 9
+  "totalMatches": 8
 }

@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-15T23:19:21.034162Z",
+  "lastUpdated": "2026-03-16T23:21:21.662602Z",
   "teams": [
     {
       "name": "Sunderland",
@@ -978,32 +978,48 @@
           "spread": 0.5,
           "netPerformance": 0.5,
           "cumulativeNetPerformance": 8.5
+        },
+        {
+          "date": "2026-03-16",
+          "opponent": "Wolves",
+          "homeAway": "home",
+          "score": "2-2",
+          "result": "D",
+          "spreadsByBookmaker": {
+            "mybookieag": -0.5
+          },
+          "netPerformanceByBookmaker": {
+            "mybookieag": -0.5
+          },
+          "spread": -0.5,
+          "netPerformance": -0.5,
+          "cumulativeNetPerformance": 8.0
         }
       ],
-      "totalNetPerformance": 8.5,
+      "totalNetPerformance": 8.0,
       "totalNetPerformanceByBookmaker": {
         "backfill": 8.0,
         "matchbook": 1.5,
-        "mybookieag": -1.0
+        "mybookieag": -1.5
       },
       "statistics": {
-        "matchesPlayed": 29,
+        "matchesPlayed": 30,
         "wins": 13,
         "losses": 11,
-        "draws": 5,
+        "draws": 6,
         "covers": 16,
         "coversByBookmaker": {
           "backfill": 10,
           "matchbook": 3,
           "mybookieag": 3
         },
-        "avgNetPerformance": 0.29,
-        "winRate": 0.448,
-        "coverRate": 0.552,
+        "avgNetPerformance": 0.27,
+        "winRate": 0.433,
+        "coverRate": 0.533,
         "coverRateByBookmaker": {
-          "backfill": 0.345,
-          "matchbook": 0.103,
-          "mybookieag": 0.103
+          "backfill": 0.333,
+          "matchbook": 0.1,
+          "mybookieag": 0.1
         }
       }
     },
@@ -8655,32 +8671,48 @@
           "spread": 1.5,
           "netPerformance": 2.5,
           "cumulativeNetPerformance": -6.0
+        },
+        {
+          "date": "2026-03-16",
+          "opponent": "Brentford",
+          "homeAway": "away",
+          "score": "2-2",
+          "result": "D",
+          "spreadsByBookmaker": {
+            "mybookieag": 0.5
+          },
+          "netPerformanceByBookmaker": {
+            "mybookieag": 0.5
+          },
+          "spread": 0.5,
+          "netPerformance": 0.5,
+          "cumulativeNetPerformance": -5.5
         }
       ],
-      "totalNetPerformance": -6.0,
+      "totalNetPerformance": -5.5,
       "totalNetPerformanceByBookmaker": {
         "backfill": -10.0,
         "matchbook": -2.5,
-        "mybookieag": 6.5
+        "mybookieag": 7.0
       },
       "statistics": {
-        "matchesPlayed": 30,
+        "matchesPlayed": 31,
         "wins": 3,
         "losses": 20,
-        "draws": 7,
-        "covers": 14,
+        "draws": 8,
+        "covers": 15,
         "coversByBookmaker": {
           "backfill": 8,
           "matchbook": 2,
-          "mybookieag": 4
+          "mybookieag": 5
         },
-        "avgNetPerformance": -0.2,
-        "winRate": 0.1,
-        "coverRate": 0.467,
+        "avgNetPerformance": -0.18,
+        "winRate": 0.097,
+        "coverRate": 0.484,
         "coverRateByBookmaker": {
-          "backfill": 0.267,
-          "matchbook": 0.067,
-          "mybookieag": 0.133
+          "backfill": 0.258,
+          "matchbook": 0.065,
+          "mybookieag": 0.161
         }
       }
     },
@@ -10196,6 +10228,6 @@
     "mybookieag"
   ],
   "correlation": 0.399,
-  "totalMatches": 300,
+  "totalMatches": 301,
   "teamsTracked": 20
 }
