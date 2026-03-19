@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-19T13:14:00.423535Z",
+  "lastUpdated": "2026-03-19T23:20:21.953842Z",
   "upcomingMatches": [
     {
       "id": "97ab90a603a65929bd77565a95e00644",
@@ -70,10 +70,10 @@
         "impliedProbAway": 0.167
       },
       "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
+        "homePoint": -1.5,
+        "awayPoint": 1.5,
         "byBookmaker": {
-          "mybookieag": -0.5
+          "mybookieag": -1.5
         }
       },
       "kalshiOdds": {
