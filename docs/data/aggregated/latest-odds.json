@@ -1,33 +1,6 @@
 {
-  "lastUpdated": "2026-03-20T13:08:13.431203Z",
+  "lastUpdated": "2026-03-20T23:19:24.920596Z",
   "upcomingMatches": [
-    {
-      "id": "97ab90a603a65929bd77565a95e00644",
-      "commenceTime": "2026-03-20T20:00:00Z",
-      "homeTeam": "Bournemouth",
-      "awayTeam": "Man United",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 3.15,
-        "draw": 3.75,
-        "away": 2.15,
-        "impliedProbHome": 0.317,
-        "impliedProbDraw": 0.267,
-        "impliedProbAway": 0.465
-      },
-      "spread": {
-        "homePoint": 0.5,
-        "awayPoint": -0.5,
-        "byBookmaker": {
-          "mybookieag": 0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
     {
       "id": "6f6891624dbf3d13a1e41a24d2c7bf4c",
       "commenceTime": "2026-03-21T12:30:00Z",
@@ -70,10 +43,10 @@
         "impliedProbAway": 0.167
       },
       "spread": {
-        "homePoint": -1.5,
-        "awayPoint": 1.5,
+        "homePoint": -0.5,
+        "awayPoint": 0.5,
         "byBookmaker": {
-          "mybookieag": -1.5
+          "mybookieag": -0.5
         }
       },
       "kalshiOdds": {
@@ -443,5 +416,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 18
+  "totalMatches": 17
 }
