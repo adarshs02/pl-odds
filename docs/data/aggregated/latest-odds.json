@@ -1,33 +1,6 @@
 {
-  "lastUpdated": "2026-03-20T23:19:24.920596Z",
+  "lastUpdated": "2026-03-21T12:57:58.542981Z",
   "upcomingMatches": [
-    {
-      "id": "6f6891624dbf3d13a1e41a24d2c7bf4c",
-      "commenceTime": "2026-03-21T12:30:00Z",
-      "homeTeam": "Brighton",
-      "awayTeam": "Liverpool",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 3.1,
-        "draw": 3.65,
-        "away": 2.2,
-        "impliedProbHome": 0.323,
-        "impliedProbDraw": 0.274,
-        "impliedProbAway": 0.455
-      },
-      "spread": {
-        "homePoint": 0.5,
-        "awayPoint": -0.5,
-        "byBookmaker": {
-          "mybookieag": 0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
     {
       "id": "5a6fab8da714813d8037b9754f082f7f",
       "commenceTime": "2026-03-21T15:00:00Z",
@@ -416,5 +389,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 17
+  "totalMatches": 16
 }
