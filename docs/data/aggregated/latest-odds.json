@@ -1,33 +1,6 @@
 {
-  "lastUpdated": "2026-03-21T23:15:06.821467Z",
+  "lastUpdated": "2026-03-22T13:00:11.615945Z",
   "upcomingMatches": [
-    {
-      "id": "3def90dc9d468dd46508a5afae2d5546",
-      "commenceTime": "2026-03-22T12:00:00Z",
-      "homeTeam": "Newcastle",
-      "awayTeam": "Sunderland",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 1.65,
-        "draw": 3.95,
-        "away": 5.25,
-        "impliedProbHome": 0.606,
-        "impliedProbDraw": 0.253,
-        "impliedProbAway": 0.19
-      },
-      "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
-        "byBookmaker": {
-          "mybookieag": -0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
     {
       "id": "1efa28912151d6adc43453fb2302a610",
       "commenceTime": "2026-03-22T14:15:00Z",
@@ -308,5 +281,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 13
+  "totalMatches": 12
 }
