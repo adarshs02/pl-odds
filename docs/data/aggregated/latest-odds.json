@@ -1,60 +1,6 @@
 {
-  "lastUpdated": "2026-03-22T13:00:11.615945Z",
+  "lastUpdated": "2026-03-22T23:17:33.210255Z",
   "upcomingMatches": [
-    {
-      "id": "1efa28912151d6adc43453fb2302a610",
-      "commenceTime": "2026-03-22T14:15:00Z",
-      "homeTeam": "Aston Villa",
-      "awayTeam": "West Ham",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 1.95,
-        "draw": 3.45,
-        "away": 3.8,
-        "impliedProbHome": 0.513,
-        "impliedProbDraw": 0.29,
-        "impliedProbAway": 0.263
-      },
-      "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
-        "byBookmaker": {
-          "mybookieag": -0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
-    {
-      "id": "81dd92df69b61ff2716351eea3bd457c",
-      "commenceTime": "2026-03-22T14:15:00Z",
-      "homeTeam": "Tottenham",
-      "awayTeam": "Nott'm Forest",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 2.35,
-        "draw": 3.4,
-        "away": 2.95,
-        "impliedProbHome": 0.426,
-        "impliedProbDraw": 0.294,
-        "impliedProbAway": 0.339
-      },
-      "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
-        "byBookmaker": {
-          "mybookieag": -0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
     {
       "id": "10d3a3a8df4f15a0754da8195a47c41f",
       "commenceTime": "2026-04-10T19:00:00Z",
@@ -281,5 +227,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 12
+  "totalMatches": 10
 }
