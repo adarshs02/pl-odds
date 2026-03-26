@@ -1,19 +1,19 @@
 {
-  "lastUpdated": "2026-03-25T23:24:10.716010Z",
+  "lastUpdated": "2026-03-26T13:26:00.028653Z",
   "upcomingMatches": [
     {
       "id": "10d3a3a8df4f15a0754da8195a47c41f",
-      "commenceTime": "2026-04-10T19:00:00Z",
+      "commenceTime": "2026-04-10T20:00:00Z",
       "homeTeam": "West Ham",
       "awayTeam": "Wolves",
       "h2hOdds": {
         "bookmaker": "DraftKings",
-        "home": 1.77,
-        "draw": 3.8,
-        "away": 4.2,
-        "impliedProbHome": 0.565,
-        "impliedProbDraw": 0.263,
-        "impliedProbAway": 0.238
+        "home": 1.8,
+        "draw": 3.65,
+        "away": 4.1,
+        "impliedProbHome": 0.556,
+        "impliedProbDraw": 0.274,
+        "impliedProbAway": 0.244
       },
       "spread": {
         "homePoint": -0.5,
@@ -30,17 +30,17 @@
     },
     {
       "id": "ff027a0ac6a0538a713b46bd753b670d",
-      "commenceTime": "2026-04-11T11:30:00Z",
+      "commenceTime": "2026-04-11T12:30:00Z",
       "homeTeam": "Arsenal",
       "awayTeam": "Bournemouth",
       "h2hOdds": {
         "bookmaker": "DraftKings",
-        "home": 1.34,
-        "draw": 5.0,
-        "away": 8.0,
-        "impliedProbHome": 0.746,
-        "impliedProbDraw": 0.2,
-        "impliedProbAway": 0.125
+        "home": 1.36,
+        "draw": 4.9,
+        "away": 7.5,
+        "impliedProbHome": 0.735,
+        "impliedProbDraw": 0.204,
+        "impliedProbAway": 0.133
       },
       "spread": {
         "homePoint": -1.5,
@@ -83,60 +83,6 @@
       }
     },
     {
-      "id": "0b8adb16f16b2490e3fbd514a2d86190",
-      "commenceTime": "2026-04-11T14:00:00Z",
-      "homeTeam": "Brentford",
-      "awayTeam": "Everton",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 2.15,
-        "draw": 3.3,
-        "away": 3.3,
-        "impliedProbHome": 0.465,
-        "impliedProbDraw": 0.303,
-        "impliedProbAway": 0.303
-      },
-      "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
-        "byBookmaker": {
-          "mybookieag": -0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
-    {
-      "id": "44d98d5d5c19eb115a527f1de294f03e",
-      "commenceTime": "2026-04-11T14:00:00Z",
-      "homeTeam": "Burnley",
-      "awayTeam": "Brighton",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 4.1,
-        "draw": 3.85,
-        "away": 1.77,
-        "impliedProbHome": 0.244,
-        "impliedProbDraw": 0.26,
-        "impliedProbAway": 0.565
-      },
-      "spread": {
-        "homePoint": 0.5,
-        "awayPoint": -0.5,
-        "byBookmaker": {
-          "mybookieag": 0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
-    {
       "id": "34bae76a0a8f270a8765f8a4ec5d4234",
       "commenceTime": "2026-04-11T14:00:00Z",
       "homeTeam": "Crystal Palace",
@@ -164,18 +110,72 @@
       }
     },
     {
+      "id": "0b8adb16f16b2490e3fbd514a2d86190",
+      "commenceTime": "2026-04-11T15:00:00Z",
+      "homeTeam": "Brentford",
+      "awayTeam": "Everton",
+      "h2hOdds": {
+        "bookmaker": "DraftKings",
+        "home": 2.15,
+        "draw": 3.3,
+        "away": 3.3,
+        "impliedProbHome": 0.465,
+        "impliedProbDraw": 0.303,
+        "impliedProbAway": 0.303
+      },
+      "spread": {
+        "homePoint": -0.5,
+        "awayPoint": 0.5,
+        "byBookmaker": {
+          "mybookieag": -0.5
+        }
+      },
+      "kalshiOdds": {
+        "homeWinProb": 0.0,
+        "drawProb": 0.0,
+        "awayWinProb": 0.0
+      }
+    },
+    {
+      "id": "44d98d5d5c19eb115a527f1de294f03e",
+      "commenceTime": "2026-04-11T15:00:00Z",
+      "homeTeam": "Burnley",
+      "awayTeam": "Brighton",
+      "h2hOdds": {
+        "bookmaker": "DraftKings",
+        "home": 4.2,
+        "draw": 3.9,
+        "away": 1.74,
+        "impliedProbHome": 0.238,
+        "impliedProbDraw": 0.256,
+        "impliedProbAway": 0.575
+      },
+      "spread": {
+        "homePoint": 0.5,
+        "awayPoint": -0.5,
+        "byBookmaker": {
+          "mybookieag": 0.5
+        }
+      },
+      "kalshiOdds": {
+        "homeWinProb": 0.0,
+        "drawProb": 0.0,
+        "awayWinProb": 0.0
+      }
+    },
+    {
       "id": "f022ab37b6c69f588015498186a9694b",
-      "commenceTime": "2026-04-11T16:30:00Z",
+      "commenceTime": "2026-04-11T17:30:00Z",
       "homeTeam": "Liverpool",
       "awayTeam": "Fulham",
       "h2hOdds": {
         "bookmaker": "DraftKings",
-        "home": 1.5,
+        "home": 1.53,
         "draw": 4.5,
-        "away": 5.5,
-        "impliedProbHome": 0.667,
+        "away": 5.25,
+        "impliedProbHome": 0.654,
         "impliedProbDraw": 0.222,
-        "impliedProbAway": 0.182
+        "impliedProbAway": 0.19
       },
       "spread": {
         "homePoint": -1.5,
@@ -192,23 +192,23 @@
     },
     {
       "id": "5b7b41cabf1a84e8991c9cf3d0a7ab90",
-      "commenceTime": "2026-04-12T13:00:00Z",
+      "commenceTime": "2026-04-12T14:00:00Z",
       "homeTeam": "Sunderland",
       "awayTeam": "Tottenham",
       "h2hOdds": {
         "bookmaker": "DraftKings",
-        "home": 2.65,
+        "home": 2.55,
         "draw": 3.35,
-        "away": 2.55,
-        "impliedProbHome": 0.377,
+        "away": 2.6,
+        "impliedProbHome": 0.392,
         "impliedProbDraw": 0.299,
-        "impliedProbAway": 0.392
+        "impliedProbAway": 0.385
       },
       "spread": {
-        "homePoint": 0.5,
-        "awayPoint": -0.5,
+        "homePoint": -0.5,
+        "awayPoint": 0.5,
         "byBookmaker": {
-          "mybookieag": 0.5
+          "mybookieag": -0.5
         }
       },
       "kalshiOdds": {
@@ -219,17 +219,17 @@
     },
     {
       "id": "e4c2f457a464a95a8631ab28ef77b0b9",
-      "commenceTime": "2026-04-12T15:30:00Z",
+      "commenceTime": "2026-04-12T16:30:00Z",
       "homeTeam": "Chelsea",
       "awayTeam": "Man City",
       "h2hOdds": {
         "bookmaker": "DraftKings",
-        "home": 2.75,
+        "home": 2.85,
         "draw": 3.8,
-        "away": 2.25,
-        "impliedProbHome": 0.364,
+        "away": 2.2,
+        "impliedProbHome": 0.351,
         "impliedProbDraw": 0.263,
-        "impliedProbAway": 0.444
+        "impliedProbAway": 0.455
       },
       "spread": {
         "homePoint": 0.5,
@@ -246,7 +246,7 @@
     },
     {
       "id": "7d48c93e68e7403998d0ed38e99caae5",
-      "commenceTime": "2026-04-13T19:00:00Z",
+      "commenceTime": "2026-04-13T20:00:00Z",
       "homeTeam": "Man United",
       "awayTeam": "Leeds",
       "h2hOdds": {
@@ -273,7 +273,7 @@
     },
     {
       "id": "2c2061ffc9ee67808fd45273089d7795",
-      "commenceTime": "2026-04-18T11:30:00Z",
+      "commenceTime": "2026-04-18T12:30:00Z",
       "homeTeam": "Brentford",
       "awayTeam": "Fulham",
       "h2hOdds": {
@@ -295,7 +295,7 @@
     },
     {
       "id": "be6cdb6ddd27d099b5291f0d1e051d92",
-      "commenceTime": "2026-04-18T14:00:00Z",
+      "commenceTime": "2026-04-18T15:00:00Z",
       "homeTeam": "Newcastle",
       "awayTeam": "Bournemouth",
       "h2hOdds": {
@@ -317,17 +317,17 @@
     },
     {
       "id": "d137c5f062243e857803fcebfdda2953",
-      "commenceTime": "2026-04-18T14:00:00Z",
+      "commenceTime": "2026-04-18T15:00:00Z",
       "homeTeam": "Leeds",
       "awayTeam": "Wolves",
       "h2hOdds": {
         "bookmaker": "DraftKings",
-        "home": 1.67,
-        "draw": 3.8,
-        "away": 4.9,
-        "impliedProbHome": 0.599,
-        "impliedProbDraw": 0.263,
-        "impliedProbAway": 0.204
+        "home": 1.65,
+        "draw": 3.9,
+        "away": 5.0,
+        "impliedProbHome": 0.606,
+        "impliedProbDraw": 0.256,
+        "impliedProbAway": 0.2
       },
       "spread": {
         "homePoint": -0.5,
@@ -339,7 +339,7 @@
     },
     {
       "id": "5e7f44119f2e640fdf04c245a764657f",
-      "commenceTime": "2026-04-18T16:30:00Z",
+      "commenceTime": "2026-04-18T17:30:00Z",
       "homeTeam": "Tottenham",
       "awayTeam": "Brighton",
       "h2hOdds": {
@@ -361,7 +361,7 @@
     },
     {
       "id": "933e20e0892b28ca075a9ab5465d5c6d",
-      "commenceTime": "2026-04-18T19:00:00Z",
+      "commenceTime": "2026-04-18T20:00:00Z",
       "homeTeam": "Chelsea",
       "awayTeam": "Man United",
       "h2hOdds": {
@@ -427,7 +427,7 @@
     },
     {
       "id": "3e7369c873aed1c62f4d76fd652d73c7",
-      "commenceTime": "2026-04-19T13:00:00Z",
+      "commenceTime": "2026-04-19T14:00:00Z",
       "homeTeam": "Everton",
       "awayTeam": "Liverpool",
       "h2hOdds": {
@@ -471,17 +471,17 @@
     },
     {
       "id": "ea28653ebcd7743146869e2aa7851275",
-      "commenceTime": "2026-04-20T19:00:00Z",
+      "commenceTime": "2026-04-20T20:00:00Z",
       "homeTeam": "Crystal Palace",
       "awayTeam": "West Ham",
       "h2hOdds": {
         "bookmaker": "DraftKings",
         "home": 2.15,
-        "draw": 3.0,
-        "away": 3.7,
+        "draw": 3.1,
+        "away": 3.55,
         "impliedProbHome": 0.465,
-        "impliedProbDraw": 0.333,
-        "impliedProbAway": 0.27
+        "impliedProbDraw": 0.323,
+        "impliedProbAway": 0.282
       },
       "spread": {
         "homePoint": -0.5,
