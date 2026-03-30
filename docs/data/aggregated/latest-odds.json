@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-29T23:22:38.568059Z",
+  "lastUpdated": "2026-03-30T13:42:02.386351Z",
   "upcomingMatches": [
     {
       "id": "10d3a3a8df4f15a0754da8195a47c41f",
@@ -35,11 +35,11 @@
       "awayTeam": "Bournemouth",
       "h2hOdds": {
         "bookmaker": "DraftKings",
-        "home": 1.36,
-        "draw": 4.9,
+        "home": 1.38,
+        "draw": 4.8,
         "away": 7.5,
-        "impliedProbHome": 0.735,
-        "impliedProbDraw": 0.204,
+        "impliedProbHome": 0.725,
+        "impliedProbDraw": 0.208,
         "impliedProbAway": 0.133
       },
       "spread": {
