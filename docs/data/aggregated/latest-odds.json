@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-02T23:24:32.204333Z",
+  "lastUpdated": "2026-04-03T13:12:09.907805Z",
   "upcomingMatches": [
     {
       "id": "10d3a3a8df4f15a0754da8195a47c41f",
@@ -426,6 +426,11 @@
         "byBookmaker": {
           "mybookieag": -0.5
         }
+      },
+      "kalshiOdds": {
+        "homeWinProb": 0.0,
+        "drawProb": 0.0,
+        "awayWinProb": 0.0
       }
     },
     {
@@ -448,6 +453,11 @@
         "byBookmaker": {
           "mybookieag": -1.5
         }
+      },
+      "kalshiOdds": {
+        "homeWinProb": 0.0,
+        "drawProb": 0.0,
+        "awayWinProb": 0.0
       }
     },
     {
@@ -470,6 +480,11 @@
         "byBookmaker": {
           "mybookieag": 0.5
         }
+      },
+      "kalshiOdds": {
+        "homeWinProb": 0.0,
+        "drawProb": 0.0,
+        "awayWinProb": 0.0
       }
     },
     {
@@ -492,6 +507,11 @@
         "byBookmaker": {
           "mybookieag": -0.5
         }
+      },
+      "kalshiOdds": {
+        "homeWinProb": 0.0,
+        "drawProb": 0.0,
+        "awayWinProb": 0.0
       }
     },
     {
