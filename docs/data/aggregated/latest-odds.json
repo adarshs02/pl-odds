@@ -1,141 +1,6 @@
 {
-  "lastUpdated": "2026-04-11T13:06:36.690848Z",
+  "lastUpdated": "2026-04-11T23:22:53.741480Z",
   "upcomingMatches": [
-    {
-      "id": "41b3af3f11ca7ac6a1f3763620c10d5a",
-      "commenceTime": "2026-04-11T14:00:00Z",
-      "homeTeam": "Nott'm Forest",
-      "awayTeam": "Aston Villa",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 2.55,
-        "draw": 3.25,
-        "away": 2.7,
-        "impliedProbHome": 0.392,
-        "impliedProbDraw": 0.308,
-        "impliedProbAway": 0.37
-      },
-      "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
-        "byBookmaker": {
-          "mybookieag": -0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
-    {
-      "id": "0b8adb16f16b2490e3fbd514a2d86190",
-      "commenceTime": "2026-04-11T14:00:00Z",
-      "homeTeam": "Brentford",
-      "awayTeam": "Everton",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 2.15,
-        "draw": 3.4,
-        "away": 3.45,
-        "impliedProbHome": 0.465,
-        "impliedProbDraw": 0.294,
-        "impliedProbAway": 0.29
-      },
-      "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
-        "byBookmaker": {
-          "mybookieag": -0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
-    {
-      "id": "44d98d5d5c19eb115a527f1de294f03e",
-      "commenceTime": "2026-04-11T14:00:00Z",
-      "homeTeam": "Burnley",
-      "awayTeam": "Brighton",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 4.4,
-        "draw": 4.1,
-        "away": 1.74,
-        "impliedProbHome": 0.227,
-        "impliedProbDraw": 0.244,
-        "impliedProbAway": 0.575
-      },
-      "spread": {
-        "homePoint": 0.5,
-        "awayPoint": -0.5,
-        "byBookmaker": {
-          "mybookieag": 0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
-    {
-      "id": "34bae76a0a8f270a8765f8a4ec5d4234",
-      "commenceTime": "2026-04-11T14:00:00Z",
-      "homeTeam": "Crystal Palace",
-      "awayTeam": "Newcastle",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 2.75,
-        "draw": 3.4,
-        "away": 2.45,
-        "impliedProbHome": 0.364,
-        "impliedProbDraw": 0.294,
-        "impliedProbAway": 0.408
-      },
-      "spread": {
-        "homePoint": 0.5,
-        "awayPoint": -0.5,
-        "byBookmaker": {
-          "mybookieag": 0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
-    {
-      "id": "f022ab37b6c69f588015498186a9694b",
-      "commenceTime": "2026-04-11T16:30:00Z",
-      "homeTeam": "Liverpool",
-      "awayTeam": "Fulham",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 1.65,
-        "draw": 4.3,
-        "away": 4.9,
-        "impliedProbHome": 0.606,
-        "impliedProbDraw": 0.233,
-        "impliedProbAway": 0.204
-      },
-      "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
-        "byBookmaker": {
-          "mybookieag": -0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
     {
       "id": "5b7b41cabf1a84e8991c9cf3d0a7ab90",
       "commenceTime": "2026-04-12T13:00:00Z",
@@ -151,10 +16,10 @@
         "impliedProbAway": 0.377
       },
       "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
+        "homePoint": 0.5,
+        "awayPoint": -0.5,
         "byBookmaker": {
-          "mybookieag": -0.5
+          "mybookieag": 0.5
         }
       },
       "kalshiOdds": {
@@ -178,10 +43,10 @@
         "impliedProbAway": 0.377
       },
       "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
+        "homePoint": 0.5,
+        "awayPoint": -0.5,
         "byBookmaker": {
-          "mybookieag": -0.5
+          "mybookieag": 0.5
         }
       },
       "kalshiOdds": {
@@ -367,10 +232,10 @@
         "impliedProbAway": 0.392
       },
       "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
+        "homePoint": 0.5,
+        "awayPoint": -0.5,
         "byBookmaker": {
-          "mybookieag": -0.5
+          "mybookieag": 0.5
         }
       },
       "kalshiOdds": {
@@ -547,5 +412,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 20
+  "totalMatches": 15
 }
