@@ -1,33 +1,6 @@
 {
-  "lastUpdated": "2026-04-10T23:25:35.549254Z",
+  "lastUpdated": "2026-04-11T13:06:36.690848Z",
   "upcomingMatches": [
-    {
-      "id": "ff027a0ac6a0538a713b46bd753b670d",
-      "commenceTime": "2026-04-11T11:30:00Z",
-      "homeTeam": "Arsenal",
-      "awayTeam": "Bournemouth",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 1.43,
-        "draw": 4.7,
-        "away": 7.5,
-        "impliedProbHome": 0.699,
-        "impliedProbDraw": 0.213,
-        "impliedProbAway": 0.133
-      },
-      "spread": {
-        "homePoint": -1.5,
-        "awayPoint": 1.5,
-        "byBookmaker": {
-          "mybookieag": -1.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
     {
       "id": "41b3af3f11ca7ac6a1f3763620c10d5a",
       "commenceTime": "2026-04-11T14:00:00Z",
@@ -574,5 +547,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 21
+  "totalMatches": 20
 }
