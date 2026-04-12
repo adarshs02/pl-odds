@@ -1,60 +1,6 @@
 {
-  "lastUpdated": "2026-04-12T13:09:26.601349Z",
+  "lastUpdated": "2026-04-12T23:24:22.326507Z",
   "upcomingMatches": [
-    {
-      "id": "5b7b41cabf1a84e8991c9cf3d0a7ab90",
-      "commenceTime": "2026-04-12T14:00:00Z",
-      "homeTeam": "Sunderland",
-      "awayTeam": "Tottenham",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 2.55,
-        "draw": 3.35,
-        "away": 2.6,
-        "impliedProbHome": 0.392,
-        "impliedProbDraw": 0.299,
-        "impliedProbAway": 0.385
-      },
-      "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
-        "byBookmaker": {
-          "mybookieag": -0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
-    {
-      "id": "e4c2f457a464a95a8631ab28ef77b0b9",
-      "commenceTime": "2026-04-12T15:30:00Z",
-      "homeTeam": "Chelsea",
-      "awayTeam": "Man City",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 3.0,
-        "draw": 3.85,
-        "away": 2.15,
-        "impliedProbHome": 0.333,
-        "impliedProbDraw": 0.26,
-        "impliedProbAway": 0.465
-      },
-      "spread": {
-        "homePoint": 0.5,
-        "awayPoint": -0.5,
-        "byBookmaker": {
-          "mybookieag": 0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
     {
       "id": "7d48c93e68e7403998d0ed38e99caae5",
       "commenceTime": "2026-04-13T19:00:00Z",
@@ -259,10 +205,10 @@
         "impliedProbAway": 0.167
       },
       "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
+        "homePoint": -1.5,
+        "awayPoint": 1.5,
         "byBookmaker": {
-          "mybookieag": -0.5
+          "mybookieag": -1.5
         }
       },
       "kalshiOdds": {
@@ -358,5 +304,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 13
+  "totalMatches": 11
 }
