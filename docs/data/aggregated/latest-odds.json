@@ -1,33 +1,6 @@
 {
-  "lastUpdated": "2026-04-13T13:47:13.543245Z",
+  "lastUpdated": "2026-04-13T23:33:53.497521Z",
   "upcomingMatches": [
-    {
-      "id": "7d48c93e68e7403998d0ed38e99caae5",
-      "commenceTime": "2026-04-13T19:00:00Z",
-      "homeTeam": "Man United",
-      "awayTeam": "Leeds",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 1.57,
-        "draw": 4.4,
-        "away": 5.5,
-        "impliedProbHome": 0.637,
-        "impliedProbDraw": 0.227,
-        "impliedProbAway": 0.182
-      },
-      "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
-        "byBookmaker": {
-          "mybookieag": -0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
     {
       "id": "2c2061ffc9ee67808fd45273089d7795",
       "commenceTime": "2026-04-18T11:30:00Z",
@@ -574,5 +547,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 21
+  "totalMatches": 20
 }
