@@ -6518,5 +6518,105 @@
       }
     ],
     "last_update": "2026-04-14T02:24:05Z"
+  },
+  {
+    "id": "2c2061ffc9ee67808fd45273089d7795",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-04-18T11:31:00Z",
+    "completed": true,
+    "home_team": "Brentford",
+    "away_team": "Fulham",
+    "scores": [
+      {
+        "name": "Fulham",
+        "score": "0"
+      },
+      {
+        "name": "Brentford",
+        "score": "0"
+      }
+    ],
+    "last_update": "2026-04-18T23:24:48Z"
+  },
+  {
+    "id": "be6cdb6ddd27d099b5291f0d1e051d92",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-04-18T14:00:00Z",
+    "completed": true,
+    "home_team": "Newcastle United",
+    "away_team": "Bournemouth",
+    "scores": [
+      {
+        "name": "Bournemouth",
+        "score": "2"
+      },
+      {
+        "name": "Newcastle United",
+        "score": "1"
+      }
+    ],
+    "last_update": "2026-04-18T23:24:48Z"
+  },
+  {
+    "id": "d137c5f062243e857803fcebfdda2953",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-04-18T14:00:00Z",
+    "completed": true,
+    "home_team": "Leeds United",
+    "away_team": "Wolverhampton Wanderers",
+    "scores": [
+      {
+        "name": "Wolverhampton Wanderers",
+        "score": "0"
+      },
+      {
+        "name": "Leeds United",
+        "score": "3"
+      }
+    ],
+    "last_update": "2026-04-18T23:24:48Z"
+  },
+  {
+    "id": "5e7f44119f2e640fdf04c245a764657f",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-04-18T16:30:00Z",
+    "completed": true,
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Brighton and Hove Albion",
+    "scores": [
+      {
+        "name": "Brighton and Hove Albion",
+        "score": "2"
+      },
+      {
+        "name": "Tottenham Hotspur",
+        "score": "2"
+      }
+    ],
+    "last_update": "2026-04-18T23:24:48Z"
+  },
+  {
+    "id": "933e20e0892b28ca075a9ab5465d5c6d",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-04-18T19:00:00Z",
+    "completed": true,
+    "home_team": "Chelsea",
+    "away_team": "Manchester United",
+    "scores": [
+      {
+        "name": "Manchester United",
+        "score": "1"
+      },
+      {
+        "name": "Chelsea",
+        "score": "0"
+      }
+    ],
+    "last_update": "2026-04-18T23:24:48Z"
   }
 ]
