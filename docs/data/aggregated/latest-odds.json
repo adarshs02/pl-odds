@@ -1,60 +1,6 @@
 {
-  "lastUpdated": "2026-04-19T13:09:46.778970Z",
+  "lastUpdated": "2026-04-19T23:26:45.401857Z",
   "upcomingMatches": [
-    {
-      "id": "3e7369c873aed1c62f4d76fd652d73c7",
-      "commenceTime": "2026-04-19T14:00:00Z",
-      "homeTeam": "Everton",
-      "awayTeam": "Liverpool",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 3.4,
-        "draw": 3.45,
-        "away": 2.05,
-        "impliedProbHome": 0.294,
-        "impliedProbDraw": 0.29,
-        "impliedProbAway": 0.488
-      },
-      "spread": {
-        "homePoint": 0.5,
-        "awayPoint": -0.5,
-        "byBookmaker": {
-          "mybookieag": 0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
-    {
-      "id": "67946ccfc03197bc48eb7b6c9786b713",
-      "commenceTime": "2026-04-19T15:30:00Z",
-      "homeTeam": "Man City",
-      "awayTeam": "Arsenal",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 1.83,
-        "draw": 3.65,
-        "away": 4.2,
-        "impliedProbHome": 0.546,
-        "impliedProbDraw": 0.274,
-        "impliedProbAway": 0.238
-      },
-      "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
-        "byBookmaker": {
-          "mybookieag": -0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
     {
       "id": "ea28653ebcd7743146869e2aa7851275",
       "commenceTime": "2026-04-20T19:00:00Z",
@@ -151,10 +97,10 @@
         "impliedProbAway": 0.794
       },
       "spread": {
-        "homePoint": 1.5,
-        "awayPoint": -1.5,
+        "homePoint": 2.5,
+        "awayPoint": -2.5,
         "byBookmaker": {
-          "mybookieag": 1.5
+          "mybookieag": 2.5
         }
       },
       "kalshiOdds": {
@@ -205,10 +151,10 @@
         "impliedProbAway": 0.408
       },
       "spread": {
-        "homePoint": 0.5,
-        "awayPoint": -0.5,
+        "homePoint": -0.5,
+        "awayPoint": 0.5,
         "byBookmaker": {
-          "mybookieag": 0.5
+          "mybookieag": -0.5
         }
       },
       "kalshiOdds": {
@@ -358,5 +304,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 13
+  "totalMatches": 11
 }
