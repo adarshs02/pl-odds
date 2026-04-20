@@ -1,33 +1,6 @@
 {
-  "lastUpdated": "2026-04-20T13:50:23.616988Z",
+  "lastUpdated": "2026-04-20T23:33:52.632313Z",
   "upcomingMatches": [
-    {
-      "id": "ea28653ebcd7743146869e2aa7851275",
-      "commenceTime": "2026-04-20T19:00:00Z",
-      "homeTeam": "Crystal Palace",
-      "awayTeam": "West Ham",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 2.5,
-        "draw": 3.3,
-        "away": 2.9,
-        "impliedProbHome": 0.4,
-        "impliedProbDraw": 0.303,
-        "impliedProbAway": 0.345
-      },
-      "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
-        "byBookmaker": {
-          "mybookieag": -0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
     {
       "id": "e6e88546df45a25ee81d07b597d91167",
       "commenceTime": "2026-04-21T19:00:00Z",
@@ -574,5 +547,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 21
+  "totalMatches": 20
 }
