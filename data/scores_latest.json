@@ -6717,6 +6717,26 @@
         "score": "0"
       }
     ],
-    "last_update": "2026-04-20T23:33:33Z"
+    "last_update": "2026-04-21T02:22:54Z"
+  },
+  {
+    "id": "e6e88546df45a25ee81d07b597d91167",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-04-21T19:00:00Z",
+    "completed": true,
+    "home_team": "Brighton and Hove Albion",
+    "away_team": "Chelsea",
+    "scores": [
+      {
+        "name": "Chelsea",
+        "score": "0"
+      },
+      {
+        "name": "Brighton and Hove Albion",
+        "score": "3"
+      }
+    ],
+    "last_update": "2026-04-21T23:26:47Z"
   }
 ]

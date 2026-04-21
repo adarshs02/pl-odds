@@ -1,33 +1,6 @@
 {
-  "lastUpdated": "2026-04-21T13:50:55.950405Z",
+  "lastUpdated": "2026-04-21T23:27:01.636179Z",
   "upcomingMatches": [
-    {
-      "id": "e6e88546df45a25ee81d07b597d91167",
-      "commenceTime": "2026-04-21T19:00:00Z",
-      "homeTeam": "Brighton",
-      "awayTeam": "Chelsea",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 2.45,
-        "draw": 3.8,
-        "away": 2.65,
-        "impliedProbHome": 0.408,
-        "impliedProbDraw": 0.263,
-        "impliedProbAway": 0.377
-      },
-      "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
-        "byBookmaker": {
-          "mybookieag": -0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
     {
       "id": "690fef3d62fc4c8015481626d5aab274",
       "commenceTime": "2026-04-22T19:00:00Z",
@@ -547,5 +520,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 20
+  "totalMatches": 19
 }
