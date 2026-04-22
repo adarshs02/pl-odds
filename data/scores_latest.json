@@ -6729,14 +6729,54 @@
     "away_team": "Chelsea",
     "scores": [
       {
-        "name": "Chelsea",
-        "score": "0"
-      },
-      {
         "name": "Brighton and Hove Albion",
         "score": "3"
+      },
+      {
+        "name": "Chelsea",
+        "score": "0"
       }
     ],
-    "last_update": "2026-04-21T23:26:47Z"
+    "last_update": "2026-04-22T19:10:52Z"
+  },
+  {
+    "id": "690fef3d62fc4c8015481626d5aab274",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-04-22T19:00:00Z",
+    "completed": true,
+    "home_team": "Bournemouth",
+    "away_team": "Leeds United",
+    "scores": [
+      {
+        "name": "Leeds United",
+        "score": "2"
+      },
+      {
+        "name": "Bournemouth",
+        "score": "2"
+      }
+    ],
+    "last_update": "2026-04-22T23:37:26Z"
+  },
+  {
+    "id": "4a1a7f4a60859fc3ecc69d05f5729556",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-04-22T19:00:00Z",
+    "completed": true,
+    "home_team": "Burnley",
+    "away_team": "Manchester City",
+    "scores": [
+      {
+        "name": "Manchester City",
+        "score": "1"
+      },
+      {
+        "name": "Burnley",
+        "score": "0"
+      }
+    ],
+    "last_update": "2026-04-22T23:37:26Z"
   }
 ]

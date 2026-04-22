@@ -1,60 +1,6 @@
 {
-  "lastUpdated": "2026-04-22T13:50:44.196727Z",
+  "lastUpdated": "2026-04-22T23:37:47.288440Z",
   "upcomingMatches": [
-    {
-      "id": "690fef3d62fc4c8015481626d5aab274",
-      "commenceTime": "2026-04-22T19:00:00Z",
-      "homeTeam": "Bournemouth",
-      "awayTeam": "Leeds",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 2.05,
-        "draw": 3.55,
-        "away": 3.6,
-        "impliedProbHome": 0.488,
-        "impliedProbDraw": 0.282,
-        "impliedProbAway": 0.278
-      },
-      "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
-        "byBookmaker": {
-          "mybookieag": -0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
-    {
-      "id": "4a1a7f4a60859fc3ecc69d05f5729556",
-      "commenceTime": "2026-04-22T19:00:00Z",
-      "homeTeam": "Burnley",
-      "awayTeam": "Man City",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 14.0,
-        "draw": 8.5,
-        "away": 1.17,
-        "impliedProbHome": 0.071,
-        "impliedProbDraw": 0.118,
-        "impliedProbAway": 0.855
-      },
-      "spread": {
-        "homePoint": 2.5,
-        "awayPoint": -2.5,
-        "byBookmaker": {
-          "mybookieag": 2.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
     {
       "id": "1d779cd51003d8f01a9378594cea630e",
       "commenceTime": "2026-04-24T19:00:00Z",
@@ -97,10 +43,10 @@
         "impliedProbAway": 0.385
       },
       "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
+        "homePoint": 0.5,
+        "awayPoint": -0.5,
         "byBookmaker": {
-          "mybookieag": -0.5
+          "mybookieag": 0.5
         }
       },
       "kalshiOdds": {
@@ -520,5 +466,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 19
+  "totalMatches": 17
 }
