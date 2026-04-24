@@ -1,33 +1,6 @@
 {
-  "lastUpdated": "2026-04-24T13:43:47.950764Z",
+  "lastUpdated": "2026-04-24T23:31:17.935077Z",
   "upcomingMatches": [
-    {
-      "id": "1d779cd51003d8f01a9378594cea630e",
-      "commenceTime": "2026-04-24T19:00:00Z",
-      "homeTeam": "Sunderland",
-      "awayTeam": "Nott'm Forest",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 2.75,
-        "draw": 3.25,
-        "away": 2.65,
-        "impliedProbHome": 0.364,
-        "impliedProbDraw": 0.308,
-        "impliedProbAway": 0.377
-      },
-      "spread": {
-        "homePoint": 0.5,
-        "awayPoint": -0.5,
-        "byBookmaker": {
-          "mybookieag": 0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
     {
       "id": "1cb5fdae7703fb61d1de571066050f9b",
       "commenceTime": "2026-04-25T11:30:00Z",
@@ -70,10 +43,10 @@
         "impliedProbAway": 0.167
       },
       "spread": {
-        "homePoint": -1.5,
-        "awayPoint": 1.5,
+        "homePoint": -0.5,
+        "awayPoint": 0.5,
         "byBookmaker": {
-          "mybookieag": -1.5
+          "mybookieag": -0.5
         }
       },
       "kalshiOdds": {
@@ -466,5 +439,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 17
+  "totalMatches": 16
 }
