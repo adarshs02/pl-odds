@@ -6789,14 +6789,114 @@
     "away_team": "Nottingham Forest",
     "scores": [
       {
-        "name": "Nottingham Forest",
-        "score": "5"
+        "name": "Sunderland",
+        "score": "0"
       },
       {
-        "name": "Sunderland",
+        "name": "Nottingham Forest",
+        "score": "5"
+      }
+    ],
+    "last_update": "2026-04-25T11:41:55Z"
+  },
+  {
+    "id": "1cb5fdae7703fb61d1de571066050f9b",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-04-25T11:30:00Z",
+    "completed": true,
+    "home_team": "Fulham",
+    "away_team": "Aston Villa",
+    "scores": [
+      {
+        "name": "Aston Villa",
+        "score": "0"
+      },
+      {
+        "name": "Fulham",
+        "score": "1"
+      }
+    ],
+    "last_update": "2026-04-25T23:27:52Z"
+  },
+  {
+    "id": "8a5b7d24683637ab7350fe8a20af1a62",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-04-25T13:59:00Z",
+    "completed": true,
+    "home_team": "Liverpool",
+    "away_team": "Crystal Palace",
+    "scores": [
+      {
+        "name": "Crystal Palace",
+        "score": "1"
+      },
+      {
+        "name": "Liverpool",
+        "score": "3"
+      }
+    ],
+    "last_update": "2026-04-25T23:27:52Z"
+  },
+  {
+    "id": "c5137cd717098fbb38acd0236bc41b34",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-04-25T14:00:00Z",
+    "completed": true,
+    "home_team": "Wolverhampton Wanderers",
+    "away_team": "Tottenham Hotspur",
+    "scores": [
+      {
+        "name": "Tottenham Hotspur",
+        "score": "1"
+      },
+      {
+        "name": "Wolverhampton Wanderers",
         "score": "0"
       }
     ],
-    "last_update": "2026-04-24T23:30:52Z"
+    "last_update": "2026-04-25T23:27:52Z"
+  },
+  {
+    "id": "e7eba73b41f6b75f5b4692376efb888a",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-04-25T14:01:00Z",
+    "completed": true,
+    "home_team": "West Ham United",
+    "away_team": "Everton",
+    "scores": [
+      {
+        "name": "Everton",
+        "score": "1"
+      },
+      {
+        "name": "West Ham United",
+        "score": "2"
+      }
+    ],
+    "last_update": "2026-04-25T23:27:52Z"
+  },
+  {
+    "id": "76829fec3394b52a992b0a21eedbccf6",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-04-25T16:30:00Z",
+    "completed": true,
+    "home_team": "Arsenal",
+    "away_team": "Newcastle United",
+    "scores": [
+      {
+        "name": "Newcastle United",
+        "score": "0"
+      },
+      {
+        "name": "Arsenal",
+        "score": "1"
+      }
+    ],
+    "last_update": "2026-04-25T23:27:52Z"
   }
 ]
