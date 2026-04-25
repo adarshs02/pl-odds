@@ -1,33 +1,6 @@
 {
-  "lastUpdated": "2026-04-24T23:31:17.935077Z",
+  "lastUpdated": "2026-04-25T13:13:00.487566Z",
   "upcomingMatches": [
-    {
-      "id": "1cb5fdae7703fb61d1de571066050f9b",
-      "commenceTime": "2026-04-25T11:30:00Z",
-      "homeTeam": "Fulham",
-      "awayTeam": "Aston Villa",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 2.6,
-        "draw": 3.6,
-        "away": 2.6,
-        "impliedProbHome": 0.385,
-        "impliedProbDraw": 0.278,
-        "impliedProbAway": 0.385
-      },
-      "spread": {
-        "homePoint": 0.5,
-        "awayPoint": -0.5,
-        "byBookmaker": {
-          "mybookieag": 0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
     {
       "id": "8a5b7d24683637ab7350fe8a20af1a62",
       "commenceTime": "2026-04-25T14:00:00Z",
@@ -439,5 +412,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 16
+  "totalMatches": 15
 }
