@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-26T23:29:15.871696Z",
+  "lastUpdated": "2026-04-27T14:03:09.137119Z",
   "upcomingMatches": [
     {
       "id": "ea38471acf4d5944929f9025e151376d",
@@ -8,12 +8,12 @@
       "awayTeam": "Brentford",
       "h2hOdds": {
         "bookmaker": "DraftKings",
-        "home": 1.83,
-        "draw": 3.85,
-        "away": 3.9,
-        "impliedProbHome": 0.546,
-        "impliedProbDraw": 0.26,
-        "impliedProbAway": 0.256
+        "home": 1.95,
+        "draw": 3.75,
+        "away": 3.75,
+        "impliedProbHome": 0.513,
+        "impliedProbDraw": 0.267,
+        "impliedProbAway": 0.267
       },
       "spread": {
         "homePoint": -0.5,
@@ -35,11 +35,11 @@
       "awayTeam": "Burnley",
       "h2hOdds": {
         "bookmaker": "DraftKings",
-        "home": 1.45,
-        "draw": 4.5,
+        "home": 1.43,
+        "draw": 4.7,
         "away": 6.5,
-        "impliedProbHome": 0.69,
-        "impliedProbDraw": 0.222,
+        "impliedProbHome": 0.699,
+        "impliedProbDraw": 0.213,
         "impliedProbAway": 0.154
       },
       "spread": {
@@ -62,12 +62,12 @@
       "awayTeam": "West Ham",
       "h2hOdds": {
         "bookmaker": "DraftKings",
-        "home": 1.91,
-        "draw": 3.65,
-        "away": 3.7,
-        "impliedProbHome": 0.524,
-        "impliedProbDraw": 0.274,
-        "impliedProbAway": 0.27
+        "home": 2.0,
+        "draw": 3.7,
+        "away": 3.45,
+        "impliedProbHome": 0.5,
+        "impliedProbDraw": 0.27,
+        "impliedProbAway": 0.29
       },
       "spread": {
         "homePoint": -0.5,
@@ -89,12 +89,12 @@
       "awayTeam": "Brighton",
       "h2hOdds": {
         "bookmaker": "DraftKings",
-        "home": 2.35,
+        "home": 2.5,
         "draw": 3.6,
-        "away": 2.75,
-        "impliedProbHome": 0.426,
+        "away": 2.65,
+        "impliedProbHome": 0.4,
         "impliedProbDraw": 0.278,
-        "impliedProbAway": 0.364
+        "impliedProbAway": 0.377
       },
       "spread": {
         "homePoint": -0.5,
@@ -116,12 +116,12 @@
       "awayTeam": "Sunderland",
       "h2hOdds": {
         "bookmaker": "DraftKings",
-        "home": 3.0,
-        "draw": 3.25,
-        "away": 2.35,
-        "impliedProbHome": 0.333,
-        "impliedProbDraw": 0.308,
-        "impliedProbAway": 0.426
+        "home": 3.05,
+        "draw": 3.35,
+        "away": 2.3,
+        "impliedProbHome": 0.328,
+        "impliedProbDraw": 0.299,
+        "impliedProbAway": 0.435
       },
       "spread": {
         "homePoint": 0.5,
@@ -143,11 +143,11 @@
       "awayTeam": "Fulham",
       "h2hOdds": {
         "bookmaker": "DraftKings",
-        "home": 1.38,
-        "draw": 4.7,
+        "home": 1.43,
+        "draw": 4.5,
         "away": 7.5,
-        "impliedProbHome": 0.725,
-        "impliedProbDraw": 0.213,
+        "impliedProbHome": 0.699,
+        "impliedProbDraw": 0.222,
         "impliedProbAway": 0.133
       },
       "spread": {
@@ -170,12 +170,12 @@
       "awayTeam": "Crystal Palace",
       "h2hOdds": {
         "bookmaker": "DraftKings",
-        "home": 1.71,
+        "home": 1.67,
         "draw": 4.1,
-        "away": 4.2,
-        "impliedProbHome": 0.585,
+        "away": 4.6,
+        "impliedProbHome": 0.599,
         "impliedProbDraw": 0.244,
-        "impliedProbAway": 0.238
+        "impliedProbAway": 0.217
       },
       "spread": {
         "homePoint": -0.5,
@@ -198,10 +198,10 @@
       "h2hOdds": {
         "bookmaker": "DraftKings",
         "home": 2.35,
-        "draw": 3.7,
+        "draw": 3.75,
         "away": 2.7,
         "impliedProbHome": 0.426,
-        "impliedProbDraw": 0.27,
+        "impliedProbDraw": 0.267,
         "impliedProbAway": 0.37
       },
       "spread": {
@@ -224,12 +224,12 @@
       "awayTeam": "Tottenham",
       "h2hOdds": {
         "bookmaker": "DraftKings",
-        "home": 2.05,
-        "draw": 3.75,
-        "away": 3.15,
-        "impliedProbHome": 0.488,
-        "impliedProbDraw": 0.267,
-        "impliedProbAway": 0.317
+        "home": 2.2,
+        "draw": 3.65,
+        "away": 3.0,
+        "impliedProbHome": 0.455,
+        "impliedProbDraw": 0.274,
+        "impliedProbAway": 0.333
       },
       "spread": {
         "homePoint": -0.5,
@@ -251,12 +251,12 @@
       "awayTeam": "Nott'm Forest",
       "h2hOdds": {
         "bookmaker": "DraftKings",
-        "home": 1.71,
-        "draw": 3.9,
-        "away": 4.4,
-        "impliedProbHome": 0.585,
-        "impliedProbDraw": 0.256,
-        "impliedProbAway": 0.227
+        "home": 1.69,
+        "draw": 4.0,
+        "away": 4.6,
+        "impliedProbHome": 0.592,
+        "impliedProbDraw": 0.25,
+        "impliedProbAway": 0.217
       },
       "spread": {
         "homePoint": -0.5,
@@ -278,12 +278,12 @@
       "awayTeam": "Man City",
       "h2hOdds": {
         "bookmaker": "DraftKings",
-        "home": 5.25,
-        "draw": 4.3,
-        "away": 1.54,
-        "impliedProbHome": 0.19,
-        "impliedProbDraw": 0.233,
-        "impliedProbAway": 0.649
+        "home": 6.0,
+        "draw": 4.8,
+        "away": 1.47,
+        "impliedProbHome": 0.167,
+        "impliedProbDraw": 0.208,
+        "impliedProbAway": 0.68
       },
       "spread": {
         "homePoint": 1.5,
