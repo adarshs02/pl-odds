@@ -1,33 +1,6 @@
 {
-  "lastUpdated": "2026-04-27T14:03:09.137119Z",
+  "lastUpdated": "2026-04-27T23:42:07.441412Z",
   "upcomingMatches": [
-    {
-      "id": "ea38471acf4d5944929f9025e151376d",
-      "commenceTime": "2026-04-27T19:00:00Z",
-      "homeTeam": "Man United",
-      "awayTeam": "Brentford",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 1.95,
-        "draw": 3.75,
-        "away": 3.75,
-        "impliedProbHome": 0.513,
-        "impliedProbDraw": 0.267,
-        "impliedProbAway": 0.267
-      },
-      "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
-        "byBookmaker": {
-          "mybookieag": -0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
     {
       "id": "eaaf4ed0986f4f5414fc727f5c235d48",
       "commenceTime": "2026-05-01T19:00:00Z",
@@ -304,5 +277,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 11
+  "totalMatches": 10
 }
