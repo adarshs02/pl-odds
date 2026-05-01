@@ -1,33 +1,6 @@
 {
-  "lastUpdated": "2026-05-01T13:25:55.898348Z",
+  "lastUpdated": "2026-05-01T23:41:36.631894Z",
   "upcomingMatches": [
-    {
-      "id": "eaaf4ed0986f4f5414fc727f5c235d48",
-      "commenceTime": "2026-05-01T19:00:00Z",
-      "homeTeam": "Leeds",
-      "awayTeam": "Burnley",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 1.43,
-        "draw": 4.8,
-        "away": 7.0,
-        "impliedProbHome": 0.699,
-        "impliedProbDraw": 0.208,
-        "impliedProbAway": 0.143
-      },
-      "spread": {
-        "homePoint": -1.5,
-        "awayPoint": 1.5,
-        "byBookmaker": {
-          "mybookieag": -1.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
     {
       "id": "0602d732b6ac41cc00e19dd37073c401",
       "commenceTime": "2026-05-02T14:00:00Z",
@@ -547,5 +520,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 20
+  "totalMatches": 19
 }

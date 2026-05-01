@@ -6918,5 +6918,25 @@
       }
     ],
     "last_update": "2026-04-28T02:22:24Z"
+  },
+  {
+    "id": "eaaf4ed0986f4f5414fc727f5c235d48",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-05-01T19:00:00Z",
+    "completed": true,
+    "home_team": "Leeds United",
+    "away_team": "Burnley",
+    "scores": [
+      {
+        "name": "Burnley",
+        "score": "1"
+      },
+      {
+        "name": "Leeds United",
+        "score": "3"
+      }
+    ],
+    "last_update": "2026-05-01T23:41:22Z"
   }
 ]
