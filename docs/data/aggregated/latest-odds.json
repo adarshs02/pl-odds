@@ -1,114 +1,6 @@
 {
-  "lastUpdated": "2026-05-02T13:20:30.789943Z",
+  "lastUpdated": "2026-05-02T23:33:00.712672Z",
   "upcomingMatches": [
-    {
-      "id": "0602d732b6ac41cc00e19dd37073c401",
-      "commenceTime": "2026-05-02T14:00:00Z",
-      "homeTeam": "Brentford",
-      "awayTeam": "West Ham",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 2.0,
-        "draw": 3.8,
-        "away": 3.5,
-        "impliedProbHome": 0.5,
-        "impliedProbDraw": 0.263,
-        "impliedProbAway": 0.286
-      },
-      "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
-        "byBookmaker": {
-          "mybookieag": -0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
-    {
-      "id": "4d99d206793841a85ad25c977bb6dcb2",
-      "commenceTime": "2026-05-02T14:00:00Z",
-      "homeTeam": "Newcastle",
-      "awayTeam": "Brighton",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 2.5,
-        "draw": 3.65,
-        "away": 2.65,
-        "impliedProbHome": 0.4,
-        "impliedProbDraw": 0.274,
-        "impliedProbAway": 0.377
-      },
-      "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
-        "byBookmaker": {
-          "mybookieag": -0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
-    {
-      "id": "685bc7e34533e57867d51a08db38f1ec",
-      "commenceTime": "2026-05-02T14:00:00Z",
-      "homeTeam": "Wolves",
-      "awayTeam": "Sunderland",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 3.15,
-        "draw": 3.4,
-        "away": 2.3,
-        "impliedProbHome": 0.317,
-        "impliedProbDraw": 0.294,
-        "impliedProbAway": 0.435
-      },
-      "spread": {
-        "homePoint": 0.5,
-        "awayPoint": -0.5,
-        "byBookmaker": {
-          "mybookieag": 0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
-    {
-      "id": "d20966bfff788c76678b8df12b984866",
-      "commenceTime": "2026-05-02T16:30:00Z",
-      "homeTeam": "Arsenal",
-      "awayTeam": "Fulham",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 1.44,
-        "draw": 4.6,
-        "away": 7.5,
-        "impliedProbHome": 0.694,
-        "impliedProbDraw": 0.217,
-        "impliedProbAway": 0.133
-      },
-      "spread": {
-        "homePoint": -1.5,
-        "awayPoint": 1.5,
-        "byBookmaker": {
-          "mybookieag": -1.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
     {
       "id": "ac1ca15f14b17edc746f8c6e994b0155",
       "commenceTime": "2026-05-03T13:00:00Z",
@@ -520,5 +412,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 19
+  "totalMatches": 15
 }
