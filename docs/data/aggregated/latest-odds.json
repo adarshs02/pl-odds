@@ -1,33 +1,6 @@
 {
-  "lastUpdated": "2026-05-02T23:33:00.712672Z",
+  "lastUpdated": "2026-05-03T13:19:20.271429Z",
   "upcomingMatches": [
-    {
-      "id": "ac1ca15f14b17edc746f8c6e994b0155",
-      "commenceTime": "2026-05-03T13:00:00Z",
-      "homeTeam": "Bournemouth",
-      "awayTeam": "Crystal Palace",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 1.65,
-        "draw": 4.2,
-        "away": 4.8,
-        "impliedProbHome": 0.606,
-        "impliedProbDraw": 0.238,
-        "impliedProbAway": 0.208
-      },
-      "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
-        "byBookmaker": {
-          "mybookieag": -0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
     {
       "id": "6273cdde58224d3b30e4d2a0a74b72df",
       "commenceTime": "2026-05-03T14:30:00Z",
@@ -412,5 +385,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 15
+  "totalMatches": 14
 }
