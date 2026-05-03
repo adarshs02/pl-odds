@@ -6937,7 +6937,7 @@
         "score": "1"
       }
     ],
-    "last_update": "2026-05-02T14:11:07Z"
+    "last_update": "2026-05-03T13:11:31Z"
   },
   {
     "id": "0602d732b6ac41cc00e19dd37073c401",
@@ -6949,15 +6949,15 @@
     "away_team": "West Ham United",
     "scores": [
       {
-        "name": "West Ham United",
-        "score": "0"
-      },
-      {
         "name": "Brentford",
         "score": "3"
+      },
+      {
+        "name": "West Ham United",
+        "score": "0"
       }
     ],
-    "last_update": "2026-05-02T22:56:20Z"
+    "last_update": "2026-05-03T13:11:31Z"
   },
   {
     "id": "4d99d206793841a85ad25c977bb6dcb2",
@@ -6969,15 +6969,15 @@
     "away_team": "Brighton and Hove Albion",
     "scores": [
       {
-        "name": "Brighton and Hove Albion",
-        "score": "1"
-      },
-      {
         "name": "Newcastle United",
         "score": "3"
+      },
+      {
+        "name": "Brighton and Hove Albion",
+        "score": "1"
       }
     ],
-    "last_update": "2026-05-02T22:56:20Z"
+    "last_update": "2026-05-03T13:11:31Z"
   },
   {
     "id": "685bc7e34533e57867d51a08db38f1ec",
@@ -6989,15 +6989,15 @@
     "away_team": "Sunderland",
     "scores": [
       {
-        "name": "Sunderland",
+        "name": "Wolverhampton Wanderers",
         "score": "1"
       },
       {
-        "name": "Wolverhampton Wanderers",
+        "name": "Sunderland",
         "score": "1"
       }
     ],
-    "last_update": "2026-05-02T22:56:20Z"
+    "last_update": "2026-05-03T13:11:31Z"
   },
   {
     "id": "d20966bfff788c76678b8df12b984866",
@@ -7009,14 +7009,74 @@
     "away_team": "Fulham",
     "scores": [
       {
+        "name": "Arsenal",
+        "score": "3"
+      },
+      {
         "name": "Fulham",
+        "score": "0"
+      }
+    ],
+    "last_update": "2026-05-03T13:11:31Z"
+  },
+  {
+    "id": "ac1ca15f14b17edc746f8c6e994b0155",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-05-03T13:00:00Z",
+    "completed": true,
+    "home_team": "Bournemouth",
+    "away_team": "Crystal Palace",
+    "scores": [
+      {
+        "name": "Crystal Palace",
         "score": "0"
       },
       {
-        "name": "Arsenal",
+        "name": "Bournemouth",
         "score": "3"
       }
     ],
-    "last_update": "2026-05-02T22:56:20Z"
+    "last_update": "2026-05-03T23:33:50Z"
+  },
+  {
+    "id": "6273cdde58224d3b30e4d2a0a74b72df",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-05-03T14:30:00Z",
+    "completed": true,
+    "home_team": "Manchester United",
+    "away_team": "Liverpool",
+    "scores": [
+      {
+        "name": "Liverpool",
+        "score": "2"
+      },
+      {
+        "name": "Manchester United",
+        "score": "3"
+      }
+    ],
+    "last_update": "2026-05-03T23:33:50Z"
+  },
+  {
+    "id": "82a45989e8b145f27fbd7932180e1121",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-05-03T18:00:00Z",
+    "completed": true,
+    "home_team": "Aston Villa",
+    "away_team": "Tottenham Hotspur",
+    "scores": [
+      {
+        "name": "Tottenham Hotspur",
+        "score": "2"
+      },
+      {
+        "name": "Aston Villa",
+        "score": "1"
+      }
+    ],
+    "last_update": "2026-05-03T23:33:50Z"
   }
 ]

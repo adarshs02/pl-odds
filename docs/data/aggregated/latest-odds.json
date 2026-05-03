@@ -1,60 +1,6 @@
 {
-  "lastUpdated": "2026-05-03T13:19:20.271429Z",
+  "lastUpdated": "2026-05-03T23:34:03.685928Z",
   "upcomingMatches": [
-    {
-      "id": "6273cdde58224d3b30e4d2a0a74b72df",
-      "commenceTime": "2026-05-03T14:30:00Z",
-      "homeTeam": "Man United",
-      "awayTeam": "Liverpool",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 2.3,
-        "draw": 3.75,
-        "away": 2.8,
-        "impliedProbHome": 0.435,
-        "impliedProbDraw": 0.267,
-        "impliedProbAway": 0.357
-      },
-      "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
-        "byBookmaker": {
-          "mybookieag": -0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
-    {
-      "id": "82a45989e8b145f27fbd7932180e1121",
-      "commenceTime": "2026-05-03T18:00:00Z",
-      "homeTeam": "Aston Villa",
-      "awayTeam": "Tottenham",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 2.2,
-        "draw": 3.65,
-        "away": 3.05,
-        "impliedProbHome": 0.455,
-        "impliedProbDraw": 0.274,
-        "impliedProbAway": 0.328
-      },
-      "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
-        "byBookmaker": {
-          "mybookieag": -0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
     {
       "id": "699bf1a1a9eb1b2ed120fea0c2225ddf",
       "commenceTime": "2026-05-04T14:00:00Z",
@@ -151,10 +97,10 @@
         "impliedProbAway": 0.392
       },
       "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
+        "homePoint": 0.5,
+        "awayPoint": -0.5,
         "byBookmaker": {
-          "mybookieag": -0.5
+          "mybookieag": 0.5
         }
       },
       "kalshiOdds": {
@@ -385,5 +331,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 14
+  "totalMatches": 12
 }
