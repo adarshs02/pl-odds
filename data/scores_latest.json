@@ -6957,7 +6957,7 @@
         "score": "0"
       }
     ],
-    "last_update": "2026-05-03T13:11:31Z"
+    "last_update": "2026-05-04T14:10:33Z"
   },
   {
     "id": "4d99d206793841a85ad25c977bb6dcb2",
@@ -6977,7 +6977,7 @@
         "score": "1"
       }
     ],
-    "last_update": "2026-05-03T13:11:31Z"
+    "last_update": "2026-05-04T14:10:33Z"
   },
   {
     "id": "685bc7e34533e57867d51a08db38f1ec",
@@ -6997,7 +6997,7 @@
         "score": "1"
       }
     ],
-    "last_update": "2026-05-03T13:11:31Z"
+    "last_update": "2026-05-04T14:10:33Z"
   },
   {
     "id": "d20966bfff788c76678b8df12b984866",
@@ -7017,7 +7017,7 @@
         "score": "0"
       }
     ],
-    "last_update": "2026-05-03T13:11:31Z"
+    "last_update": "2026-05-04T14:10:33Z"
   },
   {
     "id": "ac1ca15f14b17edc746f8c6e994b0155",
@@ -7029,15 +7029,15 @@
     "away_team": "Crystal Palace",
     "scores": [
       {
-        "name": "Crystal Palace",
-        "score": "0"
-      },
-      {
         "name": "Bournemouth",
         "score": "3"
+      },
+      {
+        "name": "Crystal Palace",
+        "score": "0"
       }
     ],
-    "last_update": "2026-05-03T23:33:50Z"
+    "last_update": "2026-05-04T14:10:33Z"
   },
   {
     "id": "6273cdde58224d3b30e4d2a0a74b72df",
@@ -7049,15 +7049,15 @@
     "away_team": "Liverpool",
     "scores": [
       {
-        "name": "Liverpool",
-        "score": "2"
-      },
-      {
         "name": "Manchester United",
         "score": "3"
+      },
+      {
+        "name": "Liverpool",
+        "score": "2"
       }
     ],
-    "last_update": "2026-05-03T23:33:50Z"
+    "last_update": "2026-05-04T14:10:33Z"
   },
   {
     "id": "82a45989e8b145f27fbd7932180e1121",
@@ -7069,14 +7069,54 @@
     "away_team": "Tottenham Hotspur",
     "scores": [
       {
-        "name": "Tottenham Hotspur",
-        "score": "2"
+        "name": "Aston Villa",
+        "score": "1"
       },
       {
-        "name": "Aston Villa",
+        "name": "Tottenham Hotspur",
+        "score": "2"
+      }
+    ],
+    "last_update": "2026-05-04T14:10:33Z"
+  },
+  {
+    "id": "699bf1a1a9eb1b2ed120fea0c2225ddf",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-05-04T14:00:00Z",
+    "completed": true,
+    "home_team": "Chelsea",
+    "away_team": "Nottingham Forest",
+    "scores": [
+      {
+        "name": "Nottingham Forest",
+        "score": "3"
+      },
+      {
+        "name": "Chelsea",
         "score": "1"
       }
     ],
-    "last_update": "2026-05-03T23:33:50Z"
+    "last_update": "2026-05-04T23:42:29Z"
+  },
+  {
+    "id": "09d5570dec06194bdd8124831b9deb5a",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-05-04T19:00:00Z",
+    "completed": true,
+    "home_team": "Everton",
+    "away_team": "Manchester City",
+    "scores": [
+      {
+        "name": "Manchester City",
+        "score": "3"
+      },
+      {
+        "name": "Everton",
+        "score": "3"
+      }
+    ],
+    "last_update": "2026-05-04T23:42:29Z"
   }
 ]

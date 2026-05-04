@@ -1,33 +1,6 @@
 {
-  "lastUpdated": "2026-05-04T14:09:57.430063Z",
+  "lastUpdated": "2026-05-04T23:42:34.676700Z",
   "upcomingMatches": [
-    {
-      "id": "09d5570dec06194bdd8124831b9deb5a",
-      "commenceTime": "2026-05-04T19:00:00Z",
-      "homeTeam": "Everton",
-      "awayTeam": "Man City",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 6.5,
-        "draw": 4.7,
-        "away": 1.47,
-        "impliedProbHome": 0.154,
-        "impliedProbDraw": 0.213,
-        "impliedProbAway": 0.68
-      },
-      "spread": {
-        "homePoint": 1.5,
-        "awayPoint": -1.5,
-        "byBookmaker": {
-          "mybookieag": 1.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
     {
       "id": "31c28f74ac0a0f65eeff8515ec593368",
       "commenceTime": "2026-05-09T11:30:00Z",
@@ -520,5 +493,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 19
+  "totalMatches": 18
 }
