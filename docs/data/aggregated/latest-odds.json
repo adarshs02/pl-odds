@@ -1,33 +1,6 @@
 {
-  "lastUpdated": "2026-05-08T23:44:52.871569Z",
+  "lastUpdated": "2026-05-09T13:24:31.337497Z",
   "upcomingMatches": [
-    {
-      "id": "31c28f74ac0a0f65eeff8515ec593368",
-      "commenceTime": "2026-05-09T11:30:00Z",
-      "homeTeam": "Liverpool",
-      "awayTeam": "Chelsea",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 1.87,
-        "draw": 4.0,
-        "away": 3.85,
-        "impliedProbHome": 0.535,
-        "impliedProbDraw": 0.25,
-        "impliedProbAway": 0.26
-      },
-      "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
-        "byBookmaker": {
-          "mybookieag": -0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
     {
       "id": "0568f4e3240e33cd97331e3e6b5ae536",
       "commenceTime": "2026-05-09T14:00:00Z",
@@ -520,5 +493,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 19
+  "totalMatches": 18
 }
