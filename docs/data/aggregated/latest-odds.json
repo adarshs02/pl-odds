@@ -1,87 +1,6 @@
 {
-  "lastUpdated": "2026-05-09T23:36:17.722730Z",
+  "lastUpdated": "2026-05-10T13:26:25.617507Z",
   "upcomingMatches": [
-    {
-      "id": "d886f96ec9255bad51c2b93ebf5067f2",
-      "commenceTime": "2026-05-10T13:00:00Z",
-      "homeTeam": "Burnley",
-      "awayTeam": "Aston Villa",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 5.25,
-        "draw": 4.2,
-        "away": 1.59,
-        "impliedProbHome": 0.19,
-        "impliedProbDraw": 0.238,
-        "impliedProbAway": 0.629
-      },
-      "spread": {
-        "homePoint": 0.5,
-        "awayPoint": -0.5,
-        "byBookmaker": {
-          "mybookieag": 0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
-    {
-      "id": "05192f677ae85b891f6a652b5cbe8917",
-      "commenceTime": "2026-05-10T13:00:00Z",
-      "homeTeam": "Crystal Palace",
-      "awayTeam": "Everton",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 2.75,
-        "draw": 3.25,
-        "away": 2.6,
-        "impliedProbHome": 0.364,
-        "impliedProbDraw": 0.308,
-        "impliedProbAway": 0.385
-      },
-      "spread": {
-        "homePoint": 0.5,
-        "awayPoint": -0.5,
-        "byBookmaker": {
-          "mybookieag": 0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
-    {
-      "id": "b83b66eb2cc703413276e418724fd51f",
-      "commenceTime": "2026-05-10T13:00:00Z",
-      "homeTeam": "Nott'm Forest",
-      "awayTeam": "Newcastle",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 2.6,
-        "draw": 3.5,
-        "away": 2.55,
-        "impliedProbHome": 0.385,
-        "impliedProbDraw": 0.286,
-        "impliedProbAway": 0.392
-      },
-      "spread": {
-        "homePoint": 0.5,
-        "awayPoint": -0.5,
-        "byBookmaker": {
-          "mybookieag": 0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
     {
       "id": "d75b633386ce973fb123df8b86120374",
       "commenceTime": "2026-05-10T15:30:00Z",
@@ -385,5 +304,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 14
+  "totalMatches": 11
 }
