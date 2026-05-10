@@ -1,33 +1,6 @@
 {
-  "lastUpdated": "2026-05-10T13:26:25.617507Z",
+  "lastUpdated": "2026-05-10T23:40:20.194741Z",
   "upcomingMatches": [
-    {
-      "id": "d75b633386ce973fb123df8b86120374",
-      "commenceTime": "2026-05-10T15:30:00Z",
-      "homeTeam": "West Ham",
-      "awayTeam": "Arsenal",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 5.0,
-        "draw": 4.1,
-        "away": 1.61,
-        "impliedProbHome": 0.2,
-        "impliedProbDraw": 0.244,
-        "impliedProbAway": 0.621
-      },
-      "spread": {
-        "homePoint": 0.5,
-        "awayPoint": -0.5,
-        "byBookmaker": {
-          "mybookieag": 0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
     {
       "id": "6d8db9dded1c8d337ae3a570c8d4ff3c",
       "commenceTime": "2026-05-11T19:00:00Z",
@@ -304,5 +277,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 11
+  "totalMatches": 10
 }
