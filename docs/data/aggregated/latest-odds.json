@@ -1,33 +1,6 @@
 {
-  "lastUpdated": "2026-05-11T15:18:20.642092Z",
+  "lastUpdated": "2026-05-11T23:45:50.411313Z",
   "upcomingMatches": [
-    {
-      "id": "6d8db9dded1c8d337ae3a570c8d4ff3c",
-      "commenceTime": "2026-05-11T19:00:00Z",
-      "homeTeam": "Tottenham",
-      "awayTeam": "Leeds",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 1.8,
-        "draw": 3.95,
-        "away": 4.1,
-        "impliedProbHome": 0.556,
-        "impliedProbDraw": 0.253,
-        "impliedProbAway": 0.244
-      },
-      "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
-        "byBookmaker": {
-          "mybookieag": -0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
     {
       "id": "25f172034a65aca643fc22203f5e4cb2",
       "commenceTime": "2026-05-13T19:00:00Z",
@@ -304,5 +277,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 11
+  "totalMatches": 10
 }
