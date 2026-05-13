@@ -1,33 +1,6 @@
 {
-  "lastUpdated": "2026-05-13T14:42:42.653454Z",
+  "lastUpdated": "2026-05-13T23:48:36.743161Z",
   "upcomingMatches": [
-    {
-      "id": "25f172034a65aca643fc22203f5e4cb2",
-      "commenceTime": "2026-05-13T19:00:00Z",
-      "homeTeam": "Man City",
-      "awayTeam": "Crystal Palace",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 1.2,
-        "draw": 7.5,
-        "away": 12.0,
-        "impliedProbHome": 0.833,
-        "impliedProbDraw": 0.133,
-        "impliedProbAway": 0.083
-      },
-      "spread": {
-        "homePoint": -2.5,
-        "awayPoint": 2.5,
-        "byBookmaker": {
-          "mybookieag": -2.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
     {
       "id": "1c5214151ed7571cdad54fd8cdad6113",
       "commenceTime": "2026-05-15T19:00:00Z",
@@ -277,5 +250,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 10
+  "totalMatches": 9
 }
