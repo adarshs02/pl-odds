@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-14T23:44:30.315057Z",
+  "lastUpdated": "2026-05-15T23:43:49.308353Z",
   "teams": [
     {
       "name": "Sunderland",
@@ -7240,32 +7240,48 @@
           "spread": -0.5,
           "netPerformance": -0.5,
           "cumulativeNetPerformance": -3.0
+        },
+        {
+          "date": "2026-05-15",
+          "opponent": "Liverpool",
+          "homeAway": "home",
+          "score": "4-2",
+          "result": "W",
+          "spreadsByBookmaker": {
+            "mybookieag": 0.5
+          },
+          "netPerformanceByBookmaker": {
+            "mybookieag": 2.5
+          },
+          "spread": 0.5,
+          "netPerformance": 2.5,
+          "cumulativeNetPerformance": -0.5
         }
       ],
-      "totalNetPerformance": -3.0,
+      "totalNetPerformance": -0.5,
       "totalNetPerformanceByBookmaker": {
         "backfill": 6.5,
         "matchbook": -0.5,
-        "mybookieag": -8.5
+        "mybookieag": -6.0
       },
       "statistics": {
-        "matchesPlayed": 36,
-        "wins": 17,
+        "matchesPlayed": 37,
+        "wins": 18,
         "losses": 11,
         "draws": 8,
-        "covers": 15,
+        "covers": 16,
         "coversByBookmaker": {
           "backfill": 11,
           "matchbook": 2,
-          "mybookieag": 3
+          "mybookieag": 4
         },
-        "avgNetPerformance": -0.08,
-        "winRate": 0.472,
-        "coverRate": 0.417,
+        "avgNetPerformance": -0.01,
+        "winRate": 0.486,
+        "coverRate": 0.432,
         "coverRateByBookmaker": {
-          "backfill": 0.306,
-          "matchbook": 0.056,
-          "mybookieag": 0.083
+          "backfill": 0.297,
+          "matchbook": 0.054,
+          "mybookieag": 0.108
         }
       }
     },
@@ -12080,18 +12096,34 @@
           "spread": -0.5,
           "netPerformance": -0.5,
           "cumulativeNetPerformance": -14.5
+        },
+        {
+          "date": "2026-05-15",
+          "opponent": "Aston Villa",
+          "homeAway": "away",
+          "score": "2-4",
+          "result": "L",
+          "spreadsByBookmaker": {
+            "mybookieag": -0.5
+          },
+          "netPerformanceByBookmaker": {
+            "mybookieag": -2.5
+          },
+          "spread": -0.5,
+          "netPerformance": -2.5,
+          "cumulativeNetPerformance": -17.0
         }
       ],
-      "totalNetPerformance": -14.5,
+      "totalNetPerformance": -17.0,
       "totalNetPerformanceByBookmaker": {
         "backfill": -12.0,
         "matchbook": -2.0,
-        "mybookieag": -2.0
+        "mybookieag": -4.5
       },
       "statistics": {
-        "matchesPlayed": 35,
+        "matchesPlayed": 36,
         "wins": 17,
-        "losses": 11,
+        "losses": 12,
         "draws": 7,
         "covers": 14,
         "coversByBookmaker": {
@@ -12099,13 +12131,13 @@
           "matchbook": 1,
           "mybookieag": 6
         },
-        "avgNetPerformance": -0.41,
-        "winRate": 0.486,
-        "coverRate": 0.4,
+        "avgNetPerformance": -0.47,
+        "winRate": 0.472,
+        "coverRate": 0.389,
         "coverRateByBookmaker": {
-          "backfill": 0.2,
-          "matchbook": 0.029,
-          "mybookieag": 0.171
+          "backfill": 0.194,
+          "matchbook": 0.028,
+          "mybookieag": 0.167
         }
       }
     }
@@ -12115,7 +12147,7 @@
     "matchbook",
     "mybookieag"
   ],
-  "correlation": 0.406,
-  "totalMatches": 360,
+  "correlation": 0.402,
+  "totalMatches": 361,
   "teamsTracked": 20
 }
