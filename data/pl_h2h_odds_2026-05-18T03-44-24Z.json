@@ -1,0 +1,152 @@
+[
+  {
+    "away_team": "Burnley",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "last_update": "2026-05-18T03:44:13Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-05-18T03:44:13Z",
+            "outcomes": [
+              {
+                "name": "Arsenal",
+                "price": 1.09
+              },
+              {
+                "name": "Burnley",
+                "price": 23.0
+              },
+              {
+                "name": "Draw",
+                "price": 12.0
+              }
+            ]
+          }
+        ],
+        "title": "DraftKings"
+      }
+    ],
+    "commence_time": "2026-05-18T19:00:00Z",
+    "home_team": "Arsenal",
+    "id": "818582ac502774aad4bb82309b9b85fa",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL"
+  },
+  {
+    "away_team": "Manchester City",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "last_update": "2026-05-18T03:44:13Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-05-18T03:44:13Z",
+            "outcomes": [
+              {
+                "name": "Bournemouth",
+                "price": 4.2
+              },
+              {
+                "name": "Manchester City",
+                "price": 1.74
+              },
+              {
+                "name": "Draw",
+                "price": 4.3
+              }
+            ]
+          }
+        ],
+        "title": "DraftKings"
+      }
+    ],
+    "commence_time": "2026-05-19T18:30:00Z",
+    "home_team": "Bournemouth",
+    "id": "51ec3d5c2707905aed83785fe055ffb0",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL"
+  },
+  {
+    "away_team": "Tottenham Hotspur",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "last_update": "2026-05-18T03:44:13Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-05-18T03:44:13Z",
+            "outcomes": [
+              {
+                "name": "Chelsea",
+                "price": 2.05
+              },
+              {
+                "name": "Tottenham Hotspur",
+                "price": 3.55
+              },
+              {
+                "name": "Draw",
+                "price": 3.7
+              }
+            ]
+          }
+        ],
+        "title": "DraftKings"
+      }
+    ],
+    "commence_time": "2026-05-19T19:15:00Z",
+    "home_team": "Chelsea",
+    "id": "f8183792f85edf341601f814e35773c8",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL"
+  },
+  {
+    "away_team": "Aston Villa",
+    "bookmakers": [],
+    "commence_time": "2026-05-24T15:00:00Z",
+    "home_team": "Manchester City",
+    "id": "353fa2742803b8f3add6a41e0caba1c9",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL"
+  },
+  {
+    "away_team": "Manchester United",
+    "bookmakers": [],
+    "commence_time": "2026-05-24T15:00:00Z",
+    "home_team": "Brighton and Hove Albion",
+    "id": "af2482d669bae9c726c7c55401fbf4de",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL"
+  },
+  {
+    "away_team": "Wolverhampton Wanderers",
+    "bookmakers": [],
+    "commence_time": "2026-05-24T15:00:00Z",
+    "home_team": "Burnley",
+    "id": "6d3c84cfb97cc1ac6ce46c00ccae4cee",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL"
+  },
+  {
+    "away_team": "Chelsea",
+    "bookmakers": [],
+    "commence_time": "2026-05-24T15:00:00Z",
+    "home_team": "Sunderland",
+    "id": "95d90d1340fc44c36643ca64392eaa97",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL"
+  },
+  {
+    "away_team": "Newcastle United",
+    "bookmakers": [],
+    "commence_time": "2026-05-24T15:00:00Z",
+    "home_team": "Fulham",
+    "id": "cf99e3729dc9016030ba4441c30e24b7",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL"
+  }
+]
