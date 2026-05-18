@@ -1,33 +1,6 @@
 {
-  "lastUpdated": "2026-05-18T15:39:51.704857Z",
+  "lastUpdated": "2026-05-18T23:55:14.262161Z",
   "upcomingMatches": [
-    {
-      "id": "818582ac502774aad4bb82309b9b85fa",
-      "commenceTime": "2026-05-18T19:00:00Z",
-      "homeTeam": "Arsenal",
-      "awayTeam": "Burnley",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 1.09,
-        "draw": 12.0,
-        "away": 23.0,
-        "impliedProbHome": 0.917,
-        "impliedProbDraw": 0.083,
-        "impliedProbAway": 0.043
-      },
-      "spread": {
-        "homePoint": -2.5,
-        "awayPoint": 2.5,
-        "byBookmaker": {
-          "mybookieag": -2.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
     {
       "id": "51ec3d5c2707905aed83785fe055ffb0",
       "commenceTime": "2026-05-19T18:30:00Z",
@@ -88,5 +61,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 3
+  "totalMatches": 2
 }
