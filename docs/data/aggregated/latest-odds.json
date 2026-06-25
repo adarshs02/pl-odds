@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-24T23:57:17.375515Z",
+  "lastUpdated": "2026-06-25T14:38:57.537295Z",
   "upcomingMatches": [
     {
       "id": "eb2553d10d63dc912b99f8fd0d675721",
@@ -24,11 +24,11 @@
       "h2hOdds": {
         "bookmaker": "DraftKings",
         "home": 6.5,
-        "draw": 4.6,
-        "away": 1.43,
+        "draw": 4.3,
+        "away": 1.45,
         "impliedProbHome": 0.154,
-        "impliedProbDraw": 0.217,
-        "impliedProbAway": 0.699
+        "impliedProbDraw": 0.233,
+        "impliedProbAway": 0.69
       }
     },
     {
@@ -38,12 +38,12 @@
       "awayTeam": "Crystal Palace",
       "h2hOdds": {
         "bookmaker": "DraftKings",
-        "home": 2.0,
-        "draw": 3.5,
-        "away": 3.55,
-        "impliedProbHome": 0.5,
-        "impliedProbDraw": 0.286,
-        "impliedProbAway": 0.282
+        "home": 2.15,
+        "draw": 3.4,
+        "away": 3.3,
+        "impliedProbHome": 0.465,
+        "impliedProbDraw": 0.294,
+        "impliedProbAway": 0.303
       },
       "spread": {
         "homePoint": 0.0,
@@ -185,12 +185,12 @@
       "awayTeam": "Chelsea",
       "h2hOdds": {
         "bookmaker": "DraftKings",
-        "home": 3.15,
+        "home": 2.9,
         "draw": 3.6,
-        "away": 2.1,
-        "impliedProbHome": 0.317,
+        "away": 2.2,
+        "impliedProbHome": 0.345,
         "impliedProbDraw": 0.278,
-        "impliedProbAway": 0.476
+        "impliedProbAway": 0.455
       },
       "spread": {
         "homePoint": 0.5,
