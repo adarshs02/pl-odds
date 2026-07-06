@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-05T23:55:56.990522Z",
+  "lastUpdated": "2026-07-06T15:39:55.222362Z",
   "upcomingMatches": [
     {
       "id": "eb2553d10d63dc912b99f8fd0d675721",
@@ -119,12 +119,12 @@
       "awayTeam": "Aston Villa",
       "h2hOdds": {
         "bookmaker": "DraftKings",
-        "home": 2.2,
+        "home": 2.3,
         "draw": 3.6,
-        "away": 2.95,
-        "impliedProbHome": 0.455,
+        "away": 2.8,
+        "impliedProbHome": 0.435,
         "impliedProbDraw": 0.278,
-        "impliedProbAway": 0.339
+        "impliedProbAway": 0.357
       },
       "spread": {
         "homePoint": -0.5,
