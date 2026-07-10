@@ -1,0 +1,92 @@
+[
+  {
+    "id": "eb2553d10d63dc912b99f8fd0d675721",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-08-21T19:00:00Z",
+    "home_team": "Arsenal",
+    "away_team": "Coventry City",
+    "bookmakers": []
+  },
+  {
+    "id": "95bb16d19debff3ec39919f361f072a4",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-08-22T11:30:00Z",
+    "home_team": "Hull City",
+    "away_team": "Manchester United",
+    "bookmakers": []
+  },
+  {
+    "id": "cd1f0173ec061d9b8a8b22ab8f2f8393",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-08-22T14:00:00Z",
+    "home_team": "Everton",
+    "away_team": "Crystal Palace",
+    "bookmakers": []
+  },
+  {
+    "id": "01615d9573ef1e5aa8c09eb32a4a983b",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-08-22T14:00:00Z",
+    "home_team": "Ipswich Town",
+    "away_team": "Sunderland",
+    "bookmakers": []
+  },
+  {
+    "id": "ee99154f8db029efcf567c5f7f7a0c0b",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-08-22T14:00:00Z",
+    "home_team": "Nottingham Forest",
+    "away_team": "Leeds United",
+    "bookmakers": []
+  },
+  {
+    "id": "8b4b033209bb204516cbd1f523614f25",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-08-22T16:30:00Z",
+    "home_team": "Brentford",
+    "away_team": "Tottenham Hotspur",
+    "bookmakers": []
+  },
+  {
+    "id": "f5086c74d4a767e3ad7ea69bd4a66b76",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-08-23T13:00:00Z",
+    "home_team": "Brighton and Hove Albion",
+    "away_team": "Aston Villa",
+    "bookmakers": []
+  },
+  {
+    "id": "87c7c9bfd5e3072bded20c702f553c63",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-08-23T13:00:00Z",
+    "home_team": "Manchester City",
+    "away_team": "Bournemouth",
+    "bookmakers": []
+  },
+  {
+    "id": "ea0bacc4c23f813c6af97ec9b306a850",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-08-23T15:30:00Z",
+    "home_team": "Newcastle United",
+    "away_team": "Liverpool",
+    "bookmakers": []
+  },
+  {
+    "id": "4e4a813bf4218cc527e6f8ef2351170d",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-08-24T19:00:00Z",
+    "home_team": "Fulham",
+    "away_team": "Chelsea",
+    "bookmakers": []
+  }
+]
