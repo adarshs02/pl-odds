@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-12T23:41:56.003631Z",
+  "lastUpdated": "2026-07-13T14:41:24.289186Z",
   "upcomingMatches": [
     {
       "id": "eb2553d10d63dc912b99f8fd0d675721",
@@ -76,11 +76,11 @@
       "h2hOdds": {
         "bookmaker": "DraftKings",
         "home": 2.2,
-        "draw": 3.45,
-        "away": 3.1,
+        "draw": 3.35,
+        "away": 3.15,
         "impliedProbHome": 0.455,
-        "impliedProbDraw": 0.29,
-        "impliedProbAway": 0.323
+        "impliedProbDraw": 0.299,
+        "impliedProbAway": 0.317
       },
       "spread": {
         "homePoint": -0.5,
@@ -97,12 +97,12 @@
       "awayTeam": "Tottenham",
       "h2hOdds": {
         "bookmaker": "DraftKings",
-        "home": 2.55,
-        "draw": 3.5,
-        "away": 2.55,
-        "impliedProbHome": 0.392,
-        "impliedProbDraw": 0.286,
-        "impliedProbAway": 0.392
+        "home": 2.15,
+        "draw": 3.65,
+        "away": 3.0,
+        "impliedProbHome": 0.465,
+        "impliedProbDraw": 0.274,
+        "impliedProbAway": 0.333
       },
       "spread": {
         "homePoint": 0.0,
@@ -119,12 +119,12 @@
       "awayTeam": "Aston Villa",
       "h2hOdds": {
         "bookmaker": "DraftKings",
-        "home": 2.3,
-        "draw": 3.6,
-        "away": 2.8,
-        "impliedProbHome": 0.435,
-        "impliedProbDraw": 0.278,
-        "impliedProbAway": 0.357
+        "home": 2.25,
+        "draw": 3.55,
+        "away": 2.9,
+        "impliedProbHome": 0.444,
+        "impliedProbDraw": 0.282,
+        "impliedProbAway": 0.345
       },
       "spread": {
         "homePoint": -0.5,
