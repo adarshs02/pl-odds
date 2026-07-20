@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-19T23:46:13.680844Z",
+  "lastUpdated": "2026-07-20T14:12:03.979453Z",
   "upcomingMatches": [
     {
       "id": "eb2553d10d63dc912b99f8fd0d675721",
@@ -8,10 +8,10 @@
       "awayTeam": "Coventry City",
       "h2hOdds": {
         "bookmaker": "DraftKings",
-        "home": 1.15,
+        "home": 1.14,
         "draw": 7.5,
         "away": 15.0,
-        "impliedProbHome": 0.87,
+        "impliedProbHome": 0.877,
         "impliedProbDraw": 0.133,
         "impliedProbAway": 0.067
       }
@@ -97,12 +97,12 @@
       "awayTeam": "Tottenham",
       "h2hOdds": {
         "bookmaker": "DraftKings",
-        "home": 2.25,
-        "draw": 3.65,
-        "away": 2.9,
-        "impliedProbHome": 0.444,
-        "impliedProbDraw": 0.274,
-        "impliedProbAway": 0.345
+        "home": 2.2,
+        "draw": 3.7,
+        "away": 2.85,
+        "impliedProbHome": 0.455,
+        "impliedProbDraw": 0.27,
+        "impliedProbAway": 0.351
       },
       "spread": {
         "homePoint": 0.0,
