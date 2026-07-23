@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-22T23:53:38.457340Z",
+  "lastUpdated": "2026-07-23T14:08:15.975251Z",
   "upcomingMatches": [
     {
       "id": "eb2553d10d63dc912b99f8fd0d675721",
@@ -8,10 +8,10 @@
       "awayTeam": "Coventry City",
       "h2hOdds": {
         "bookmaker": "DraftKings",
-        "home": 1.14,
+        "home": 1.15,
         "draw": 7.5,
         "away": 15.0,
-        "impliedProbHome": 0.877,
+        "impliedProbHome": 0.87,
         "impliedProbDraw": 0.133,
         "impliedProbAway": 0.067
       }
