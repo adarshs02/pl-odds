@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-26T23:51:04.489712Z",
+  "lastUpdated": "2026-07-27T14:42:21.752629Z",
   "upcomingMatches": [
     {
       "id": "eb2553d10d63dc912b99f8fd0d675721",
@@ -23,12 +23,12 @@
       "awayTeam": "Man United",
       "h2hOdds": {
         "bookmaker": "DraftKings",
-        "home": 6.5,
-        "draw": 4.3,
-        "away": 1.45,
-        "impliedProbHome": 0.154,
-        "impliedProbDraw": 0.233,
-        "impliedProbAway": 0.69
+        "home": 7.0,
+        "draw": 4.4,
+        "away": 1.44,
+        "impliedProbHome": 0.143,
+        "impliedProbDraw": 0.227,
+        "impliedProbAway": 0.694
       }
     },
     {
@@ -97,11 +97,11 @@
       "awayTeam": "Tottenham",
       "h2hOdds": {
         "bookmaker": "DraftKings",
-        "home": 2.2,
-        "draw": 3.7,
+        "home": 2.25,
+        "draw": 3.6,
         "away": 2.85,
-        "impliedProbHome": 0.455,
-        "impliedProbDraw": 0.27,
+        "impliedProbHome": 0.444,
+        "impliedProbDraw": 0.278,
         "impliedProbAway": 0.351
       },
       "spread": {
@@ -185,12 +185,12 @@
       "awayTeam": "Chelsea",
       "h2hOdds": {
         "bookmaker": "DraftKings",
-        "home": 2.9,
-        "draw": 3.6,
-        "away": 2.2,
-        "impliedProbHome": 0.345,
-        "impliedProbDraw": 0.278,
-        "impliedProbAway": 0.455
+        "home": 3.05,
+        "draw": 3.65,
+        "away": 2.15,
+        "impliedProbHome": 0.328,
+        "impliedProbDraw": 0.274,
+        "impliedProbAway": 0.465
       },
       "spread": {
         "homePoint": 0.5,
