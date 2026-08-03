@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-03T14:45:58.416279Z",
+  "lastUpdated": "2026-08-03T23:58:55.465511Z",
   "upcomingMatches": [
     {
       "id": "eb2553d10d63dc912b99f8fd0d675721",
@@ -14,6 +14,13 @@
         "impliedProbHome": 0.87,
         "impliedProbDraw": 0.133,
         "impliedProbAway": 0.067
+      },
+      "spread": {
+        "homePoint": -1.5,
+        "awayPoint": 1.5,
+        "byBookmaker": {
+          "mybookieag": -1.5
+        }
       }
     },
     {
@@ -29,6 +36,13 @@
         "impliedProbHome": 0.143,
         "impliedProbDraw": 0.227,
         "impliedProbAway": 0.694
+      },
+      "spread": {
+        "homePoint": 1.5,
+        "awayPoint": -1.5,
+        "byBookmaker": {
+          "mybookieag": 1.5
+        }
       }
     },
     {
@@ -46,10 +60,10 @@
         "impliedProbAway": 0.303
       },
       "spread": {
-        "homePoint": 0.0,
-        "awayPoint": -0.0,
+        "homePoint": -0.5,
+        "awayPoint": 0.5,
         "byBookmaker": {
-          "backfill": 0.0
+          "mybookieag": -0.5
         }
       }
     },
@@ -66,6 +80,13 @@
         "impliedProbHome": 0.37,
         "impliedProbDraw": 0.308,
         "impliedProbAway": 0.385
+      },
+      "spread": {
+        "homePoint": 0.5,
+        "awayPoint": -0.5,
+        "byBookmaker": {
+          "mybookieag": 0.5
+        }
       }
     },
     {
@@ -86,7 +107,7 @@
         "homePoint": -0.5,
         "awayPoint": 0.5,
         "byBookmaker": {
-          "backfill": -0.5
+          "mybookieag": -0.5
         }
       }
     },
@@ -105,10 +126,10 @@
         "impliedProbAway": 0.357
       },
       "spread": {
-        "homePoint": 0.0,
-        "awayPoint": -0.0,
+        "homePoint": -0.5,
+        "awayPoint": 0.5,
         "byBookmaker": {
-          "backfill": 0.0
+          "mybookieag": -0.5
         }
       }
     },
@@ -130,7 +151,7 @@
         "homePoint": -0.5,
         "awayPoint": 0.5,
         "byBookmaker": {
-          "backfill": -0.5
+          "mybookieag": -0.5
         }
       }
     },
@@ -152,7 +173,7 @@
         "homePoint": -1.5,
         "awayPoint": 1.5,
         "byBookmaker": {
-          "backfill": -1.5
+          "mybookieag": -1.5
         }
       }
     },
@@ -174,7 +195,7 @@
         "homePoint": 0.5,
         "awayPoint": -0.5,
         "byBookmaker": {
-          "backfill": 0.5
+          "mybookieag": 0.5
         }
       }
     },
@@ -196,7 +217,7 @@
         "homePoint": 0.5,
         "awayPoint": -0.5,
         "byBookmaker": {
-          "matchbook": 0.5
+          "mybookieag": 0.5
         }
       }
     }
