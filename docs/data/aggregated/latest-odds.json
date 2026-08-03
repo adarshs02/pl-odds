@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-02T23:48:59.664367Z",
+  "lastUpdated": "2026-08-03T14:45:58.416279Z",
   "upcomingMatches": [
     {
       "id": "eb2553d10d63dc912b99f8fd0d675721",
@@ -8,12 +8,12 @@
       "awayTeam": "Coventry City",
       "h2hOdds": {
         "bookmaker": "DraftKings",
-        "home": 1.17,
-        "draw": 7.0,
-        "away": 14.0,
-        "impliedProbHome": 0.855,
-        "impliedProbDraw": 0.143,
-        "impliedProbAway": 0.071
+        "home": 1.15,
+        "draw": 7.5,
+        "away": 15.0,
+        "impliedProbHome": 0.87,
+        "impliedProbDraw": 0.133,
+        "impliedProbAway": 0.067
       }
     },
     {
@@ -97,12 +97,12 @@
       "awayTeam": "Tottenham",
       "h2hOdds": {
         "bookmaker": "DraftKings",
-        "home": 2.25,
-        "draw": 3.6,
-        "away": 2.85,
-        "impliedProbHome": 0.444,
-        "impliedProbDraw": 0.278,
-        "impliedProbAway": 0.351
+        "home": 2.35,
+        "draw": 3.55,
+        "away": 2.8,
+        "impliedProbHome": 0.426,
+        "impliedProbDraw": 0.282,
+        "impliedProbAway": 0.357
       },
       "spread": {
         "homePoint": 0.0,
@@ -163,12 +163,12 @@
       "awayTeam": "Liverpool",
       "h2hOdds": {
         "bookmaker": "DraftKings",
-        "home": 2.9,
-        "draw": 3.7,
-        "away": 2.2,
-        "impliedProbHome": 0.345,
-        "impliedProbDraw": 0.27,
-        "impliedProbAway": 0.455
+        "home": 3.1,
+        "draw": 3.75,
+        "away": 2.1,
+        "impliedProbHome": 0.323,
+        "impliedProbDraw": 0.267,
+        "impliedProbAway": 0.476
       },
       "spread": {
         "homePoint": 0.5,
