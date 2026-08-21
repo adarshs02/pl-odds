@@ -1,28 +1,6 @@
 {
-  "lastUpdated": "2026-08-21T12:53:04.368862Z",
+  "lastUpdated": "2026-08-21T23:13:00.367576Z",
   "upcomingMatches": [
-    {
-      "id": "eb2553d10d63dc912b99f8fd0d675721",
-      "commenceTime": "2026-08-21T19:00:00Z",
-      "homeTeam": "Arsenal",
-      "awayTeam": "Coventry City",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 1.18,
-        "draw": 7.5,
-        "away": 15.0,
-        "impliedProbHome": 0.847,
-        "impliedProbDraw": 0.133,
-        "impliedProbAway": 0.067
-      },
-      "spread": {
-        "homePoint": -2.0,
-        "awayPoint": 2.0,
-        "byBookmaker": {
-          "mybookieag": -2.0
-        }
-      }
-    },
     {
       "id": "95bb16d19debff3ec39919f361f072a4",
       "commenceTime": "2026-08-22T11:30:00Z",
@@ -87,10 +65,10 @@
         "impliedProbAway": 0.377
       },
       "spread": {
-        "homePoint": 0.5,
-        "awayPoint": -0.5,
+        "homePoint": 0.0,
+        "awayPoint": -0.0,
         "byBookmaker": {
-          "mybookieag": 0.5
+          "mybookieag": 0.0
         }
       },
       "kalshiOdds": {
@@ -114,10 +92,10 @@
         "impliedProbAway": 0.317
       },
       "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
+        "homePoint": 0.0,
+        "awayPoint": -0.0,
         "byBookmaker": {
-          "mybookieag": -0.5
+          "mybookieag": 0.0
         }
       },
       "kalshiOdds": {
@@ -141,10 +119,10 @@
         "impliedProbAway": 0.364
       },
       "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
+        "homePoint": 0.0,
+        "awayPoint": -0.0,
         "byBookmaker": {
-          "mybookieag": -0.5
+          "mybookieag": 0.0
         }
       },
       "kalshiOdds": {
@@ -267,5 +245,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 10
+  "totalMatches": 9
 }
