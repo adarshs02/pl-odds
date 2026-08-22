@@ -1,28 +1,6 @@
 {
-  "lastUpdated": "2026-08-21T23:13:00.367576Z",
+  "lastUpdated": "2026-08-22T12:43:36.061670Z",
   "upcomingMatches": [
-    {
-      "id": "95bb16d19debff3ec39919f361f072a4",
-      "commenceTime": "2026-08-22T11:30:00Z",
-      "homeTeam": "Hull City",
-      "awayTeam": "Man United",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 8.0,
-        "draw": 5.0,
-        "away": 1.38,
-        "impliedProbHome": 0.125,
-        "impliedProbDraw": 0.2,
-        "impliedProbAway": 0.725
-      },
-      "spread": {
-        "homePoint": 1.5,
-        "awayPoint": -1.5,
-        "byBookmaker": {
-          "mybookieag": 1.5
-        }
-      }
-    },
     {
       "id": "cd1f0173ec061d9b8a8b22ab8f2f8393",
       "commenceTime": "2026-08-22T14:00:00Z",
@@ -245,5 +223,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 9
+  "totalMatches": 8
 }
