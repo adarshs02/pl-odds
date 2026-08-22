@@ -1,114 +1,6 @@
 {
-  "lastUpdated": "2026-08-22T12:43:36.061670Z",
+  "lastUpdated": "2026-08-22T23:10:06.884847Z",
   "upcomingMatches": [
-    {
-      "id": "cd1f0173ec061d9b8a8b22ab8f2f8393",
-      "commenceTime": "2026-08-22T14:00:00Z",
-      "homeTeam": "Everton",
-      "awayTeam": "Crystal Palace",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 2.2,
-        "draw": 3.4,
-        "away": 3.35,
-        "impliedProbHome": 0.455,
-        "impliedProbDraw": 0.294,
-        "impliedProbAway": 0.299
-      },
-      "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
-        "byBookmaker": {
-          "mybookieag": -0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
-    {
-      "id": "01615d9573ef1e5aa8c09eb32a4a983b",
-      "commenceTime": "2026-08-22T14:00:00Z",
-      "homeTeam": "Ipswich Town",
-      "awayTeam": "Sunderland",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 2.75,
-        "draw": 3.3,
-        "away": 2.65,
-        "impliedProbHome": 0.364,
-        "impliedProbDraw": 0.303,
-        "impliedProbAway": 0.377
-      },
-      "spread": {
-        "homePoint": 0.0,
-        "awayPoint": -0.0,
-        "byBookmaker": {
-          "mybookieag": 0.0
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
-    {
-      "id": "ee99154f8db029efcf567c5f7f7a0c0b",
-      "commenceTime": "2026-08-22T14:00:00Z",
-      "homeTeam": "Nott'm Forest",
-      "awayTeam": "Leeds",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 2.3,
-        "draw": 3.4,
-        "away": 3.15,
-        "impliedProbHome": 0.435,
-        "impliedProbDraw": 0.294,
-        "impliedProbAway": 0.317
-      },
-      "spread": {
-        "homePoint": 0.0,
-        "awayPoint": -0.0,
-        "byBookmaker": {
-          "mybookieag": 0.0
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
-    {
-      "id": "8b4b033209bb204516cbd1f523614f25",
-      "commenceTime": "2026-08-22T16:30:00Z",
-      "homeTeam": "Brentford",
-      "awayTeam": "Tottenham",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 2.45,
-        "draw": 3.6,
-        "away": 2.75,
-        "impliedProbHome": 0.408,
-        "impliedProbDraw": 0.278,
-        "impliedProbAway": 0.364
-      },
-      "spread": {
-        "homePoint": 0.0,
-        "awayPoint": -0.0,
-        "byBookmaker": {
-          "mybookieag": 0.0
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
     {
       "id": "f5086c74d4a767e3ad7ea69bd4a66b76",
       "commenceTime": "2026-08-23T13:00:00Z",
@@ -151,10 +43,10 @@
         "impliedProbAway": 0.174
       },
       "spread": {
-        "homePoint": -1.5,
-        "awayPoint": 1.5,
+        "homePoint": -1.0,
+        "awayPoint": 1.0,
         "byBookmaker": {
-          "mybookieag": -1.5
+          "mybookieag": -1.0
         }
       },
       "kalshiOdds": {
@@ -223,5 +115,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 8
+  "totalMatches": 4
 }
