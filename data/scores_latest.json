@@ -7777,7 +7777,7 @@
         "score": "0"
       }
     ],
-    "last_update": "2026-08-23T13:11:10Z"
+    "last_update": "2026-08-24T19:16:17Z"
   },
   {
     "id": "cd1f0173ec061d9b8a8b22ab8f2f8393",
@@ -7797,7 +7797,7 @@
         "score": "0"
       }
     ],
-    "last_update": "2026-08-23T13:11:10Z"
+    "last_update": "2026-08-24T19:16:17Z"
   },
   {
     "id": "01615d9573ef1e5aa8c09eb32a4a983b",
@@ -7817,7 +7817,7 @@
         "score": "1"
       }
     ],
-    "last_update": "2026-08-23T13:11:10Z"
+    "last_update": "2026-08-24T19:16:17Z"
   },
   {
     "id": "ee99154f8db029efcf567c5f7f7a0c0b",
@@ -7837,7 +7837,7 @@
         "score": "1"
       }
     ],
-    "last_update": "2026-08-23T13:11:10Z"
+    "last_update": "2026-08-24T19:16:17Z"
   },
   {
     "id": "8b4b033209bb204516cbd1f523614f25",
@@ -7857,7 +7857,7 @@
         "score": "0"
       }
     ],
-    "last_update": "2026-08-23T13:11:10Z"
+    "last_update": "2026-08-24T19:16:17Z"
   },
   {
     "id": "f5086c74d4a767e3ad7ea69bd4a66b76",
@@ -7869,15 +7869,15 @@
     "away_team": "Aston Villa",
     "scores": [
       {
-        "name": "Aston Villa",
-        "score": "0"
-      },
-      {
         "name": "Brighton and Hove Albion",
         "score": "4"
+      },
+      {
+        "name": "Aston Villa",
+        "score": "0"
       }
     ],
-    "last_update": "2026-08-23T22:53:00Z"
+    "last_update": "2026-08-24T19:16:17Z"
   },
   {
     "id": "87c7c9bfd5e3072bded20c702f553c63",
@@ -7889,15 +7889,15 @@
     "away_team": "Bournemouth",
     "scores": [
       {
-        "name": "Bournemouth",
-        "score": "1"
-      },
-      {
         "name": "Manchester City",
         "score": "2"
+      },
+      {
+        "name": "Bournemouth",
+        "score": "1"
       }
     ],
-    "last_update": "2026-08-23T22:53:00Z"
+    "last_update": "2026-08-24T19:16:17Z"
   },
   {
     "id": "ea0bacc4c23f813c6af97ec9b306a850",
@@ -7909,14 +7909,34 @@
     "away_team": "Liverpool",
     "scores": [
       {
-        "name": "Liverpool",
+        "name": "Newcastle United",
         "score": "2"
       },
       {
-        "name": "Newcastle United",
+        "name": "Liverpool",
         "score": "2"
       }
     ],
-    "last_update": "2026-08-23T22:53:00Z"
+    "last_update": "2026-08-24T19:16:17Z"
+  },
+  {
+    "id": "4e4a813bf4218cc527e6f8ef2351170d",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-08-24T19:00:00Z",
+    "completed": true,
+    "home_team": "Fulham",
+    "away_team": "Chelsea",
+    "scores": [
+      {
+        "name": "Chelsea",
+        "score": "3"
+      },
+      {
+        "name": "Fulham",
+        "score": "2"
+      }
+    ],
+    "last_update": "2026-08-24T23:13:12Z"
   }
 ]

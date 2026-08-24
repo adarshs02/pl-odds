@@ -1,33 +1,6 @@
 {
-  "lastUpdated": "2026-08-24T12:55:25.849569Z",
+  "lastUpdated": "2026-08-24T23:13:19.739604Z",
   "upcomingMatches": [
-    {
-      "id": "4e4a813bf4218cc527e6f8ef2351170d",
-      "commenceTime": "2026-08-24T19:00:00Z",
-      "homeTeam": "Fulham",
-      "awayTeam": "Chelsea",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 4.0,
-        "draw": 3.9,
-        "away": 1.83,
-        "impliedProbHome": 0.25,
-        "impliedProbDraw": 0.256,
-        "impliedProbAway": 0.546
-      },
-      "spread": {
-        "homePoint": 0.5,
-        "awayPoint": -0.5,
-        "byBookmaker": {
-          "mybookieag": 0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
     {
       "id": "373cc6e2fb57f471cd2deab9a28a6edb",
       "commenceTime": "2026-08-28T19:00:00Z",
@@ -227,10 +200,10 @@
         "impliedProbAway": 0.364
       },
       "spread": {
-        "homePoint": 0.5,
-        "awayPoint": -0.5,
+        "homePoint": -0.5,
+        "awayPoint": 0.5,
         "byBookmaker": {
-          "mybookieag": 0.5
+          "mybookieag": -0.5
         }
       },
       "kalshiOdds": {
@@ -272,5 +245,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 10
+  "totalMatches": 9
 }
