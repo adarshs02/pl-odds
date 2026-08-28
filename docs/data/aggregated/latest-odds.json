@@ -1,33 +1,6 @@
 {
-  "lastUpdated": "2026-08-28T06:25:19.421831Z",
+  "lastUpdated": "2026-08-28T21:54:16.855323Z",
   "upcomingMatches": [
-    {
-      "id": "373cc6e2fb57f471cd2deab9a28a6edb",
-      "commenceTime": "2026-08-28T19:00:00Z",
-      "homeTeam": "Crystal Palace",
-      "awayTeam": "Man City",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 5.0,
-        "draw": 4.3,
-        "away": 1.62,
-        "impliedProbHome": 0.2,
-        "impliedProbDraw": 0.233,
-        "impliedProbAway": 0.617
-      },
-      "spread": {
-        "homePoint": 1.0,
-        "awayPoint": -1.0,
-        "byBookmaker": {
-          "mybookieag": 1.0
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
     {
       "id": "feafb731d0307bc91a58e18187aa2eab",
       "commenceTime": "2026-08-29T11:30:00Z",
@@ -532,5 +505,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 20
+  "totalMatches": 19
 }
