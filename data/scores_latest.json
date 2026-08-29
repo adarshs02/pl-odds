@@ -7938,5 +7938,25 @@
       }
     ],
     "last_update": "2026-08-25T02:23:15Z"
+  },
+  {
+    "id": "373cc6e2fb57f471cd2deab9a28a6edb",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-08-28T19:00:00Z",
+    "completed": true,
+    "home_team": "Crystal Palace",
+    "away_team": "Manchester City",
+    "scores": [
+      {
+        "name": "Manchester City",
+        "score": "4"
+      },
+      {
+        "name": "Crystal Palace",
+        "score": "1"
+      }
+    ],
+    "last_update": "2026-08-29T02:22:40Z"
   }
 ]
