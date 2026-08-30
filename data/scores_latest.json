@@ -7949,14 +7949,94 @@
     "away_team": "Manchester City",
     "scores": [
       {
-        "name": "Manchester City",
-        "score": "4"
+        "name": "Crystal Palace",
+        "score": "1"
       },
       {
-        "name": "Crystal Palace",
+        "name": "Manchester City",
+        "score": "4"
+      }
+    ],
+    "last_update": "2026-08-29T11:46:41Z"
+  },
+  {
+    "id": "feafb731d0307bc91a58e18187aa2eab",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-08-29T11:30:00Z",
+    "completed": true,
+    "home_team": "Liverpool",
+    "away_team": "Nottingham Forest",
+    "scores": [
+      {
+        "name": "Nottingham Forest",
+        "score": "2"
+      },
+      {
+        "name": "Liverpool",
+        "score": "2"
+      }
+    ],
+    "last_update": "2026-08-29T23:55:08Z"
+  },
+  {
+    "id": "ff4818bd73fa63c0a1e4c98e50c7a2e5",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-08-29T14:00:00Z",
+    "completed": true,
+    "home_team": "Bournemouth",
+    "away_team": "Everton",
+    "scores": [
+      {
+        "name": "Everton",
+        "score": "1"
+      },
+      {
+        "name": "Bournemouth",
         "score": "1"
       }
     ],
-    "last_update": "2026-08-29T02:22:40Z"
+    "last_update": "2026-08-29T23:55:08Z"
+  },
+  {
+    "id": "374dd92785cc06d6514d275515219c44",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-08-29T14:00:00Z",
+    "completed": true,
+    "home_team": "Coventry City",
+    "away_team": "Hull City",
+    "scores": [
+      {
+        "name": "Hull City",
+        "score": "1"
+      },
+      {
+        "name": "Coventry City",
+        "score": "0"
+      }
+    ],
+    "last_update": "2026-08-29T23:55:08Z"
+  },
+  {
+    "id": "7a8746a45dc76378359a7d9cc5474bc8",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-08-29T16:30:00Z",
+    "completed": true,
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Newcastle United",
+    "scores": [
+      {
+        "name": "Newcastle United",
+        "score": "2"
+      },
+      {
+        "name": "Tottenham Hotspur",
+        "score": "0"
+      }
+    ],
+    "last_update": "2026-08-29T23:55:08Z"
   }
 ]

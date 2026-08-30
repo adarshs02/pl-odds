@@ -1,33 +1,6 @@
 {
-  "lastUpdated": "2026-08-29T16:25:56.178658Z",
+  "lastUpdated": "2026-08-30T00:52:53.057978Z",
   "upcomingMatches": [
-    {
-      "id": "7a8746a45dc76378359a7d9cc5474bc8",
-      "commenceTime": "2026-08-29T16:30:00Z",
-      "homeTeam": "Tottenham",
-      "awayTeam": "Newcastle",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 2.3,
-        "draw": 3.65,
-        "away": 2.95,
-        "impliedProbHome": 0.435,
-        "impliedProbDraw": 0.274,
-        "impliedProbAway": 0.339
-      },
-      "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
-        "byBookmaker": {
-          "mybookieag": -0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
     {
       "id": "e479c08421b8549c6959c2b84f6f3f79",
       "commenceTime": "2026-08-30T13:00:00Z",
@@ -43,10 +16,10 @@
         "impliedProbAway": 0.364
       },
       "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
+        "homePoint": 0.0,
+        "awayPoint": -0.0,
         "byBookmaker": {
-          "mybookieag": -0.5
+          "mybookieag": 0.0
         }
       },
       "kalshiOdds": {
@@ -97,10 +70,10 @@
         "impliedProbAway": 0.345
       },
       "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
+        "homePoint": 0.0,
+        "awayPoint": -0.0,
         "byBookmaker": {
-          "mybookieag": -0.5
+          "mybookieag": 0.0
         }
       },
       "kalshiOdds": {
@@ -335,10 +308,10 @@
         "impliedProbAway": 0.4
       },
       "spread": {
-        "homePoint": 0.5,
-        "awayPoint": -0.5,
+        "homePoint": -0.5,
+        "awayPoint": 0.5,
         "byBookmaker": {
-          "mybookieag": 0.5
+          "mybookieag": -0.5
         }
       },
       "kalshiOdds": {
@@ -429,5 +402,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 16
+  "totalMatches": 15
 }
