@@ -1,114 +1,6 @@
 {
-  "lastUpdated": "2026-08-30T00:52:53.057978Z",
+  "lastUpdated": "2026-08-30T16:19:31.206142Z",
   "upcomingMatches": [
-    {
-      "id": "e479c08421b8549c6959c2b84f6f3f79",
-      "commenceTime": "2026-08-30T13:00:00Z",
-      "homeTeam": "Leeds",
-      "awayTeam": "Brentford",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 2.5,
-        "draw": 3.4,
-        "away": 2.75,
-        "impliedProbHome": 0.4,
-        "impliedProbDraw": 0.294,
-        "impliedProbAway": 0.364
-      },
-      "spread": {
-        "homePoint": 0.0,
-        "awayPoint": -0.0,
-        "byBookmaker": {
-          "mybookieag": 0.0
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
-    {
-      "id": "6a4c946a61ddb5ef4703eb4528ccdef1",
-      "commenceTime": "2026-08-30T13:00:00Z",
-      "homeTeam": "Chelsea",
-      "awayTeam": "Brighton",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 1.87,
-        "draw": 3.85,
-        "away": 3.8,
-        "impliedProbHome": 0.535,
-        "impliedProbDraw": 0.26,
-        "impliedProbAway": 0.263
-      },
-      "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
-        "byBookmaker": {
-          "mybookieag": -0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
-    {
-      "id": "9becb395ad634de55caec620f9d713fa",
-      "commenceTime": "2026-08-30T13:00:00Z",
-      "homeTeam": "Sunderland",
-      "awayTeam": "Fulham",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 2.45,
-        "draw": 3.25,
-        "away": 2.9,
-        "impliedProbHome": 0.408,
-        "impliedProbDraw": 0.308,
-        "impliedProbAway": 0.345
-      },
-      "spread": {
-        "homePoint": 0.0,
-        "awayPoint": -0.0,
-        "byBookmaker": {
-          "mybookieag": 0.0
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
-    {
-      "id": "5759167055d94ba38e145ab92188abbf",
-      "commenceTime": "2026-08-30T15:30:00Z",
-      "homeTeam": "Man United",
-      "awayTeam": "Ipswich Town",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 1.41,
-        "draw": 4.9,
-        "away": 7.0,
-        "impliedProbHome": 0.709,
-        "impliedProbDraw": 0.204,
-        "impliedProbAway": 0.143
-      },
-      "spread": {
-        "homePoint": -1.5,
-        "awayPoint": 1.5,
-        "byBookmaker": {
-          "mybookieag": -1.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
     {
       "id": "2c49e9d1ef855f62962b915e773f906d",
       "commenceTime": "2026-08-31T19:00:00Z",
@@ -402,5 +294,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 15
+  "totalMatches": 11
 }
