@@ -7957,7 +7957,7 @@
         "score": "4"
       }
     ],
-    "last_update": "2026-08-29T11:46:41Z"
+    "last_update": "2026-08-30T13:11:08Z"
   },
   {
     "id": "feafb731d0307bc91a58e18187aa2eab",
@@ -7969,15 +7969,15 @@
     "away_team": "Nottingham Forest",
     "scores": [
       {
-        "name": "Nottingham Forest",
+        "name": "Liverpool",
         "score": "2"
       },
       {
-        "name": "Liverpool",
+        "name": "Nottingham Forest",
         "score": "2"
       }
     ],
-    "last_update": "2026-08-29T23:55:08Z"
+    "last_update": "2026-08-30T13:11:08Z"
   },
   {
     "id": "ff4818bd73fa63c0a1e4c98e50c7a2e5",
@@ -7989,15 +7989,15 @@
     "away_team": "Everton",
     "scores": [
       {
-        "name": "Everton",
+        "name": "Bournemouth",
         "score": "1"
       },
       {
-        "name": "Bournemouth",
+        "name": "Everton",
         "score": "1"
       }
     ],
-    "last_update": "2026-08-29T23:55:08Z"
+    "last_update": "2026-08-30T13:11:08Z"
   },
   {
     "id": "374dd92785cc06d6514d275515219c44",
@@ -8009,15 +8009,15 @@
     "away_team": "Hull City",
     "scores": [
       {
-        "name": "Hull City",
-        "score": "1"
-      },
-      {
         "name": "Coventry City",
         "score": "0"
+      },
+      {
+        "name": "Hull City",
+        "score": "1"
       }
     ],
-    "last_update": "2026-08-29T23:55:08Z"
+    "last_update": "2026-08-30T13:11:08Z"
   },
   {
     "id": "7a8746a45dc76378359a7d9cc5474bc8",
@@ -8029,14 +8029,94 @@
     "away_team": "Newcastle United",
     "scores": [
       {
+        "name": "Tottenham Hotspur",
+        "score": "0"
+      },
+      {
         "name": "Newcastle United",
+        "score": "2"
+      }
+    ],
+    "last_update": "2026-08-30T13:11:08Z"
+  },
+  {
+    "id": "e479c08421b8549c6959c2b84f6f3f79",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-08-30T13:00:00Z",
+    "completed": true,
+    "home_team": "Leeds United",
+    "away_team": "Brentford",
+    "scores": [
+      {
+        "name": "Brentford",
+        "score": "1"
+      },
+      {
+        "name": "Leeds United",
+        "score": "1"
+      }
+    ],
+    "last_update": "2026-08-30T22:55:59Z"
+  },
+  {
+    "id": "6a4c946a61ddb5ef4703eb4528ccdef1",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-08-30T13:00:00Z",
+    "completed": true,
+    "home_team": "Chelsea",
+    "away_team": "Brighton and Hove Albion",
+    "scores": [
+      {
+        "name": "Brighton and Hove Albion",
+        "score": "3"
+      },
+      {
+        "name": "Chelsea",
+        "score": "4"
+      }
+    ],
+    "last_update": "2026-08-30T22:55:59Z"
+  },
+  {
+    "id": "9becb395ad634de55caec620f9d713fa",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-08-30T13:00:00Z",
+    "completed": true,
+    "home_team": "Sunderland",
+    "away_team": "Fulham",
+    "scores": [
+      {
+        "name": "Fulham",
+        "score": "0"
+      },
+      {
+        "name": "Sunderland",
+        "score": "1"
+      }
+    ],
+    "last_update": "2026-08-30T22:55:59Z"
+  },
+  {
+    "id": "5759167055d94ba38e145ab92188abbf",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-08-30T15:30:00Z",
+    "completed": true,
+    "home_team": "Manchester United",
+    "away_team": "Ipswich Town",
+    "scores": [
+      {
+        "name": "Ipswich Town",
         "score": "2"
       },
       {
-        "name": "Tottenham Hotspur",
-        "score": "0"
+        "name": "Manchester United",
+        "score": "5"
       }
     ],
-    "last_update": "2026-08-29T23:55:08Z"
+    "last_update": "2026-08-30T22:55:59Z"
   }
 ]
