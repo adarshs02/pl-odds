@@ -1,33 +1,6 @@
 {
-  "lastUpdated": "2026-08-31T18:57:04.404892Z",
+  "lastUpdated": "2026-09-01T01:29:56.924394Z",
   "upcomingMatches": [
-    {
-      "id": "2c49e9d1ef855f62962b915e773f906d",
-      "commenceTime": "2026-08-31T19:00:00Z",
-      "homeTeam": "Aston Villa",
-      "awayTeam": "Arsenal",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 6.0,
-        "draw": 4.3,
-        "away": 1.53,
-        "impliedProbHome": 0.167,
-        "impliedProbDraw": 0.233,
-        "impliedProbAway": 0.654
-      },
-      "spread": {
-        "homePoint": 1.0,
-        "awayPoint": -1.0,
-        "byBookmaker": {
-          "mybookieag": 1.0
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
     {
       "id": "625c096fabb6047cbeb082dab9affce4",
       "commenceTime": "2026-09-04T19:00:00Z",
@@ -43,10 +16,10 @@
         "impliedProbAway": 0.629
       },
       "spread": {
-        "homePoint": 0.5,
-        "awayPoint": -0.5,
+        "homePoint": 1.5,
+        "awayPoint": -1.5,
         "byBookmaker": {
-          "mybookieag": 0.5
+          "mybookieag": 1.5
         }
       },
       "kalshiOdds": {
@@ -151,10 +124,10 @@
         "impliedProbAway": 0.091
       },
       "spread": {
-        "homePoint": -1.5,
-        "awayPoint": 1.5,
+        "homePoint": -2.5,
+        "awayPoint": 2.5,
         "byBookmaker": {
-          "mybookieag": -1.5
+          "mybookieag": -2.5
         }
       }
     },
@@ -554,5 +527,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 21
+  "totalMatches": 20
 }

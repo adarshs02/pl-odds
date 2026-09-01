@@ -7977,7 +7977,7 @@
         "score": "2"
       }
     ],
-    "last_update": "2026-08-30T13:11:08Z"
+    "last_update": "2026-08-31T19:06:11Z"
   },
   {
     "id": "ff4818bd73fa63c0a1e4c98e50c7a2e5",
@@ -7997,7 +7997,7 @@
         "score": "1"
       }
     ],
-    "last_update": "2026-08-30T13:11:08Z"
+    "last_update": "2026-08-31T19:06:11Z"
   },
   {
     "id": "374dd92785cc06d6514d275515219c44",
@@ -8017,7 +8017,7 @@
         "score": "1"
       }
     ],
-    "last_update": "2026-08-30T13:11:08Z"
+    "last_update": "2026-08-31T19:06:11Z"
   },
   {
     "id": "7a8746a45dc76378359a7d9cc5474bc8",
@@ -8037,7 +8037,7 @@
         "score": "2"
       }
     ],
-    "last_update": "2026-08-30T13:11:08Z"
+    "last_update": "2026-08-31T19:06:11Z"
   },
   {
     "id": "e479c08421b8549c6959c2b84f6f3f79",
@@ -8049,15 +8049,15 @@
     "away_team": "Brentford",
     "scores": [
       {
-        "name": "Brentford",
+        "name": "Leeds United",
         "score": "1"
       },
       {
-        "name": "Leeds United",
+        "name": "Brentford",
         "score": "1"
       }
     ],
-    "last_update": "2026-08-30T22:55:59Z"
+    "last_update": "2026-08-31T19:06:11Z"
   },
   {
     "id": "6a4c946a61ddb5ef4703eb4528ccdef1",
@@ -8069,15 +8069,15 @@
     "away_team": "Brighton and Hove Albion",
     "scores": [
       {
-        "name": "Brighton and Hove Albion",
-        "score": "3"
-      },
-      {
         "name": "Chelsea",
         "score": "4"
+      },
+      {
+        "name": "Brighton and Hove Albion",
+        "score": "3"
       }
     ],
-    "last_update": "2026-08-30T22:55:59Z"
+    "last_update": "2026-08-31T19:06:11Z"
   },
   {
     "id": "9becb395ad634de55caec620f9d713fa",
@@ -8089,15 +8089,15 @@
     "away_team": "Fulham",
     "scores": [
       {
-        "name": "Fulham",
-        "score": "0"
-      },
-      {
         "name": "Sunderland",
         "score": "1"
+      },
+      {
+        "name": "Fulham",
+        "score": "0"
       }
     ],
-    "last_update": "2026-08-30T22:55:59Z"
+    "last_update": "2026-08-31T19:06:11Z"
   },
   {
     "id": "5759167055d94ba38e145ab92188abbf",
@@ -8109,14 +8109,34 @@
     "away_team": "Ipswich Town",
     "scores": [
       {
-        "name": "Ipswich Town",
-        "score": "2"
-      },
-      {
         "name": "Manchester United",
         "score": "5"
+      },
+      {
+        "name": "Ipswich Town",
+        "score": "2"
       }
     ],
-    "last_update": "2026-08-30T22:55:59Z"
+    "last_update": "2026-08-31T19:06:11Z"
+  },
+  {
+    "id": "2c49e9d1ef855f62962b915e773f906d",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-08-31T19:00:00Z",
+    "completed": true,
+    "home_team": "Aston Villa",
+    "away_team": "Arsenal",
+    "scores": [
+      {
+        "name": "Arsenal",
+        "score": "1"
+      },
+      {
+        "name": "Aston Villa",
+        "score": "0"
+      }
+    ],
+    "last_update": "2026-09-01T01:29:44Z"
   }
 ]
