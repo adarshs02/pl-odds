@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-04T00:30:32.412545Z",
+  "lastUpdated": "2026-09-05T00:27:46.747710Z",
   "teams": [
     {
       "name": "Sunderland",
@@ -7422,63 +7422,6 @@
       }
     },
     {
-      "name": "Ipswich Town",
-      "matchHistory": [
-        {
-          "date": "2026-08-22",
-          "opponent": "Sunderland",
-          "homeAway": "home",
-          "score": "2-1",
-          "result": "W",
-          "spreadsByBookmaker": {
-            "mybookieag": 0.0
-          },
-          "netPerformanceByBookmaker": {
-            "mybookieag": 1.0
-          },
-          "spread": 0.0,
-          "netPerformance": 1.0,
-          "cumulativeNetPerformance": 1.0
-        },
-        {
-          "date": "2026-08-30",
-          "opponent": "Man United",
-          "homeAway": "away",
-          "score": "2-5",
-          "result": "L",
-          "spreadsByBookmaker": {
-            "mybookieag": 1.5
-          },
-          "netPerformanceByBookmaker": {
-            "mybookieag": -1.5
-          },
-          "spread": 1.5,
-          "netPerformance": -1.5,
-          "cumulativeNetPerformance": -0.5
-        }
-      ],
-      "totalNetPerformance": -0.5,
-      "totalNetPerformanceByBookmaker": {
-        "mybookieag": -0.5
-      },
-      "statistics": {
-        "matchesPlayed": 2,
-        "wins": 1,
-        "losses": 1,
-        "draws": 0,
-        "covers": 1,
-        "coversByBookmaker": {
-          "mybookieag": 1
-        },
-        "avgNetPerformance": -0.25,
-        "winRate": 0.5,
-        "coverRate": 0.5,
-        "coverRateByBookmaker": {
-          "mybookieag": 0.5
-        }
-      }
-    },
-    {
       "name": "Aston Villa",
       "matchHistory": [
         {
@@ -8148,6 +8091,79 @@
           "mybookieag": 0.15,
           "backfill": 0.25,
           "matchbook": 0.05
+        }
+      }
+    },
+    {
+      "name": "Ipswich Town",
+      "matchHistory": [
+        {
+          "date": "2026-08-22",
+          "opponent": "Sunderland",
+          "homeAway": "home",
+          "score": "2-1",
+          "result": "W",
+          "spreadsByBookmaker": {
+            "mybookieag": 0.0
+          },
+          "netPerformanceByBookmaker": {
+            "mybookieag": 1.0
+          },
+          "spread": 0.0,
+          "netPerformance": 1.0,
+          "cumulativeNetPerformance": 1.0
+        },
+        {
+          "date": "2026-08-30",
+          "opponent": "Man United",
+          "homeAway": "away",
+          "score": "2-5",
+          "result": "L",
+          "spreadsByBookmaker": {
+            "mybookieag": 1.5
+          },
+          "netPerformanceByBookmaker": {
+            "mybookieag": -1.5
+          },
+          "spread": 1.5,
+          "netPerformance": -1.5,
+          "cumulativeNetPerformance": -0.5
+        },
+        {
+          "date": "2026-09-04",
+          "opponent": "Liverpool",
+          "homeAway": "home",
+          "score": "0-2",
+          "result": "L",
+          "spreadsByBookmaker": {
+            "mybookieag": 1.0
+          },
+          "netPerformanceByBookmaker": {
+            "mybookieag": -1.0
+          },
+          "spread": 1.0,
+          "netPerformance": -1.0,
+          "cumulativeNetPerformance": -1.5
+        }
+      ],
+      "totalNetPerformance": -1.5,
+      "totalNetPerformanceByBookmaker": {
+        "mybookieag": -1.5
+      },
+      "statistics": {
+        "matchesPlayed": 3,
+        "wins": 1,
+        "losses": 2,
+        "draws": 0,
+        "covers": 1,
+        "coversByBookmaker": {
+          "mybookieag": 1
+        },
+        "avgNetPerformance": -0.5,
+        "winRate": 0.333,
+        "coverRate": 0.333,
+        "coverRateByBookmaker": {
+          "mybookieag": 0.333
         }
       }
     },
@@ -13435,32 +13451,48 @@
           "spread": -1.0,
           "netPerformance": -1.0,
           "cumulativeNetPerformance": -19.0
+        },
+        {
+          "date": "2026-09-04",
+          "opponent": "Ipswich Town",
+          "homeAway": "away",
+          "score": "2-0",
+          "result": "W",
+          "spreadsByBookmaker": {
+            "mybookieag": -1.0
+          },
+          "netPerformanceByBookmaker": {
+            "mybookieag": 1.0
+          },
+          "spread": -1.0,
+          "netPerformance": 1.0,
+          "cumulativeNetPerformance": -18.0
         }
       ],
-      "totalNetPerformance": -19.0,
+      "totalNetPerformance": -18.0,
       "totalNetPerformanceByBookmaker": {
         "backfill": -12.0,
         "matchbook": -2.0,
-        "mybookieag": -6.5
+        "mybookieag": -5.5
       },
       "statistics": {
-        "matchesPlayed": 39,
-        "wins": 17,
+        "matchesPlayed": 40,
+        "wins": 18,
         "losses": 12,
         "draws": 10,
-        "covers": 14,
+        "covers": 15,
         "coversByBookmaker": {
           "backfill": 7,
           "matchbook": 1,
-          "mybookieag": 6
+          "mybookieag": 7
         },
-        "avgNetPerformance": -0.49,
-        "winRate": 0.436,
-        "coverRate": 0.359,
+        "avgNetPerformance": -0.45,
+        "winRate": 0.45,
+        "coverRate": 0.375,
         "coverRateByBookmaker": {
-          "backfill": 0.179,
-          "matchbook": 0.026,
-          "mybookieag": 0.154
+          "backfill": 0.175,
+          "matchbook": 0.025,
+          "mybookieag": 0.175
         }
       }
     }
@@ -13470,7 +13502,7 @@
     "matchbook",
     "mybookieag"
   ],
-  "correlation": 0.384,
-  "totalMatches": 400,
+  "correlation": 0.388,
+  "totalMatches": 401,
   "teamsTracked": 23
 }

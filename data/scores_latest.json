@@ -8138,5 +8138,25 @@
       }
     ],
     "last_update": "2026-09-01T02:29:41Z"
+  },
+  {
+    "id": "625c096fabb6047cbeb082dab9affce4",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-09-04T19:00:00Z",
+    "completed": true,
+    "home_team": "Ipswich Town",
+    "away_team": "Liverpool",
+    "scores": [
+      {
+        "name": "Liverpool",
+        "score": "2"
+      },
+      {
+        "name": "Ipswich Town",
+        "score": "0"
+      }
+    ],
+    "last_update": "2026-09-05T00:27:44Z"
   }
 ]

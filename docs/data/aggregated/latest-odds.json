@@ -1,33 +1,6 @@
 {
-  "lastUpdated": "2026-09-04T15:59:26.740652Z",
+  "lastUpdated": "2026-09-05T00:27:46.817544Z",
   "upcomingMatches": [
-    {
-      "id": "625c096fabb6047cbeb082dab9affce4",
-      "commenceTime": "2026-09-04T19:00:00Z",
-      "homeTeam": "Ipswich Town",
-      "awayTeam": "Liverpool",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 5.25,
-        "draw": 4.7,
-        "away": 1.54,
-        "impliedProbHome": 0.19,
-        "impliedProbDraw": 0.213,
-        "impliedProbAway": 0.649
-      },
-      "spread": {
-        "homePoint": 1.0,
-        "awayPoint": -1.0,
-        "byBookmaker": {
-          "mybookieag": 1.0
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
     {
       "id": "686358c484cc44fe8e617674c335d531",
       "commenceTime": "2026-09-05T11:30:00Z",
@@ -70,10 +43,10 @@
         "impliedProbAway": 0.182
       },
       "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
+        "homePoint": -1.0,
+        "awayPoint": 1.0,
         "byBookmaker": {
-          "mybookieag": -0.5
+          "mybookieag": -1.0
         }
       },
       "kalshiOdds": {
@@ -146,10 +119,10 @@
         "impliedProbAway": 0.317
       },
       "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
+        "homePoint": 0.0,
+        "awayPoint": -0.0,
         "byBookmaker": {
-          "mybookieag": -0.5
+          "mybookieag": 0.0
         }
       },
       "kalshiOdds": {
@@ -173,10 +146,10 @@
         "impliedProbAway": 0.351
       },
       "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
+        "homePoint": 0.0,
+        "awayPoint": -0.0,
         "byBookmaker": {
-          "mybookieag": -0.5
+          "mybookieag": 0.0
         }
       },
       "kalshiOdds": {
@@ -527,5 +500,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 20
+  "totalMatches": 19
 }
