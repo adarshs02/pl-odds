@@ -1,28 +1,6 @@
 {
-  "lastUpdated": "2026-09-05T14:50:17.238339Z",
+  "lastUpdated": "2026-09-06T00:21:29.222672Z",
   "upcomingMatches": [
-    {
-      "id": "21fd24ad6732df00774304a046d84fe9",
-      "commenceTime": "2026-09-05T16:30:00Z",
-      "homeTeam": "Hull City",
-      "awayTeam": "Aston Villa",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 4.1,
-        "draw": 3.7,
-        "away": 1.87,
-        "impliedProbHome": 0.244,
-        "impliedProbDraw": 0.27,
-        "impliedProbAway": 0.535
-      },
-      "spread": {
-        "homePoint": 0.5,
-        "awayPoint": -0.5,
-        "byBookmaker": {
-          "mybookieag": 0.5
-        }
-      }
-    },
     {
       "id": "8ea6c863f1852654399073b518b0a1f8",
       "commenceTime": "2026-09-06T13:00:00Z",
@@ -343,5 +321,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 13
+  "totalMatches": 12
 }
