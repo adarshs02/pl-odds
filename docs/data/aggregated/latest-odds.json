@@ -1,33 +1,6 @@
 {
-  "lastUpdated": "2026-09-06T00:21:29.222672Z",
+  "lastUpdated": "2026-09-06T15:10:00.185566Z",
   "upcomingMatches": [
-    {
-      "id": "8ea6c863f1852654399073b518b0a1f8",
-      "commenceTime": "2026-09-06T13:00:00Z",
-      "homeTeam": "Everton",
-      "awayTeam": "Man United",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 3.1,
-        "draw": 3.55,
-        "away": 2.2,
-        "impliedProbHome": 0.323,
-        "impliedProbDraw": 0.282,
-        "impliedProbAway": 0.455
-      },
-      "spread": {
-        "homePoint": 0.5,
-        "awayPoint": -0.5,
-        "byBookmaker": {
-          "mybookieag": 0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
     {
       "id": "78d4dfda8c2dc27bdc3ec26c2654f8fc",
       "commenceTime": "2026-09-06T15:30:00Z",
@@ -321,5 +294,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 12
+  "totalMatches": 11
 }
