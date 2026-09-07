@@ -8157,7 +8157,7 @@
         "score": "2"
       }
     ],
-    "last_update": "2026-09-05T11:41:06Z"
+    "last_update": "2026-09-06T13:16:04Z"
   },
   {
     "id": "686358c484cc44fe8e617674c335d531",
@@ -8169,15 +8169,15 @@
     "away_team": "Bournemouth",
     "scores": [
       {
-        "name": "Bournemouth",
+        "name": "Newcastle United",
         "score": "2"
       },
       {
-        "name": "Newcastle United",
+        "name": "Bournemouth",
         "score": "2"
       }
     ],
-    "last_update": "2026-09-05T23:50:01Z"
+    "last_update": "2026-09-06T13:16:04Z"
   },
   {
     "id": "29f81160baf6a97d6391d7172fad2425",
@@ -8189,15 +8189,15 @@
     "away_team": "Sunderland",
     "scores": [
       {
-        "name": "Sunderland",
+        "name": "Brentford",
         "score": "1"
       },
       {
-        "name": "Brentford",
+        "name": "Sunderland",
         "score": "1"
       }
     ],
-    "last_update": "2026-09-05T23:50:01Z"
+    "last_update": "2026-09-06T13:16:04Z"
   },
   {
     "id": "3b81531990da7ea3e461c43e8827672b",
@@ -8209,15 +8209,15 @@
     "away_team": "Leeds United",
     "scores": [
       {
-        "name": "Leeds United",
+        "name": "Brighton and Hove Albion",
         "score": "1"
       },
       {
-        "name": "Brighton and Hove Albion",
+        "name": "Leeds United",
         "score": "1"
       }
     ],
-    "last_update": "2026-09-05T23:50:01Z"
+    "last_update": "2026-09-06T13:16:04Z"
   },
   {
     "id": "3db5f919507eb8ab0c8c72bddaca8f08",
@@ -8229,15 +8229,15 @@
     "away_team": "Coventry City",
     "scores": [
       {
-        "name": "Coventry City",
-        "score": "0"
-      },
-      {
         "name": "Manchester City",
         "score": "1"
+      },
+      {
+        "name": "Coventry City",
+        "score": "0"
       }
     ],
-    "last_update": "2026-09-05T23:50:01Z"
+    "last_update": "2026-09-06T13:16:04Z"
   },
   {
     "id": "8f68612bf47c3193e7fa2d8783e79373",
@@ -8249,15 +8249,15 @@
     "away_team": "Crystal Palace",
     "scores": [
       {
-        "name": "Crystal Palace",
-        "score": "3"
-      },
-      {
         "name": "Fulham",
         "score": "2"
+      },
+      {
+        "name": "Crystal Palace",
+        "score": "3"
       }
     ],
-    "last_update": "2026-09-05T23:50:01Z"
+    "last_update": "2026-09-06T13:16:04Z"
   },
   {
     "id": "a6f2622727548c33369cc15c88b2aabd",
@@ -8269,15 +8269,15 @@
     "away_team": "Tottenham Hotspur",
     "scores": [
       {
-        "name": "Tottenham Hotspur",
+        "name": "Nottingham Forest",
         "score": "0"
       },
       {
-        "name": "Nottingham Forest",
+        "name": "Tottenham Hotspur",
         "score": "0"
       }
     ],
-    "last_update": "2026-09-05T23:50:01Z"
+    "last_update": "2026-09-06T13:16:04Z"
   },
   {
     "id": "21fd24ad6732df00774304a046d84fe9",
@@ -8289,14 +8289,54 @@
     "away_team": "Aston Villa",
     "scores": [
       {
-        "name": "Aston Villa",
+        "name": "Hull City",
         "score": "0"
       },
       {
-        "name": "Hull City",
+        "name": "Aston Villa",
         "score": "0"
       }
     ],
-    "last_update": "2026-09-05T23:50:01Z"
+    "last_update": "2026-09-06T13:16:04Z"
+  },
+  {
+    "id": "8ea6c863f1852654399073b518b0a1f8",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-09-06T13:00:00Z",
+    "completed": true,
+    "home_team": "Everton",
+    "away_team": "Manchester United",
+    "scores": [
+      {
+        "name": "Manchester United",
+        "score": "2"
+      },
+      {
+        "name": "Everton",
+        "score": "2"
+      }
+    ],
+    "last_update": "2026-09-06T22:55:59Z"
+  },
+  {
+    "id": "78d4dfda8c2dc27bdc3ec26c2654f8fc",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-09-06T15:30:00Z",
+    "completed": true,
+    "home_team": "Arsenal",
+    "away_team": "Chelsea",
+    "scores": [
+      {
+        "name": "Chelsea",
+        "score": "1"
+      },
+      {
+        "name": "Arsenal",
+        "score": "2"
+      }
+    ],
+    "last_update": "2026-09-06T22:55:59Z"
   }
 ]

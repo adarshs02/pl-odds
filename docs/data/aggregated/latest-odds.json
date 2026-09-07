@@ -1,33 +1,6 @@
 {
-  "lastUpdated": "2026-09-06T15:10:00.185566Z",
+  "lastUpdated": "2026-09-07T00:27:49.977614Z",
   "upcomingMatches": [
-    {
-      "id": "78d4dfda8c2dc27bdc3ec26c2654f8fc",
-      "commenceTime": "2026-09-06T15:30:00Z",
-      "homeTeam": "Arsenal",
-      "awayTeam": "Chelsea",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 1.69,
-        "draw": 3.8,
-        "away": 5.0,
-        "impliedProbHome": 0.592,
-        "impliedProbDraw": 0.263,
-        "impliedProbAway": 0.2
-      },
-      "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
-        "byBookmaker": {
-          "mybookieag": -0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
     {
       "id": "d09677edcf1fb82ad75a8df58bb26eab",
       "commenceTime": "2026-09-12T14:00:00Z",
@@ -294,5 +267,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 11
+  "totalMatches": 10
 }
