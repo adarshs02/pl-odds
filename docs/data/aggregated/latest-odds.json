@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-11T16:07:15.381313Z",
+  "lastUpdated": "2026-09-12T00:46:29.205863Z",
   "upcomingMatches": [
     {
       "id": "d09677edcf1fb82ad75a8df58bb26eab",
@@ -16,10 +16,10 @@
         "impliedProbAway": 0.308
       },
       "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
+        "homePoint": 0.0,
+        "awayPoint": -0.0,
         "byBookmaker": {
-          "mybookieag": -0.5
+          "mybookieag": 0.0
         }
       },
       "kalshiOdds": {
@@ -43,10 +43,10 @@
         "impliedProbAway": 0.37
       },
       "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
+        "homePoint": 0.0,
+        "awayPoint": -0.0,
         "byBookmaker": {
-          "mybookieag": -0.5
+          "mybookieag": 0.0
         }
       },
       "kalshiOdds": {
@@ -70,10 +70,10 @@
         "impliedProbAway": 0.077
       },
       "spread": {
-        "homePoint": -1.5,
-        "awayPoint": 1.5,
+        "homePoint": -2.0,
+        "awayPoint": 2.0,
         "byBookmaker": {
-          "mybookieag": -1.5
+          "mybookieag": -2.0
         }
       }
     },
@@ -173,10 +173,10 @@
         "impliedProbAway": 0.671
       },
       "spread": {
-        "homePoint": 1.5,
-        "awayPoint": -1.5,
+        "homePoint": 1.0,
+        "awayPoint": -1.0,
         "byBookmaker": {
-          "mybookieag": 1.5
+          "mybookieag": 1.0
         }
       },
       "kalshiOdds": {
