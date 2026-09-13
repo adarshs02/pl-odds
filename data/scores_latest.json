@@ -8338,5 +8338,145 @@
       }
     ],
     "last_update": "2026-09-06T22:55:59Z"
+  },
+  {
+    "id": "d09677edcf1fb82ad75a8df58bb26eab",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-09-12T14:00:00Z",
+    "completed": true,
+    "home_team": "Aston Villa",
+    "away_team": "Nottingham Forest",
+    "scores": [
+      {
+        "name": "Nottingham Forest",
+        "score": "2"
+      },
+      {
+        "name": "Aston Villa",
+        "score": "1"
+      }
+    ],
+    "last_update": "2026-09-13T00:29:13Z"
+  },
+  {
+    "id": "d856d4353db0b4cca2a49b96dfd19c92",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-09-12T14:00:00Z",
+    "completed": true,
+    "home_team": "Bournemouth",
+    "away_team": "Brentford",
+    "scores": [
+      {
+        "name": "Brentford",
+        "score": "2"
+      },
+      {
+        "name": "Bournemouth",
+        "score": "2"
+      }
+    ],
+    "last_update": "2026-09-13T00:29:13Z"
+  },
+  {
+    "id": "5163190733dcaaea80474e43cbe20a51",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-09-12T14:00:00Z",
+    "completed": true,
+    "home_team": "Chelsea",
+    "away_team": "Hull City",
+    "scores": [
+      {
+        "name": "Hull City",
+        "score": "2"
+      },
+      {
+        "name": "Chelsea",
+        "score": "2"
+      }
+    ],
+    "last_update": "2026-09-13T00:29:13Z"
+  },
+  {
+    "id": "14f6639178a943ac614c7b872bf6e4d6",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-09-12T14:00:00Z",
+    "completed": true,
+    "home_team": "Crystal Palace",
+    "away_team": "Ipswich Town",
+    "scores": [
+      {
+        "name": "Ipswich Town",
+        "score": "3"
+      },
+      {
+        "name": "Crystal Palace",
+        "score": "2"
+      }
+    ],
+    "last_update": "2026-09-13T00:29:13Z"
+  },
+  {
+    "id": "63da4075a4ae406575fd3086b839fe49",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-09-12T14:00:00Z",
+    "completed": true,
+    "home_team": "Liverpool",
+    "away_team": "Fulham",
+    "scores": [
+      {
+        "name": "Fulham",
+        "score": "0"
+      },
+      {
+        "name": "Liverpool",
+        "score": "0"
+      }
+    ],
+    "last_update": "2026-09-13T00:29:13Z"
+  },
+  {
+    "id": "cbbc88759fe3e2f1677a0c6ee40955af",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-09-12T16:30:00Z",
+    "completed": true,
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Everton",
+    "scores": [
+      {
+        "name": "Everton",
+        "score": "0"
+      },
+      {
+        "name": "Tottenham Hotspur",
+        "score": "0"
+      }
+    ],
+    "last_update": "2026-09-13T00:29:13Z"
+  },
+  {
+    "id": "082f74fe6a8bc5826555b76e9e114dab",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-09-12T19:00:00Z",
+    "completed": true,
+    "home_team": "Sunderland",
+    "away_team": "Arsenal",
+    "scores": [
+      {
+        "name": "Arsenal",
+        "score": "2"
+      },
+      {
+        "name": "Sunderland",
+        "score": "0"
+      }
+    ],
+    "last_update": "2026-09-13T00:29:13Z"
   }
 ]

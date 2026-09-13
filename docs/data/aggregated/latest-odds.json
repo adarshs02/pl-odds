@@ -1,60 +1,6 @@
 {
-  "lastUpdated": "2026-09-12T15:15:03.781088Z",
+  "lastUpdated": "2026-09-13T00:29:19.251701Z",
   "upcomingMatches": [
-    {
-      "id": "cbbc88759fe3e2f1677a0c6ee40955af",
-      "commenceTime": "2026-09-12T16:30:00Z",
-      "homeTeam": "Tottenham",
-      "awayTeam": "Everton",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 2.0,
-        "draw": 3.65,
-        "away": 3.6,
-        "impliedProbHome": 0.5,
-        "impliedProbDraw": 0.274,
-        "impliedProbAway": 0.278
-      },
-      "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
-        "byBookmaker": {
-          "mybookieag": -0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
-    {
-      "id": "082f74fe6a8bc5826555b76e9e114dab",
-      "commenceTime": "2026-09-12T19:00:00Z",
-      "homeTeam": "Sunderland",
-      "awayTeam": "Arsenal",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 7.0,
-        "draw": 4.4,
-        "away": 1.49,
-        "impliedProbHome": 0.143,
-        "impliedProbDraw": 0.227,
-        "impliedProbAway": 0.671
-      },
-      "spread": {
-        "homePoint": 1.0,
-        "awayPoint": -1.0,
-        "byBookmaker": {
-          "mybookieag": 1.0
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
     {
       "id": "c97a93b915115f2b4659fb88262b71f8",
       "commenceTime": "2026-09-13T13:00:00Z",
@@ -397,5 +343,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 15
+  "totalMatches": 13
 }
