@@ -8538,5 +8538,25 @@
       }
     ],
     "last_update": "2026-09-15T02:22:36Z"
+  },
+  {
+    "id": "82d8b6a005d78bac0b1508abc17a7d39",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-09-18T19:00:00Z",
+    "completed": true,
+    "home_team": "Brentford",
+    "away_team": "Chelsea",
+    "scores": [
+      {
+        "name": "Chelsea",
+        "score": "0"
+      },
+      {
+        "name": "Brentford",
+        "score": "3"
+      }
+    ],
+    "last_update": "2026-09-19T00:44:47Z"
   }
 ]
