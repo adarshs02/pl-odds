@@ -8549,14 +8549,114 @@
     "away_team": "Chelsea",
     "scores": [
       {
+        "name": "Brentford",
+        "score": "3"
+      },
+      {
         "name": "Chelsea",
+        "score": "0"
+      }
+    ],
+    "last_update": "2026-09-19T11:42:01Z"
+  },
+  {
+    "id": "d02ff636f652d5b5bb65f6b24330c4fe",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-09-19T11:30:00Z",
+    "completed": true,
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Aston Villa",
+    "scores": [
+      {
+        "name": "Aston Villa",
+        "score": "3"
+      },
+      {
+        "name": "Tottenham Hotspur",
+        "score": "2"
+      }
+    ],
+    "last_update": "2026-09-19T23:52:20Z"
+  },
+  {
+    "id": "b5b058d0a95f9742548f789d1c564a78",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-09-19T14:00:00Z",
+    "completed": true,
+    "home_team": "Brighton and Hove Albion",
+    "away_team": "Arsenal",
+    "scores": [
+      {
+        "name": "Arsenal",
         "score": "0"
       },
       {
-        "name": "Brentford",
+        "name": "Brighton and Hove Albion",
         "score": "3"
       }
     ],
-    "last_update": "2026-09-19T00:44:47Z"
+    "last_update": "2026-09-19T23:52:20Z"
+  },
+  {
+    "id": "88519a51012811476c9b4724eafc96c5",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-09-19T14:00:00Z",
+    "completed": true,
+    "home_team": "Everton",
+    "away_team": "Ipswich Town",
+    "scores": [
+      {
+        "name": "Ipswich Town",
+        "score": "0"
+      },
+      {
+        "name": "Everton",
+        "score": "1"
+      }
+    ],
+    "last_update": "2026-09-19T23:52:20Z"
+  },
+  {
+    "id": "f65c4eaf0f94a569f06d768f737dad2e",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-09-19T14:00:00Z",
+    "completed": true,
+    "home_team": "Newcastle United",
+    "away_team": "Hull City",
+    "scores": [
+      {
+        "name": "Hull City",
+        "score": "1"
+      },
+      {
+        "name": "Newcastle United",
+        "score": "2"
+      }
+    ],
+    "last_update": "2026-09-19T23:52:20Z"
+  },
+  {
+    "id": "75133fdcd4fc3067b303a8f166f974e4",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-09-19T16:30:00Z",
+    "completed": true,
+    "home_team": "Nottingham Forest",
+    "away_team": "Coventry City",
+    "scores": [
+      {
+        "name": "Coventry City",
+        "score": "1"
+      },
+      {
+        "name": "Nottingham Forest",
+        "score": "0"
+      }
+    ],
+    "last_update": "2026-09-19T23:52:20Z"
   }
 ]

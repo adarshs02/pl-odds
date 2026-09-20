@@ -1,28 +1,6 @@
 {
-  "lastUpdated": "2026-09-19T15:36:35.563257Z",
+  "lastUpdated": "2026-09-20T00:29:11.854386Z",
   "upcomingMatches": [
-    {
-      "id": "75133fdcd4fc3067b303a8f166f974e4",
-      "commenceTime": "2026-09-19T16:30:00Z",
-      "homeTeam": "Nott'm Forest",
-      "awayTeam": "Coventry City",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 1.67,
-        "draw": 4.0,
-        "away": 5.0,
-        "impliedProbHome": 0.599,
-        "impliedProbDraw": 0.25,
-        "impliedProbAway": 0.2
-      },
-      "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
-        "byBookmaker": {
-          "mybookieag": -0.5
-        }
-      }
-    },
     {
       "id": "784f777f5181e1efdad7a6ecb2cfde15",
       "commenceTime": "2026-09-20T13:00:00Z",
@@ -225,5 +203,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 9
+  "totalMatches": 8
 }
