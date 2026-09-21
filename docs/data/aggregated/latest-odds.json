@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-21T00:37:34.146441Z",
+  "lastUpdated": "2026-09-21T18:01:32.445750Z",
   "upcomingMatches": [
     {
       "id": "b870dcfba5e5920d3f1551a3aa1ea435",
@@ -8,12 +8,12 @@
       "awayTeam": "Leeds",
       "h2hOdds": {
         "bookmaker": "DraftKings",
-        "home": 1.3,
-        "draw": 5.25,
-        "away": 9.0,
-        "impliedProbHome": 0.769,
-        "impliedProbDraw": 0.19,
-        "impliedProbAway": 0.111
+        "home": 1.36,
+        "draw": 4.9,
+        "away": 8.0,
+        "impliedProbHome": 0.735,
+        "impliedProbDraw": 0.204,
+        "impliedProbAway": 0.125
       },
       "spread": {
         "homePoint": -1.5,
@@ -30,12 +30,12 @@
       "awayTeam": "Brentford",
       "h2hOdds": {
         "bookmaker": "DraftKings",
-        "home": 2.4,
-        "draw": 3.5,
-        "away": 2.7,
-        "impliedProbHome": 0.417,
-        "impliedProbDraw": 0.286,
-        "impliedProbAway": 0.37
+        "home": 2.6,
+        "draw": 3.45,
+        "away": 2.55,
+        "impliedProbHome": 0.385,
+        "impliedProbDraw": 0.29,
+        "impliedProbAway": 0.392
       },
       "spread": {
         "homePoint": 0.5,
