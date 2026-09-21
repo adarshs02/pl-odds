@@ -8557,7 +8557,7 @@
         "score": "0"
       }
     ],
-    "last_update": "2026-09-19T11:42:01Z"
+    "last_update": "2026-09-20T13:11:10Z"
   },
   {
     "id": "d02ff636f652d5b5bb65f6b24330c4fe",
@@ -8569,15 +8569,15 @@
     "away_team": "Aston Villa",
     "scores": [
       {
-        "name": "Aston Villa",
-        "score": "3"
-      },
-      {
         "name": "Tottenham Hotspur",
         "score": "2"
+      },
+      {
+        "name": "Aston Villa",
+        "score": "3"
       }
     ],
-    "last_update": "2026-09-19T23:52:20Z"
+    "last_update": "2026-09-20T13:11:10Z"
   },
   {
     "id": "b5b058d0a95f9742548f789d1c564a78",
@@ -8589,15 +8589,15 @@
     "away_team": "Arsenal",
     "scores": [
       {
-        "name": "Arsenal",
-        "score": "0"
-      },
-      {
         "name": "Brighton and Hove Albion",
         "score": "3"
+      },
+      {
+        "name": "Arsenal",
+        "score": "0"
       }
     ],
-    "last_update": "2026-09-19T23:52:20Z"
+    "last_update": "2026-09-20T13:11:10Z"
   },
   {
     "id": "88519a51012811476c9b4724eafc96c5",
@@ -8609,15 +8609,15 @@
     "away_team": "Ipswich Town",
     "scores": [
       {
-        "name": "Ipswich Town",
-        "score": "0"
-      },
-      {
         "name": "Everton",
         "score": "1"
+      },
+      {
+        "name": "Ipswich Town",
+        "score": "0"
       }
     ],
-    "last_update": "2026-09-19T23:52:20Z"
+    "last_update": "2026-09-20T13:11:10Z"
   },
   {
     "id": "f65c4eaf0f94a569f06d768f737dad2e",
@@ -8629,15 +8629,15 @@
     "away_team": "Hull City",
     "scores": [
       {
-        "name": "Hull City",
-        "score": "1"
-      },
-      {
         "name": "Newcastle United",
         "score": "2"
+      },
+      {
+        "name": "Hull City",
+        "score": "1"
       }
     ],
-    "last_update": "2026-09-19T23:52:20Z"
+    "last_update": "2026-09-20T13:11:10Z"
   },
   {
     "id": "75133fdcd4fc3067b303a8f166f974e4",
@@ -8649,14 +8649,94 @@
     "away_team": "Coventry City",
     "scores": [
       {
+        "name": "Nottingham Forest",
+        "score": "0"
+      },
+      {
         "name": "Coventry City",
+        "score": "1"
+      }
+    ],
+    "last_update": "2026-09-20T13:11:10Z"
+  },
+  {
+    "id": "784f777f5181e1efdad7a6ecb2cfde15",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-09-20T13:00:00Z",
+    "completed": true,
+    "home_team": "Bournemouth",
+    "away_team": "Liverpool",
+    "scores": [
+      {
+        "name": "Liverpool",
         "score": "1"
       },
       {
-        "name": "Nottingham Forest",
+        "name": "Bournemouth",
         "score": "0"
       }
     ],
-    "last_update": "2026-09-19T23:52:20Z"
+    "last_update": "2026-09-20T22:47:40Z"
+  },
+  {
+    "id": "b63aef4291a066e32644e591c19a235a",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-09-20T13:00:00Z",
+    "completed": true,
+    "home_team": "Leeds United",
+    "away_team": "Crystal Palace",
+    "scores": [
+      {
+        "name": "Crystal Palace",
+        "score": "0"
+      },
+      {
+        "name": "Leeds United",
+        "score": "0"
+      }
+    ],
+    "last_update": "2026-09-20T22:47:40Z"
+  },
+  {
+    "id": "f923236e69ed946fdc55163494ee88db",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-09-20T13:00:00Z",
+    "completed": true,
+    "home_team": "Manchester City",
+    "away_team": "Sunderland",
+    "scores": [
+      {
+        "name": "Sunderland",
+        "score": "3"
+      },
+      {
+        "name": "Manchester City",
+        "score": "5"
+      }
+    ],
+    "last_update": "2026-09-20T22:47:40Z"
+  },
+  {
+    "id": "182b81a9e220b2347235107c42802fd8",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-09-20T15:30:00Z",
+    "completed": true,
+    "home_team": "Fulham",
+    "away_team": "Manchester United",
+    "scores": [
+      {
+        "name": "Manchester United",
+        "score": "1"
+      },
+      {
+        "name": "Fulham",
+        "score": "1"
+      }
+    ],
+    "last_update": "2026-09-20T22:47:40Z"
   }
 ]
