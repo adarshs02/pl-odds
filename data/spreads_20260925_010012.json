@@ -1,0 +1,662 @@
+[
+  {
+    "id": "b870dcfba5e5920d3f1551a3aa1ea435",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-10-10T11:30:00Z",
+    "home_team": "Arsenal",
+    "away_team": "Leeds United",
+    "bookmakers": [
+      {
+        "key": "mybookieag",
+        "title": "MyBookie.ag",
+        "last_update": "2026-09-25T00:58:44Z",
+        "markets": [
+          {
+            "key": "spreads",
+            "last_update": "2026-09-25T00:58:44Z",
+            "outcomes": [
+              {
+                "name": "Arsenal",
+                "price": 2.08,
+                "point": -1.5
+              },
+              {
+                "name": "Leeds United",
+                "price": 1.67,
+                "point": 1.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "02e6c0ccb11bb7ce78989ce49d67110b",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-10-10T14:00:00Z",
+    "home_team": "Aston Villa",
+    "away_team": "Brentford",
+    "bookmakers": [
+      {
+        "key": "mybookieag",
+        "title": "MyBookie.ag",
+        "last_update": "2026-09-25T00:58:44Z",
+        "markets": [
+          {
+            "key": "spreads",
+            "last_update": "2026-09-25T00:58:44Z",
+            "outcomes": [
+              {
+                "name": "Aston Villa",
+                "price": 1.5,
+                "point": 0.5
+              },
+              {
+                "name": "Brentford",
+                "price": 2.44,
+                "point": -0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "45d4a466e32cd2b4ea535207923ceaf5",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-10-10T14:00:00Z",
+    "home_team": "Chelsea",
+    "away_team": "Bournemouth",
+    "bookmakers": [
+      {
+        "key": "mybookieag",
+        "title": "MyBookie.ag",
+        "last_update": "2026-09-25T00:58:44Z",
+        "markets": [
+          {
+            "key": "spreads",
+            "last_update": "2026-09-25T00:58:44Z",
+            "outcomes": [
+              {
+                "name": "Bournemouth",
+                "price": 1.97,
+                "point": 0.5
+              },
+              {
+                "name": "Chelsea",
+                "price": 1.75,
+                "point": -0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "380b8f24ec5430fb545a7490c1017285",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-10-10T14:00:00Z",
+    "home_team": "Sunderland",
+    "away_team": "Brighton and Hove Albion",
+    "bookmakers": [
+      {
+        "key": "mybookieag",
+        "title": "MyBookie.ag",
+        "last_update": "2026-09-25T00:58:44Z",
+        "markets": [
+          {
+            "key": "spreads",
+            "last_update": "2026-09-25T00:58:44Z",
+            "outcomes": [
+              {
+                "name": "Brighton and Hove Albion",
+                "price": 2.3,
+                "point": -0.5
+              },
+              {
+                "name": "Sunderland",
+                "price": 1.55,
+                "point": 0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "288b4ff00c79daa712c911c564fe1be7",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-10-10T14:00:00Z",
+    "home_team": "Ipswich Town",
+    "away_team": "Fulham",
+    "bookmakers": [
+      {
+        "key": "mybookieag",
+        "title": "MyBookie.ag",
+        "last_update": "2026-09-25T00:58:44Z",
+        "markets": [
+          {
+            "key": "spreads",
+            "last_update": "2026-09-25T00:58:44Z",
+            "outcomes": [
+              {
+                "name": "Fulham",
+                "price": 2.38,
+                "point": -0.5
+              },
+              {
+                "name": "Ipswich Town",
+                "price": 1.52,
+                "point": 0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "22c9b2c43cbe1334381269550dab78e6",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-10-10T16:30:00Z",
+    "home_team": "Manchester United",
+    "away_team": "Tottenham Hotspur",
+    "bookmakers": [
+      {
+        "key": "mybookieag",
+        "title": "MyBookie.ag",
+        "last_update": "2026-09-25T00:58:44Z",
+        "markets": [
+          {
+            "key": "spreads",
+            "last_update": "2026-09-25T00:58:44Z",
+            "outcomes": [
+              {
+                "name": "Manchester United",
+                "price": 1.69,
+                "point": -0.5
+              },
+              {
+                "name": "Tottenham Hotspur",
+                "price": 2.05,
+                "point": 0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "86effab5c6e7bfd58c8e88b1fb7c6ba9",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-10-11T13:00:00Z",
+    "home_team": "Crystal Palace",
+    "away_team": "Nottingham Forest",
+    "bookmakers": [
+      {
+        "key": "mybookieag",
+        "title": "MyBookie.ag",
+        "last_update": "2026-09-25T00:58:44Z",
+        "markets": [
+          {
+            "key": "spreads",
+            "last_update": "2026-09-25T00:58:44Z",
+            "outcomes": [
+              {
+                "name": "Crystal Palace",
+                "price": 2.5,
+                "point": -0.5
+              },
+              {
+                "name": "Nottingham Forest",
+                "price": 1.47,
+                "point": 0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0bdae4d304810578e47386606bff7106",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-10-11T13:00:00Z",
+    "home_team": "Hull City",
+    "away_team": "Everton",
+    "bookmakers": [
+      {
+        "key": "mybookieag",
+        "title": "MyBookie.ag",
+        "last_update": "2026-09-25T00:58:44Z",
+        "markets": [
+          {
+            "key": "spreads",
+            "last_update": "2026-09-25T00:58:44Z",
+            "outcomes": [
+              {
+                "name": "Everton",
+                "price": 2.03,
+                "point": -0.5
+              },
+              {
+                "name": "Hull City",
+                "price": 1.7,
+                "point": 0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "6dbab232dd8d2aed0cb1d6f7978fb7b1",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-10-11T15:30:00Z",
+    "home_team": "Liverpool",
+    "away_team": "Manchester City",
+    "bookmakers": [
+      {
+        "key": "mybookieag",
+        "title": "MyBookie.ag",
+        "last_update": "2026-09-25T00:58:44Z",
+        "markets": [
+          {
+            "key": "spreads",
+            "last_update": "2026-09-25T00:58:44Z",
+            "outcomes": [
+              {
+                "name": "Liverpool",
+                "price": 1.56,
+                "point": 0.5
+              },
+              {
+                "name": "Manchester City",
+                "price": 2.28,
+                "point": -0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "acd5bd945dd953ad1e300df5bfe696f9",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-10-12T19:00:00Z",
+    "home_team": "Coventry City",
+    "away_team": "Newcastle United",
+    "bookmakers": [
+      {
+        "key": "mybookieag",
+        "title": "MyBookie.ag",
+        "last_update": "2026-09-25T00:58:44Z",
+        "markets": [
+          {
+            "key": "spreads",
+            "last_update": "2026-09-25T00:58:44Z",
+            "outcomes": [
+              {
+                "name": "Coventry City",
+                "price": 1.68,
+                "point": 0.5
+              },
+              {
+                "name": "Newcastle United",
+                "price": 2.05,
+                "point": -0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "764e6513cb3f348881503df70ccb90e0",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-10-17T11:30:00Z",
+    "home_team": "Everton",
+    "away_team": "Chelsea",
+    "bookmakers": [
+      {
+        "key": "mybookieag",
+        "title": "MyBookie.ag",
+        "last_update": "2026-09-25T00:58:44Z",
+        "markets": [
+          {
+            "key": "spreads",
+            "last_update": "2026-09-25T00:58:44Z",
+            "outcomes": [
+              {
+                "name": "Chelsea",
+                "price": 2.23,
+                "point": -0.5
+              },
+              {
+                "name": "Everton",
+                "price": 1.58,
+                "point": 0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "8f1945e7272bc7e89016439f5ab321c7",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-10-17T14:00:00Z",
+    "home_team": "Brentford",
+    "away_team": "Liverpool",
+    "bookmakers": [
+      {
+        "key": "mybookieag",
+        "title": "MyBookie.ag",
+        "last_update": "2026-09-25T00:58:44Z",
+        "markets": [
+          {
+            "key": "spreads",
+            "last_update": "2026-09-25T00:58:44Z",
+            "outcomes": [
+              {
+                "name": "Brentford",
+                "price": 1.57,
+                "point": 0.5
+              },
+              {
+                "name": "Liverpool",
+                "price": 2.25,
+                "point": -0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "7895f97f2f9577f3b13287a3d086859d",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-10-17T14:00:00Z",
+    "home_team": "Fulham",
+    "away_team": "Hull City",
+    "bookmakers": [
+      {
+        "key": "mybookieag",
+        "title": "MyBookie.ag",
+        "last_update": "2026-09-25T00:58:44Z",
+        "markets": [
+          {
+            "key": "spreads",
+            "last_update": "2026-09-25T00:58:44Z",
+            "outcomes": [
+              {
+                "name": "Fulham",
+                "price": 1.64,
+                "point": -0.5
+              },
+              {
+                "name": "Hull City",
+                "price": 2.13,
+                "point": 0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bf2142d1ca76ba2fc9e61afce80f86c0",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-10-17T14:00:00Z",
+    "home_team": "Manchester City",
+    "away_team": "Ipswich Town",
+    "bookmakers": [
+      {
+        "key": "mybookieag",
+        "title": "MyBookie.ag",
+        "last_update": "2026-09-25T00:58:44Z",
+        "markets": [
+          {
+            "key": "spreads",
+            "last_update": "2026-09-25T00:58:44Z",
+            "outcomes": [
+              {
+                "name": "Ipswich Town",
+                "price": 2.18,
+                "point": 1.5
+              },
+              {
+                "name": "Manchester City",
+                "price": 1.61,
+                "point": -1.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "d1bbbdcd3d430e70091b518369b559cf",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-10-17T16:30:00Z",
+    "home_team": "Newcastle United",
+    "away_team": "Aston Villa",
+    "bookmakers": [
+      {
+        "key": "mybookieag",
+        "title": "MyBookie.ag",
+        "last_update": "2026-09-25T00:58:44Z",
+        "markets": [
+          {
+            "key": "spreads",
+            "last_update": "2026-09-25T00:58:44Z",
+            "outcomes": [
+              {
+                "name": "Aston Villa",
+                "price": 1.72,
+                "point": 0.5
+              },
+              {
+                "name": "Newcastle United",
+                "price": 2.01,
+                "point": -0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "dfd5d6648be46426e418801584d46a68",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-10-18T13:00:00Z",
+    "home_team": "Bournemouth",
+    "away_team": "Sunderland",
+    "bookmakers": [
+      {
+        "key": "mybookieag",
+        "title": "MyBookie.ag",
+        "last_update": "2026-09-25T00:58:44Z",
+        "markets": [
+          {
+            "key": "spreads",
+            "last_update": "2026-09-25T00:58:44Z",
+            "outcomes": [
+              {
+                "name": "Bournemouth",
+                "price": 1.95,
+                "point": -0.5
+              },
+              {
+                "name": "Sunderland",
+                "price": 1.76,
+                "point": 0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "9fc08b390a49c4434f7cf631a0bb88fb",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-10-18T13:00:00Z",
+    "home_team": "Brighton and Hove Albion",
+    "away_team": "Crystal Palace",
+    "bookmakers": [
+      {
+        "key": "mybookieag",
+        "title": "MyBookie.ag",
+        "last_update": "2026-09-25T00:58:44Z",
+        "markets": [
+          {
+            "key": "spreads",
+            "last_update": "2026-09-25T00:58:44Z",
+            "outcomes": [
+              {
+                "name": "Brighton and Hove Albion",
+                "price": 2.32,
+                "point": -1.5
+              },
+              {
+                "name": "Crystal Palace",
+                "price": 1.54,
+                "point": 1.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "676b3b0b609e9cf565da450786618d26",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-10-18T13:00:00Z",
+    "home_team": "Leeds United",
+    "away_team": "Manchester United",
+    "bookmakers": [
+      {
+        "key": "mybookieag",
+        "title": "MyBookie.ag",
+        "last_update": "2026-09-25T00:58:44Z",
+        "markets": [
+          {
+            "key": "spreads",
+            "last_update": "2026-09-25T00:58:44Z",
+            "outcomes": [
+              {
+                "name": "Leeds United",
+                "price": 1.56,
+                "point": 0.5
+              },
+              {
+                "name": "Manchester United",
+                "price": 2.28,
+                "point": -0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "f696a248965373d9071dc0662e5c58a8",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-10-18T15:30:00Z",
+    "home_team": "Nottingham Forest",
+    "away_team": "Arsenal",
+    "bookmakers": [
+      {
+        "key": "mybookieag",
+        "title": "MyBookie.ag",
+        "last_update": "2026-09-25T00:58:44Z",
+        "markets": [
+          {
+            "key": "spreads",
+            "last_update": "2026-09-25T00:58:44Z",
+            "outcomes": [
+              {
+                "name": "Arsenal",
+                "price": 1.59,
+                "point": -0.5
+              },
+              {
+                "name": "Nottingham Forest",
+                "price": 2.22,
+                "point": 0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "9baaf4e48b041cfef04e70e42532502e",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-10-19T19:00:00Z",
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Coventry City",
+    "bookmakers": [
+      {
+        "key": "mybookieag",
+        "title": "MyBookie.ag",
+        "last_update": "2026-09-25T00:58:44Z",
+        "markets": [
+          {
+            "key": "spreads",
+            "last_update": "2026-09-25T00:58:44Z",
+            "outcomes": [
+              {
+                "name": "Coventry City",
+                "price": 1.6,
+                "point": 1.5
+              },
+              {
+                "name": "Tottenham Hotspur",
+                "price": 2.21,
+                "point": -1.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
