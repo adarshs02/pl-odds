@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-28T01:16:40.541312Z",
+  "lastUpdated": "2026-09-28T19:25:15.847522Z",
   "upcomingMatches": [
     {
       "id": "b870dcfba5e5920d3f1551a3aa1ea435",
@@ -8,12 +8,12 @@
       "awayTeam": "Leeds",
       "h2hOdds": {
         "bookmaker": "DraftKings",
-        "home": 1.36,
-        "draw": 4.9,
-        "away": 8.0,
-        "impliedProbHome": 0.735,
-        "impliedProbDraw": 0.204,
-        "impliedProbAway": 0.125
+        "home": 1.37,
+        "draw": 4.8,
+        "away": 7.5,
+        "impliedProbHome": 0.73,
+        "impliedProbDraw": 0.208,
+        "impliedProbAway": 0.133
       },
       "spread": {
         "homePoint": -1.5,
@@ -62,12 +62,12 @@
       "awayTeam": "Bournemouth",
       "h2hOdds": {
         "bookmaker": "DraftKings",
-        "home": 1.8,
+        "home": 1.71,
         "draw": 4.0,
-        "away": 3.85,
-        "impliedProbHome": 0.556,
+        "away": 4.2,
+        "impliedProbHome": 0.585,
         "impliedProbDraw": 0.25,
-        "impliedProbAway": 0.26
+        "impliedProbAway": 0.238
       },
       "spread": {
         "homePoint": -0.5,
@@ -116,12 +116,12 @@
       "awayTeam": "Brighton",
       "h2hOdds": {
         "bookmaker": "DraftKings",
-        "home": 2.7,
+        "home": 2.8,
         "draw": 3.45,
-        "away": 2.45,
-        "impliedProbHome": 0.37,
+        "away": 2.35,
+        "impliedProbHome": 0.357,
         "impliedProbDraw": 0.29,
-        "impliedProbAway": 0.408
+        "impliedProbAway": 0.426
       },
       "spread": {
         "homePoint": 0.5,
@@ -219,12 +219,12 @@
       "awayTeam": "Man City",
       "h2hOdds": {
         "bookmaker": "DraftKings",
-        "home": 2.65,
+        "home": 2.55,
         "draw": 3.6,
-        "away": 2.4,
-        "impliedProbHome": 0.377,
+        "away": 2.5,
+        "impliedProbHome": 0.392,
         "impliedProbDraw": 0.278,
-        "impliedProbAway": 0.417
+        "impliedProbAway": 0.4
       },
       "spread": {
         "homePoint": 0.5,
@@ -445,11 +445,11 @@
       "h2hOdds": {
         "bookmaker": "DraftKings",
         "home": 5.75,
-        "draw": 3.65,
-        "away": 1.61,
+        "draw": 3.8,
+        "away": 1.59,
         "impliedProbHome": 0.174,
-        "impliedProbDraw": 0.274,
-        "impliedProbAway": 0.621
+        "impliedProbDraw": 0.263,
+        "impliedProbAway": 0.629
       },
       "spread": {
         "homePoint": 0.5,
