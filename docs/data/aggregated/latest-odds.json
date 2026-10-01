@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-01T01:39:43.229652Z",
+  "lastUpdated": "2026-10-01T18:13:13.700879Z",
   "upcomingMatches": [
     {
       "id": "b870dcfba5e5920d3f1551a3aa1ea435",
@@ -219,12 +219,12 @@
       "awayTeam": "Man City",
       "h2hOdds": {
         "bookmaker": "DraftKings",
-        "home": 2.55,
+        "home": 2.5,
         "draw": 3.6,
-        "away": 2.5,
-        "impliedProbHome": 0.392,
+        "away": 2.55,
+        "impliedProbHome": 0.4,
         "impliedProbDraw": 0.278,
-        "impliedProbAway": 0.4
+        "impliedProbAway": 0.392
       },
       "spread": {
         "homePoint": -0.5,
@@ -378,12 +378,12 @@
       "awayTeam": "Sunderland",
       "h2hOdds": {
         "bookmaker": "DraftKings",
-        "home": 1.95,
+        "home": 2.0,
         "draw": 3.5,
-        "away": 3.65,
-        "impliedProbHome": 0.513,
+        "away": 3.5,
+        "impliedProbHome": 0.5,
         "impliedProbDraw": 0.286,
-        "impliedProbAway": 0.274
+        "impliedProbAway": 0.286
       },
       "spread": {
         "homePoint": -0.5,
@@ -400,11 +400,11 @@
       "awayTeam": "Crystal Palace",
       "h2hOdds": {
         "bookmaker": "DraftKings",
-        "home": 1.53,
-        "draw": 4.5,
+        "home": 1.54,
+        "draw": 4.4,
         "away": 5.25,
-        "impliedProbHome": 0.654,
-        "impliedProbDraw": 0.222,
+        "impliedProbHome": 0.649,
+        "impliedProbDraw": 0.227,
         "impliedProbAway": 0.19
       },
       "spread": {
@@ -423,11 +423,11 @@
       "h2hOdds": {
         "bookmaker": "DraftKings",
         "home": 2.75,
-        "draw": 3.5,
-        "away": 2.4,
+        "draw": 3.6,
+        "away": 2.3,
         "impliedProbHome": 0.364,
-        "impliedProbDraw": 0.286,
-        "impliedProbAway": 0.417
+        "impliedProbDraw": 0.278,
+        "impliedProbAway": 0.435
       },
       "spread": {
         "homePoint": 0.5,
