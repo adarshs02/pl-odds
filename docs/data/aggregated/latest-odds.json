@@ -1,82 +1,6 @@
 {
-  "lastUpdated": "2026-10-11T01:24:12.050718Z",
+  "lastUpdated": "2026-10-11T17:30:45.825981Z",
   "upcomingMatches": [
-    {
-      "id": "86effab5c6e7bfd58c8e88b1fb7c6ba9",
-      "commenceTime": "2026-10-11T13:00:00Z",
-      "homeTeam": "Crystal Palace",
-      "awayTeam": "Nott'm Forest",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 2.6,
-        "draw": 3.35,
-        "away": 2.65,
-        "impliedProbHome": 0.385,
-        "impliedProbDraw": 0.299,
-        "impliedProbAway": 0.377
-      },
-      "spread": {
-        "homePoint": 0.5,
-        "awayPoint": -0.5,
-        "byBookmaker": {
-          "mybookieag": 0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
-    {
-      "id": "0bdae4d304810578e47386606bff7106",
-      "commenceTime": "2026-10-11T13:00:00Z",
-      "homeTeam": "Hull City",
-      "awayTeam": "Everton",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 3.65,
-        "draw": 3.35,
-        "away": 2.05,
-        "impliedProbHome": 0.274,
-        "impliedProbDraw": 0.299,
-        "impliedProbAway": 0.488
-      },
-      "spread": {
-        "homePoint": 0.5,
-        "awayPoint": -0.5,
-        "byBookmaker": {
-          "mybookieag": 0.5
-        }
-      }
-    },
-    {
-      "id": "6dbab232dd8d2aed0cb1d6f7978fb7b1",
-      "commenceTime": "2026-10-11T15:30:00Z",
-      "homeTeam": "Liverpool",
-      "awayTeam": "Man City",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 2.55,
-        "draw": 3.7,
-        "away": 2.5,
-        "impliedProbHome": 0.392,
-        "impliedProbDraw": 0.27,
-        "impliedProbAway": 0.4
-      },
-      "spread": {
-        "homePoint": 0.5,
-        "awayPoint": -0.5,
-        "byBookmaker": {
-          "mybookieag": 0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
     {
       "id": "acd5bd945dd953ad1e300df5bfe696f9",
       "commenceTime": "2026-10-12T19:00:00Z",
@@ -365,5 +289,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 14
+  "totalMatches": 11
 }
