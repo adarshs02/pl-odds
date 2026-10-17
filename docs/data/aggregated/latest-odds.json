@@ -1,109 +1,6 @@
 {
-  "lastUpdated": "2026-10-17T00:53:37.525291Z",
+  "lastUpdated": "2026-10-17T15:13:38.220076Z",
   "upcomingMatches": [
-    {
-      "id": "764e6513cb3f348881503df70ccb90e0",
-      "commenceTime": "2026-10-17T11:30:00Z",
-      "homeTeam": "Everton",
-      "awayTeam": "Chelsea",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 3.15,
-        "draw": 3.75,
-        "away": 2.15,
-        "impliedProbHome": 0.317,
-        "impliedProbDraw": 0.267,
-        "impliedProbAway": 0.465
-      },
-      "spread": {
-        "homePoint": 0.5,
-        "awayPoint": -0.5,
-        "byBookmaker": {
-          "mybookieag": 0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
-    {
-      "id": "8f1945e7272bc7e89016439f5ab321c7",
-      "commenceTime": "2026-10-17T14:00:00Z",
-      "homeTeam": "Brentford",
-      "awayTeam": "Liverpool",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 2.35,
-        "draw": 3.6,
-        "away": 2.9,
-        "impliedProbHome": 0.426,
-        "impliedProbDraw": 0.278,
-        "impliedProbAway": 0.345
-      },
-      "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
-        "byBookmaker": {
-          "mybookieag": -0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
-    {
-      "id": "7895f97f2f9577f3b13287a3d086859d",
-      "commenceTime": "2026-10-17T14:00:00Z",
-      "homeTeam": "Fulham",
-      "awayTeam": "Hull City",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 1.71,
-        "draw": 4.0,
-        "away": 4.7,
-        "impliedProbHome": 0.585,
-        "impliedProbDraw": 0.25,
-        "impliedProbAway": 0.213
-      },
-      "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
-        "byBookmaker": {
-          "mybookieag": -0.5
-        }
-      }
-    },
-    {
-      "id": "bf2142d1ca76ba2fc9e61afce80f86c0",
-      "commenceTime": "2026-10-17T14:00:00Z",
-      "homeTeam": "Man City",
-      "awayTeam": "Ipswich Town",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 1.22,
-        "draw": 7.0,
-        "away": 11.0,
-        "impliedProbHome": 0.82,
-        "impliedProbDraw": 0.143,
-        "impliedProbAway": 0.091
-      },
-      "spread": {
-        "homePoint": -1.5,
-        "awayPoint": 1.5,
-        "byBookmaker": {
-          "mybookieag": -1.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
     {
       "id": "d1bbbdcd3d430e70091b518369b559cf",
       "commenceTime": "2026-10-17T16:30:00Z",
@@ -370,5 +267,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 14
+  "totalMatches": 10
 }
