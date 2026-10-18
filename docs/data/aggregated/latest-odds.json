@@ -1,33 +1,6 @@
 {
-  "lastUpdated": "2026-10-17T15:13:38.220076Z",
+  "lastUpdated": "2026-10-18T00:29:03.216249Z",
   "upcomingMatches": [
-    {
-      "id": "d1bbbdcd3d430e70091b518369b559cf",
-      "commenceTime": "2026-10-17T16:30:00Z",
-      "homeTeam": "Newcastle",
-      "awayTeam": "Aston Villa",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 2.25,
-        "draw": 3.75,
-        "away": 3.0,
-        "impliedProbHome": 0.444,
-        "impliedProbDraw": 0.267,
-        "impliedProbAway": 0.333
-      },
-      "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
-        "byBookmaker": {
-          "mybookieag": -0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
     {
       "id": "dfd5d6648be46426e418801584d46a68",
       "commenceTime": "2026-10-18T13:00:00Z",
@@ -267,5 +240,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 10
+  "totalMatches": 9
 }

@@ -8938,5 +8938,105 @@
       }
     ],
     "last_update": "2026-10-13T02:21:36Z"
+  },
+  {
+    "id": "764e6513cb3f348881503df70ccb90e0",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-10-17T11:30:00Z",
+    "completed": true,
+    "home_team": "Everton",
+    "away_team": "Chelsea",
+    "scores": [
+      {
+        "name": "Everton",
+        "score": "0"
+      },
+      {
+        "name": "Chelsea",
+        "score": "2"
+      }
+    ],
+    "last_update": "2026-10-17T23:04:16Z"
+  },
+  {
+    "id": "8f1945e7272bc7e89016439f5ab321c7",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-10-17T14:00:00Z",
+    "completed": true,
+    "home_team": "Brentford",
+    "away_team": "Liverpool",
+    "scores": [
+      {
+        "name": "Brentford",
+        "score": "1"
+      },
+      {
+        "name": "Liverpool",
+        "score": "2"
+      }
+    ],
+    "last_update": "2026-10-17T23:04:16Z"
+  },
+  {
+    "id": "7895f97f2f9577f3b13287a3d086859d",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-10-17T14:00:00Z",
+    "completed": true,
+    "home_team": "Fulham",
+    "away_team": "Hull City",
+    "scores": [
+      {
+        "name": "Fulham",
+        "score": "1"
+      },
+      {
+        "name": "Hull City",
+        "score": "0"
+      }
+    ],
+    "last_update": "2026-10-17T23:04:16Z"
+  },
+  {
+    "id": "bf2142d1ca76ba2fc9e61afce80f86c0",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-10-17T14:00:00Z",
+    "completed": true,
+    "home_team": "Manchester City",
+    "away_team": "Ipswich Town",
+    "scores": [
+      {
+        "name": "Manchester City",
+        "score": "3"
+      },
+      {
+        "name": "Ipswich Town",
+        "score": "2"
+      }
+    ],
+    "last_update": "2026-10-17T23:04:16Z"
+  },
+  {
+    "id": "d1bbbdcd3d430e70091b518369b559cf",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-10-17T16:30:00Z",
+    "completed": true,
+    "home_team": "Newcastle United",
+    "away_team": "Aston Villa",
+    "scores": [
+      {
+        "name": "Newcastle United",
+        "score": "0"
+      },
+      {
+        "name": "Aston Villa",
+        "score": "1"
+      }
+    ],
+    "last_update": "2026-10-17T23:04:16Z"
   }
 ]
