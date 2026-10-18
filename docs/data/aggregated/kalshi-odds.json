@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-17T15:13:26Z",
+  "lastUpdated": "2026-10-18T15:34:46Z",
   "winnerFutures": [
     {
       "team": "Tottenham",
@@ -112,60 +112,6 @@
   ],
   "top4Futures": [],
   "matchOutcomes": [
-    {
-      "homeTeam": "Man City",
-      "awayTeam": "Ipswich Town",
-      "commenceTime": "2026-10-19T14:00:00Z",
-      "homeWinProb": 0.0,
-      "drawProb": 0.0,
-      "awayWinProb": 0.0,
-      "totalVolume": 0
-    },
-    {
-      "homeTeam": "Brentford",
-      "awayTeam": "Liverpool",
-      "commenceTime": "2026-10-19T14:00:00Z",
-      "homeWinProb": 0.0,
-      "drawProb": 0.0,
-      "awayWinProb": 0.0,
-      "totalVolume": 0
-    },
-    {
-      "homeTeam": "Newcastle",
-      "awayTeam": "Aston Villa",
-      "commenceTime": "2026-10-19T16:30:00Z",
-      "homeWinProb": 0.0,
-      "drawProb": 0.0,
-      "awayWinProb": 0.0,
-      "totalVolume": 0
-    },
-    {
-      "homeTeam": "Leeds",
-      "awayTeam": "Man United",
-      "commenceTime": "2026-10-20T13:00:00Z",
-      "homeWinProb": 0.0,
-      "drawProb": 0.0,
-      "awayWinProb": 0.0,
-      "totalVolume": 0
-    },
-    {
-      "homeTeam": "Brighton",
-      "awayTeam": "Crystal Palace",
-      "commenceTime": "2026-10-20T13:00:00Z",
-      "homeWinProb": 0.0,
-      "drawProb": 0.0,
-      "awayWinProb": 0.0,
-      "totalVolume": 0
-    },
-    {
-      "homeTeam": "Bournemouth",
-      "awayTeam": "Sunderland",
-      "commenceTime": "2026-10-20T13:00:00Z",
-      "homeWinProb": 0.0,
-      "drawProb": 0.0,
-      "awayWinProb": 0.0,
-      "totalVolume": 0
-    },
     {
       "homeTeam": "Nott'm Forest",
       "awayTeam": "Arsenal",
@@ -296,6 +242,15 @@
       "homeTeam": "Aston Villa",
       "awayTeam": "Fulham",
       "commenceTime": "2026-11-02T20:00:00Z",
+      "homeWinProb": 0.0,
+      "drawProb": 0.0,
+      "awayWinProb": 0.0,
+      "totalVolume": 0
+    },
+    {
+      "homeTeam": "Liverpool",
+      "awayTeam": "Arsenal",
+      "commenceTime": "2026-11-03T16:30:00Z",
       "homeWinProb": 0.0,
       "drawProb": 0.0,
       "awayWinProb": 0.0,

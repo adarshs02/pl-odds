@@ -1,114 +1,6 @@
 {
-  "lastUpdated": "2026-10-18T00:29:03.216249Z",
+  "lastUpdated": "2026-10-18T15:35:06.202786Z",
   "upcomingMatches": [
-    {
-      "id": "dfd5d6648be46426e418801584d46a68",
-      "commenceTime": "2026-10-18T13:00:00Z",
-      "homeTeam": "Bournemouth",
-      "awayTeam": "Sunderland",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 2.0,
-        "draw": 3.55,
-        "away": 3.55,
-        "impliedProbHome": 0.5,
-        "impliedProbDraw": 0.282,
-        "impliedProbAway": 0.282
-      },
-      "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
-        "byBookmaker": {
-          "mybookieag": -0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
-    {
-      "id": "9fc08b390a49c4434f7cf631a0bb88fb",
-      "commenceTime": "2026-10-18T13:00:00Z",
-      "homeTeam": "Brighton",
-      "awayTeam": "Crystal Palace",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 1.56,
-        "draw": 4.5,
-        "away": 5.25,
-        "impliedProbHome": 0.641,
-        "impliedProbDraw": 0.222,
-        "impliedProbAway": 0.19
-      },
-      "spread": {
-        "homePoint": -1.5,
-        "awayPoint": 1.5,
-        "byBookmaker": {
-          "mybookieag": -1.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
-    {
-      "id": "676b3b0b609e9cf565da450786618d26",
-      "commenceTime": "2026-10-18T13:00:00Z",
-      "homeTeam": "Leeds",
-      "awayTeam": "Man United",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 2.35,
-        "draw": 3.55,
-        "away": 2.85,
-        "impliedProbHome": 0.426,
-        "impliedProbDraw": 0.282,
-        "impliedProbAway": 0.351
-      },
-      "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
-        "byBookmaker": {
-          "mybookieag": -0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
-    {
-      "id": "f696a248965373d9071dc0662e5c58a8",
-      "commenceTime": "2026-10-18T15:30:00Z",
-      "homeTeam": "Nott'm Forest",
-      "awayTeam": "Arsenal",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 6.0,
-        "draw": 3.85,
-        "away": 1.59,
-        "impliedProbHome": 0.167,
-        "impliedProbDraw": 0.26,
-        "impliedProbAway": 0.629
-      },
-      "spread": {
-        "homePoint": 0.5,
-        "awayPoint": -0.5,
-        "byBookmaker": {
-          "mybookieag": 0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
     {
       "id": "9baaf4e48b041cfef04e70e42532502e",
       "commenceTime": "2026-10-19T19:00:00Z",
@@ -240,5 +132,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 9
+  "totalMatches": 5
 }
