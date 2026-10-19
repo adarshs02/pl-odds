@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-18T15:34:46Z",
+  "lastUpdated": "2026-10-19T18:30:30Z",
   "winnerFutures": [
     {
       "team": "Tottenham",
@@ -112,15 +112,6 @@
   ],
   "top4Futures": [],
   "matchOutcomes": [
-    {
-      "homeTeam": "Nott'm Forest",
-      "awayTeam": "Arsenal",
-      "commenceTime": "2026-10-20T15:30:00Z",
-      "homeWinProb": 0.0,
-      "drawProb": 0.0,
-      "awayWinProb": 0.0,
-      "totalVolume": 0
-    },
     {
       "homeTeam": "Ipswich Town",
       "awayTeam": "Nott'm Forest",
@@ -251,6 +242,15 @@
       "homeTeam": "Liverpool",
       "awayTeam": "Arsenal",
       "commenceTime": "2026-11-03T16:30:00Z",
+      "homeWinProb": 0.0,
+      "drawProb": 0.0,
+      "awayWinProb": 0.0,
+      "totalVolume": 0
+    },
+    {
+      "homeTeam": "Newcastle",
+      "awayTeam": "Everton",
+      "commenceTime": "2026-11-04T20:00:00Z",
       "homeWinProb": 0.0,
       "drawProb": 0.0,
       "awayWinProb": 0.0,

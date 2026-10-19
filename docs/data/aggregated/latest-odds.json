@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-19T00:34:45.066474Z",
+  "lastUpdated": "2026-10-19T18:30:47.103831Z",
   "upcomingMatches": [
     {
       "id": "9baaf4e48b041cfef04e70e42532502e",
@@ -8,10 +8,10 @@
       "awayTeam": "Coventry City",
       "h2hOdds": {
         "bookmaker": "DraftKings",
-        "home": 1.48,
+        "home": 1.5,
         "draw": 4.6,
         "away": 6.0,
-        "impliedProbHome": 0.676,
+        "impliedProbHome": 0.667,
         "impliedProbDraw": 0.217,
         "impliedProbAway": 0.167
       },
@@ -30,11 +30,11 @@
       "awayTeam": "Nott'm Forest",
       "h2hOdds": {
         "bookmaker": "DraftKings",
-        "home": 2.95,
-        "draw": 3.5,
+        "home": 3.0,
+        "draw": 3.55,
         "away": 2.25,
-        "impliedProbHome": 0.339,
-        "impliedProbDraw": 0.286,
+        "impliedProbHome": 0.333,
+        "impliedProbDraw": 0.282,
         "impliedProbAway": 0.444
       },
       "spread": {
@@ -57,12 +57,12 @@
       "awayTeam": "Man City",
       "h2hOdds": {
         "bookmaker": "DraftKings",
-        "home": 4.3,
-        "draw": 4.0,
-        "away": 1.69,
-        "impliedProbHome": 0.233,
-        "impliedProbDraw": 0.25,
-        "impliedProbAway": 0.592
+        "home": 4.4,
+        "draw": 4.1,
+        "away": 1.71,
+        "impliedProbHome": 0.227,
+        "impliedProbDraw": 0.244,
+        "impliedProbAway": 0.585
       },
       "spread": {
         "homePoint": 0.5,
@@ -85,10 +85,10 @@
       "h2hOdds": {
         "bookmaker": "DraftKings",
         "home": 1.38,
-        "draw": 4.5,
+        "draw": 4.6,
         "away": 8.5,
         "impliedProbHome": 0.725,
-        "impliedProbDraw": 0.222,
+        "impliedProbDraw": 0.217,
         "impliedProbAway": 0.118
       },
       "spread": {
@@ -112,10 +112,10 @@
       "h2hOdds": {
         "bookmaker": "DraftKings",
         "home": 2.9,
-        "draw": 3.45,
+        "draw": 3.5,
         "away": 2.3,
         "impliedProbHome": 0.345,
-        "impliedProbDraw": 0.29,
+        "impliedProbDraw": 0.286,
         "impliedProbAway": 0.435
       },
       "spread": {
