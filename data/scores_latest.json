@@ -9118,5 +9118,25 @@
       }
     ],
     "last_update": "2026-10-18T22:52:40Z"
+  },
+  {
+    "id": "9baaf4e48b041cfef04e70e42532502e",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-10-19T19:00:00Z",
+    "completed": true,
+    "home_team": "Tottenham Hotspur",
+    "away_team": "Coventry City",
+    "scores": [
+      {
+        "name": "Tottenham Hotspur",
+        "score": "3"
+      },
+      {
+        "name": "Coventry City",
+        "score": "1"
+      }
+    ],
+    "last_update": "2026-10-19T23:12:38Z"
   }
 ]

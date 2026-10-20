@@ -1,28 +1,6 @@
 {
-  "lastUpdated": "2026-10-19T18:30:47.103831Z",
+  "lastUpdated": "2026-10-20T01:20:34.048948Z",
   "upcomingMatches": [
-    {
-      "id": "9baaf4e48b041cfef04e70e42532502e",
-      "commenceTime": "2026-10-19T19:00:00Z",
-      "homeTeam": "Tottenham",
-      "awayTeam": "Coventry City",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 1.5,
-        "draw": 4.6,
-        "away": 6.0,
-        "impliedProbHome": 0.667,
-        "impliedProbDraw": 0.217,
-        "impliedProbAway": 0.167
-      },
-      "spread": {
-        "homePoint": -1.5,
-        "awayPoint": 1.5,
-        "byBookmaker": {
-          "mybookieag": -1.5
-        }
-      }
-    },
     {
       "id": "d0202960708a442401d7fc7bd74a0183",
       "commenceTime": "2026-10-23T19:00:00Z",
@@ -132,5 +110,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 5
+  "totalMatches": 4
 }
