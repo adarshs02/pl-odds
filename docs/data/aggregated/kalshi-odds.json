@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-23T16:42:41Z",
+  "lastUpdated": "2026-10-24T15:36:24Z",
   "winnerFutures": [
     {
       "team": "Tottenham",
@@ -112,24 +112,6 @@
   ],
   "top4Futures": [],
   "matchOutcomes": [
-    {
-      "homeTeam": "Ipswich Town",
-      "awayTeam": "Nott'm Forest",
-      "commenceTime": "2026-10-25T19:00:00Z",
-      "homeWinProb": 0.0,
-      "drawProb": 0.0,
-      "awayWinProb": 0.0,
-      "totalVolume": 0
-    },
-    {
-      "homeTeam": "Aston Villa",
-      "awayTeam": "Man City",
-      "commenceTime": "2026-10-26T11:30:00Z",
-      "homeWinProb": 0.0,
-      "drawProb": 0.0,
-      "awayWinProb": 0.0,
-      "totalVolume": 0
-    },
     {
       "homeTeam": "Arsenal",
       "awayTeam": "Everton",
@@ -251,6 +233,33 @@
       "homeTeam": "Newcastle",
       "awayTeam": "Everton",
       "commenceTime": "2026-11-04T20:00:00Z",
+      "homeWinProb": 0.0,
+      "drawProb": 0.0,
+      "awayWinProb": 0.0,
+      "totalVolume": 0
+    },
+    {
+      "homeTeam": "Leeds",
+      "awayTeam": "Tottenham",
+      "commenceTime": "2026-11-09T12:30:00Z",
+      "homeWinProb": 0.0,
+      "drawProb": 0.0,
+      "awayWinProb": 0.0,
+      "totalVolume": 0
+    },
+    {
+      "homeTeam": "Fulham",
+      "awayTeam": "Newcastle",
+      "commenceTime": "2026-11-09T15:00:00Z",
+      "homeWinProb": 0.0,
+      "drawProb": 0.0,
+      "awayWinProb": 0.0,
+      "totalVolume": 0
+    },
+    {
+      "homeTeam": "Nott'm Forest",
+      "awayTeam": "Man City",
+      "commenceTime": "2026-11-09T17:30:00Z",
       "homeWinProb": 0.0,
       "drawProb": 0.0,
       "awayWinProb": 0.0,
