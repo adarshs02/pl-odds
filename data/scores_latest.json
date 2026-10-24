@@ -9138,5 +9138,25 @@
       }
     ],
     "last_update": "2026-10-19T23:12:38Z"
+  },
+  {
+    "id": "d0202960708a442401d7fc7bd74a0183",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-10-23T19:00:00Z",
+    "completed": true,
+    "home_team": "Ipswich Town",
+    "away_team": "Nottingham Forest",
+    "scores": [
+      {
+        "name": "Ipswich Town",
+        "score": "1"
+      },
+      {
+        "name": "Nottingham Forest",
+        "score": "1"
+      }
+    ],
+    "last_update": "2026-10-23T23:13:05Z"
   }
 ]

@@ -1,33 +1,6 @@
 {
-  "lastUpdated": "2026-10-23T16:42:55.465679Z",
+  "lastUpdated": "2026-10-24T01:14:24.054509Z",
   "upcomingMatches": [
-    {
-      "id": "d0202960708a442401d7fc7bd74a0183",
-      "commenceTime": "2026-10-23T19:00:00Z",
-      "homeTeam": "Ipswich Town",
-      "awayTeam": "Nott'm Forest",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 3.2,
-        "draw": 3.5,
-        "away": 2.25,
-        "impliedProbHome": 0.312,
-        "impliedProbDraw": 0.286,
-        "impliedProbAway": 0.444
-      },
-      "spread": {
-        "homePoint": 0.5,
-        "awayPoint": -0.5,
-        "byBookmaker": {
-          "mybookieag": 0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
     {
       "id": "aca5dd297dbee71f576f7641569fe578",
       "commenceTime": "2026-10-24T11:30:00Z",
@@ -527,5 +500,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 20
+  "totalMatches": 19
 }
