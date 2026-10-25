@@ -1,109 +1,6 @@
 {
-  "lastUpdated": "2026-10-25T00:39:24.104810Z",
+  "lastUpdated": "2026-10-25T15:47:00.132875Z",
   "upcomingMatches": [
-    {
-      "id": "33fb7467b23c91d57dc976d9ab05ea97",
-      "commenceTime": "2026-10-25T14:00:00Z",
-      "homeTeam": "Man United",
-      "awayTeam": "Bournemouth",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 2.0,
-        "draw": 3.65,
-        "away": 3.55,
-        "impliedProbHome": 0.5,
-        "impliedProbDraw": 0.274,
-        "impliedProbAway": 0.282
-      },
-      "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
-        "byBookmaker": {
-          "mybookieag": -0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
-    {
-      "id": "69493b5ebb84f24ab1d6023a30ee89f0",
-      "commenceTime": "2026-10-25T14:00:00Z",
-      "homeTeam": "Hull City",
-      "awayTeam": "Brentford",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 4.5,
-        "draw": 4.0,
-        "away": 1.71,
-        "impliedProbHome": 0.222,
-        "impliedProbDraw": 0.25,
-        "impliedProbAway": 0.585
-      },
-      "spread": {
-        "homePoint": 0.5,
-        "awayPoint": -0.5,
-        "byBookmaker": {
-          "mybookieag": 0.5
-        }
-      }
-    },
-    {
-      "id": "290ba8cd3f3a2e9252effca673bf5549",
-      "commenceTime": "2026-10-25T14:00:00Z",
-      "homeTeam": "Liverpool",
-      "awayTeam": "Brighton",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 2.1,
-        "draw": 3.8,
-        "away": 3.1,
-        "impliedProbHome": 0.476,
-        "impliedProbDraw": 0.263,
-        "impliedProbAway": 0.323
-      },
-      "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
-        "byBookmaker": {
-          "mybookieag": -0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
-    {
-      "id": "fe235b26408c477368c40672a4488694",
-      "commenceTime": "2026-10-25T14:00:00Z",
-      "homeTeam": "Crystal Palace",
-      "awayTeam": "Newcastle",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 2.85,
-        "draw": 3.55,
-        "away": 2.35,
-        "impliedProbHome": 0.351,
-        "impliedProbDraw": 0.282,
-        "impliedProbAway": 0.426
-      },
-      "spread": {
-        "homePoint": 0.5,
-        "awayPoint": -0.5,
-        "byBookmaker": {
-          "mybookieag": 0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
     {
       "id": "e82f6b60fa41b82c8510f5b67ce61849",
       "commenceTime": "2026-10-25T16:30:00Z",
@@ -397,5 +294,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 15
+  "totalMatches": 11
 }
