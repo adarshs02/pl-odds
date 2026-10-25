@@ -9158,5 +9158,85 @@
       }
     ],
     "last_update": "2026-10-23T23:13:05Z"
+  },
+  {
+    "id": "aca5dd297dbee71f576f7641569fe578",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-10-24T11:30:00Z",
+    "completed": true,
+    "home_team": "Aston Villa",
+    "away_team": "Manchester City",
+    "scores": [
+      {
+        "name": "Aston Villa",
+        "score": "2"
+      },
+      {
+        "name": "Manchester City",
+        "score": "1"
+      }
+    ],
+    "last_update": "2026-10-24T23:09:47Z"
+  },
+  {
+    "id": "f66e4f29c1b7bcfc5ab58c0b88c8850b",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-10-24T14:00:00Z",
+    "completed": true,
+    "home_team": "Arsenal",
+    "away_team": "Everton",
+    "scores": [
+      {
+        "name": "Arsenal",
+        "score": "2"
+      },
+      {
+        "name": "Everton",
+        "score": "0"
+      }
+    ],
+    "last_update": "2026-10-24T23:09:47Z"
+  },
+  {
+    "id": "0fbb2626ed9534b9dcf21d16925f9bd7",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-10-24T14:00:00Z",
+    "completed": true,
+    "home_team": "Coventry City",
+    "away_team": "Fulham",
+    "scores": [
+      {
+        "name": "Coventry City",
+        "score": "0"
+      },
+      {
+        "name": "Fulham",
+        "score": "1"
+      }
+    ],
+    "last_update": "2026-10-24T23:09:47Z"
+  },
+  {
+    "id": "0382a9faef0bb8df1bcc436536cffb05",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-10-24T16:30:00Z",
+    "completed": true,
+    "home_team": "Chelsea",
+    "away_team": "Tottenham Hotspur",
+    "scores": [
+      {
+        "name": "Chelsea",
+        "score": "0"
+      },
+      {
+        "name": "Tottenham Hotspur",
+        "score": "2"
+      }
+    ],
+    "last_update": "2026-10-24T23:09:47Z"
   }
 ]

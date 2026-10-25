@@ -1,33 +1,6 @@
 {
-  "lastUpdated": "2026-10-24T15:36:36.909145Z",
+  "lastUpdated": "2026-10-25T00:39:24.104810Z",
   "upcomingMatches": [
-    {
-      "id": "0382a9faef0bb8df1bcc436536cffb05",
-      "commenceTime": "2026-10-24T16:30:00Z",
-      "homeTeam": "Chelsea",
-      "awayTeam": "Tottenham",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 1.69,
-        "draw": 4.3,
-        "away": 4.5,
-        "impliedProbHome": 0.592,
-        "impliedProbDraw": 0.233,
-        "impliedProbAway": 0.222
-      },
-      "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
-        "byBookmaker": {
-          "mybookieag": -0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
     {
       "id": "33fb7467b23c91d57dc976d9ab05ea97",
       "commenceTime": "2026-10-25T14:00:00Z",
@@ -424,5 +397,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 16
+  "totalMatches": 15
 }
