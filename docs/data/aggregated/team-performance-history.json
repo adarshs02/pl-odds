@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-25T00:39:24.045810Z",
+  "lastUpdated": "2026-10-26T00:50:02.910504Z",
   "teams": [
     {
       "name": "Brighton",
@@ -727,18 +727,34 @@
           "spread": -1.5,
           "netPerformance": 3.5,
           "cumulativeNetPerformance": 17.0
+        },
+        {
+          "date": "2026-10-25",
+          "opponent": "Liverpool",
+          "homeAway": "away",
+          "score": "0-2",
+          "result": "L",
+          "spreadsByBookmaker": {
+            "mybookieag": 0.5
+          },
+          "netPerformanceByBookmaker": {
+            "mybookieag": -1.5
+          },
+          "spread": 0.5,
+          "netPerformance": -1.5,
+          "cumulativeNetPerformance": 15.5
         }
       ],
-      "totalNetPerformance": 17.0,
+      "totalNetPerformance": 15.5,
       "totalNetPerformanceByBookmaker": {
         "backfill": 1.0,
         "matchbook": -2.5,
-        "mybookieag": 16.5
+        "mybookieag": 15.0
       },
       "statistics": {
-        "matchesPlayed": 45,
+        "matchesPlayed": 46,
         "wins": 19,
-        "losses": 14,
+        "losses": 15,
         "draws": 12,
         "covers": 22,
         "coversByBookmaker": {
@@ -746,13 +762,13 @@
           "matchbook": 1,
           "mybookieag": 12
         },
-        "avgNetPerformance": 0.38,
-        "winRate": 0.422,
-        "coverRate": 0.489,
+        "avgNetPerformance": 0.34,
+        "winRate": 0.413,
+        "coverRate": 0.478,
         "coverRateByBookmaker": {
-          "backfill": 0.2,
+          "backfill": 0.196,
           "matchbook": 0.022,
-          "mybookieag": 0.267
+          "mybookieag": 0.261
         }
       }
     },
@@ -1478,32 +1494,48 @@
           "spread": -0.5,
           "netPerformance": -1.5,
           "cumulativeNetPerformance": 11.5
+        },
+        {
+          "date": "2026-10-25",
+          "opponent": "Hull City",
+          "homeAway": "away",
+          "score": "1-1",
+          "result": "D",
+          "spreadsByBookmaker": {
+            "mybookieag": -0.5
+          },
+          "netPerformanceByBookmaker": {
+            "mybookieag": -0.5
+          },
+          "spread": -0.5,
+          "netPerformance": -0.5,
+          "cumulativeNetPerformance": 11.0
         }
       ],
-      "totalNetPerformance": 11.5,
+      "totalNetPerformance": 11.0,
       "totalNetPerformanceByBookmaker": {
         "backfill": 8.0,
         "matchbook": 1.5,
-        "mybookieag": 2.0
+        "mybookieag": 1.5
       },
       "statistics": {
-        "matchesPlayed": 45,
+        "matchesPlayed": 46,
         "wins": 16,
         "losses": 14,
-        "draws": 15,
+        "draws": 16,
         "covers": 21,
         "coversByBookmaker": {
           "backfill": 10,
           "matchbook": 3,
           "mybookieag": 8
         },
-        "avgNetPerformance": 0.26,
-        "winRate": 0.356,
-        "coverRate": 0.467,
+        "avgNetPerformance": 0.24,
+        "winRate": 0.348,
+        "coverRate": 0.457,
         "coverRateByBookmaker": {
-          "backfill": 0.222,
-          "matchbook": 0.067,
-          "mybookieag": 0.178
+          "backfill": 0.217,
+          "matchbook": 0.065,
+          "mybookieag": 0.174
         }
       }
     },
@@ -2229,32 +2261,817 @@
           "spread": 0.5,
           "netPerformance": -1.5,
           "cumulativeNetPerformance": 10.5
+        },
+        {
+          "date": "2026-10-25",
+          "opponent": "Leeds",
+          "homeAway": "home",
+          "score": "0-0",
+          "result": "D",
+          "spreadsByBookmaker": {
+            "mybookieag": 0.5
+          },
+          "netPerformanceByBookmaker": {
+            "mybookieag": 0.5
+          },
+          "spread": 0.5,
+          "netPerformance": 0.5,
+          "cumulativeNetPerformance": 11.0
         }
       ],
-      "totalNetPerformance": 10.5,
+      "totalNetPerformance": 11.0,
       "totalNetPerformanceByBookmaker": {
         "backfill": 15.0,
         "matchbook": -2.5,
-        "mybookieag": -2.0
+        "mybookieag": -1.5
       },
       "statistics": {
-        "matchesPlayed": 45,
+        "matchesPlayed": 46,
         "wins": 15,
         "losses": 17,
-        "draws": 13,
-        "covers": 26,
+        "draws": 14,
+        "covers": 27,
         "coversByBookmaker": {
           "backfill": 15,
           "matchbook": 2,
-          "mybookieag": 9
+          "mybookieag": 10
         },
-        "avgNetPerformance": 0.23,
-        "winRate": 0.333,
-        "coverRate": 0.578,
+        "avgNetPerformance": 0.24,
+        "winRate": 0.326,
+        "coverRate": 0.587,
         "coverRateByBookmaker": {
-          "backfill": 0.333,
-          "matchbook": 0.044,
-          "mybookieag": 0.2
+          "backfill": 0.326,
+          "matchbook": 0.043,
+          "mybookieag": 0.217
+        }
+      }
+    },
+    {
+      "name": "Bournemouth",
+      "matchHistory": [
+        {
+          "date": "2025-08-15",
+          "opponent": "Liverpool",
+          "homeAway": "away",
+          "score": "2-4",
+          "result": "L",
+          "spreadsByBookmaker": {
+            "backfill": 1.5
+          },
+          "netPerformanceByBookmaker": {
+            "backfill": -0.5
+          },
+          "spread": 1.5,
+          "netPerformance": -0.5,
+          "cumulativeNetPerformance": -0.5
+        },
+        {
+          "date": "2025-08-23",
+          "opponent": "Wolves",
+          "homeAway": "home",
+          "score": "1-0",
+          "result": "W",
+          "spreadsByBookmaker": {
+            "backfill": -0.5
+          },
+          "netPerformanceByBookmaker": {
+            "backfill": 0.5
+          },
+          "spread": -0.5,
+          "netPerformance": 0.5,
+          "cumulativeNetPerformance": 0.0
+        },
+        {
+          "date": "2025-08-30",
+          "opponent": "Tottenham",
+          "homeAway": "away",
+          "score": "1-0",
+          "result": "W",
+          "spreadsByBookmaker": {
+            "backfill": 0.5
+          },
+          "netPerformanceByBookmaker": {
+            "backfill": 1.5
+          },
+          "spread": 0.5,
+          "netPerformance": 1.5,
+          "cumulativeNetPerformance": 1.5
+        },
+        {
+          "date": "2025-09-13",
+          "opponent": "Brighton",
+          "homeAway": "home",
+          "score": "2-1",
+          "result": "W",
+          "spreadsByBookmaker": {
+            "backfill": 0.0
+          },
+          "netPerformanceByBookmaker": {
+            "backfill": 1.0
+          },
+          "spread": 0.0,
+          "netPerformance": 1.0,
+          "cumulativeNetPerformance": 2.5
+        },
+        {
+          "date": "2025-09-21",
+          "opponent": "Newcastle",
+          "homeAway": "home",
+          "score": "0-0",
+          "result": "D",
+          "spreadsByBookmaker": {
+            "backfill": -0.5
+          },
+          "netPerformanceByBookmaker": {
+            "backfill": -0.5
+          },
+          "spread": -0.5,
+          "netPerformance": -0.5,
+          "cumulativeNetPerformance": 2.0
+        },
+        {
+          "date": "2025-09-27",
+          "opponent": "Leeds",
+          "homeAway": "away",
+          "score": "2-2",
+          "result": "D",
+          "spreadsByBookmaker": {
+            "backfill": -0.5
+          },
+          "netPerformanceByBookmaker": {
+            "backfill": -0.5
+          },
+          "spread": -0.5,
+          "netPerformance": -0.5,
+          "cumulativeNetPerformance": 1.5
+        },
+        {
+          "date": "2025-10-03",
+          "opponent": "Fulham",
+          "homeAway": "home",
+          "score": "3-1",
+          "result": "W",
+          "spreadsByBookmaker": {
+            "backfill": -0.5
+          },
+          "netPerformanceByBookmaker": {
+            "backfill": 1.5
+          },
+          "spread": -0.5,
+          "netPerformance": 1.5,
+          "cumulativeNetPerformance": 3.0
+        },
+        {
+          "date": "2025-10-18",
+          "opponent": "Crystal Palace",
+          "homeAway": "away",
+          "score": "3-3",
+          "result": "D",
+          "spreadsByBookmaker": {
+            "backfill": 0.5
+          },
+          "netPerformanceByBookmaker": {
+            "backfill": 0.5
+          },
+          "spread": 0.5,
+          "netPerformance": 0.5,
+          "cumulativeNetPerformance": 3.5
+        },
+        {
+          "date": "2025-10-26",
+          "opponent": "Nott'm Forest",
+          "homeAway": "home",
+          "score": "2-0",
+          "result": "W",
+          "spreadsByBookmaker": {
+            "backfill": -0.5
+          },
+          "netPerformanceByBookmaker": {
+            "backfill": 1.5
+          },
+          "spread": -0.5,
+          "netPerformance": 1.5,
+          "cumulativeNetPerformance": 5.0
+        },
+        {
+          "date": "2025-11-02",
+          "opponent": "Man City",
+          "homeAway": "away",
+          "score": "1-3",
+          "result": "L",
+          "spreadsByBookmaker": {
+            "backfill": 1.5
+          },
+          "netPerformanceByBookmaker": {
+            "backfill": -0.5
+          },
+          "spread": 1.5,
+          "netPerformance": -0.5,
+          "cumulativeNetPerformance": 4.5
+        },
+        {
+          "date": "2025-11-09",
+          "opponent": "Aston Villa",
+          "homeAway": "away",
+          "score": "0-4",
+          "result": "L",
+          "spreadsByBookmaker": {
+            "backfill": 0.5
+          },
+          "netPerformanceByBookmaker": {
+            "backfill": -3.5
+          },
+          "spread": 0.5,
+          "netPerformance": -3.5,
+          "cumulativeNetPerformance": 1.0
+        },
+        {
+          "date": "2025-11-22",
+          "opponent": "West Ham",
+          "homeAway": "home",
+          "score": "2-2",
+          "result": "D",
+          "spreadsByBookmaker": {
+            "backfill": -0.5
+          },
+          "netPerformanceByBookmaker": {
+            "backfill": -0.5
+          },
+          "spread": -0.5,
+          "netPerformance": -0.5,
+          "cumulativeNetPerformance": 0.5
+        },
+        {
+          "date": "2025-11-29",
+          "opponent": "Sunderland",
+          "homeAway": "away",
+          "score": "2-3",
+          "result": "L",
+          "spreadsByBookmaker": {
+            "backfill": -0.5
+          },
+          "netPerformanceByBookmaker": {
+            "backfill": -1.5
+          },
+          "spread": -0.5,
+          "netPerformance": -1.5,
+          "cumulativeNetPerformance": -1.0
+        },
+        {
+          "date": "2025-12-02",
+          "opponent": "Everton",
+          "homeAway": "home",
+          "score": "0-1",
+          "result": "L",
+          "spreadsByBookmaker": {
+            "backfill": -0.5
+          },
+          "netPerformanceByBookmaker": {
+            "backfill": -1.5
+          },
+          "spread": -0.5,
+          "netPerformance": -1.5,
+          "cumulativeNetPerformance": -2.5
+        },
+        {
+          "date": "2025-12-06",
+          "opponent": "Chelsea",
+          "homeAway": "home",
+          "score": "0-0",
+          "result": "D",
+          "spreadsByBookmaker": {
+            "backfill": 0.5
+          },
+          "netPerformanceByBookmaker": {
+            "backfill": 0.5
+          },
+          "spread": 0.5,
+          "netPerformance": 0.5,
+          "cumulativeNetPerformance": -2.0
+        },
+        {
+          "date": "2025-12-15",
+          "opponent": "Man United",
+          "homeAway": "away",
+          "score": "4-4",
+          "result": "D",
+          "spreadsByBookmaker": {
+            "backfill": 0.5
+          },
+          "netPerformanceByBookmaker": {
+            "backfill": 0.5
+          },
+          "spread": 0.5,
+          "netPerformance": 0.5,
+          "cumulativeNetPerformance": -1.5
+        },
+        {
+          "date": "2025-12-20",
+          "opponent": "Burnley",
+          "homeAway": "home",
+          "score": "1-1",
+          "result": "D",
+          "spreadsByBookmaker": {
+            "backfill": -1.5
+          },
+          "netPerformanceByBookmaker": {
+            "backfill": -1.5
+          },
+          "spread": -1.5,
+          "netPerformance": -1.5,
+          "cumulativeNetPerformance": -3.0
+        },
+        {
+          "date": "2025-12-27",
+          "opponent": "Brentford",
+          "homeAway": "away",
+          "score": "1-4",
+          "result": "L",
+          "spreadsByBookmaker": {
+            "backfill": 0.5
+          },
+          "netPerformanceByBookmaker": {
+            "backfill": -2.5
+          },
+          "spread": 0.5,
+          "netPerformance": -2.5,
+          "cumulativeNetPerformance": -5.5
+        },
+        {
+          "date": "2025-12-30",
+          "opponent": "Chelsea",
+          "homeAway": "away",
+          "score": "2-2",
+          "result": "D",
+          "spreadsByBookmaker": {
+            "backfill": 1.0
+          },
+          "netPerformanceByBookmaker": {
+            "backfill": 1.0
+          },
+          "spread": 1.0,
+          "netPerformance": 1.0,
+          "cumulativeNetPerformance": -4.5
+        },
+        {
+          "date": "2026-01-03",
+          "opponent": "Arsenal",
+          "homeAway": "home",
+          "score": "2-3",
+          "result": "L",
+          "spreadsByBookmaker": {
+            "backfill": 1.0
+          },
+          "netPerformanceByBookmaker": {
+            "backfill": 0.0
+          },
+          "spread": 1.0,
+          "netPerformance": 0.0,
+          "cumulativeNetPerformance": -4.5
+        },
+        {
+          "date": "2026-01-07",
+          "opponent": "Tottenham",
+          "homeAway": "home",
+          "score": "3-2",
+          "result": "W",
+          "spreadsByBookmaker": {
+            "matchbook": -0.5
+          },
+          "netPerformanceByBookmaker": {
+            "matchbook": 0.5
+          },
+          "spread": -0.5,
+          "netPerformance": 0.5,
+          "cumulativeNetPerformance": -4.0
+        },
+        {
+          "date": "2026-01-19",
+          "opponent": "Brighton",
+          "homeAway": "away",
+          "score": "1-1",
+          "result": "D",
+          "spreadsByBookmaker": {
+            "matchbook": 0.5
+          },
+          "netPerformanceByBookmaker": {
+            "matchbook": 0.5
+          },
+          "spread": 0.5,
+          "netPerformance": 0.5,
+          "cumulativeNetPerformance": -3.5
+        },
+        {
+          "date": "2026-01-24",
+          "opponent": "Liverpool",
+          "homeAway": "home",
+          "score": "3-2",
+          "result": "W",
+          "spreadsByBookmaker": {
+            "matchbook": 0.5
+          },
+          "netPerformanceByBookmaker": {
+            "matchbook": 1.5
+          },
+          "spread": 0.5,
+          "netPerformance": 1.5,
+          "cumulativeNetPerformance": -2.0
+        },
+        {
+          "date": "2026-01-31",
+          "opponent": "Wolves",
+          "homeAway": "away",
+          "score": "2-0",
+          "result": "W",
+          "spreadsByBookmaker": {
+            "matchbook": -0.5
+          },
+          "netPerformanceByBookmaker": {
+            "matchbook": 1.5
+          },
+          "spread": -0.5,
+          "netPerformance": 1.5,
+          "cumulativeNetPerformance": -0.5
+        },
+        {
+          "date": "2026-02-07",
+          "opponent": "Aston Villa",
+          "homeAway": "home",
+          "score": "1-1",
+          "result": "D",
+          "spreadsByBookmaker": {
+            "matchbook": 0.0
+          },
+          "netPerformanceByBookmaker": {
+            "matchbook": 0.0
+          },
+          "spread": 0.0,
+          "netPerformance": 0.0,
+          "cumulativeNetPerformance": -0.5
+        },
+        {
+          "date": "2026-02-10",
+          "opponent": "Everton",
+          "homeAway": "away",
+          "score": "2-1",
+          "result": "W",
+          "spreadsByBookmaker": {
+            "matchbook": 0.5,
+            "mybookieag": 0.5
+          },
+          "netPerformanceByBookmaker": {
+            "matchbook": 1.5,
+            "mybookieag": 1.5
+          },
+          "spread": 0.5,
+          "netPerformance": 1.5,
+          "cumulativeNetPerformance": 1.0
+        },
+        {
+          "date": "2026-02-21",
+          "opponent": "West Ham",
+          "homeAway": "away",
+          "score": "0-0",
+          "result": "D",
+          "spreadsByBookmaker": {
+            "mybookieag": 0.5
+          },
+          "netPerformanceByBookmaker": {
+            "mybookieag": 0.5
+          },
+          "spread": 0.5,
+          "netPerformance": 0.5,
+          "cumulativeNetPerformance": 1.5
+        },
+        {
+          "date": "2026-02-28",
+          "opponent": "Sunderland",
+          "homeAway": "home",
+          "score": "1-1",
+          "result": "D",
+          "spreadsByBookmaker": {
+            "mybookieag": -0.5
+          },
+          "netPerformanceByBookmaker": {
+            "mybookieag": -0.5
+          },
+          "spread": -0.5,
+          "netPerformance": -0.5,
+          "cumulativeNetPerformance": 1.0
+        },
+        {
+          "date": "2026-03-03",
+          "opponent": "Brentford",
+          "homeAway": "home",
+          "score": "0-0",
+          "result": "D",
+          "spreadsByBookmaker": {
+            "mybookieag": -0.5
+          },
+          "netPerformanceByBookmaker": {
+            "mybookieag": -0.5
+          },
+          "spread": -0.5,
+          "netPerformance": -0.5,
+          "cumulativeNetPerformance": 0.5
+        },
+        {
+          "date": "2026-03-14",
+          "opponent": "Burnley",
+          "homeAway": "away",
+          "score": "0-0",
+          "result": "D",
+          "spreadsByBookmaker": {
+            "mybookieag": -0.5
+          },
+          "netPerformanceByBookmaker": {
+            "mybookieag": -0.5
+          },
+          "spread": -0.5,
+          "netPerformance": -0.5,
+          "cumulativeNetPerformance": 0.0
+        },
+        {
+          "date": "2026-03-20",
+          "opponent": "Man United",
+          "homeAway": "home",
+          "score": "2-2",
+          "result": "D",
+          "spreadsByBookmaker": {
+            "mybookieag": 0.5
+          },
+          "netPerformanceByBookmaker": {
+            "mybookieag": 0.5
+          },
+          "spread": 0.5,
+          "netPerformance": 0.5,
+          "cumulativeNetPerformance": 0.5
+        },
+        {
+          "date": "2026-04-11",
+          "opponent": "Arsenal",
+          "homeAway": "away",
+          "score": "2-1",
+          "result": "W",
+          "spreadsByBookmaker": {
+            "mybookieag": 1.5
+          },
+          "netPerformanceByBookmaker": {
+            "mybookieag": 2.5
+          },
+          "spread": 1.5,
+          "netPerformance": 2.5,
+          "cumulativeNetPerformance": 3.0
+        },
+        {
+          "date": "2026-04-18",
+          "opponent": "Newcastle",
+          "homeAway": "away",
+          "score": "2-1",
+          "result": "W",
+          "spreadsByBookmaker": {
+            "mybookieag": 0.5
+          },
+          "netPerformanceByBookmaker": {
+            "mybookieag": 1.5
+          },
+          "spread": 0.5,
+          "netPerformance": 1.5,
+          "cumulativeNetPerformance": 4.5
+        },
+        {
+          "date": "2026-04-22",
+          "opponent": "Leeds",
+          "homeAway": "home",
+          "score": "2-2",
+          "result": "D",
+          "spreadsByBookmaker": {
+            "mybookieag": -0.5
+          },
+          "netPerformanceByBookmaker": {
+            "mybookieag": -0.5
+          },
+          "spread": -0.5,
+          "netPerformance": -0.5,
+          "cumulativeNetPerformance": 4.0
+        },
+        {
+          "date": "2026-05-03",
+          "opponent": "Crystal Palace",
+          "homeAway": "home",
+          "score": "3-0",
+          "result": "W",
+          "spreadsByBookmaker": {
+            "mybookieag": -0.5
+          },
+          "netPerformanceByBookmaker": {
+            "mybookieag": 2.5
+          },
+          "spread": -0.5,
+          "netPerformance": 2.5,
+          "cumulativeNetPerformance": 6.5
+        },
+        {
+          "date": "2026-05-09",
+          "opponent": "Fulham",
+          "homeAway": "away",
+          "score": "1-0",
+          "result": "W",
+          "spreadsByBookmaker": {
+            "mybookieag": -0.5
+          },
+          "netPerformanceByBookmaker": {
+            "mybookieag": 0.5
+          },
+          "spread": -0.5,
+          "netPerformance": 0.5,
+          "cumulativeNetPerformance": 7.0
+        },
+        {
+          "date": "2026-05-19",
+          "opponent": "Man City",
+          "homeAway": "home",
+          "score": "1-1",
+          "result": "D",
+          "spreadsByBookmaker": {
+            "mybookieag": 0.5
+          },
+          "netPerformanceByBookmaker": {
+            "mybookieag": 0.5
+          },
+          "spread": 0.5,
+          "netPerformance": 0.5,
+          "cumulativeNetPerformance": 7.5
+        },
+        {
+          "date": "2026-05-24",
+          "opponent": "Nott'm Forest",
+          "homeAway": "away",
+          "score": "1-1",
+          "result": "D",
+          "spreadsByBookmaker": {
+            "mybookieag": -0.5
+          },
+          "netPerformanceByBookmaker": {
+            "mybookieag": -0.5
+          },
+          "spread": -0.5,
+          "netPerformance": -0.5,
+          "cumulativeNetPerformance": 7.0
+        },
+        {
+          "date": "2026-08-23",
+          "opponent": "Man City",
+          "homeAway": "away",
+          "score": "1-2",
+          "result": "L",
+          "spreadsByBookmaker": {
+            "mybookieag": 1.0
+          },
+          "netPerformanceByBookmaker": {
+            "mybookieag": 0.0
+          },
+          "spread": 1.0,
+          "netPerformance": 0.0,
+          "cumulativeNetPerformance": 7.0
+        },
+        {
+          "date": "2026-08-29",
+          "opponent": "Everton",
+          "homeAway": "home",
+          "score": "1-1",
+          "result": "D",
+          "spreadsByBookmaker": {
+            "mybookieag": -0.5
+          },
+          "netPerformanceByBookmaker": {
+            "mybookieag": -0.5
+          },
+          "spread": -0.5,
+          "netPerformance": -0.5,
+          "cumulativeNetPerformance": 6.5
+        },
+        {
+          "date": "2026-09-05",
+          "opponent": "Newcastle",
+          "homeAway": "away",
+          "score": "2-2",
+          "result": "D",
+          "spreadsByBookmaker": {
+            "mybookieag": 0.5
+          },
+          "netPerformanceByBookmaker": {
+            "mybookieag": 0.5
+          },
+          "spread": 0.5,
+          "netPerformance": 0.5,
+          "cumulativeNetPerformance": 7.0
+        },
+        {
+          "date": "2026-09-12",
+          "opponent": "Brentford",
+          "homeAway": "home",
+          "score": "2-2",
+          "result": "D",
+          "spreadsByBookmaker": {
+            "mybookieag": 0.0
+          },
+          "netPerformanceByBookmaker": {
+            "mybookieag": 0.0
+          },
+          "spread": 0.0,
+          "netPerformance": 0.0,
+          "cumulativeNetPerformance": 7.0
+        },
+        {
+          "date": "2026-09-20",
+          "opponent": "Liverpool",
+          "homeAway": "home",
+          "score": "0-1",
+          "result": "L",
+          "spreadsByBookmaker": {
+            "mybookieag": 0.5
+          },
+          "netPerformanceByBookmaker": {
+            "mybookieag": -0.5
+          },
+          "spread": 0.5,
+          "netPerformance": -0.5,
+          "cumulativeNetPerformance": 6.5
+        },
+        {
+          "date": "2026-10-10",
+          "opponent": "Chelsea",
+          "homeAway": "away",
+          "score": "1-5",
+          "result": "L",
+          "spreadsByBookmaker": {
+            "mybookieag": 0.5
+          },
+          "netPerformanceByBookmaker": {
+            "mybookieag": -3.5
+          },
+          "spread": 0.5,
+          "netPerformance": -3.5,
+          "cumulativeNetPerformance": 3.0
+        },
+        {
+          "date": "2026-10-18",
+          "opponent": "Sunderland",
+          "homeAway": "home",
+          "score": "2-0",
+          "result": "W",
+          "spreadsByBookmaker": {
+            "mybookieag": -0.5
+          },
+          "netPerformanceByBookmaker": {
+            "mybookieag": 1.5
+          },
+          "spread": -0.5,
+          "netPerformance": 1.5,
+          "cumulativeNetPerformance": 4.5
+        },
+        {
+          "date": "2026-10-25",
+          "opponent": "Man United",
+          "homeAway": "away",
+          "score": "3-0",
+          "result": "W",
+          "spreadsByBookmaker": {
+            "mybookieag": 0.5
+          },
+          "netPerformanceByBookmaker": {
+            "mybookieag": 3.5
+          },
+          "spread": 0.5,
+          "netPerformance": 3.5,
+          "cumulativeNetPerformance": 8.0
+        }
+      ],
+      "totalNetPerformance": 8.0,
+      "totalNetPerformanceByBookmaker": {
+        "backfill": -4.5,
+        "matchbook": 5.5,
+        "mybookieag": 8.5
+      },
+      "statistics": {
+        "matchesPlayed": 46,
+        "wins": 15,
+        "losses": 10,
+        "draws": 21,
+        "covers": 24,
+        "coversByBookmaker": {
+          "backfill": 9,
+          "matchbook": 5,
+          "mybookieag": 11
+        },
+        "avgNetPerformance": 0.17,
+        "winRate": 0.326,
+        "coverRate": 0.522,
+        "coverRateByBookmaker": {
+          "backfill": 0.196,
+          "matchbook": 0.109,
+          "mybookieag": 0.239
         }
       }
     },
@@ -2372,26 +3189,42 @@
           "spread": 0.5,
           "netPerformance": -0.5,
           "cumulativeNetPerformance": 7.0
+        },
+        {
+          "date": "2026-10-25",
+          "opponent": "Brentford",
+          "homeAway": "home",
+          "score": "1-1",
+          "result": "D",
+          "spreadsByBookmaker": {
+            "mybookieag": 0.5
+          },
+          "netPerformanceByBookmaker": {
+            "mybookieag": 0.5
+          },
+          "spread": 0.5,
+          "netPerformance": 0.5,
+          "cumulativeNetPerformance": 7.5
         }
       ],
-      "totalNetPerformance": 7.0,
+      "totalNetPerformance": 7.5,
       "totalNetPerformanceByBookmaker": {
-        "mybookieag": 7.0
+        "mybookieag": 7.5
       },
       "statistics": {
-        "matchesPlayed": 7,
+        "matchesPlayed": 8,
         "wins": 2,
         "losses": 2,
-        "draws": 3,
-        "covers": 5,
+        "draws": 4,
+        "covers": 6,
         "coversByBookmaker": {
-          "mybookieag": 5
+          "mybookieag": 6
         },
-        "avgNetPerformance": 1.0,
-        "winRate": 0.286,
-        "coverRate": 0.714,
+        "avgNetPerformance": 0.94,
+        "winRate": 0.25,
+        "coverRate": 0.75,
         "coverRateByBookmaker": {
-          "mybookieag": 0.714
+          "mybookieag": 0.75
         }
       }
     },
@@ -3103,32 +3936,48 @@
           "spread": -0.5,
           "netPerformance": -0.5,
           "cumulativeNetPerformance": 6.25
+        },
+        {
+          "date": "2026-10-25",
+          "opponent": "Sunderland",
+          "homeAway": "away",
+          "score": "0-0",
+          "result": "D",
+          "spreadsByBookmaker": {
+            "mybookieag": -0.5
+          },
+          "netPerformanceByBookmaker": {
+            "mybookieag": -0.5
+          },
+          "spread": -0.5,
+          "netPerformance": -0.5,
+          "cumulativeNetPerformance": 5.75
         }
       ],
-      "totalNetPerformance": 6.25,
+      "totalNetPerformance": 5.75,
       "totalNetPerformanceByBookmaker": {
-        "mybookieag": 7.0,
+        "mybookieag": 6.5,
         "backfill": 0.0,
         "matchbook": 0.0
       },
       "statistics": {
-        "matchesPlayed": 44,
+        "matchesPlayed": 45,
         "wins": 13,
         "losses": 13,
-        "draws": 18,
+        "draws": 19,
         "covers": 26,
         "coversByBookmaker": {
           "mybookieag": 13,
           "backfill": 11,
           "matchbook": 3
         },
-        "avgNetPerformance": 0.14,
-        "winRate": 0.295,
-        "coverRate": 0.591,
+        "avgNetPerformance": 0.13,
+        "winRate": 0.289,
+        "coverRate": 0.578,
         "coverRateByBookmaker": {
-          "mybookieag": 0.295,
-          "backfill": 0.25,
-          "matchbook": 0.068
+          "mybookieag": 0.289,
+          "backfill": 0.244,
+          "matchbook": 0.067
         }
       }
     },
@@ -3898,759 +4747,6 @@
           "backfill": 0.174,
           "matchbook": 0.065,
           "mybookieag": 0.217
-        }
-      }
-    },
-    {
-      "name": "Bournemouth",
-      "matchHistory": [
-        {
-          "date": "2025-08-15",
-          "opponent": "Liverpool",
-          "homeAway": "away",
-          "score": "2-4",
-          "result": "L",
-          "spreadsByBookmaker": {
-            "backfill": 1.5
-          },
-          "netPerformanceByBookmaker": {
-            "backfill": -0.5
-          },
-          "spread": 1.5,
-          "netPerformance": -0.5,
-          "cumulativeNetPerformance": -0.5
-        },
-        {
-          "date": "2025-08-23",
-          "opponent": "Wolves",
-          "homeAway": "home",
-          "score": "1-0",
-          "result": "W",
-          "spreadsByBookmaker": {
-            "backfill": -0.5
-          },
-          "netPerformanceByBookmaker": {
-            "backfill": 0.5
-          },
-          "spread": -0.5,
-          "netPerformance": 0.5,
-          "cumulativeNetPerformance": 0.0
-        },
-        {
-          "date": "2025-08-30",
-          "opponent": "Tottenham",
-          "homeAway": "away",
-          "score": "1-0",
-          "result": "W",
-          "spreadsByBookmaker": {
-            "backfill": 0.5
-          },
-          "netPerformanceByBookmaker": {
-            "backfill": 1.5
-          },
-          "spread": 0.5,
-          "netPerformance": 1.5,
-          "cumulativeNetPerformance": 1.5
-        },
-        {
-          "date": "2025-09-13",
-          "opponent": "Brighton",
-          "homeAway": "home",
-          "score": "2-1",
-          "result": "W",
-          "spreadsByBookmaker": {
-            "backfill": 0.0
-          },
-          "netPerformanceByBookmaker": {
-            "backfill": 1.0
-          },
-          "spread": 0.0,
-          "netPerformance": 1.0,
-          "cumulativeNetPerformance": 2.5
-        },
-        {
-          "date": "2025-09-21",
-          "opponent": "Newcastle",
-          "homeAway": "home",
-          "score": "0-0",
-          "result": "D",
-          "spreadsByBookmaker": {
-            "backfill": -0.5
-          },
-          "netPerformanceByBookmaker": {
-            "backfill": -0.5
-          },
-          "spread": -0.5,
-          "netPerformance": -0.5,
-          "cumulativeNetPerformance": 2.0
-        },
-        {
-          "date": "2025-09-27",
-          "opponent": "Leeds",
-          "homeAway": "away",
-          "score": "2-2",
-          "result": "D",
-          "spreadsByBookmaker": {
-            "backfill": -0.5
-          },
-          "netPerformanceByBookmaker": {
-            "backfill": -0.5
-          },
-          "spread": -0.5,
-          "netPerformance": -0.5,
-          "cumulativeNetPerformance": 1.5
-        },
-        {
-          "date": "2025-10-03",
-          "opponent": "Fulham",
-          "homeAway": "home",
-          "score": "3-1",
-          "result": "W",
-          "spreadsByBookmaker": {
-            "backfill": -0.5
-          },
-          "netPerformanceByBookmaker": {
-            "backfill": 1.5
-          },
-          "spread": -0.5,
-          "netPerformance": 1.5,
-          "cumulativeNetPerformance": 3.0
-        },
-        {
-          "date": "2025-10-18",
-          "opponent": "Crystal Palace",
-          "homeAway": "away",
-          "score": "3-3",
-          "result": "D",
-          "spreadsByBookmaker": {
-            "backfill": 0.5
-          },
-          "netPerformanceByBookmaker": {
-            "backfill": 0.5
-          },
-          "spread": 0.5,
-          "netPerformance": 0.5,
-          "cumulativeNetPerformance": 3.5
-        },
-        {
-          "date": "2025-10-26",
-          "opponent": "Nott'm Forest",
-          "homeAway": "home",
-          "score": "2-0",
-          "result": "W",
-          "spreadsByBookmaker": {
-            "backfill": -0.5
-          },
-          "netPerformanceByBookmaker": {
-            "backfill": 1.5
-          },
-          "spread": -0.5,
-          "netPerformance": 1.5,
-          "cumulativeNetPerformance": 5.0
-        },
-        {
-          "date": "2025-11-02",
-          "opponent": "Man City",
-          "homeAway": "away",
-          "score": "1-3",
-          "result": "L",
-          "spreadsByBookmaker": {
-            "backfill": 1.5
-          },
-          "netPerformanceByBookmaker": {
-            "backfill": -0.5
-          },
-          "spread": 1.5,
-          "netPerformance": -0.5,
-          "cumulativeNetPerformance": 4.5
-        },
-        {
-          "date": "2025-11-09",
-          "opponent": "Aston Villa",
-          "homeAway": "away",
-          "score": "0-4",
-          "result": "L",
-          "spreadsByBookmaker": {
-            "backfill": 0.5
-          },
-          "netPerformanceByBookmaker": {
-            "backfill": -3.5
-          },
-          "spread": 0.5,
-          "netPerformance": -3.5,
-          "cumulativeNetPerformance": 1.0
-        },
-        {
-          "date": "2025-11-22",
-          "opponent": "West Ham",
-          "homeAway": "home",
-          "score": "2-2",
-          "result": "D",
-          "spreadsByBookmaker": {
-            "backfill": -0.5
-          },
-          "netPerformanceByBookmaker": {
-            "backfill": -0.5
-          },
-          "spread": -0.5,
-          "netPerformance": -0.5,
-          "cumulativeNetPerformance": 0.5
-        },
-        {
-          "date": "2025-11-29",
-          "opponent": "Sunderland",
-          "homeAway": "away",
-          "score": "2-3",
-          "result": "L",
-          "spreadsByBookmaker": {
-            "backfill": -0.5
-          },
-          "netPerformanceByBookmaker": {
-            "backfill": -1.5
-          },
-          "spread": -0.5,
-          "netPerformance": -1.5,
-          "cumulativeNetPerformance": -1.0
-        },
-        {
-          "date": "2025-12-02",
-          "opponent": "Everton",
-          "homeAway": "home",
-          "score": "0-1",
-          "result": "L",
-          "spreadsByBookmaker": {
-            "backfill": -0.5
-          },
-          "netPerformanceByBookmaker": {
-            "backfill": -1.5
-          },
-          "spread": -0.5,
-          "netPerformance": -1.5,
-          "cumulativeNetPerformance": -2.5
-        },
-        {
-          "date": "2025-12-06",
-          "opponent": "Chelsea",
-          "homeAway": "home",
-          "score": "0-0",
-          "result": "D",
-          "spreadsByBookmaker": {
-            "backfill": 0.5
-          },
-          "netPerformanceByBookmaker": {
-            "backfill": 0.5
-          },
-          "spread": 0.5,
-          "netPerformance": 0.5,
-          "cumulativeNetPerformance": -2.0
-        },
-        {
-          "date": "2025-12-15",
-          "opponent": "Man United",
-          "homeAway": "away",
-          "score": "4-4",
-          "result": "D",
-          "spreadsByBookmaker": {
-            "backfill": 0.5
-          },
-          "netPerformanceByBookmaker": {
-            "backfill": 0.5
-          },
-          "spread": 0.5,
-          "netPerformance": 0.5,
-          "cumulativeNetPerformance": -1.5
-        },
-        {
-          "date": "2025-12-20",
-          "opponent": "Burnley",
-          "homeAway": "home",
-          "score": "1-1",
-          "result": "D",
-          "spreadsByBookmaker": {
-            "backfill": -1.5
-          },
-          "netPerformanceByBookmaker": {
-            "backfill": -1.5
-          },
-          "spread": -1.5,
-          "netPerformance": -1.5,
-          "cumulativeNetPerformance": -3.0
-        },
-        {
-          "date": "2025-12-27",
-          "opponent": "Brentford",
-          "homeAway": "away",
-          "score": "1-4",
-          "result": "L",
-          "spreadsByBookmaker": {
-            "backfill": 0.5
-          },
-          "netPerformanceByBookmaker": {
-            "backfill": -2.5
-          },
-          "spread": 0.5,
-          "netPerformance": -2.5,
-          "cumulativeNetPerformance": -5.5
-        },
-        {
-          "date": "2025-12-30",
-          "opponent": "Chelsea",
-          "homeAway": "away",
-          "score": "2-2",
-          "result": "D",
-          "spreadsByBookmaker": {
-            "backfill": 1.0
-          },
-          "netPerformanceByBookmaker": {
-            "backfill": 1.0
-          },
-          "spread": 1.0,
-          "netPerformance": 1.0,
-          "cumulativeNetPerformance": -4.5
-        },
-        {
-          "date": "2026-01-03",
-          "opponent": "Arsenal",
-          "homeAway": "home",
-          "score": "2-3",
-          "result": "L",
-          "spreadsByBookmaker": {
-            "backfill": 1.0
-          },
-          "netPerformanceByBookmaker": {
-            "backfill": 0.0
-          },
-          "spread": 1.0,
-          "netPerformance": 0.0,
-          "cumulativeNetPerformance": -4.5
-        },
-        {
-          "date": "2026-01-07",
-          "opponent": "Tottenham",
-          "homeAway": "home",
-          "score": "3-2",
-          "result": "W",
-          "spreadsByBookmaker": {
-            "matchbook": -0.5
-          },
-          "netPerformanceByBookmaker": {
-            "matchbook": 0.5
-          },
-          "spread": -0.5,
-          "netPerformance": 0.5,
-          "cumulativeNetPerformance": -4.0
-        },
-        {
-          "date": "2026-01-19",
-          "opponent": "Brighton",
-          "homeAway": "away",
-          "score": "1-1",
-          "result": "D",
-          "spreadsByBookmaker": {
-            "matchbook": 0.5
-          },
-          "netPerformanceByBookmaker": {
-            "matchbook": 0.5
-          },
-          "spread": 0.5,
-          "netPerformance": 0.5,
-          "cumulativeNetPerformance": -3.5
-        },
-        {
-          "date": "2026-01-24",
-          "opponent": "Liverpool",
-          "homeAway": "home",
-          "score": "3-2",
-          "result": "W",
-          "spreadsByBookmaker": {
-            "matchbook": 0.5
-          },
-          "netPerformanceByBookmaker": {
-            "matchbook": 1.5
-          },
-          "spread": 0.5,
-          "netPerformance": 1.5,
-          "cumulativeNetPerformance": -2.0
-        },
-        {
-          "date": "2026-01-31",
-          "opponent": "Wolves",
-          "homeAway": "away",
-          "score": "2-0",
-          "result": "W",
-          "spreadsByBookmaker": {
-            "matchbook": -0.5
-          },
-          "netPerformanceByBookmaker": {
-            "matchbook": 1.5
-          },
-          "spread": -0.5,
-          "netPerformance": 1.5,
-          "cumulativeNetPerformance": -0.5
-        },
-        {
-          "date": "2026-02-07",
-          "opponent": "Aston Villa",
-          "homeAway": "home",
-          "score": "1-1",
-          "result": "D",
-          "spreadsByBookmaker": {
-            "matchbook": 0.0
-          },
-          "netPerformanceByBookmaker": {
-            "matchbook": 0.0
-          },
-          "spread": 0.0,
-          "netPerformance": 0.0,
-          "cumulativeNetPerformance": -0.5
-        },
-        {
-          "date": "2026-02-10",
-          "opponent": "Everton",
-          "homeAway": "away",
-          "score": "2-1",
-          "result": "W",
-          "spreadsByBookmaker": {
-            "matchbook": 0.5,
-            "mybookieag": 0.5
-          },
-          "netPerformanceByBookmaker": {
-            "matchbook": 1.5,
-            "mybookieag": 1.5
-          },
-          "spread": 0.5,
-          "netPerformance": 1.5,
-          "cumulativeNetPerformance": 1.0
-        },
-        {
-          "date": "2026-02-21",
-          "opponent": "West Ham",
-          "homeAway": "away",
-          "score": "0-0",
-          "result": "D",
-          "spreadsByBookmaker": {
-            "mybookieag": 0.5
-          },
-          "netPerformanceByBookmaker": {
-            "mybookieag": 0.5
-          },
-          "spread": 0.5,
-          "netPerformance": 0.5,
-          "cumulativeNetPerformance": 1.5
-        },
-        {
-          "date": "2026-02-28",
-          "opponent": "Sunderland",
-          "homeAway": "home",
-          "score": "1-1",
-          "result": "D",
-          "spreadsByBookmaker": {
-            "mybookieag": -0.5
-          },
-          "netPerformanceByBookmaker": {
-            "mybookieag": -0.5
-          },
-          "spread": -0.5,
-          "netPerformance": -0.5,
-          "cumulativeNetPerformance": 1.0
-        },
-        {
-          "date": "2026-03-03",
-          "opponent": "Brentford",
-          "homeAway": "home",
-          "score": "0-0",
-          "result": "D",
-          "spreadsByBookmaker": {
-            "mybookieag": -0.5
-          },
-          "netPerformanceByBookmaker": {
-            "mybookieag": -0.5
-          },
-          "spread": -0.5,
-          "netPerformance": -0.5,
-          "cumulativeNetPerformance": 0.5
-        },
-        {
-          "date": "2026-03-14",
-          "opponent": "Burnley",
-          "homeAway": "away",
-          "score": "0-0",
-          "result": "D",
-          "spreadsByBookmaker": {
-            "mybookieag": -0.5
-          },
-          "netPerformanceByBookmaker": {
-            "mybookieag": -0.5
-          },
-          "spread": -0.5,
-          "netPerformance": -0.5,
-          "cumulativeNetPerformance": 0.0
-        },
-        {
-          "date": "2026-03-20",
-          "opponent": "Man United",
-          "homeAway": "home",
-          "score": "2-2",
-          "result": "D",
-          "spreadsByBookmaker": {
-            "mybookieag": 0.5
-          },
-          "netPerformanceByBookmaker": {
-            "mybookieag": 0.5
-          },
-          "spread": 0.5,
-          "netPerformance": 0.5,
-          "cumulativeNetPerformance": 0.5
-        },
-        {
-          "date": "2026-04-11",
-          "opponent": "Arsenal",
-          "homeAway": "away",
-          "score": "2-1",
-          "result": "W",
-          "spreadsByBookmaker": {
-            "mybookieag": 1.5
-          },
-          "netPerformanceByBookmaker": {
-            "mybookieag": 2.5
-          },
-          "spread": 1.5,
-          "netPerformance": 2.5,
-          "cumulativeNetPerformance": 3.0
-        },
-        {
-          "date": "2026-04-18",
-          "opponent": "Newcastle",
-          "homeAway": "away",
-          "score": "2-1",
-          "result": "W",
-          "spreadsByBookmaker": {
-            "mybookieag": 0.5
-          },
-          "netPerformanceByBookmaker": {
-            "mybookieag": 1.5
-          },
-          "spread": 0.5,
-          "netPerformance": 1.5,
-          "cumulativeNetPerformance": 4.5
-        },
-        {
-          "date": "2026-04-22",
-          "opponent": "Leeds",
-          "homeAway": "home",
-          "score": "2-2",
-          "result": "D",
-          "spreadsByBookmaker": {
-            "mybookieag": -0.5
-          },
-          "netPerformanceByBookmaker": {
-            "mybookieag": -0.5
-          },
-          "spread": -0.5,
-          "netPerformance": -0.5,
-          "cumulativeNetPerformance": 4.0
-        },
-        {
-          "date": "2026-05-03",
-          "opponent": "Crystal Palace",
-          "homeAway": "home",
-          "score": "3-0",
-          "result": "W",
-          "spreadsByBookmaker": {
-            "mybookieag": -0.5
-          },
-          "netPerformanceByBookmaker": {
-            "mybookieag": 2.5
-          },
-          "spread": -0.5,
-          "netPerformance": 2.5,
-          "cumulativeNetPerformance": 6.5
-        },
-        {
-          "date": "2026-05-09",
-          "opponent": "Fulham",
-          "homeAway": "away",
-          "score": "1-0",
-          "result": "W",
-          "spreadsByBookmaker": {
-            "mybookieag": -0.5
-          },
-          "netPerformanceByBookmaker": {
-            "mybookieag": 0.5
-          },
-          "spread": -0.5,
-          "netPerformance": 0.5,
-          "cumulativeNetPerformance": 7.0
-        },
-        {
-          "date": "2026-05-19",
-          "opponent": "Man City",
-          "homeAway": "home",
-          "score": "1-1",
-          "result": "D",
-          "spreadsByBookmaker": {
-            "mybookieag": 0.5
-          },
-          "netPerformanceByBookmaker": {
-            "mybookieag": 0.5
-          },
-          "spread": 0.5,
-          "netPerformance": 0.5,
-          "cumulativeNetPerformance": 7.5
-        },
-        {
-          "date": "2026-05-24",
-          "opponent": "Nott'm Forest",
-          "homeAway": "away",
-          "score": "1-1",
-          "result": "D",
-          "spreadsByBookmaker": {
-            "mybookieag": -0.5
-          },
-          "netPerformanceByBookmaker": {
-            "mybookieag": -0.5
-          },
-          "spread": -0.5,
-          "netPerformance": -0.5,
-          "cumulativeNetPerformance": 7.0
-        },
-        {
-          "date": "2026-08-23",
-          "opponent": "Man City",
-          "homeAway": "away",
-          "score": "1-2",
-          "result": "L",
-          "spreadsByBookmaker": {
-            "mybookieag": 1.0
-          },
-          "netPerformanceByBookmaker": {
-            "mybookieag": 0.0
-          },
-          "spread": 1.0,
-          "netPerformance": 0.0,
-          "cumulativeNetPerformance": 7.0
-        },
-        {
-          "date": "2026-08-29",
-          "opponent": "Everton",
-          "homeAway": "home",
-          "score": "1-1",
-          "result": "D",
-          "spreadsByBookmaker": {
-            "mybookieag": -0.5
-          },
-          "netPerformanceByBookmaker": {
-            "mybookieag": -0.5
-          },
-          "spread": -0.5,
-          "netPerformance": -0.5,
-          "cumulativeNetPerformance": 6.5
-        },
-        {
-          "date": "2026-09-05",
-          "opponent": "Newcastle",
-          "homeAway": "away",
-          "score": "2-2",
-          "result": "D",
-          "spreadsByBookmaker": {
-            "mybookieag": 0.5
-          },
-          "netPerformanceByBookmaker": {
-            "mybookieag": 0.5
-          },
-          "spread": 0.5,
-          "netPerformance": 0.5,
-          "cumulativeNetPerformance": 7.0
-        },
-        {
-          "date": "2026-09-12",
-          "opponent": "Brentford",
-          "homeAway": "home",
-          "score": "2-2",
-          "result": "D",
-          "spreadsByBookmaker": {
-            "mybookieag": 0.0
-          },
-          "netPerformanceByBookmaker": {
-            "mybookieag": 0.0
-          },
-          "spread": 0.0,
-          "netPerformance": 0.0,
-          "cumulativeNetPerformance": 7.0
-        },
-        {
-          "date": "2026-09-20",
-          "opponent": "Liverpool",
-          "homeAway": "home",
-          "score": "0-1",
-          "result": "L",
-          "spreadsByBookmaker": {
-            "mybookieag": 0.5
-          },
-          "netPerformanceByBookmaker": {
-            "mybookieag": -0.5
-          },
-          "spread": 0.5,
-          "netPerformance": -0.5,
-          "cumulativeNetPerformance": 6.5
-        },
-        {
-          "date": "2026-10-10",
-          "opponent": "Chelsea",
-          "homeAway": "away",
-          "score": "1-5",
-          "result": "L",
-          "spreadsByBookmaker": {
-            "mybookieag": 0.5
-          },
-          "netPerformanceByBookmaker": {
-            "mybookieag": -3.5
-          },
-          "spread": 0.5,
-          "netPerformance": -3.5,
-          "cumulativeNetPerformance": 3.0
-        },
-        {
-          "date": "2026-10-18",
-          "opponent": "Sunderland",
-          "homeAway": "home",
-          "score": "2-0",
-          "result": "W",
-          "spreadsByBookmaker": {
-            "mybookieag": -0.5
-          },
-          "netPerformanceByBookmaker": {
-            "mybookieag": 1.5
-          },
-          "spread": -0.5,
-          "netPerformance": 1.5,
-          "cumulativeNetPerformance": 4.5
-        }
-      ],
-      "totalNetPerformance": 4.5,
-      "totalNetPerformanceByBookmaker": {
-        "backfill": -4.5,
-        "matchbook": 5.5,
-        "mybookieag": 5.0
-      },
-      "statistics": {
-        "matchesPlayed": 45,
-        "wins": 14,
-        "losses": 10,
-        "draws": 21,
-        "covers": 23,
-        "coversByBookmaker": {
-          "backfill": 9,
-          "matchbook": 5,
-          "mybookieag": 10
-        },
-        "avgNetPerformance": 0.1,
-        "winRate": 0.311,
-        "coverRate": 0.511,
-        "coverRateByBookmaker": {
-          "backfill": 0.2,
-          "matchbook": 0.111,
-          "mybookieag": 0.222
         }
       }
     },
@@ -6169,759 +6265,6 @@
           "backfill": 0.261,
           "matchbook": 0.043,
           "mybookieag": 0.239
-        }
-      }
-    },
-    {
-      "name": "Man United",
-      "matchHistory": [
-        {
-          "date": "2025-08-17",
-          "opponent": "Arsenal",
-          "homeAway": "home",
-          "score": "0-1",
-          "result": "L",
-          "spreadsByBookmaker": {
-            "backfill": 0.5
-          },
-          "netPerformanceByBookmaker": {
-            "backfill": -0.5
-          },
-          "spread": 0.5,
-          "netPerformance": -0.5,
-          "cumulativeNetPerformance": -0.5
-        },
-        {
-          "date": "2025-08-24",
-          "opponent": "Fulham",
-          "homeAway": "away",
-          "score": "1-1",
-          "result": "D",
-          "spreadsByBookmaker": {
-            "backfill": -0.5
-          },
-          "netPerformanceByBookmaker": {
-            "backfill": -0.5
-          },
-          "spread": -0.5,
-          "netPerformance": -0.5,
-          "cumulativeNetPerformance": -1.0
-        },
-        {
-          "date": "2025-08-30",
-          "opponent": "Burnley",
-          "homeAway": "home",
-          "score": "3-2",
-          "result": "W",
-          "spreadsByBookmaker": {
-            "backfill": -1.5
-          },
-          "netPerformanceByBookmaker": {
-            "backfill": -0.5
-          },
-          "spread": -1.5,
-          "netPerformance": -0.5,
-          "cumulativeNetPerformance": -1.5
-        },
-        {
-          "date": "2025-09-14",
-          "opponent": "Man City",
-          "homeAway": "away",
-          "score": "0-3",
-          "result": "L",
-          "spreadsByBookmaker": {
-            "backfill": 1.0
-          },
-          "netPerformanceByBookmaker": {
-            "backfill": -2.0
-          },
-          "spread": 1.0,
-          "netPerformance": -2.0,
-          "cumulativeNetPerformance": -3.5
-        },
-        {
-          "date": "2025-09-20",
-          "opponent": "Chelsea",
-          "homeAway": "home",
-          "score": "2-1",
-          "result": "W",
-          "spreadsByBookmaker": {
-            "backfill": 0.0
-          },
-          "netPerformanceByBookmaker": {
-            "backfill": 1.0
-          },
-          "spread": 0.0,
-          "netPerformance": 1.0,
-          "cumulativeNetPerformance": -2.5
-        },
-        {
-          "date": "2025-09-27",
-          "opponent": "Brentford",
-          "homeAway": "away",
-          "score": "1-3",
-          "result": "L",
-          "spreadsByBookmaker": {
-            "backfill": -0.5
-          },
-          "netPerformanceByBookmaker": {
-            "backfill": -2.5
-          },
-          "spread": -0.5,
-          "netPerformance": -2.5,
-          "cumulativeNetPerformance": -5.0
-        },
-        {
-          "date": "2025-10-04",
-          "opponent": "Sunderland",
-          "homeAway": "home",
-          "score": "2-0",
-          "result": "W",
-          "spreadsByBookmaker": {
-            "backfill": -0.5
-          },
-          "netPerformanceByBookmaker": {
-            "backfill": 1.5
-          },
-          "spread": -0.5,
-          "netPerformance": 1.5,
-          "cumulativeNetPerformance": -3.5
-        },
-        {
-          "date": "2025-10-19",
-          "opponent": "Liverpool",
-          "homeAway": "away",
-          "score": "2-1",
-          "result": "W",
-          "spreadsByBookmaker": {
-            "backfill": 0.5
-          },
-          "netPerformanceByBookmaker": {
-            "backfill": 1.5
-          },
-          "spread": 0.5,
-          "netPerformance": 1.5,
-          "cumulativeNetPerformance": -2.0
-        },
-        {
-          "date": "2025-10-25",
-          "opponent": "Brighton",
-          "homeAway": "home",
-          "score": "4-2",
-          "result": "W",
-          "spreadsByBookmaker": {
-            "backfill": -0.5
-          },
-          "netPerformanceByBookmaker": {
-            "backfill": 1.5
-          },
-          "spread": -0.5,
-          "netPerformance": 1.5,
-          "cumulativeNetPerformance": -0.5
-        },
-        {
-          "date": "2025-11-01",
-          "opponent": "Nott'm Forest",
-          "homeAway": "away",
-          "score": "2-2",
-          "result": "D",
-          "spreadsByBookmaker": {
-            "backfill": -0.5
-          },
-          "netPerformanceByBookmaker": {
-            "backfill": -0.5
-          },
-          "spread": -0.5,
-          "netPerformance": -0.5,
-          "cumulativeNetPerformance": -1.0
-        },
-        {
-          "date": "2025-11-08",
-          "opponent": "Tottenham",
-          "homeAway": "away",
-          "score": "2-2",
-          "result": "D",
-          "spreadsByBookmaker": {
-            "backfill": -0.5
-          },
-          "netPerformanceByBookmaker": {
-            "backfill": -0.5
-          },
-          "spread": -0.5,
-          "netPerformance": -0.5,
-          "cumulativeNetPerformance": -1.5
-        },
-        {
-          "date": "2025-11-24",
-          "opponent": "Everton",
-          "homeAway": "home",
-          "score": "0-1",
-          "result": "L",
-          "spreadsByBookmaker": {
-            "backfill": -0.5
-          },
-          "netPerformanceByBookmaker": {
-            "backfill": -1.5
-          },
-          "spread": -0.5,
-          "netPerformance": -1.5,
-          "cumulativeNetPerformance": -3.0
-        },
-        {
-          "date": "2025-11-30",
-          "opponent": "Crystal Palace",
-          "homeAway": "away",
-          "score": "2-1",
-          "result": "W",
-          "spreadsByBookmaker": {
-            "backfill": 0.5
-          },
-          "netPerformanceByBookmaker": {
-            "backfill": 1.5
-          },
-          "spread": 0.5,
-          "netPerformance": 1.5,
-          "cumulativeNetPerformance": -1.5
-        },
-        {
-          "date": "2025-12-04",
-          "opponent": "West Ham",
-          "homeAway": "home",
-          "score": "1-1",
-          "result": "D",
-          "spreadsByBookmaker": {
-            "backfill": -1.5
-          },
-          "netPerformanceByBookmaker": {
-            "backfill": -1.5
-          },
-          "spread": -1.5,
-          "netPerformance": -1.5,
-          "cumulativeNetPerformance": -3.0
-        },
-        {
-          "date": "2025-12-08",
-          "opponent": "Wolves",
-          "homeAway": "away",
-          "score": "4-1",
-          "result": "W",
-          "spreadsByBookmaker": {
-            "backfill": -0.5
-          },
-          "netPerformanceByBookmaker": {
-            "backfill": 2.5
-          },
-          "spread": -0.5,
-          "netPerformance": 2.5,
-          "cumulativeNetPerformance": -0.5
-        },
-        {
-          "date": "2025-12-15",
-          "opponent": "Bournemouth",
-          "homeAway": "home",
-          "score": "4-4",
-          "result": "D",
-          "spreadsByBookmaker": {
-            "backfill": -0.5
-          },
-          "netPerformanceByBookmaker": {
-            "backfill": -0.5
-          },
-          "spread": -0.5,
-          "netPerformance": -0.5,
-          "cumulativeNetPerformance": -1.0
-        },
-        {
-          "date": "2025-12-21",
-          "opponent": "Aston Villa",
-          "homeAway": "away",
-          "score": "1-2",
-          "result": "L",
-          "spreadsByBookmaker": {
-            "backfill": 0.5
-          },
-          "netPerformanceByBookmaker": {
-            "backfill": -0.5
-          },
-          "spread": 0.5,
-          "netPerformance": -0.5,
-          "cumulativeNetPerformance": -1.5
-        },
-        {
-          "date": "2025-12-26",
-          "opponent": "Newcastle",
-          "homeAway": "home",
-          "score": "1-0",
-          "result": "W",
-          "spreadsByBookmaker": {
-            "backfill": 0.0
-          },
-          "netPerformanceByBookmaker": {
-            "backfill": 1.0
-          },
-          "spread": 0.0,
-          "netPerformance": 1.0,
-          "cumulativeNetPerformance": -0.5
-        },
-        {
-          "date": "2025-12-30",
-          "opponent": "Wolves",
-          "homeAway": "home",
-          "score": "1-1",
-          "result": "D",
-          "spreadsByBookmaker": {
-            "backfill": -1.5
-          },
-          "netPerformanceByBookmaker": {
-            "backfill": -1.5
-          },
-          "spread": -1.5,
-          "netPerformance": -1.5,
-          "cumulativeNetPerformance": -2.0
-        },
-        {
-          "date": "2026-01-04",
-          "opponent": "Leeds",
-          "homeAway": "away",
-          "score": "1-1",
-          "result": "D",
-          "spreadsByBookmaker": {
-            "mybookieag": 0.5
-          },
-          "netPerformanceByBookmaker": {
-            "mybookieag": 0.5
-          },
-          "spread": 0.5,
-          "netPerformance": 0.5,
-          "cumulativeNetPerformance": -1.5
-        },
-        {
-          "date": "2026-01-07",
-          "opponent": "Burnley",
-          "homeAway": "away",
-          "score": "2-2",
-          "result": "D",
-          "spreadsByBookmaker": {
-            "matchbook": -0.5
-          },
-          "netPerformanceByBookmaker": {
-            "matchbook": -0.5
-          },
-          "spread": -0.5,
-          "netPerformance": -0.5,
-          "cumulativeNetPerformance": -2.0
-        },
-        {
-          "date": "2026-01-17",
-          "opponent": "Man City",
-          "homeAway": "home",
-          "score": "2-0",
-          "result": "W",
-          "spreadsByBookmaker": {
-            "matchbook": 0.5
-          },
-          "netPerformanceByBookmaker": {
-            "matchbook": 2.5
-          },
-          "spread": 0.5,
-          "netPerformance": 2.5,
-          "cumulativeNetPerformance": 0.5
-        },
-        {
-          "date": "2026-01-25",
-          "opponent": "Arsenal",
-          "homeAway": "away",
-          "score": "3-2",
-          "result": "W",
-          "spreadsByBookmaker": {
-            "matchbook": 1.0
-          },
-          "netPerformanceByBookmaker": {
-            "matchbook": 2.0
-          },
-          "spread": 1.0,
-          "netPerformance": 2.0,
-          "cumulativeNetPerformance": 2.5
-        },
-        {
-          "date": "2026-02-01",
-          "opponent": "Fulham",
-          "homeAway": "home",
-          "score": "3-2",
-          "result": "W",
-          "spreadsByBookmaker": {
-            "matchbook": -1.0
-          },
-          "netPerformanceByBookmaker": {
-            "matchbook": 0.0
-          },
-          "spread": -1.0,
-          "netPerformance": 0.0,
-          "cumulativeNetPerformance": 2.5
-        },
-        {
-          "date": "2026-02-07",
-          "opponent": "Tottenham",
-          "homeAway": "home",
-          "score": "2-0",
-          "result": "W",
-          "spreadsByBookmaker": {
-            "matchbook": -1.0
-          },
-          "netPerformanceByBookmaker": {
-            "matchbook": 1.0
-          },
-          "spread": -1.0,
-          "netPerformance": 1.0,
-          "cumulativeNetPerformance": 3.5
-        },
-        {
-          "date": "2026-02-10",
-          "opponent": "West Ham",
-          "homeAway": "away",
-          "score": "1-1",
-          "result": "D",
-          "spreadsByBookmaker": {
-            "matchbook": -0.5,
-            "mybookieag": -0.5
-          },
-          "netPerformanceByBookmaker": {
-            "matchbook": -0.5,
-            "mybookieag": -0.5
-          },
-          "spread": -0.5,
-          "netPerformance": -0.5,
-          "cumulativeNetPerformance": 3.0
-        },
-        {
-          "date": "2026-02-23",
-          "opponent": "Everton",
-          "homeAway": "away",
-          "score": "1-0",
-          "result": "W",
-          "spreadsByBookmaker": {
-            "mybookieag": -0.5
-          },
-          "netPerformanceByBookmaker": {
-            "mybookieag": 0.5
-          },
-          "spread": -0.5,
-          "netPerformance": 0.5,
-          "cumulativeNetPerformance": 3.5
-        },
-        {
-          "date": "2026-03-01",
-          "opponent": "Crystal Palace",
-          "homeAway": "home",
-          "score": "2-1",
-          "result": "W",
-          "spreadsByBookmaker": {
-            "mybookieag": -1.5
-          },
-          "netPerformanceByBookmaker": {
-            "mybookieag": -0.5
-          },
-          "spread": -1.5,
-          "netPerformance": -0.5,
-          "cumulativeNetPerformance": 3.0
-        },
-        {
-          "date": "2026-03-04",
-          "opponent": "Newcastle",
-          "homeAway": "away",
-          "score": "1-2",
-          "result": "L",
-          "spreadsByBookmaker": {
-            "mybookieag": -0.5
-          },
-          "netPerformanceByBookmaker": {
-            "mybookieag": -1.5
-          },
-          "spread": -0.5,
-          "netPerformance": -1.5,
-          "cumulativeNetPerformance": 1.5
-        },
-        {
-          "date": "2026-03-15",
-          "opponent": "Aston Villa",
-          "homeAway": "home",
-          "score": "3-1",
-          "result": "W",
-          "spreadsByBookmaker": {
-            "mybookieag": -0.5
-          },
-          "netPerformanceByBookmaker": {
-            "mybookieag": 1.5
-          },
-          "spread": -0.5,
-          "netPerformance": 1.5,
-          "cumulativeNetPerformance": 3.0
-        },
-        {
-          "date": "2026-03-20",
-          "opponent": "Bournemouth",
-          "homeAway": "away",
-          "score": "2-2",
-          "result": "D",
-          "spreadsByBookmaker": {
-            "mybookieag": -0.5
-          },
-          "netPerformanceByBookmaker": {
-            "mybookieag": -0.5
-          },
-          "spread": -0.5,
-          "netPerformance": -0.5,
-          "cumulativeNetPerformance": 2.5
-        },
-        {
-          "date": "2026-04-13",
-          "opponent": "Leeds",
-          "homeAway": "home",
-          "score": "1-2",
-          "result": "L",
-          "spreadsByBookmaker": {
-            "mybookieag": -0.5
-          },
-          "netPerformanceByBookmaker": {
-            "mybookieag": -1.5
-          },
-          "spread": -0.5,
-          "netPerformance": -1.5,
-          "cumulativeNetPerformance": 1.0
-        },
-        {
-          "date": "2026-04-18",
-          "opponent": "Chelsea",
-          "homeAway": "away",
-          "score": "1-0",
-          "result": "W",
-          "spreadsByBookmaker": {
-            "mybookieag": 0.5
-          },
-          "netPerformanceByBookmaker": {
-            "mybookieag": 1.5
-          },
-          "spread": 0.5,
-          "netPerformance": 1.5,
-          "cumulativeNetPerformance": 2.5
-        },
-        {
-          "date": "2026-04-27",
-          "opponent": "Brentford",
-          "homeAway": "home",
-          "score": "2-1",
-          "result": "W",
-          "spreadsByBookmaker": {
-            "mybookieag": -0.5
-          },
-          "netPerformanceByBookmaker": {
-            "mybookieag": 0.5
-          },
-          "spread": -0.5,
-          "netPerformance": 0.5,
-          "cumulativeNetPerformance": 3.0
-        },
-        {
-          "date": "2026-05-03",
-          "opponent": "Liverpool",
-          "homeAway": "home",
-          "score": "3-2",
-          "result": "W",
-          "spreadsByBookmaker": {
-            "mybookieag": -0.5
-          },
-          "netPerformanceByBookmaker": {
-            "mybookieag": 0.5
-          },
-          "spread": -0.5,
-          "netPerformance": 0.5,
-          "cumulativeNetPerformance": 3.5
-        },
-        {
-          "date": "2026-05-09",
-          "opponent": "Sunderland",
-          "homeAway": "away",
-          "score": "0-0",
-          "result": "D",
-          "spreadsByBookmaker": {
-            "mybookieag": -0.5
-          },
-          "netPerformanceByBookmaker": {
-            "mybookieag": -0.5
-          },
-          "spread": -0.5,
-          "netPerformance": -0.5,
-          "cumulativeNetPerformance": 3.0
-        },
-        {
-          "date": "2026-05-17",
-          "opponent": "Nott'm Forest",
-          "homeAway": "home",
-          "score": "3-2",
-          "result": "W",
-          "spreadsByBookmaker": {
-            "mybookieag": -0.5
-          },
-          "netPerformanceByBookmaker": {
-            "mybookieag": 0.5
-          },
-          "spread": -0.5,
-          "netPerformance": 0.5,
-          "cumulativeNetPerformance": 3.5
-        },
-        {
-          "date": "2026-05-24",
-          "opponent": "Brighton",
-          "homeAway": "away",
-          "score": "3-0",
-          "result": "W",
-          "spreadsByBookmaker": {
-            "mybookieag": 0.5
-          },
-          "netPerformanceByBookmaker": {
-            "mybookieag": 3.5
-          },
-          "spread": 0.5,
-          "netPerformance": 3.5,
-          "cumulativeNetPerformance": 7.0
-        },
-        {
-          "date": "2026-08-22",
-          "opponent": "Hull City",
-          "homeAway": "away",
-          "score": "0-2",
-          "result": "L",
-          "spreadsByBookmaker": {
-            "mybookieag": -1.5
-          },
-          "netPerformanceByBookmaker": {
-            "mybookieag": -3.5
-          },
-          "spread": -1.5,
-          "netPerformance": -3.5,
-          "cumulativeNetPerformance": 3.5
-        },
-        {
-          "date": "2026-08-30",
-          "opponent": "Ipswich Town",
-          "homeAway": "home",
-          "score": "5-2",
-          "result": "W",
-          "spreadsByBookmaker": {
-            "mybookieag": -1.5
-          },
-          "netPerformanceByBookmaker": {
-            "mybookieag": 1.5
-          },
-          "spread": -1.5,
-          "netPerformance": 1.5,
-          "cumulativeNetPerformance": 5.0
-        },
-        {
-          "date": "2026-09-06",
-          "opponent": "Everton",
-          "homeAway": "away",
-          "score": "2-2",
-          "result": "D",
-          "spreadsByBookmaker": {
-            "mybookieag": -0.5
-          },
-          "netPerformanceByBookmaker": {
-            "mybookieag": -0.5
-          },
-          "spread": -0.5,
-          "netPerformance": -0.5,
-          "cumulativeNetPerformance": 4.5
-        },
-        {
-          "date": "2026-09-13",
-          "opponent": "Man City",
-          "homeAway": "home",
-          "score": "0-1",
-          "result": "L",
-          "spreadsByBookmaker": {
-            "mybookieag": 0.5
-          },
-          "netPerformanceByBookmaker": {
-            "mybookieag": -0.5
-          },
-          "spread": 0.5,
-          "netPerformance": -0.5,
-          "cumulativeNetPerformance": 4.0
-        },
-        {
-          "date": "2026-09-20",
-          "opponent": "Fulham",
-          "homeAway": "away",
-          "score": "1-1",
-          "result": "D",
-          "spreadsByBookmaker": {
-            "mybookieag": -0.5
-          },
-          "netPerformanceByBookmaker": {
-            "mybookieag": -0.5
-          },
-          "spread": -0.5,
-          "netPerformance": -0.5,
-          "cumulativeNetPerformance": 3.5
-        },
-        {
-          "date": "2026-10-10",
-          "opponent": "Tottenham",
-          "homeAway": "home",
-          "score": "1-1",
-          "result": "D",
-          "spreadsByBookmaker": {
-            "mybookieag": -0.5
-          },
-          "netPerformanceByBookmaker": {
-            "mybookieag": -0.5
-          },
-          "spread": -0.5,
-          "netPerformance": -0.5,
-          "cumulativeNetPerformance": 3.0
-        },
-        {
-          "date": "2026-10-18",
-          "opponent": "Leeds",
-          "homeAway": "away",
-          "score": "1-1",
-          "result": "D",
-          "spreadsByBookmaker": {
-            "mybookieag": 0.5
-          },
-          "netPerformanceByBookmaker": {
-            "mybookieag": 0.5
-          },
-          "spread": 0.5,
-          "netPerformance": 0.5,
-          "cumulativeNetPerformance": 3.5
-        }
-      ],
-      "totalNetPerformance": 3.5,
-      "totalNetPerformanceByBookmaker": {
-        "mybookieag": 0.5,
-        "backfill": -2.0,
-        "matchbook": 4.5
-      },
-      "statistics": {
-        "matchesPlayed": 45,
-        "wins": 21,
-        "losses": 9,
-        "draws": 15,
-        "covers": 20,
-        "coversByBookmaker": {
-          "mybookieag": 10,
-          "backfill": 7,
-          "matchbook": 3
-        },
-        "avgNetPerformance": 0.08,
-        "winRate": 0.467,
-        "coverRate": 0.444,
-        "coverRateByBookmaker": {
-          "mybookieag": 0.222,
-          "backfill": 0.156,
-          "matchbook": 0.067
         }
       }
     },
@@ -9384,6 +8727,775 @@
       }
     },
     {
+      "name": "Man United",
+      "matchHistory": [
+        {
+          "date": "2025-08-17",
+          "opponent": "Arsenal",
+          "homeAway": "home",
+          "score": "0-1",
+          "result": "L",
+          "spreadsByBookmaker": {
+            "backfill": 0.5
+          },
+          "netPerformanceByBookmaker": {
+            "backfill": -0.5
+          },
+          "spread": 0.5,
+          "netPerformance": -0.5,
+          "cumulativeNetPerformance": -0.5
+        },
+        {
+          "date": "2025-08-24",
+          "opponent": "Fulham",
+          "homeAway": "away",
+          "score": "1-1",
+          "result": "D",
+          "spreadsByBookmaker": {
+            "backfill": -0.5
+          },
+          "netPerformanceByBookmaker": {
+            "backfill": -0.5
+          },
+          "spread": -0.5,
+          "netPerformance": -0.5,
+          "cumulativeNetPerformance": -1.0
+        },
+        {
+          "date": "2025-08-30",
+          "opponent": "Burnley",
+          "homeAway": "home",
+          "score": "3-2",
+          "result": "W",
+          "spreadsByBookmaker": {
+            "backfill": -1.5
+          },
+          "netPerformanceByBookmaker": {
+            "backfill": -0.5
+          },
+          "spread": -1.5,
+          "netPerformance": -0.5,
+          "cumulativeNetPerformance": -1.5
+        },
+        {
+          "date": "2025-09-14",
+          "opponent": "Man City",
+          "homeAway": "away",
+          "score": "0-3",
+          "result": "L",
+          "spreadsByBookmaker": {
+            "backfill": 1.0
+          },
+          "netPerformanceByBookmaker": {
+            "backfill": -2.0
+          },
+          "spread": 1.0,
+          "netPerformance": -2.0,
+          "cumulativeNetPerformance": -3.5
+        },
+        {
+          "date": "2025-09-20",
+          "opponent": "Chelsea",
+          "homeAway": "home",
+          "score": "2-1",
+          "result": "W",
+          "spreadsByBookmaker": {
+            "backfill": 0.0
+          },
+          "netPerformanceByBookmaker": {
+            "backfill": 1.0
+          },
+          "spread": 0.0,
+          "netPerformance": 1.0,
+          "cumulativeNetPerformance": -2.5
+        },
+        {
+          "date": "2025-09-27",
+          "opponent": "Brentford",
+          "homeAway": "away",
+          "score": "1-3",
+          "result": "L",
+          "spreadsByBookmaker": {
+            "backfill": -0.5
+          },
+          "netPerformanceByBookmaker": {
+            "backfill": -2.5
+          },
+          "spread": -0.5,
+          "netPerformance": -2.5,
+          "cumulativeNetPerformance": -5.0
+        },
+        {
+          "date": "2025-10-04",
+          "opponent": "Sunderland",
+          "homeAway": "home",
+          "score": "2-0",
+          "result": "W",
+          "spreadsByBookmaker": {
+            "backfill": -0.5
+          },
+          "netPerformanceByBookmaker": {
+            "backfill": 1.5
+          },
+          "spread": -0.5,
+          "netPerformance": 1.5,
+          "cumulativeNetPerformance": -3.5
+        },
+        {
+          "date": "2025-10-19",
+          "opponent": "Liverpool",
+          "homeAway": "away",
+          "score": "2-1",
+          "result": "W",
+          "spreadsByBookmaker": {
+            "backfill": 0.5
+          },
+          "netPerformanceByBookmaker": {
+            "backfill": 1.5
+          },
+          "spread": 0.5,
+          "netPerformance": 1.5,
+          "cumulativeNetPerformance": -2.0
+        },
+        {
+          "date": "2025-10-25",
+          "opponent": "Brighton",
+          "homeAway": "home",
+          "score": "4-2",
+          "result": "W",
+          "spreadsByBookmaker": {
+            "backfill": -0.5
+          },
+          "netPerformanceByBookmaker": {
+            "backfill": 1.5
+          },
+          "spread": -0.5,
+          "netPerformance": 1.5,
+          "cumulativeNetPerformance": -0.5
+        },
+        {
+          "date": "2025-11-01",
+          "opponent": "Nott'm Forest",
+          "homeAway": "away",
+          "score": "2-2",
+          "result": "D",
+          "spreadsByBookmaker": {
+            "backfill": -0.5
+          },
+          "netPerformanceByBookmaker": {
+            "backfill": -0.5
+          },
+          "spread": -0.5,
+          "netPerformance": -0.5,
+          "cumulativeNetPerformance": -1.0
+        },
+        {
+          "date": "2025-11-08",
+          "opponent": "Tottenham",
+          "homeAway": "away",
+          "score": "2-2",
+          "result": "D",
+          "spreadsByBookmaker": {
+            "backfill": -0.5
+          },
+          "netPerformanceByBookmaker": {
+            "backfill": -0.5
+          },
+          "spread": -0.5,
+          "netPerformance": -0.5,
+          "cumulativeNetPerformance": -1.5
+        },
+        {
+          "date": "2025-11-24",
+          "opponent": "Everton",
+          "homeAway": "home",
+          "score": "0-1",
+          "result": "L",
+          "spreadsByBookmaker": {
+            "backfill": -0.5
+          },
+          "netPerformanceByBookmaker": {
+            "backfill": -1.5
+          },
+          "spread": -0.5,
+          "netPerformance": -1.5,
+          "cumulativeNetPerformance": -3.0
+        },
+        {
+          "date": "2025-11-30",
+          "opponent": "Crystal Palace",
+          "homeAway": "away",
+          "score": "2-1",
+          "result": "W",
+          "spreadsByBookmaker": {
+            "backfill": 0.5
+          },
+          "netPerformanceByBookmaker": {
+            "backfill": 1.5
+          },
+          "spread": 0.5,
+          "netPerformance": 1.5,
+          "cumulativeNetPerformance": -1.5
+        },
+        {
+          "date": "2025-12-04",
+          "opponent": "West Ham",
+          "homeAway": "home",
+          "score": "1-1",
+          "result": "D",
+          "spreadsByBookmaker": {
+            "backfill": -1.5
+          },
+          "netPerformanceByBookmaker": {
+            "backfill": -1.5
+          },
+          "spread": -1.5,
+          "netPerformance": -1.5,
+          "cumulativeNetPerformance": -3.0
+        },
+        {
+          "date": "2025-12-08",
+          "opponent": "Wolves",
+          "homeAway": "away",
+          "score": "4-1",
+          "result": "W",
+          "spreadsByBookmaker": {
+            "backfill": -0.5
+          },
+          "netPerformanceByBookmaker": {
+            "backfill": 2.5
+          },
+          "spread": -0.5,
+          "netPerformance": 2.5,
+          "cumulativeNetPerformance": -0.5
+        },
+        {
+          "date": "2025-12-15",
+          "opponent": "Bournemouth",
+          "homeAway": "home",
+          "score": "4-4",
+          "result": "D",
+          "spreadsByBookmaker": {
+            "backfill": -0.5
+          },
+          "netPerformanceByBookmaker": {
+            "backfill": -0.5
+          },
+          "spread": -0.5,
+          "netPerformance": -0.5,
+          "cumulativeNetPerformance": -1.0
+        },
+        {
+          "date": "2025-12-21",
+          "opponent": "Aston Villa",
+          "homeAway": "away",
+          "score": "1-2",
+          "result": "L",
+          "spreadsByBookmaker": {
+            "backfill": 0.5
+          },
+          "netPerformanceByBookmaker": {
+            "backfill": -0.5
+          },
+          "spread": 0.5,
+          "netPerformance": -0.5,
+          "cumulativeNetPerformance": -1.5
+        },
+        {
+          "date": "2025-12-26",
+          "opponent": "Newcastle",
+          "homeAway": "home",
+          "score": "1-0",
+          "result": "W",
+          "spreadsByBookmaker": {
+            "backfill": 0.0
+          },
+          "netPerformanceByBookmaker": {
+            "backfill": 1.0
+          },
+          "spread": 0.0,
+          "netPerformance": 1.0,
+          "cumulativeNetPerformance": -0.5
+        },
+        {
+          "date": "2025-12-30",
+          "opponent": "Wolves",
+          "homeAway": "home",
+          "score": "1-1",
+          "result": "D",
+          "spreadsByBookmaker": {
+            "backfill": -1.5
+          },
+          "netPerformanceByBookmaker": {
+            "backfill": -1.5
+          },
+          "spread": -1.5,
+          "netPerformance": -1.5,
+          "cumulativeNetPerformance": -2.0
+        },
+        {
+          "date": "2026-01-04",
+          "opponent": "Leeds",
+          "homeAway": "away",
+          "score": "1-1",
+          "result": "D",
+          "spreadsByBookmaker": {
+            "mybookieag": 0.5
+          },
+          "netPerformanceByBookmaker": {
+            "mybookieag": 0.5
+          },
+          "spread": 0.5,
+          "netPerformance": 0.5,
+          "cumulativeNetPerformance": -1.5
+        },
+        {
+          "date": "2026-01-07",
+          "opponent": "Burnley",
+          "homeAway": "away",
+          "score": "2-2",
+          "result": "D",
+          "spreadsByBookmaker": {
+            "matchbook": -0.5
+          },
+          "netPerformanceByBookmaker": {
+            "matchbook": -0.5
+          },
+          "spread": -0.5,
+          "netPerformance": -0.5,
+          "cumulativeNetPerformance": -2.0
+        },
+        {
+          "date": "2026-01-17",
+          "opponent": "Man City",
+          "homeAway": "home",
+          "score": "2-0",
+          "result": "W",
+          "spreadsByBookmaker": {
+            "matchbook": 0.5
+          },
+          "netPerformanceByBookmaker": {
+            "matchbook": 2.5
+          },
+          "spread": 0.5,
+          "netPerformance": 2.5,
+          "cumulativeNetPerformance": 0.5
+        },
+        {
+          "date": "2026-01-25",
+          "opponent": "Arsenal",
+          "homeAway": "away",
+          "score": "3-2",
+          "result": "W",
+          "spreadsByBookmaker": {
+            "matchbook": 1.0
+          },
+          "netPerformanceByBookmaker": {
+            "matchbook": 2.0
+          },
+          "spread": 1.0,
+          "netPerformance": 2.0,
+          "cumulativeNetPerformance": 2.5
+        },
+        {
+          "date": "2026-02-01",
+          "opponent": "Fulham",
+          "homeAway": "home",
+          "score": "3-2",
+          "result": "W",
+          "spreadsByBookmaker": {
+            "matchbook": -1.0
+          },
+          "netPerformanceByBookmaker": {
+            "matchbook": 0.0
+          },
+          "spread": -1.0,
+          "netPerformance": 0.0,
+          "cumulativeNetPerformance": 2.5
+        },
+        {
+          "date": "2026-02-07",
+          "opponent": "Tottenham",
+          "homeAway": "home",
+          "score": "2-0",
+          "result": "W",
+          "spreadsByBookmaker": {
+            "matchbook": -1.0
+          },
+          "netPerformanceByBookmaker": {
+            "matchbook": 1.0
+          },
+          "spread": -1.0,
+          "netPerformance": 1.0,
+          "cumulativeNetPerformance": 3.5
+        },
+        {
+          "date": "2026-02-10",
+          "opponent": "West Ham",
+          "homeAway": "away",
+          "score": "1-1",
+          "result": "D",
+          "spreadsByBookmaker": {
+            "matchbook": -0.5,
+            "mybookieag": -0.5
+          },
+          "netPerformanceByBookmaker": {
+            "matchbook": -0.5,
+            "mybookieag": -0.5
+          },
+          "spread": -0.5,
+          "netPerformance": -0.5,
+          "cumulativeNetPerformance": 3.0
+        },
+        {
+          "date": "2026-02-23",
+          "opponent": "Everton",
+          "homeAway": "away",
+          "score": "1-0",
+          "result": "W",
+          "spreadsByBookmaker": {
+            "mybookieag": -0.5
+          },
+          "netPerformanceByBookmaker": {
+            "mybookieag": 0.5
+          },
+          "spread": -0.5,
+          "netPerformance": 0.5,
+          "cumulativeNetPerformance": 3.5
+        },
+        {
+          "date": "2026-03-01",
+          "opponent": "Crystal Palace",
+          "homeAway": "home",
+          "score": "2-1",
+          "result": "W",
+          "spreadsByBookmaker": {
+            "mybookieag": -1.5
+          },
+          "netPerformanceByBookmaker": {
+            "mybookieag": -0.5
+          },
+          "spread": -1.5,
+          "netPerformance": -0.5,
+          "cumulativeNetPerformance": 3.0
+        },
+        {
+          "date": "2026-03-04",
+          "opponent": "Newcastle",
+          "homeAway": "away",
+          "score": "1-2",
+          "result": "L",
+          "spreadsByBookmaker": {
+            "mybookieag": -0.5
+          },
+          "netPerformanceByBookmaker": {
+            "mybookieag": -1.5
+          },
+          "spread": -0.5,
+          "netPerformance": -1.5,
+          "cumulativeNetPerformance": 1.5
+        },
+        {
+          "date": "2026-03-15",
+          "opponent": "Aston Villa",
+          "homeAway": "home",
+          "score": "3-1",
+          "result": "W",
+          "spreadsByBookmaker": {
+            "mybookieag": -0.5
+          },
+          "netPerformanceByBookmaker": {
+            "mybookieag": 1.5
+          },
+          "spread": -0.5,
+          "netPerformance": 1.5,
+          "cumulativeNetPerformance": 3.0
+        },
+        {
+          "date": "2026-03-20",
+          "opponent": "Bournemouth",
+          "homeAway": "away",
+          "score": "2-2",
+          "result": "D",
+          "spreadsByBookmaker": {
+            "mybookieag": -0.5
+          },
+          "netPerformanceByBookmaker": {
+            "mybookieag": -0.5
+          },
+          "spread": -0.5,
+          "netPerformance": -0.5,
+          "cumulativeNetPerformance": 2.5
+        },
+        {
+          "date": "2026-04-13",
+          "opponent": "Leeds",
+          "homeAway": "home",
+          "score": "1-2",
+          "result": "L",
+          "spreadsByBookmaker": {
+            "mybookieag": -0.5
+          },
+          "netPerformanceByBookmaker": {
+            "mybookieag": -1.5
+          },
+          "spread": -0.5,
+          "netPerformance": -1.5,
+          "cumulativeNetPerformance": 1.0
+        },
+        {
+          "date": "2026-04-18",
+          "opponent": "Chelsea",
+          "homeAway": "away",
+          "score": "1-0",
+          "result": "W",
+          "spreadsByBookmaker": {
+            "mybookieag": 0.5
+          },
+          "netPerformanceByBookmaker": {
+            "mybookieag": 1.5
+          },
+          "spread": 0.5,
+          "netPerformance": 1.5,
+          "cumulativeNetPerformance": 2.5
+        },
+        {
+          "date": "2026-04-27",
+          "opponent": "Brentford",
+          "homeAway": "home",
+          "score": "2-1",
+          "result": "W",
+          "spreadsByBookmaker": {
+            "mybookieag": -0.5
+          },
+          "netPerformanceByBookmaker": {
+            "mybookieag": 0.5
+          },
+          "spread": -0.5,
+          "netPerformance": 0.5,
+          "cumulativeNetPerformance": 3.0
+        },
+        {
+          "date": "2026-05-03",
+          "opponent": "Liverpool",
+          "homeAway": "home",
+          "score": "3-2",
+          "result": "W",
+          "spreadsByBookmaker": {
+            "mybookieag": -0.5
+          },
+          "netPerformanceByBookmaker": {
+            "mybookieag": 0.5
+          },
+          "spread": -0.5,
+          "netPerformance": 0.5,
+          "cumulativeNetPerformance": 3.5
+        },
+        {
+          "date": "2026-05-09",
+          "opponent": "Sunderland",
+          "homeAway": "away",
+          "score": "0-0",
+          "result": "D",
+          "spreadsByBookmaker": {
+            "mybookieag": -0.5
+          },
+          "netPerformanceByBookmaker": {
+            "mybookieag": -0.5
+          },
+          "spread": -0.5,
+          "netPerformance": -0.5,
+          "cumulativeNetPerformance": 3.0
+        },
+        {
+          "date": "2026-05-17",
+          "opponent": "Nott'm Forest",
+          "homeAway": "home",
+          "score": "3-2",
+          "result": "W",
+          "spreadsByBookmaker": {
+            "mybookieag": -0.5
+          },
+          "netPerformanceByBookmaker": {
+            "mybookieag": 0.5
+          },
+          "spread": -0.5,
+          "netPerformance": 0.5,
+          "cumulativeNetPerformance": 3.5
+        },
+        {
+          "date": "2026-05-24",
+          "opponent": "Brighton",
+          "homeAway": "away",
+          "score": "3-0",
+          "result": "W",
+          "spreadsByBookmaker": {
+            "mybookieag": 0.5
+          },
+          "netPerformanceByBookmaker": {
+            "mybookieag": 3.5
+          },
+          "spread": 0.5,
+          "netPerformance": 3.5,
+          "cumulativeNetPerformance": 7.0
+        },
+        {
+          "date": "2026-08-22",
+          "opponent": "Hull City",
+          "homeAway": "away",
+          "score": "0-2",
+          "result": "L",
+          "spreadsByBookmaker": {
+            "mybookieag": -1.5
+          },
+          "netPerformanceByBookmaker": {
+            "mybookieag": -3.5
+          },
+          "spread": -1.5,
+          "netPerformance": -3.5,
+          "cumulativeNetPerformance": 3.5
+        },
+        {
+          "date": "2026-08-30",
+          "opponent": "Ipswich Town",
+          "homeAway": "home",
+          "score": "5-2",
+          "result": "W",
+          "spreadsByBookmaker": {
+            "mybookieag": -1.5
+          },
+          "netPerformanceByBookmaker": {
+            "mybookieag": 1.5
+          },
+          "spread": -1.5,
+          "netPerformance": 1.5,
+          "cumulativeNetPerformance": 5.0
+        },
+        {
+          "date": "2026-09-06",
+          "opponent": "Everton",
+          "homeAway": "away",
+          "score": "2-2",
+          "result": "D",
+          "spreadsByBookmaker": {
+            "mybookieag": -0.5
+          },
+          "netPerformanceByBookmaker": {
+            "mybookieag": -0.5
+          },
+          "spread": -0.5,
+          "netPerformance": -0.5,
+          "cumulativeNetPerformance": 4.5
+        },
+        {
+          "date": "2026-09-13",
+          "opponent": "Man City",
+          "homeAway": "home",
+          "score": "0-1",
+          "result": "L",
+          "spreadsByBookmaker": {
+            "mybookieag": 0.5
+          },
+          "netPerformanceByBookmaker": {
+            "mybookieag": -0.5
+          },
+          "spread": 0.5,
+          "netPerformance": -0.5,
+          "cumulativeNetPerformance": 4.0
+        },
+        {
+          "date": "2026-09-20",
+          "opponent": "Fulham",
+          "homeAway": "away",
+          "score": "1-1",
+          "result": "D",
+          "spreadsByBookmaker": {
+            "mybookieag": -0.5
+          },
+          "netPerformanceByBookmaker": {
+            "mybookieag": -0.5
+          },
+          "spread": -0.5,
+          "netPerformance": -0.5,
+          "cumulativeNetPerformance": 3.5
+        },
+        {
+          "date": "2026-10-10",
+          "opponent": "Tottenham",
+          "homeAway": "home",
+          "score": "1-1",
+          "result": "D",
+          "spreadsByBookmaker": {
+            "mybookieag": -0.5
+          },
+          "netPerformanceByBookmaker": {
+            "mybookieag": -0.5
+          },
+          "spread": -0.5,
+          "netPerformance": -0.5,
+          "cumulativeNetPerformance": 3.0
+        },
+        {
+          "date": "2026-10-18",
+          "opponent": "Leeds",
+          "homeAway": "away",
+          "score": "1-1",
+          "result": "D",
+          "spreadsByBookmaker": {
+            "mybookieag": 0.5
+          },
+          "netPerformanceByBookmaker": {
+            "mybookieag": 0.5
+          },
+          "spread": 0.5,
+          "netPerformance": 0.5,
+          "cumulativeNetPerformance": 3.5
+        },
+        {
+          "date": "2026-10-25",
+          "opponent": "Bournemouth",
+          "homeAway": "home",
+          "score": "0-3",
+          "result": "L",
+          "spreadsByBookmaker": {
+            "mybookieag": -0.5
+          },
+          "netPerformanceByBookmaker": {
+            "mybookieag": -3.5
+          },
+          "spread": -0.5,
+          "netPerformance": -3.5,
+          "cumulativeNetPerformance": 0.0
+        }
+      ],
+      "totalNetPerformance": 0.0,
+      "totalNetPerformanceByBookmaker": {
+        "mybookieag": -3.0,
+        "backfill": -2.0,
+        "matchbook": 4.5
+      },
+      "statistics": {
+        "matchesPlayed": 46,
+        "wins": 21,
+        "losses": 10,
+        "draws": 15,
+        "covers": 20,
+        "coversByBookmaker": {
+          "mybookieag": 10,
+          "backfill": 7,
+          "matchbook": 3
+        },
+        "avgNetPerformance": 0.0,
+        "winRate": 0.457,
+        "coverRate": 0.435,
+        "coverRateByBookmaker": {
+          "mybookieag": 0.217,
+          "backfill": 0.152,
+          "matchbook": 0.065
+        }
+      }
+    },
+    {
       "name": "Coventry City",
       "matchHistory": [
         {
@@ -11544,18 +11656,34 @@
           "spread": 1.5,
           "netPerformance": -3.5,
           "cumulativeNetPerformance": -8.0
+        },
+        {
+          "date": "2026-10-25",
+          "opponent": "Newcastle",
+          "homeAway": "home",
+          "score": "0-2",
+          "result": "L",
+          "spreadsByBookmaker": {
+            "mybookieag": 0.5
+          },
+          "netPerformanceByBookmaker": {
+            "mybookieag": -1.5
+          },
+          "spread": 0.5,
+          "netPerformance": -1.5,
+          "cumulativeNetPerformance": -9.5
         }
       ],
-      "totalNetPerformance": -8.0,
+      "totalNetPerformance": -9.5,
       "totalNetPerformanceByBookmaker": {
         "backfill": -2.5,
         "matchbook": -1.0,
-        "mybookieag": -4.5
+        "mybookieag": -6.0
       },
       "statistics": {
-        "matchesPlayed": 45,
+        "matchesPlayed": 46,
         "wins": 13,
-        "losses": 19,
+        "losses": 20,
         "draws": 13,
         "covers": 21,
         "coversByBookmaker": {
@@ -11563,13 +11691,13 @@
           "matchbook": 3,
           "mybookieag": 10
         },
-        "avgNetPerformance": -0.18,
-        "winRate": 0.289,
-        "coverRate": 0.467,
+        "avgNetPerformance": -0.21,
+        "winRate": 0.283,
+        "coverRate": 0.457,
         "coverRateByBookmaker": {
-          "backfill": 0.2,
-          "matchbook": 0.067,
-          "mybookieag": 0.222
+          "backfill": 0.196,
+          "matchbook": 0.065,
+          "mybookieag": 0.217
         }
       }
     },
@@ -14458,32 +14586,48 @@
           "spread": -0.5,
           "netPerformance": -1.5,
           "cumulativeNetPerformance": -16.25
+        },
+        {
+          "date": "2026-10-25",
+          "opponent": "Crystal Palace",
+          "homeAway": "away",
+          "score": "2-0",
+          "result": "W",
+          "spreadsByBookmaker": {
+            "mybookieag": -0.5
+          },
+          "netPerformanceByBookmaker": {
+            "mybookieag": 1.5
+          },
+          "spread": -0.5,
+          "netPerformance": 1.5,
+          "cumulativeNetPerformance": -14.75
         }
       ],
-      "totalNetPerformance": -16.25,
+      "totalNetPerformance": -14.75,
       "totalNetPerformanceByBookmaker": {
         "backfill": -3.0,
         "matchbook": -6.0,
-        "mybookieag": -6.5
+        "mybookieag": -5.0
       },
       "statistics": {
-        "matchesPlayed": 44,
-        "wins": 15,
+        "matchesPlayed": 45,
+        "wins": 16,
         "losses": 20,
         "draws": 9,
-        "covers": 17,
+        "covers": 18,
         "coversByBookmaker": {
           "backfill": 7,
           "matchbook": 1,
-          "mybookieag": 10
+          "mybookieag": 11
         },
-        "avgNetPerformance": -0.37,
-        "winRate": 0.341,
-        "coverRate": 0.386,
+        "avgNetPerformance": -0.33,
+        "winRate": 0.356,
+        "coverRate": 0.4,
         "coverRateByBookmaker": {
-          "backfill": 0.159,
-          "matchbook": 0.023,
-          "mybookieag": 0.227
+          "backfill": 0.156,
+          "matchbook": 0.022,
+          "mybookieag": 0.244
         }
       }
     },
@@ -15195,32 +15339,48 @@
           "spread": 0.5,
           "netPerformance": 1.5,
           "cumulativeNetPerformance": -20.0
+        },
+        {
+          "date": "2026-10-25",
+          "opponent": "Brighton",
+          "homeAway": "home",
+          "score": "2-0",
+          "result": "W",
+          "spreadsByBookmaker": {
+            "mybookieag": -0.5
+          },
+          "netPerformanceByBookmaker": {
+            "mybookieag": 1.5
+          },
+          "spread": -0.5,
+          "netPerformance": 1.5,
+          "cumulativeNetPerformance": -18.5
         }
       ],
-      "totalNetPerformance": -20.0,
+      "totalNetPerformance": -18.5,
       "totalNetPerformanceByBookmaker": {
         "backfill": -12.0,
         "matchbook": -2.0,
-        "mybookieag": -7.5
+        "mybookieag": -6.0
       },
       "statistics": {
-        "matchesPlayed": 44,
-        "wins": 20,
+        "matchesPlayed": 45,
+        "wins": 21,
         "losses": 13,
         "draws": 11,
-        "covers": 17,
+        "covers": 18,
         "coversByBookmaker": {
           "backfill": 7,
           "matchbook": 1,
-          "mybookieag": 9
+          "mybookieag": 10
         },
-        "avgNetPerformance": -0.45,
-        "winRate": 0.455,
-        "coverRate": 0.386,
+        "avgNetPerformance": -0.41,
+        "winRate": 0.467,
+        "coverRate": 0.4,
         "coverRateByBookmaker": {
-          "backfill": 0.159,
-          "matchbook": 0.023,
-          "mybookieag": 0.205
+          "backfill": 0.156,
+          "matchbook": 0.022,
+          "mybookieag": 0.222
         }
       }
     }
@@ -15230,7 +15390,7 @@
     "matchbook",
     "mybookieag"
   ],
-  "correlation": 0.377,
-  "totalMatches": 455,
+  "correlation": 0.376,
+  "totalMatches": 460,
   "teamsTracked": 23
 }

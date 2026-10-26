@@ -1,33 +1,6 @@
 {
-  "lastUpdated": "2026-10-25T15:47:00.132875Z",
+  "lastUpdated": "2026-10-26T00:50:02.971959Z",
   "upcomingMatches": [
-    {
-      "id": "e82f6b60fa41b82c8510f5b67ce61849",
-      "commenceTime": "2026-10-25T16:30:00Z",
-      "homeTeam": "Sunderland",
-      "awayTeam": "Leeds",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 3.05,
-        "draw": 3.15,
-        "away": 2.45,
-        "impliedProbHome": 0.328,
-        "impliedProbDraw": 0.317,
-        "impliedProbAway": 0.408
-      },
-      "spread": {
-        "homePoint": 0.5,
-        "awayPoint": -0.5,
-        "byBookmaker": {
-          "mybookieag": 0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
     {
       "id": "6601f69175a02f03fb7065aacb538e01",
       "commenceTime": "2026-10-31T12:30:00Z",
@@ -195,10 +168,10 @@
         "impliedProbAway": 0.208
       },
       "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
+        "homePoint": -1.5,
+        "awayPoint": 1.5,
         "byBookmaker": {
-          "mybookieag": -0.5
+          "mybookieag": -1.5
         }
       },
       "kalshiOdds": {
@@ -294,5 +267,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 11
+  "totalMatches": 10
 }
