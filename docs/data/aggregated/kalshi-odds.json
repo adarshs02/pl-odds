@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-25T15:46:49Z",
+  "lastUpdated": "2026-10-26T18:27:12Z",
   "winnerFutures": [
     {
       "team": "Tottenham",
@@ -112,42 +112,6 @@
   ],
   "top4Futures": [],
   "matchOutcomes": [
-    {
-      "homeTeam": "Crystal Palace",
-      "awayTeam": "Newcastle",
-      "commenceTime": "2026-10-27T14:00:00Z",
-      "homeWinProb": 0.0,
-      "drawProb": 0.0,
-      "awayWinProb": 0.0,
-      "totalVolume": 0
-    },
-    {
-      "homeTeam": "Liverpool",
-      "awayTeam": "Brighton",
-      "commenceTime": "2026-10-27T14:00:00Z",
-      "homeWinProb": 0.0,
-      "drawProb": 0.0,
-      "awayWinProb": 0.0,
-      "totalVolume": 0
-    },
-    {
-      "homeTeam": "Man United",
-      "awayTeam": "Bournemouth",
-      "commenceTime": "2026-10-27T14:00:00Z",
-      "homeWinProb": 0.0,
-      "drawProb": 0.0,
-      "awayWinProb": 0.0,
-      "totalVolume": 0
-    },
-    {
-      "homeTeam": "Sunderland",
-      "awayTeam": "Leeds",
-      "commenceTime": "2026-10-27T16:30:00Z",
-      "homeWinProb": 0.0,
-      "drawProb": 0.0,
-      "awayWinProb": 0.0,
-      "totalVolume": 0
-    },
     {
       "homeTeam": "Chelsea",
       "awayTeam": "Man United",
