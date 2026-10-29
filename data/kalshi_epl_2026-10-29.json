@@ -1,0 +1,260 @@
+{
+  "fetchedAt": "2026-10-29T18:12:32Z",
+  "winnerFutures": [
+    {
+      "team": "Tottenham",
+      "probability": 0.0,
+      "volume": 0,
+      "liquidity": 0
+    },
+    {
+      "team": "Sunderland",
+      "probability": 0.0,
+      "volume": 0,
+      "liquidity": 0
+    },
+    {
+      "team": "Nott'm Forest",
+      "probability": 0.0,
+      "volume": 0,
+      "liquidity": 0
+    },
+    {
+      "team": "Newcastle",
+      "probability": 0.0,
+      "volume": 0,
+      "liquidity": 0
+    },
+    {
+      "team": "Man United",
+      "probability": 0.0,
+      "volume": 0,
+      "liquidity": 0
+    },
+    {
+      "team": "Man City",
+      "probability": 0.0,
+      "volume": 0,
+      "liquidity": 0
+    },
+    {
+      "team": "Liverpool",
+      "probability": 0.0,
+      "volume": 0,
+      "liquidity": 0
+    },
+    {
+      "team": "Leeds",
+      "probability": 0.0,
+      "volume": 0,
+      "liquidity": 0
+    },
+    {
+      "team": "Ipswich Town",
+      "probability": 0.0,
+      "volume": 0,
+      "liquidity": 0
+    },
+    {
+      "team": "Fulham",
+      "probability": 0.0,
+      "volume": 0,
+      "liquidity": 0
+    },
+    {
+      "team": "Everton",
+      "probability": 0.0,
+      "volume": 0,
+      "liquidity": 0
+    },
+    {
+      "team": "Crystal Palace",
+      "probability": 0.0,
+      "volume": 0,
+      "liquidity": 0
+    },
+    {
+      "team": "Chelsea",
+      "probability": 0.0,
+      "volume": 0,
+      "liquidity": 0
+    },
+    {
+      "team": "Brighton",
+      "probability": 0.0,
+      "volume": 0,
+      "liquidity": 0
+    },
+    {
+      "team": "Brentford",
+      "probability": 0.0,
+      "volume": 0,
+      "liquidity": 0
+    },
+    {
+      "team": "Bournemouth",
+      "probability": 0.0,
+      "volume": 0,
+      "liquidity": 0
+    },
+    {
+      "team": "Aston Villa",
+      "probability": 0.0,
+      "volume": 0,
+      "liquidity": 0
+    },
+    {
+      "team": "Arsenal",
+      "probability": 0.0,
+      "volume": 0,
+      "liquidity": 0
+    }
+  ],
+  "top4Futures": [],
+  "matchOutcomes": [
+    {
+      "homeTeam": "Chelsea",
+      "awayTeam": "Man United",
+      "commenceTime": "2026-11-02T12:30:00Z",
+      "homeWinProb": 0.0,
+      "drawProb": 0.0,
+      "awayWinProb": 0.0,
+      "totalVolume": 0
+    },
+    {
+      "homeTeam": "Bournemouth",
+      "awayTeam": "Leeds",
+      "commenceTime": "2026-11-02T15:00:00Z",
+      "homeWinProb": 0.0,
+      "drawProb": 0.0,
+      "awayWinProb": 0.0,
+      "totalVolume": 0
+    },
+    {
+      "homeTeam": "Brentford",
+      "awayTeam": "Nott'm Forest",
+      "commenceTime": "2026-11-02T15:00:00Z",
+      "homeWinProb": 0.0,
+      "drawProb": 0.0,
+      "awayWinProb": 0.0,
+      "totalVolume": 0
+    },
+    {
+      "homeTeam": "Man City",
+      "awayTeam": "Brighton",
+      "commenceTime": "2026-11-02T15:00:00Z",
+      "homeWinProb": 0.0,
+      "drawProb": 0.0,
+      "awayWinProb": 0.0,
+      "totalVolume": 0
+    },
+    {
+      "homeTeam": "Tottenham",
+      "awayTeam": "Crystal Palace",
+      "commenceTime": "2026-11-02T17:30:00Z",
+      "homeWinProb": 0.0,
+      "drawProb": 0.0,
+      "awayWinProb": 0.0,
+      "totalVolume": 0
+    },
+    {
+      "homeTeam": "Aston Villa",
+      "awayTeam": "Fulham",
+      "commenceTime": "2026-11-02T20:00:00Z",
+      "homeWinProb": 0.0,
+      "drawProb": 0.0,
+      "awayWinProb": 0.0,
+      "totalVolume": 0
+    },
+    {
+      "homeTeam": "Liverpool",
+      "awayTeam": "Arsenal",
+      "commenceTime": "2026-11-03T16:30:00Z",
+      "homeWinProb": 0.0,
+      "drawProb": 0.0,
+      "awayWinProb": 0.0,
+      "totalVolume": 0
+    },
+    {
+      "homeTeam": "Newcastle",
+      "awayTeam": "Everton",
+      "commenceTime": "2026-11-04T20:00:00Z",
+      "homeWinProb": 0.0,
+      "drawProb": 0.0,
+      "awayWinProb": 0.0,
+      "totalVolume": 0
+    },
+    {
+      "homeTeam": "Leeds",
+      "awayTeam": "Tottenham",
+      "commenceTime": "2026-11-09T12:30:00Z",
+      "homeWinProb": 0.0,
+      "drawProb": 0.0,
+      "awayWinProb": 0.0,
+      "totalVolume": 0
+    },
+    {
+      "homeTeam": "Fulham",
+      "awayTeam": "Newcastle",
+      "commenceTime": "2026-11-09T15:00:00Z",
+      "homeWinProb": 0.0,
+      "drawProb": 0.0,
+      "awayWinProb": 0.0,
+      "totalVolume": 0
+    },
+    {
+      "homeTeam": "Nott'm Forest",
+      "awayTeam": "Man City",
+      "commenceTime": "2026-11-09T17:30:00Z",
+      "homeWinProb": 0.0,
+      "drawProb": 0.0,
+      "awayWinProb": 0.0,
+      "totalVolume": 0
+    },
+    {
+      "homeTeam": "Brighton",
+      "awayTeam": "Brentford",
+      "commenceTime": "2026-11-10T14:00:00Z",
+      "homeWinProb": 0.0,
+      "drawProb": 0.0,
+      "awayWinProb": 0.0,
+      "totalVolume": 0
+    },
+    {
+      "homeTeam": "Crystal Palace",
+      "awayTeam": "Liverpool",
+      "commenceTime": "2026-11-10T14:00:00Z",
+      "homeWinProb": 0.0,
+      "drawProb": 0.0,
+      "awayWinProb": 0.0,
+      "totalVolume": 0
+    },
+    {
+      "homeTeam": "Ipswich Town",
+      "awayTeam": "Bournemouth",
+      "commenceTime": "2026-11-10T14:00:00Z",
+      "homeWinProb": 0.0,
+      "drawProb": 0.0,
+      "awayWinProb": 0.0,
+      "totalVolume": 0
+    },
+    {
+      "homeTeam": "Sunderland",
+      "awayTeam": "Chelsea",
+      "commenceTime": "2026-11-10T14:00:00Z",
+      "homeWinProb": 0.0,
+      "drawProb": 0.0,
+      "awayWinProb": 0.0,
+      "totalVolume": 0
+    },
+    {
+      "homeTeam": "Man United",
+      "awayTeam": "Aston Villa",
+      "commenceTime": "2026-11-10T16:30:00Z",
+      "homeWinProb": 0.0,
+      "drawProb": 0.0,
+      "awayWinProb": 0.0,
+      "totalVolume": 0
+    }
+  ]
+}
