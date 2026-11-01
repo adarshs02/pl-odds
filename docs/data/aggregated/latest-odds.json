@@ -1,33 +1,6 @@
 {
-  "lastUpdated": "2026-11-01T01:36:20.937783Z",
+  "lastUpdated": "2026-11-01T17:45:49.115784Z",
   "upcomingMatches": [
-    {
-      "id": "6a3819cdbe2ba2fe5a3d8f9b4b459965",
-      "commenceTime": "2026-11-01T16:30:00Z",
-      "homeTeam": "Liverpool",
-      "awayTeam": "Arsenal",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 2.9,
-        "draw": 3.45,
-        "away": 2.35,
-        "impliedProbHome": 0.345,
-        "impliedProbDraw": 0.29,
-        "impliedProbAway": 0.426
-      },
-      "spread": {
-        "homePoint": 0.5,
-        "awayPoint": -0.5,
-        "byBookmaker": {
-          "mybookieag": 0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
     {
       "id": "0f552d9c6990c69474f50ff2fb54e9a3",
       "commenceTime": "2026-11-02T20:00:00Z",
@@ -321,5 +294,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 12
+  "totalMatches": 11
 }
