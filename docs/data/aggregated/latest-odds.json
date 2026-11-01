@@ -1,60 +1,6 @@
 {
-  "lastUpdated": "2026-10-31T17:00:24.749505Z",
+  "lastUpdated": "2026-11-01T01:36:20.937783Z",
   "upcomingMatches": [
-    {
-      "id": "01b17432a283eb27af86ae45602eb6dd",
-      "commenceTime": "2026-10-31T17:30:00Z",
-      "homeTeam": "Tottenham",
-      "awayTeam": "Crystal Palace",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 1.54,
-        "draw": 4.6,
-        "away": 5.5,
-        "impliedProbHome": 0.649,
-        "impliedProbDraw": 0.217,
-        "impliedProbAway": 0.182
-      },
-      "spread": {
-        "homePoint": -1.5,
-        "awayPoint": 1.5,
-        "byBookmaker": {
-          "mybookieag": -1.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
-    {
-      "id": "640c52a86289f35698261b41987dd71e",
-      "commenceTime": "2026-10-31T20:00:00Z",
-      "homeTeam": "Aston Villa",
-      "awayTeam": "Fulham",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 1.95,
-        "draw": 3.75,
-        "away": 3.7,
-        "impliedProbHome": 0.513,
-        "impliedProbDraw": 0.267,
-        "impliedProbAway": 0.27
-      },
-      "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
-        "byBookmaker": {
-          "mybookieag": -0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
     {
       "id": "6a3819cdbe2ba2fe5a3d8f9b4b459965",
       "commenceTime": "2026-11-01T16:30:00Z",
@@ -173,10 +119,10 @@
         "impliedProbAway": 0.067
       },
       "spread": {
-        "homePoint": -1.5,
-        "awayPoint": 1.5,
+        "homePoint": -2.5,
+        "awayPoint": 2.5,
         "byBookmaker": {
-          "mybookieag": -1.5
+          "mybookieag": -2.5
         }
       }
     },
@@ -375,5 +321,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 14
+  "totalMatches": 12
 }
