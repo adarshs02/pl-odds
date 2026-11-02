@@ -9498,5 +9498,25 @@
       }
     ],
     "last_update": "2026-11-01T00:03:30Z"
+  },
+  {
+    "id": "6a3819cdbe2ba2fe5a3d8f9b4b459965",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-11-01T16:30:00Z",
+    "completed": true,
+    "home_team": "Liverpool",
+    "away_team": "Arsenal",
+    "scores": [
+      {
+        "name": "Liverpool",
+        "score": "0"
+      },
+      {
+        "name": "Arsenal",
+        "score": "1"
+      }
+    ],
+    "last_update": "2026-11-01T23:55:59Z"
   }
 ]
