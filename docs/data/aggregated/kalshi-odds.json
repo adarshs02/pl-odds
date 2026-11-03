@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-02T21:30:52Z",
+  "lastUpdated": "2026-11-03T19:15:18Z",
   "winnerFutures": [
     {
       "team": "Tottenham",
@@ -112,15 +112,6 @@
   ],
   "top4Futures": [],
   "matchOutcomes": [
-    {
-      "homeTeam": "Newcastle",
-      "awayTeam": "Everton",
-      "commenceTime": "2026-11-04T20:00:00Z",
-      "homeWinProb": 0.0,
-      "drawProb": 0.0,
-      "awayWinProb": 0.0,
-      "totalVolume": 0
-    },
     {
       "homeTeam": "Leeds",
       "awayTeam": "Tottenham",
