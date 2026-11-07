@@ -9538,5 +9538,25 @@
       }
     ],
     "last_update": "2026-11-03T00:13:21Z"
+  },
+  {
+    "id": "586bec023ee8ac2f0645d963bd2c9d25",
+    "sport_key": "soccer_epl",
+    "sport_title": "EPL",
+    "commence_time": "2026-11-06T20:00:00Z",
+    "completed": true,
+    "home_team": "Everton",
+    "away_team": "Coventry City",
+    "scores": [
+      {
+        "name": "Everton",
+        "score": "3"
+      },
+      {
+        "name": "Coventry City",
+        "score": "1"
+      }
+    ],
+    "last_update": "2026-11-07T00:13:46Z"
   }
 ]

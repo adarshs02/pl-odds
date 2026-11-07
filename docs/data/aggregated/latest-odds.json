@@ -1,28 +1,6 @@
 {
-  "lastUpdated": "2026-11-06T19:03:29.558233Z",
+  "lastUpdated": "2026-11-07T02:26:46.265110Z",
   "upcomingMatches": [
-    {
-      "id": "586bec023ee8ac2f0645d963bd2c9d25",
-      "commenceTime": "2026-11-06T20:00:00Z",
-      "homeTeam": "Everton",
-      "awayTeam": "Coventry City",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 1.71,
-        "draw": 4.0,
-        "away": 4.6,
-        "impliedProbHome": 0.585,
-        "impliedProbDraw": 0.25,
-        "impliedProbAway": 0.217
-      },
-      "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
-        "byBookmaker": {
-          "mybookieag": -0.5
-        }
-      }
-    },
     {
       "id": "5c87852253fd11eea5d34ad723356607",
       "commenceTime": "2026-11-07T12:30:00Z",
@@ -222,10 +200,10 @@
         "impliedProbAway": 0.629
       },
       "spread": {
-        "homePoint": 0.5,
-        "awayPoint": -0.5,
+        "homePoint": 1.5,
+        "awayPoint": -1.5,
         "byBookmaker": {
-          "mybookieag": 0.5
+          "mybookieag": 1.5
         }
       },
       "kalshiOdds": {
@@ -323,7 +301,7 @@
         "homePoint": -0.5,
         "awayPoint": 0.5,
         "byBookmaker": {
-          "backfill": -0.5
+          "mybookieag": -0.5
         }
       }
     },
@@ -342,10 +320,9 @@
         "impliedProbAway": 0.25
       },
       "spread": {
-        "homePoint": -0.75,
-        "awayPoint": 0.75,
+        "homePoint": -0.5,
+        "awayPoint": 0.5,
         "byBookmaker": {
-          "matchbook": -1.0,
           "mybookieag": -0.5
         }
       }
@@ -363,6 +340,13 @@
         "impliedProbHome": 0.426,
         "impliedProbDraw": 0.282,
         "impliedProbAway": 0.364
+      },
+      "spread": {
+        "homePoint": -0.5,
+        "awayPoint": 0.5,
+        "byBookmaker": {
+          "mybookieag": -0.5
+        }
       }
     },
     {
@@ -398,7 +382,7 @@
         "homePoint": 0.5,
         "awayPoint": -0.5,
         "byBookmaker": {
-          "backfill": 0.5
+          "mybookieag": 0.5
         }
       }
     },
@@ -467,5 +451,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 20
+  "totalMatches": 19
 }
