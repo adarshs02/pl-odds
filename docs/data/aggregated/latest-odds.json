@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-13T03:01:13.911651Z",
+  "lastUpdated": "2026-11-13T19:23:06.210541Z",
   "upcomingMatches": [
     {
       "id": "6ef39b0fd8839f6e93a3de32523e9807",
@@ -274,6 +274,11 @@
         "byBookmaker": {
           "mybookieag": 0.5
         }
+      },
+      "kalshiOdds": {
+        "homeWinProb": 0.0,
+        "drawProb": 0.0,
+        "awayWinProb": 0.0
       }
     },
     {
