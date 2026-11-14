@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-13T19:23:06.210541Z",
+  "lastUpdated": "2026-11-14T02:47:20.723906Z",
   "upcomingMatches": [
     {
       "id": "6ef39b0fd8839f6e93a3de32523e9807",
@@ -316,6 +316,13 @@
         "impliedProbHome": 0.641,
         "impliedProbDraw": 0.244,
         "impliedProbAway": 0.19
+      },
+      "spread": {
+        "homePoint": -0.5,
+        "awayPoint": 0.5,
+        "byBookmaker": {
+          "mybookieag": -0.5
+        }
       }
     },
     {
@@ -331,6 +338,13 @@
         "impliedProbHome": 0.303,
         "impliedProbDraw": 0.267,
         "impliedProbAway": 0.5
+      },
+      "spread": {
+        "homePoint": 0.5,
+        "awayPoint": -0.5,
+        "byBookmaker": {
+          "mybookieag": 0.5
+        }
       }
     },
     {
