@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-14T17:46:46Z",
+  "lastUpdated": "2026-11-15T18:37:54Z",
   "winnerFutures": [
     {
       "team": "Tottenham",
@@ -206,6 +206,51 @@
       "homeTeam": "Ipswich Town",
       "awayTeam": "Aston Villa",
       "commenceTime": "2026-11-30T17:30:00Z",
+      "homeWinProb": 0.0,
+      "drawProb": 0.0,
+      "awayWinProb": 0.0,
+      "totalVolume": 0
+    },
+    {
+      "homeTeam": "Everton",
+      "awayTeam": "Liverpool",
+      "commenceTime": "2026-12-01T12:00:00Z",
+      "homeWinProb": 0.0,
+      "drawProb": 0.0,
+      "awayWinProb": 0.0,
+      "totalVolume": 0
+    },
+    {
+      "homeTeam": "Brighton",
+      "awayTeam": "Newcastle",
+      "commenceTime": "2026-12-01T14:05:00Z",
+      "homeWinProb": 0.0,
+      "drawProb": 0.0,
+      "awayWinProb": 0.0,
+      "totalVolume": 0
+    },
+    {
+      "homeTeam": "Fulham",
+      "awayTeam": "Bournemouth",
+      "commenceTime": "2026-12-01T14:05:00Z",
+      "homeWinProb": 0.0,
+      "drawProb": 0.0,
+      "awayWinProb": 0.0,
+      "totalVolume": 0
+    },
+    {
+      "homeTeam": "Sunderland",
+      "awayTeam": "Tottenham",
+      "commenceTime": "2026-12-01T14:05:00Z",
+      "homeWinProb": 0.0,
+      "drawProb": 0.0,
+      "awayWinProb": 0.0,
+      "totalVolume": 0
+    },
+    {
+      "homeTeam": "Arsenal",
+      "awayTeam": "Man City",
+      "commenceTime": "2026-12-01T16:30:00Z",
       "homeWinProb": 0.0,
       "drawProb": 0.0,
       "awayWinProb": 0.0,
