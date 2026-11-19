@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-18T20:10:05Z",
+  "lastUpdated": "2026-11-19T20:11:55Z",
   "winnerFutures": [
     {
       "team": "Tottenham",
@@ -305,6 +305,15 @@
       "homeTeam": "Brentford",
       "awayTeam": "Arsenal",
       "commenceTime": "2026-12-04T20:15:00Z",
+      "homeWinProb": 0.0,
+      "drawProb": 0.0,
+      "awayWinProb": 0.0,
+      "totalVolume": 0
+    },
+    {
+      "homeTeam": "Tottenham",
+      "awayTeam": "Fulham",
+      "commenceTime": "2026-12-05T20:00:00Z",
       "homeWinProb": 0.0,
       "drawProb": 0.0,
       "awayWinProb": 0.0,
