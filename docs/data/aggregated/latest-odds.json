@@ -1,55 +1,6 @@
 {
-  "lastUpdated": "2026-11-22T02:44:01.872096Z",
+  "lastUpdated": "2026-11-22T19:13:46.551790Z",
   "upcomingMatches": [
-    {
-      "id": "230a356290e1a358e9dd2f7fa23de3b9",
-      "commenceTime": "2026-11-22T14:00:00Z",
-      "homeTeam": "Hull City",
-      "awayTeam": "Brighton",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 6.0,
-        "draw": 4.5,
-        "away": 1.49,
-        "impliedProbHome": 0.167,
-        "impliedProbDraw": 0.222,
-        "impliedProbAway": 0.671
-      },
-      "spread": {
-        "homePoint": 1.5,
-        "awayPoint": -1.5,
-        "byBookmaker": {
-          "mybookieag": 1.5
-        }
-      }
-    },
-    {
-      "id": "4c08b213ed416e8f41e038f42a42b962",
-      "commenceTime": "2026-11-22T16:30:00Z",
-      "homeTeam": "Liverpool",
-      "awayTeam": "Man United",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 1.74,
-        "draw": 4.2,
-        "away": 4.0,
-        "impliedProbHome": 0.575,
-        "impliedProbDraw": 0.238,
-        "impliedProbAway": 0.25
-      },
-      "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
-        "byBookmaker": {
-          "mybookieag": -0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
     {
       "id": "aa77e2a08a1a003b0bbb62a5f8e8ae42",
       "commenceTime": "2026-11-23T20:00:00Z",
@@ -343,5 +294,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 13
+  "totalMatches": 11
 }
