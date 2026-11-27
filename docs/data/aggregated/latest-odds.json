@@ -1,33 +1,6 @@
 {
-  "lastUpdated": "2026-11-27T04:38:30.496415Z",
+  "lastUpdated": "2026-11-27T20:51:59.772488Z",
   "upcomingMatches": [
-    {
-      "id": "40d95e660c301c2d8a5a7a6317017b65",
-      "commenceTime": "2026-11-27T20:00:00Z",
-      "homeTeam": "Nott'm Forest",
-      "awayTeam": "Chelsea",
-      "h2hOdds": {
-        "bookmaker": "DraftKings",
-        "home": 2.55,
-        "draw": 3.4,
-        "away": 2.8,
-        "impliedProbHome": 0.392,
-        "impliedProbDraw": 0.294,
-        "impliedProbAway": 0.357
-      },
-      "spread": {
-        "homePoint": -0.5,
-        "awayPoint": 0.5,
-        "byBookmaker": {
-          "mybookieag": -0.5
-        }
-      },
-      "kalshiOdds": {
-        "homeWinProb": 0.0,
-        "drawProb": 0.0,
-        "awayWinProb": 0.0
-      }
-    },
     {
       "id": "ab87184803a63f7b679f1d12b01c3271",
       "commenceTime": "2026-11-28T15:00:00Z",
@@ -527,5 +500,5 @@
     "matchbook",
     "mybookieag"
   ],
-  "totalMatches": 20
+  "totalMatches": 19
 }
