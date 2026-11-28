@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-27T04:38:30.421647Z",
+  "lastUpdated": "2026-11-28T04:23:17.201343Z",
   "teams": [
     {
       "name": "Brighton",
@@ -8488,32 +8488,48 @@
           "spread": 0.5,
           "netPerformance": -1.5,
           "cumulativeNetPerformance": 0.0
+        },
+        {
+          "date": "2026-11-27",
+          "opponent": "Chelsea",
+          "homeAway": "home",
+          "score": "3-2",
+          "result": "W",
+          "spreadsByBookmaker": {
+            "mybookieag": -0.5
+          },
+          "netPerformanceByBookmaker": {
+            "mybookieag": 0.5
+          },
+          "spread": -0.5,
+          "netPerformance": 0.5,
+          "cumulativeNetPerformance": 0.5
         }
       ],
-      "totalNetPerformance": 0.0,
+      "totalNetPerformance": 0.5,
       "totalNetPerformanceByBookmaker": {
-        "mybookieag": 6.0,
+        "mybookieag": 6.5,
         "backfill": -8.0,
         "matchbook": 2.0
       },
       "statistics": {
-        "matchesPlayed": 49,
-        "wins": 13,
+        "matchesPlayed": 50,
+        "wins": 14,
         "losses": 22,
         "draws": 14,
-        "covers": 21,
+        "covers": 22,
         "coversByBookmaker": {
-          "mybookieag": 11,
+          "mybookieag": 12,
           "backfill": 7,
           "matchbook": 3
         },
-        "avgNetPerformance": 0.0,
-        "winRate": 0.265,
-        "coverRate": 0.429,
+        "avgNetPerformance": 0.01,
+        "winRate": 0.28,
+        "coverRate": 0.44,
         "coverRateByBookmaker": {
-          "mybookieag": 0.224,
-          "backfill": 0.143,
-          "matchbook": 0.061
+          "mybookieag": 0.24,
+          "backfill": 0.14,
+          "matchbook": 0.06
         }
       }
     },
@@ -16283,18 +16299,34 @@
           "spread": -0.5,
           "netPerformance": -3.5,
           "cumulativeNetPerformance": -15.25
+        },
+        {
+          "date": "2026-11-27",
+          "opponent": "Nott'm Forest",
+          "homeAway": "away",
+          "score": "2-3",
+          "result": "L",
+          "spreadsByBookmaker": {
+            "mybookieag": 0.5
+          },
+          "netPerformanceByBookmaker": {
+            "mybookieag": -0.5
+          },
+          "spread": 0.5,
+          "netPerformance": -0.5,
+          "cumulativeNetPerformance": -15.75
         }
       ],
-      "totalNetPerformance": -15.25,
+      "totalNetPerformance": -15.75,
       "totalNetPerformanceByBookmaker": {
         "backfill": 2.5,
         "matchbook": 2.0,
-        "mybookieag": -20.5
+        "mybookieag": -21.0
       },
       "statistics": {
-        "matchesPlayed": 49,
+        "matchesPlayed": 50,
         "wins": 19,
-        "losses": 19,
+        "losses": 20,
         "draws": 11,
         "covers": 21,
         "coversByBookmaker": {
@@ -16302,13 +16334,13 @@
           "matchbook": 3,
           "mybookieag": 8
         },
-        "avgNetPerformance": -0.31,
-        "winRate": 0.388,
-        "coverRate": 0.429,
+        "avgNetPerformance": -0.32,
+        "winRate": 0.38,
+        "coverRate": 0.42,
         "coverRateByBookmaker": {
-          "backfill": 0.204,
-          "matchbook": 0.061,
-          "mybookieag": 0.163
+          "backfill": 0.2,
+          "matchbook": 0.06,
+          "mybookieag": 0.16
         }
       }
     }
@@ -16319,6 +16351,6 @@
     "mybookieag"
   ],
   "correlation": 0.358,
-  "totalMatches": 490,
+  "totalMatches": 491,
   "teamsTracked": 23
 }
